@@ -9,7 +9,7 @@ authors:
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: add ORCID
   # TODO: add remaining co-authors here, in author order, same two-field format
 license: MIT
-repository-code: "https://github.com/TODO-org-or-user/vapv-daisy-microclimate-scenarios"
+repository-code: "https://github.com/kamaulindhardt/vapv-daisy-microclimate-scenarios"
 version: "1.0.0"  # TODO: bump to match each GitHub release tag / Zenodo software version
 date-released: "2026-01-01"  # TODO: set to the actual release date
 identifiers:
