@@ -1,0 +1,226 @@
+crop_renamed,fertiliser_type,residue_policy,scen_label,mean_resp,sd_resp,n_rot
+Soybean,Mineral fertiliser,Residue removed,Rad -10% C,-24.780682138782673,2.435734741311782,4
+Soybean,Mineral fertiliser,Residue removed,Rad -20% C,-34.01219483526721,3.3549657489685054,4
+Soybean,Mineral fertiliser,Residue removed,Rad -30% C,-42.82890102221514,3.9200441175442307,4
+Soybean,Mineral fertiliser,Residue removed,Rad -5% C,-20.763241751718944,1.6950683349296143,4
+Soybean,Mineral fertiliser,Residue removed,Rad 0% C,-16.729189065773934,1.4951935668019942,4
+Soybean,Mineral fertiliser,Residue removed,Rad 0% E,-21.713773928400133,2.756673851497394,4
+Soybean,Mineral fertiliser,Residue removed,Rad 0% W,-25.386184255613433,1.8383140189050442,4
+Soybean,Mineral fertiliser,Residue removed,Tmp +0.5degC C,0.08139874130380427,0.6614947926449098,4
+Soybean,Mineral fertiliser,Residue removed,Tmp +1degC C,8.441717207200393,2.5077300342298,4
+Soybean,Mineral fertiliser,Residue removed,Tmp +2degC C,14.79047980968229,8.547369691129884,4
+Soybean,Mineral fertiliser,Residue removed,Tmp +3degC C,14.264248896092285,12.871734852719495,4
+Soybean,Mineral fertiliser,Residue removed,Tmp -2degC C,-60.94916383022792,3.316725666596323,4
+Soybean,Mineral fertiliser,Residue removed,Tmp -3degC C,-81.11522314583017,2.727162181640984,4
+Soybean,Mineral fertiliser,Residue removed,Tmp 0degC C,-11.452703830120226,2.477840766575577,4
+Soybean,Mineral fertiliser,Residue removed,Tmp 0degC E,-11.051096311497037,2.3201357360957466,4
+Soybean,Mineral fertiliser,Residue removed,Tmp 0degC W,-11.63398374687742,1.6952379514244877,4
+Soybean,Mineral fertiliser,Residue removed,Wind -20% C,1.6799147045636853,0.592342747250326,4
+Soybean,Mineral fertiliser,Residue removed,Wind -30% C,2.013695146586866,0.7357958051559904,4
+Soybean,Mineral fertiliser,Residue removed,Wind -40% C,2.278180948441886,0.7878720213399617,4
+Soybean,Mineral fertiliser,Residue removed,Wind -50% C,2.5762216856655,0.8904591482761526,4
+Soybean,Mineral fertiliser,Residue removed,Wind -60% C,2.885031426802427,1.071725145182709,4
+Soybean,Mineral fertiliser,Residue removed,Wind -70% C,3.089380158204432,1.0990906914431964,4
+Soybean,Mineral fertiliser,Residue removed,Wind 0% C,1.0575241399564947,0.3732145870110915,4
+Soybean,Mineral fertiliser,Residue removed,Wind 0% E,0.965657657413821,0.26373393038464593,4
+Soybean,Mineral fertiliser,Residue removed,Wind 0% W,1.1431482404132802,0.4760521236937507,4
+Soybean,Mineral fertiliser,Residue retained,Rad -10% C,-24.78107924066368,2.435604646297671,4
+Soybean,Mineral fertiliser,Residue retained,Rad -20% C,-34.012557629433516,3.3550367803912287,4
+Soybean,Mineral fertiliser,Residue retained,Rad -30% C,-42.82921641332278,3.920063452872953,4
+Soybean,Mineral fertiliser,Residue retained,Rad -5% C,-20.7637215799484,1.6948493676183793,4
+Soybean,Mineral fertiliser,Residue retained,Rad 0% C,-16.729772674572725,1.4949823619487395,4
+Soybean,Mineral fertiliser,Residue retained,Rad 0% E,-21.714223983002434,2.756558820340583,4
+Soybean,Mineral fertiliser,Residue retained,Rad 0% W,-25.38655271529654,1.8383215226168521,4
+Soybean,Mineral fertiliser,Residue retained,Tmp +0.5degC C,0.0809095400023884,0.6614322834397827,4
+Soybean,Mineral fertiliser,Residue retained,Tmp +1degC C,8.44126256818901,2.507998785726544,4
+Soybean,Mineral fertiliser,Residue retained,Tmp +2degC C,14.790808601324153,8.547123994077014,4
+Soybean,Mineral fertiliser,Residue retained,Tmp +3degC C,14.262926558815746,12.872180692819029,4
+Soybean,Mineral fertiliser,Residue retained,Tmp -2degC C,-60.94937423570635,3.3166859863790026,4
+Soybean,Mineral fertiliser,Residue retained,Tmp -3degC C,-81.11532613697818,2.7271652655589906,4
+Soybean,Mineral fertiliser,Residue retained,Tmp 0degC C,-11.453101417789984,2.4779200880215386,4
+Soybean,Mineral fertiliser,Residue retained,Tmp 0degC E,-11.051656457808765,2.3200563183628167,4
+Soybean,Mineral fertiliser,Residue retained,Tmp 0degC W,-11.634466594137688,1.6957985164476717,4
+Soybean,Mineral fertiliser,Residue retained,Wind -20% C,1.6792875300373664,0.591856839260136,4
+Soybean,Mineral fertiliser,Residue retained,Wind -30% C,2.0132009346988466,0.7354913842516817,4
+Soybean,Mineral fertiliser,Residue retained,Wind -40% C,2.277723679982486,0.7876249440282911,4
+Soybean,Mineral fertiliser,Residue retained,Wind -50% C,2.575561410612359,0.8900338737273226,4
+Soybean,Mineral fertiliser,Residue retained,Wind -60% C,2.884722940115997,1.0715469288298616,4
+Soybean,Mineral fertiliser,Residue retained,Wind -70% C,3.089151390563582,1.0990897735337974,4
+Soybean,Mineral fertiliser,Residue retained,Wind 0% C,1.0577149710118319,0.3733026572185823,4
+Soybean,Mineral fertiliser,Residue retained,Wind 0% E,0.9656174489499664,0.26383878193809013,4
+Soybean,Mineral fertiliser,Residue retained,Wind 0% W,1.1429664985946923,0.4759612897446515,4
+Soybean,Biogas digestate,Residue removed,Rad -10% C,-24.773162753163618,2.454228990310602,4
+Soybean,Biogas digestate,Residue removed,Rad -20% C,-34.01297676393053,3.3710790337844267,4
+Soybean,Biogas digestate,Residue removed,Rad -30% C,-42.84289448337047,3.928337113271618,4
+Soybean,Biogas digestate,Residue removed,Rad -5% C,-20.749172108350944,1.7194531812578122,4
+Soybean,Biogas digestate,Residue removed,Rad 0% C,-16.716908319215005,1.5172948445159216,4
+Soybean,Biogas digestate,Residue removed,Rad 0% E,-21.704766033737023,2.783893159500055,4
+Soybean,Biogas digestate,Residue removed,Rad 0% W,-25.386228433231338,1.850546805205605,4
+Soybean,Biogas digestate,Residue removed,Tmp +0.5degC C,0.12402467536874318,0.7358313850901543,4
+Soybean,Biogas digestate,Residue removed,Tmp +1degC C,8.498923352989063,2.4558951091974297,4
+Soybean,Biogas digestate,Residue removed,Tmp +2degC C,14.93396782282394,8.447286789690548,4
+Soybean,Biogas digestate,Residue removed,Tmp +3degC C,14.499840443202805,12.798675444946877,4
+Soybean,Biogas digestate,Residue removed,Tmp -2degC C,-60.94561501988993,3.3300997818398312,4
+Soybean,Biogas digestate,Residue removed,Tmp -3degC C,-81.12269063997573,2.733408643450721,4
+Soybean,Biogas digestate,Residue removed,Tmp 0degC C,-11.429700084347623,2.5336387692249365,4
+Soybean,Biogas digestate,Residue removed,Tmp 0degC E,-11.024362867044973,2.38897337113976,4
+Soybean,Biogas digestate,Residue removed,Tmp 0degC W,-11.60611366714081,1.7592158124702313,4
+Soybean,Biogas digestate,Residue removed,Wind -20% C,1.717579793550026,0.6437658567111368,4
+Soybean,Biogas digestate,Residue removed,Wind -30% C,2.0471115544802716,0.7892656639652458,4
+Soybean,Biogas digestate,Residue removed,Wind -40% C,2.3118730457062733,0.8375962721498885,4
+Soybean,Biogas digestate,Residue removed,Wind -50% C,2.6040508499862143,0.9510066561604952,4
+Soybean,Biogas digestate,Residue removed,Wind -60% C,2.8916250650573536,1.1005254323007478,4
+Soybean,Biogas digestate,Residue removed,Wind -70% C,3.116984649592269,1.164206917586379,4
+Soybean,Biogas digestate,Residue removed,Wind 0% C,1.1022169990498378,0.4289832101327456,4
+Soybean,Biogas digestate,Residue removed,Wind 0% E,1.011377851285434,0.29064949876933804,4
+Soybean,Biogas digestate,Residue removed,Wind 0% W,1.182585485156792,0.529016761985044,4
+Soybean,Biogas digestate,Residue retained,Rad -10% C,-24.772968392377784,2.4543976783030774,4
+Soybean,Biogas digestate,Residue retained,Rad -20% C,-34.012835357737174,3.37095547679777,4
+Soybean,Biogas digestate,Residue retained,Rad -30% C,-42.84276825288086,3.9283351642282454,4
+Soybean,Biogas digestate,Residue retained,Rad -5% C,-20.748992234830652,1.719703168533235,4
+Soybean,Biogas digestate,Residue retained,Rad 0% C,-16.716766309330257,1.51764002643211,4
+Soybean,Biogas digestate,Residue retained,Rad 0% E,-21.70453427367684,2.78397483313578,4
+Soybean,Biogas digestate,Residue retained,Rad 0% W,-25.386063351061416,1.8505202914842223,4
+Soybean,Biogas digestate,Residue retained,Tmp +0.5degC C,0.12384421584622385,0.7353479012922791,4
+Soybean,Biogas digestate,Residue retained,Tmp +1degC C,8.498774592272138,2.4556120051286197,4
+Soybean,Biogas digestate,Residue retained,Tmp +2degC C,14.934342188398961,8.446754000458087,4
+Soybean,Biogas digestate,Residue retained,Tmp +3degC C,14.501763323732725,12.797984704896772,4
+Soybean,Biogas digestate,Residue retained,Tmp -2degC C,-60.94541944380625,3.3302940737921696,4
+Soybean,Biogas digestate,Residue retained,Tmp -3degC C,-81.12240750209172,2.7339147347121733,4
+Soybean,Biogas digestate,Residue retained,Tmp 0degC C,-11.429220417362915,2.5341963398819773,4
+Soybean,Biogas digestate,Residue retained,Tmp 0degC E,-11.024043906860912,2.3891322661617194,4
+Soybean,Biogas digestate,Residue retained,Tmp 0degC W,-11.605913998969546,1.7596304746888252,4
+Soybean,Biogas digestate,Residue retained,Wind -20% C,1.718191795281034,0.644614254338577,4
+Soybean,Biogas digestate,Residue retained,Wind -30% C,2.047733453113461,0.790077386071061,4
+Soybean,Biogas digestate,Residue retained,Wind -40% C,2.3124508259415926,0.8383465245877028,4
+Soybean,Biogas digestate,Residue retained,Wind -50% C,2.604649000827346,0.9516290024883552,4
+Soybean,Biogas digestate,Residue retained,Wind -60% C,2.8916276058300863,1.1006265082860243,4
+Soybean,Biogas digestate,Residue retained,Wind -70% C,3.117268710394278,1.1647089287365027,4
+Soybean,Biogas digestate,Residue retained,Wind 0% C,1.1029356937798198,0.4299354887333597,4
+Soybean,Biogas digestate,Residue retained,Wind 0% E,1.0120560443696065,0.2915523068986177,4
+Soybean,Biogas digestate,Residue retained,Wind 0% W,1.1833796283271838,0.5299767250530759,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad -10% C,-34.956933156450205,4.91086264307992,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad -20% C,-48.06964330995815,7.116811252145,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad -30% C,-63.71535150831939,5.587950918732454,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad -5% C,-28.38777323961795,4.626445098084465,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad 0% C,-21.973109919963548,4.704015381138607,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad 0% E,-36.795156331262866,6.074618776593277,4
+Winter Wheat,Mineral fertiliser,Residue removed,Rad 0% W,-45.238734207580464,7.426440169481645,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp +0.5degC C,1.362471149425531,1.3597648298085903,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp +1degC C,6.650571270484655,2.361010089831694,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp +2degC C,11.18970484581332,4.471836385577762,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp +3degC C,4.532071630428318,9.437444947454471,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp -2degC C,-31.732751927435906,10.636493954866198,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp -3degC C,-50.456511449139605,13.562801469605821,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp 0degC C,-3.7124657896778124,4.870283614734323,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp 0degC E,-4.022723154920717,5.143197979130625,4
+Winter Wheat,Mineral fertiliser,Residue removed,Tmp 0degC W,-3.836720294260825,4.6492765311183915,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -20% C,-1.146074019081128,1.0224885235898802,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -30% C,-1.488001704461139,1.071089033680738,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -40% C,-1.9060124354168104,1.1787149030660689,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -50% C,-2.2287311564037786,1.479873744350388,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -60% C,-2.664268675626324,1.5760278352442694,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind -70% C,-3.0452147778975145,1.6496253614710947,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind 0% C,-0.8130112777522626,0.37115763563583304,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind 0% E,-0.7088516606765733,0.3994579069369345,4
+Winter Wheat,Mineral fertiliser,Residue removed,Wind 0% W,-0.9607604974578847,0.3940755307857907,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad -10% C,-37.53849697767769,5.098772067876005,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad -20% C,-51.4466827423156,5.5771270523994065,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad -30% C,-66.23122610909444,4.3129972259805,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad -5% C,-31.62335157245988,4.125470344706857,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad 0% C,-25.274272694810247,4.004009189479728,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad 0% E,-39.89790288055566,5.578379834367054,4
+Winter Wheat,Mineral fertiliser,Residue retained,Rad 0% W,-47.832996565772504,6.869655938170724,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp +0.5degC C,0.827913969341062,1.945022088722,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp +1degC C,3.9520709168877053,2.4262847557262,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp +2degC C,6.8241915126297,3.2083593004057374,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp +3degC C,-0.44410051344214574,6.6618241219119305,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp -2degC C,-32.984476983380844,10.812950552886866,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp -3degC C,-52.886088816209686,13.08543145956429,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp 0degC C,-2.830365101129485,4.920585802059504,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp 0degC E,-3.2217293559113407,5.0427317228101405,4
+Winter Wheat,Mineral fertiliser,Residue retained,Tmp 0degC W,-3.012351054364507,4.849163554538407,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -20% C,-1.7564305384178152,0.39914529388070896,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -30% C,-2.0769808824829745,0.45465250975654364,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -40% C,-2.4626580531565354,0.5724880360163225,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -50% C,-2.7944493330419133,0.7159529787402453,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -60% C,-3.1653379984479533,0.8347805216601982,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind -70% C,-3.5139442702329067,0.9520708645285669,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind 0% C,-1.1429854692211363,0.37365414562750754,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind 0% E,-1.0567951440353422,0.3924452522449648,4
+Winter Wheat,Mineral fertiliser,Residue retained,Wind 0% W,-1.2636136324467553,0.35302054975115565,4
+Winter Wheat,Mineral fertiliser,NA,Rad -10% C,-19.158822036736996,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad -20% C,-32.459556242640225,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad -30% C,-51.3008495600386,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad -5% C,-13.726690934933067,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad 0% C,-9.276435698666218,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad 0% E,-19.81523096495197,NA,1
+Winter Wheat,Mineral fertiliser,NA,Rad 0% W,-30.310457486452897,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp +0.5degC C,1.685011754293743,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp +1degC C,5.934470315393582,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp +2degC C,8.604406406032181,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp +3degC C,11.750879453343357,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp -2degC C,-26.15690381696591,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp -3degC C,-38.725781880938186,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp 0degC C,-2.1563785044762978,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp 0degC E,-2.8052516128544354,NA,1
+Winter Wheat,Mineral fertiliser,NA,Tmp 0degC W,-2.1825099962406194,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -20% C,-0.8834102584456929,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -30% C,-1.078695298392238,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -40% C,-1.2969170326965545,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -50% C,-1.5347709190029755,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -60% C,-1.7661864349633671,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind -70% C,-2.017819409320968,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind 0% C,-0.4803048665909729,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind 0% E,-0.4308220884390501,NA,1
+Winter Wheat,Mineral fertiliser,NA,Wind 0% W,-0.5694787346602385,NA,1
+Winter Wheat,Biogas digestate,Residue removed,Rad -10% C,-37.33917282826398,5.877096241267236,4
+Winter Wheat,Biogas digestate,Residue removed,Rad -20% C,-51.1845612721476,6.422096372568638,4
+Winter Wheat,Biogas digestate,Residue removed,Rad -30% C,-66.04367646330601,4.8990353890915594,4
+Winter Wheat,Biogas digestate,Residue removed,Rad -5% C,-31.225748069563966,5.147377371440812,4
+Winter Wheat,Biogas digestate,Residue removed,Rad 0% C,-24.875449944599946,3.9883457401133233,4
+Winter Wheat,Biogas digestate,Residue removed,Rad 0% E,-39.11471274488311,7.017259757779075,4
+Winter Wheat,Biogas digestate,Residue removed,Rad 0% W,-47.68158486782935,7.616207137178843,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp +0.5degC C,0.9390436633912425,2.465549556516611,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp +1degC C,4.740490126882724,3.795547665327906,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp +2degC C,8.224669046694247,5.6015443281859705,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp +3degC C,0.4683817348313249,8.819529795657884,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp -2degC C,-33.48969404397999,10.89301923439814,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp -3degC C,-52.53371563426653,13.966045618583468,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC C,-3.8049885728641355,5.077378051285987,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC E,-4.135279512384805,5.2215883833318015,4
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC W,-3.8559945771722366,4.908543770625616,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -20% C,-1.6367619917935707,0.9354686712118037,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -30% C,-1.9903783237441215,1.0680408784126236,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -40% C,-2.279566998477918,1.2308373147308844,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -50% C,-2.6837731226934136,1.2166023849306156,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -60% C,-3.4886703219432724,1.0127991749240113,4
+Winter Wheat,Biogas digestate,Residue removed,Wind -70% C,-3.8055260826532384,1.0802792618373485,4
+Winter Wheat,Biogas digestate,Residue removed,Wind 0% C,-1.0575045750449992,0.7789509410990043,4
+Winter Wheat,Biogas digestate,Residue removed,Wind 0% E,-0.98759434750741,0.8144345034697656,4
+Winter Wheat,Biogas digestate,Residue removed,Wind 0% W,-1.1750811861252883,0.7647802803201644,4
+Winter Wheat,Biogas digestate,Residue retained,Rad -10% C,-39.565436368105296,4.983922803045429,4
+Winter Wheat,Biogas digestate,Residue retained,Rad -20% C,-53.74010653591405,4.743320670541667,4
+Winter Wheat,Biogas digestate,Residue retained,Rad -30% C,-67.82119750748096,3.7908182943727593,4
+Winter Wheat,Biogas digestate,Residue retained,Rad -5% C,-33.25778440003083,4.633072768618302,4
+Winter Wheat,Biogas digestate,Residue retained,Rad 0% C,-27.08243606011636,3.334332922735269,4
+Winter Wheat,Biogas digestate,Residue retained,Rad 0% E,-41.43681824047708,5.8957822801737985,4
+Winter Wheat,Biogas digestate,Residue retained,Rad 0% W,-50.08253790000482,6.210859697545536,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp +0.5degC C,0.5471943203276886,2.0864634772523747,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp +1degC C,2.3404680069134223,3.2583793991046925,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp +2degC C,4.711003616164357,3.5950043610142313,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp +3degC C,-3.415366182325093,6.61413937723872,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp -2degC C,-34.29780893082235,10.815783896757585,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp -3degC C,-54.45180681225178,13.056824443852582,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp 0degC C,-3.5733285440539424,3.672141028657057,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp 0degC E,-3.824299615891315,3.8044314678101006,4
+Winter Wheat,Biogas digestate,Residue retained,Tmp 0degC W,-3.3902352766811985,3.6692534076554533,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -20% C,-1.330611596255165,0.6086024739381409,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -30% C,-1.6631552089389567,0.7918392454275563,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -40% C,-1.989986117014484,0.9513981706163073,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -50% C,-2.474965203883399,0.8871309235043995,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -60% C,-3.1876297403919285,0.991635476329935,4
+Winter Wheat,Biogas digestate,Residue retained,Wind -70% C,-3.5182300970639155,1.0561231332482401,4
+Winter Wheat,Biogas digestate,Residue retained,Wind 0% C,-0.7560077458016679,0.36651732363349115,4
+Winter Wheat,Biogas digestate,Residue retained,Wind 0% E,-0.7038426763293312,0.38775104713741027,4
+Winter Wheat,Biogas digestate,Residue retained,Wind 0% W,-0.8691099133088518,0.371623513332862,4

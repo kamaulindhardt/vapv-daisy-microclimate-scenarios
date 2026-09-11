@@ -1,0 +1,17 @@
+yield_metric,management_label,driver,slope,r_squared,n_points
+All-crop ASY AGB,Biogas digestate | Residue Removed,Radiation,0.064,0.94,5
+All-crop ASY AGB,Biogas digestate | Residue Removed,Temperature,-0.181,0.94,7
+All-crop ASY AGB,Biogas digestate | Residue Retained,Radiation,0.084,0.981,5
+All-crop ASY AGB,Biogas digestate | Residue Retained,Temperature,-0.2,0.935,7
+All-crop ASY AGB,Mineral fertiliser | Residue Removed,Radiation,0.043,0.495,5
+All-crop ASY AGB,Mineral fertiliser | Residue Removed,Temperature,-0.176,0.967,7
+All-crop ASY AGB,Mineral fertiliser | Residue Retained,Radiation,0.047,0.94,5
+All-crop ASY AGB,Mineral fertiliser | Residue Retained,Temperature,-0.184,0.908,7
+Grain ASY (WW + SY),Biogas digestate | Residue Removed,Radiation,0.055,0.983,5
+Grain ASY (WW + SY),Biogas digestate | Residue Removed,Temperature,-0.199,0.946,7
+Grain ASY (WW + SY),Biogas digestate | Residue Retained,Radiation,0.083,0.981,5
+Grain ASY (WW + SY),Biogas digestate | Residue Retained,Temperature,-0.202,0.927,7
+Grain ASY (WW + SY),Mineral fertiliser | Residue Removed,Radiation,0.02,0.467,5
+Grain ASY (WW + SY),Mineral fertiliser | Residue Removed,Temperature,-0.187,0.942,7
+Grain ASY (WW + SY),Mineral fertiliser | Residue Retained,Radiation,0.046,0.94,5
+Grain ASY (WW + SY),Mineral fertiliser | Residue Retained,Temperature,-0.186,0.899,7

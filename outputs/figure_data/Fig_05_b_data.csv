@@ -1,0 +1,43 @@
+fertilisation,residue,management_label,scen_label,flux,mean_kgN_ha,sd_kgN_ha,n_rotations,driver
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Reference,N leaching,22.633917417592592,1.8477363677431409,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,N leaching,27.19956437788889,1.7440500848343652,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Reference,N leaching,27.59872119074074,2.282483175668454,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Rad 0%,N leaching,21.415185224537037,2.5113576045430626,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad 0%,N leaching,25.255716817592592,4.204081496431254,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Rad 0%,N leaching,27.380389660185184,4.070233863406236,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Rad -5%,N leaching,20.40758783,2.2305964063762054,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -5%,N leaching,24.884538080555554,4.59873377367219,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Rad -5%,N leaching,26.725474460185186,4.914755338337623,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Rad -10%,N leaching,21.732920133333334,3.3076322708566863,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -10%,N leaching,25.48206914537037,3.773446310181418,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Rad -10%,N leaching,26.960941019537035,3.308719277249721,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Rad -20%,N leaching,21.505685494444442,4.892255211118629,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -20%,N leaching,23.49993548201852,5.693403486101982,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Rad -20%,N leaching,24.566464109166667,5.196906718563169,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Rad -30%,N leaching,20.205875725925925,2.933188990115216,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -30%,N leaching,21.090175836574076,2.925532801368224,4,Radiation
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Rad -30%,N leaching,22.917750803472224,2.820192999867397,4,Radiation
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Reference,N leaching,22.633917417592592,1.8477363677431409,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,N leaching,27.19956437788889,1.7440500848343652,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Reference,N leaching,27.59872119074074,2.282483175668454,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp -3degC,N leaching,9.914541317513889,3.808971876471592,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -3degC,N leaching,10.48576381638889,3.270790205659915,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp -3degC,N leaching,15.560137028333333,4.344584195387017,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp -2degC,N leaching,11.751167078333333,4.123652983843145,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -2degC,N leaching,13.623061167592592,4.177188371997834,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp -2degC,N leaching,17.083207585092595,4.282933302349661,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp 0degC,N leaching,21.987819784537038,3.0087422929191594,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp 0degC,N leaching,24.966966585185183,3.747550901681875,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp 0degC,N leaching,25.632131537777777,4.483214267065388,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp +0.5degC,N leaching,22.680351771481483,2.526967540920047,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +0.5degC,N leaching,24.84232790833333,1.8213255553597258,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp +0.5degC,N leaching,27.54937857037037,2.237354991782505,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp +1degC,N leaching,24.479110894444446,1.2245488867060939,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +1degC,N leaching,28.04480587399074,1.5447436839387805,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp +1degC,N leaching,27.92245716962963,0.9952612798853754,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp +2degC,N leaching,25.47977211371296,2.753223213215831,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +2degC,N leaching,29.459843407685185,2.638622202890412,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp +2degC,N leaching,30.189682258333335,3.5747736528242,4,Temperature
+Mineral fertiliser,Residue Removed,Mineral fertiliser | Residue Removed,Tmp +3degC,N leaching,24.894658196296298,2.5339214403151713,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +3degC,N leaching,28.91280099187037,2.299737918217917,4,Temperature
+Biogas digestate,Residue Retained,Biogas digestate | Residue Retained,Tmp +3degC,N leaching,30.28326547537037,2.1918086584112846,4,Temperature

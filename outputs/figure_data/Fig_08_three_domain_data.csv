@@ -1,0 +1,229 @@
+management_label,scen_label,value,outcome,driver,relative_yield_pct
+Biogas digestate | Residue Removed,Rad 0%,-7.146612840154504,Δ N leaching,Radiation,79.05643869902147
+Biogas digestate | Residue Removed,Rad -10%,-6.31442183653025,Δ N leaching,Radiation,73.35857465745745
+Biogas digestate | Residue Removed,Rad -20%,-13.601794662850851,Δ N leaching,Radiation,63.185206480605004
+Biogas digestate | Residue Removed,Rad -30%,-22.461347014370816,Δ N leaching,Radiation,47.59714654045869
+Biogas digestate | Residue Removed,Rad -5%,-8.511262405420252,Δ N leaching,Radiation,75.4270831992136
+Biogas digestate | Residue Removed,Tmp 0degC,-8.208211579001,Δ N leaching,Temperature,98.18044125528432
+Biogas digestate | Residue Removed,Tmp +0.5degC,-8.66644934751899,Δ N leaching,Temperature,100.1022126865476
+Biogas digestate | Residue Removed,Tmp +1degC,3.1075552694842568,Δ N leaching,Temperature,114.26855631867176
+Biogas digestate | Residue Removed,Tmp -2degC,-49.914414148974124,Δ N leaching,Temperature,67.88079560702616
+Biogas digestate | Residue Removed,Tmp +2degC,8.309982462931368,Δ N leaching,Temperature,124.5250607346544
+Biogas digestate | Residue Removed,Tmp -3degC,-61.44878031608113,Δ N leaching,Temperature,48.716411244111825
+Biogas digestate | Residue Removed,Tmp +3degC,6.298764899978346,Δ N leaching,Temperature,126.31157757605143
+Biogas digestate | Residue Removed,Wind 0%,-1.0464174289207253,Δ N leaching,Wind,100.13429843852367
+Biogas digestate | Residue Removed,Wind -20%,-1.7380041358276588,Δ N leaching,Wind,100.267411578364
+Biogas digestate | Residue Removed,Wind -30%,-2.041957808950481,Δ N leaching,Wind,100.32657603241502
+Biogas digestate | Residue Removed,Wind -40%,-2.3659167316616565,Δ N leaching,Wind,100.38345247926217
+Biogas digestate | Residue Removed,Wind -50%,-2.8943708957011434,Δ N leaching,Wind,100.43147794741492
+Biogas digestate | Residue Removed,Wind -60%,-5.216667487314824,Δ N leaching,Wind,98.50790479900722
+Biogas digestate | Residue Removed,Wind -70%,-5.62722076392744,Δ N leaching,Wind,98.57619408001827
+Biogas digestate | Residue Retained,Rad 0%,-0.7910929243663846,Δ N leaching,Radiation,74.97302029798523
+Biogas digestate | Residue Retained,Rad -10%,-2.31090479444996,Δ N leaching,Radiation,63.61621599040766
+Biogas digestate | Residue Retained,Rad -20%,-10.986947766954446,Δ N leaching,Radiation,50.66326974488452
+Biogas digestate | Residue Retained,Rad -30%,-16.960823492209354,Δ N leaching,Radiation,37.86035422634616
+Biogas digestate | Residue Retained,Rad -5%,-3.1640840331708,Δ N leaching,Radiation,69.38891606312518
+Biogas digestate | Residue Retained,Tmp 0degC,-7.125654987314216,Δ N leaching,Temperature,94.45651322360143
+Biogas digestate | Residue Retained,Tmp +0.5degC,-0.1787858938439711,Δ N leaching,Temperature,100.49089314623834
+Biogas digestate | Residue Retained,Tmp +1degC,1.173010795143302,Δ N leaching,Temperature,104.16696773055861
+Biogas digestate | Residue Retained,Tmp -2degC,-38.10145235706087,Δ N leaching,Temperature,59.4843565240977
+Biogas digestate | Residue Retained,Tmp +2degC,9.387975079301324,Δ N leaching,Temperature,107.69440588323096
+Biogas digestate | Residue Retained,Tmp -3degC,-43.620079637770694,Δ N leaching,Temperature,39.389765280169094
+Biogas digestate | Residue Retained,Tmp +3degC,9.727060417314858,Δ N leaching,Temperature,101.71207231734653
+Biogas digestate | Residue Retained,Wind 0%,-0.9607253885293922,Δ N leaching,Wind,99.70401861076064
+Biogas digestate | Residue Retained,Wind -20%,-1.6343187728307014,Δ N leaching,Wind,99.42433080117398
+Biogas digestate | Residue Retained,Wind -30%,-2.0223631647235583,Δ N leaching,Wind,99.25869820078846
+Biogas digestate | Residue Retained,Wind -40%,-2.3386241071690455,Δ N leaching,Wind,99.08164724201944
+Biogas digestate | Residue Retained,Wind -50%,-2.8774542090140955,Δ N leaching,Wind,98.77189851287766
+Biogas digestate | Residue Retained,Wind -60%,-5.066346973387471,Δ N leaching,Wind,98.26885240743857
+Biogas digestate | Residue Retained,Wind -70%,-5.5293303229173265,Δ N leaching,Wind,98.07639830330463
+Mineral fertiliser | Residue Removed,Rad 0%,-5.384539364397764,Δ N leaching,Radiation,79.10934831932413
+Mineral fertiliser | Residue Removed,Rad -10%,-3.980739470043939,Δ N leaching,Radiation,73.35764013424827
+Mineral fertiliser | Residue Removed,Rad -20%,-4.984695765794446,Δ N leaching,Radiation,68.2519762339746
+Mineral fertiliser | Residue Removed,Rad -30%,-10.72744786892008,Δ N leaching,Radiation,59.502899581350704
+Mineral fertiliser | Residue Removed,Rad -5%,-9.836253912732486,Δ N leaching,Radiation,73.22011701774812
+Mineral fertiliser | Residue Removed,Tmp 0degC,-2.854555051762112,Δ N leaching,Temperature,101.48976332465726
+Mineral fertiliser | Residue Removed,Tmp +0.5degC,0.20515385398021857,Δ N leaching,Temperature,108.27590158236718
+Mineral fertiliser | Residue Removed,Tmp +1degC,8.15233811632469,Δ N leaching,Temperature,117.57031453065088
+Mineral fertiliser | Residue Removed,Tmp -2degC,-48.08160310243271,Δ N leaching,Temperature,71.24786173052102
+Mineral fertiliser | Residue Removed,Tmp +2degC,12.57340761484082,Δ N leaching,Temperature,127.20944216509733
+Mineral fertiliser | Residue Removed,Tmp -3degC,-56.196087780157555,Δ N leaching,Temperature,52.40980094546659
+Mineral fertiliser | Residue Removed,Tmp +3degC,9.988287652523233,Δ N leaching,Temperature,128.46458151424244
+Mineral fertiliser | Residue Removed,Wind 0%,0.20554042598749364,Δ N leaching,Wind,100.47894764479356
+Mineral fertiliser | Residue Removed,Wind -20%,2.1691883411934865,Δ N leaching,Wind,101.90215800144868
+Mineral fertiliser | Residue Removed,Wind -30%,1.91615599606121,Δ N leaching,Wind,102.06802670193524
+Mineral fertiliser | Residue Removed,Wind -40%,1.848191977997471,Δ N leaching,Wind,102.00136291163177
+Mineral fertiliser | Residue Removed,Wind -50%,1.9949856525979985,Δ N leaching,Wind,101.99905227227954
+Mineral fertiliser | Residue Removed,Wind -60%,1.7053490232399409,Δ N leaching,Wind,102.10488545817613
+Mineral fertiliser | Residue Removed,Wind -70%,1.5117591775356494,Δ N leaching,Wind,102.15760674439656
+Mineral fertiliser | Residue Retained,Rad 0%,-11.796491125789494,Δ N leaching,Radiation,76.3837266907792
+Mineral fertiliser | Residue Retained,Rad -10%,-6.583630292233587,Δ N leaching,Radiation,65.19766664994854
+Mineral fertiliser | Residue Retained,Rad -20%,-7.028387841580316,Δ N leaching,Radiation,52.548244410516
+Mineral fertiliser | Residue Retained,Rad -30%,-13.663671647899879,Δ N leaching,Radiation,39.2689418583933
+Mineral fertiliser | Residue Retained,Rad -5%,-12.395418611375899,Δ N leaching,Radiation,70.62900761951188
+Mineral fertiliser | Residue Retained,Tmp 0degC,-9.084995328125865,Δ N leaching,Temperature,94.96465826864811
+Mineral fertiliser | Residue Retained,Tmp +0.5degC,-4.99779626341692,Δ N leaching,Temperature,100.63244493629946
+Mineral fertiliser | Residue Retained,Tmp +1degC,-1.9631838743371992,Δ N leaching,Temperature,105.40939866383185
+Mineral fertiliser | Residue Retained,Tmp -2degC,-38.43326793399268,Δ N leaching,Temperature,60.164223976591124
+Mineral fertiliser | Residue Retained,Tmp +2degC,4.790777506243896,Δ N leaching,Temperature,109.28947017944404
+Mineral fertiliser | Residue Retained,Tmp -3degC,-43.682395295450704,Δ N leaching,Temperature,40.219330685605705
+Mineral fertiliser | Residue Retained,Tmp +3degC,2.6687325919283515,Δ N leaching,Temperature,103.98470194244118
+Mineral fertiliser | Residue Retained,Wind 0%,-0.02536920263057547,Δ N leaching,Wind,99.4162922411067
+Mineral fertiliser | Residue Retained,Wind -20%,-0.37182177168646385,Δ N leaching,Wind,99.12250936271442
+Mineral fertiliser | Residue Retained,Wind -30%,-0.6212637841726212,Δ N leaching,Wind,98.97154011345675
+Mineral fertiliser | Residue Retained,Wind -40%,-0.6831646888685863,Δ N leaching,Wind,98.75624049608722
+Mineral fertiliser | Residue Retained,Wind -50%,-0.9599790539218469,Δ N leaching,Wind,98.58783142280076
+Mineral fertiliser | Residue Retained,Wind -60%,-1.1346525340274811,Δ N leaching,Wind,98.39216646440727
+Mineral fertiliser | Residue Retained,Wind -70%,-1.3276913008954305,Δ N leaching,Wind,98.18701928205064
+Biogas digestate | Residue Removed,Rad -10%,-3.0179788727817276,"Δ Total SOC, 0–30 cm",Radiation,73.35857465745745
+Biogas digestate | Residue Removed,Rad -20%,-3.492774933786433,"Δ Total SOC, 0–30 cm",Radiation,63.185206480605004
+Biogas digestate | Residue Removed,Rad -30%,-4.283989520707505,"Δ Total SOC, 0–30 cm",Radiation,47.59714654045869
+Biogas digestate | Residue Removed,Rad -5%,-2.5988569345655606,"Δ Total SOC, 0–30 cm",Radiation,75.4270831992136
+Biogas digestate | Residue Removed,Rad 0%,-2.1105911041187415,"Δ Total SOC, 0–30 cm",Radiation,79.05643869902147
+Biogas digestate | Residue Removed,Tmp +0.5degC,-0.5479644065520051,"Δ Total SOC, 0–30 cm",Temperature,100.1022126865476
+Biogas digestate | Residue Removed,Tmp +1degC,-0.02756077999241234,"Δ Total SOC, 0–30 cm",Temperature,114.26855631867176
+Biogas digestate | Residue Removed,Tmp +2degC,-1.1358378975089538,"Δ Total SOC, 0–30 cm",Temperature,124.5250607346544
+Biogas digestate | Residue Removed,Tmp +3degC,-3.1446851573657195,"Δ Total SOC, 0–30 cm",Temperature,126.31157757605143
+Biogas digestate | Residue Removed,Tmp -2degC,8.937920694040427,"Δ Total SOC, 0–30 cm",Temperature,67.88079560702616
+Biogas digestate | Residue Removed,Tmp -3degC,11.110891109057729,"Δ Total SOC, 0–30 cm",Temperature,48.716411244111825
+Biogas digestate | Residue Removed,Tmp 0degC,1.319732408135963,"Δ Total SOC, 0–30 cm",Temperature,98.18044125528432
+Biogas digestate | Residue Removed,Wind -20%,-0.09460043633203298,"Δ Total SOC, 0–30 cm",Wind,100.267411578364
+Biogas digestate | Residue Removed,Wind -30%,-0.11963891056895447,"Δ Total SOC, 0–30 cm",Wind,100.32657603241502
+Biogas digestate | Residue Removed,Wind -40%,-0.13815635844866972,"Δ Total SOC, 0–30 cm",Wind,100.38345247926217
+Biogas digestate | Residue Removed,Wind -50%,-0.15639895996698705,"Δ Total SOC, 0–30 cm",Wind,100.43147794741492
+Biogas digestate | Residue Removed,Wind -60%,-0.5071408579593899,"Δ Total SOC, 0–30 cm",Wind,98.50790479900722
+Biogas digestate | Residue Removed,Wind -70%,-0.5291137038587977,"Δ Total SOC, 0–30 cm",Wind,98.57619408001827
+Biogas digestate | Residue Removed,Wind 0%,-0.057797371104439214,"Δ Total SOC, 0–30 cm",Wind,100.13429843852367
+Biogas digestate | Residue Retained,Rad -10%,-3.5850668646542294,"Δ Total SOC, 0–30 cm",Radiation,63.61621599040766
+Biogas digestate | Residue Retained,Rad -20%,-4.614469083531148,"Δ Total SOC, 0–30 cm",Radiation,50.66326974488452
+Biogas digestate | Residue Retained,Rad -30%,-5.388492451450057,"Δ Total SOC, 0–30 cm",Radiation,37.86035422634616
+Biogas digestate | Residue Retained,Rad -5%,-2.90072065047072,"Δ Total SOC, 0–30 cm",Radiation,69.38891606312518
+Biogas digestate | Residue Retained,Rad 0%,-2.2290786969408543,"Δ Total SOC, 0–30 cm",Radiation,74.97302029798523
+Biogas digestate | Residue Retained,Tmp +0.5degC,0.15626414913059483,"Δ Total SOC, 0–30 cm",Temperature,100.49089314623834
+Biogas digestate | Residue Retained,Tmp +1degC,-0.5118810676907501,"Δ Total SOC, 0–30 cm",Temperature,104.16696773055861
+Biogas digestate | Residue Retained,Tmp +2degC,-1.6570451804930768,"Δ Total SOC, 0–30 cm",Temperature,107.69440588323096
+Biogas digestate | Residue Retained,Tmp +3degC,-3.7917023891171393,"Δ Total SOC, 0–30 cm",Temperature,101.71207231734653
+Biogas digestate | Residue Retained,Tmp -2degC,8.549315817249592,"Δ Total SOC, 0–30 cm",Temperature,59.4843565240977
+Biogas digestate | Residue Retained,Tmp -3degC,10.79883054386196,"Δ Total SOC, 0–30 cm",Temperature,39.389765280169094
+Biogas digestate | Residue Retained,Tmp 0degC,0.6142146061131244,"Δ Total SOC, 0–30 cm",Temperature,94.45651322360143
+Biogas digestate | Residue Retained,Wind -20%,-0.04305298741292969,"Δ Total SOC, 0–30 cm",Wind,99.42433080117398
+Biogas digestate | Residue Retained,Wind -30%,-0.06429541672931242,"Δ Total SOC, 0–30 cm",Wind,99.25869820078846
+Biogas digestate | Residue Retained,Wind -40%,-0.08071226219192058,"Δ Total SOC, 0–30 cm",Wind,99.08164724201944
+Biogas digestate | Residue Retained,Wind -50%,-0.10385610798366716,"Δ Total SOC, 0–30 cm",Wind,98.77189851287766
+Biogas digestate | Residue Retained,Wind -60%,-0.3853245291183742,"Δ Total SOC, 0–30 cm",Wind,98.26885240743857
+Biogas digestate | Residue Retained,Wind -70%,-0.42115001527611795,"Δ Total SOC, 0–30 cm",Wind,98.07639830330463
+Biogas digestate | Residue Retained,Wind 0%,-0.039949667434079995,"Δ Total SOC, 0–30 cm",Wind,99.70401861076064
+Mineral fertiliser | Residue Removed,Rad -10%,-3.2673458175413277,"Δ Total SOC, 0–30 cm",Radiation,73.35764013424827
+Mineral fertiliser | Residue Removed,Rad -20%,-3.4090428489626845,"Δ Total SOC, 0–30 cm",Radiation,68.2519762339746
+Mineral fertiliser | Residue Removed,Rad -30%,-3.3163723794780644,"Δ Total SOC, 0–30 cm",Radiation,59.502899581350704
+Mineral fertiliser | Residue Removed,Rad -5%,-3.1618424136425136,"Δ Total SOC, 0–30 cm",Radiation,73.22011701774812
+Mineral fertiliser | Residue Removed,Rad 0%,-2.3104206148804893,"Δ Total SOC, 0–30 cm",Radiation,79.10934831932413
+Mineral fertiliser | Residue Removed,Tmp +0.5degC,0.367650444820175,"Δ Total SOC, 0–30 cm",Temperature,108.27590158236718
+Mineral fertiliser | Residue Removed,Tmp +1degC,0.29611537202647303,"Δ Total SOC, 0–30 cm",Temperature,117.57031453065088
+Mineral fertiliser | Residue Removed,Tmp +2degC,-0.8981755911985595,"Δ Total SOC, 0–30 cm",Temperature,127.20944216509733
+Mineral fertiliser | Residue Removed,Tmp +3degC,-3.0468819801910776,"Δ Total SOC, 0–30 cm",Temperature,128.46458151424244
+Mineral fertiliser | Residue Removed,Tmp -2degC,8.97223995399367,"Δ Total SOC, 0–30 cm",Temperature,71.24786173052102
+Mineral fertiliser | Residue Removed,Tmp -3degC,10.658140150491862,"Δ Total SOC, 0–30 cm",Temperature,52.40980094546659
+Mineral fertiliser | Residue Removed,Tmp 0degC,1.7536432494266962,"Δ Total SOC, 0–30 cm",Temperature,101.48976332465726
+Mineral fertiliser | Residue Removed,Wind -20%,0.1292576585102729,"Δ Total SOC, 0–30 cm",Wind,101.90215800144868
+Mineral fertiliser | Residue Removed,Wind -30%,0.11666348260016597,"Δ Total SOC, 0–30 cm",Wind,102.06802670193524
+Mineral fertiliser | Residue Removed,Wind -40%,0.09140204994466697,"Δ Total SOC, 0–30 cm",Wind,102.00136291163177
+Mineral fertiliser | Residue Removed,Wind -50%,0.06982697751996961,"Δ Total SOC, 0–30 cm",Wind,101.99905227227954
+Mineral fertiliser | Residue Removed,Wind -60%,0.05793098501119804,"Δ Total SOC, 0–30 cm",Wind,102.10488545817613
+Mineral fertiliser | Residue Removed,Wind -70%,0.03938572297979065,"Δ Total SOC, 0–30 cm",Wind,102.15760674439656
+Mineral fertiliser | Residue Removed,Wind 0%,-0.007418259449184764,"Δ Total SOC, 0–30 cm",Wind,100.47894764479356
+Mineral fertiliser | Residue Retained,Rad -10%,-4.252356736984225,"Δ Total SOC, 0–30 cm",Radiation,65.19766664994854
+Mineral fertiliser | Residue Retained,Rad -20%,-4.734243307145134,"Δ Total SOC, 0–30 cm",Radiation,52.548244410516
+Mineral fertiliser | Residue Retained,Rad -30%,-5.357338751444158,"Δ Total SOC, 0–30 cm",Radiation,39.2689418583933
+Mineral fertiliser | Residue Retained,Rad -5%,-4.174572889094297,"Δ Total SOC, 0–30 cm",Radiation,70.62900761951188
+Mineral fertiliser | Residue Retained,Rad 0%,-3.423286685367319,"Δ Total SOC, 0–30 cm",Radiation,76.3837266907792
+Mineral fertiliser | Residue Retained,Tmp +0.5degC,-0.08950494119171759,"Δ Total SOC, 0–30 cm",Temperature,100.63244493629946
+Mineral fertiliser | Residue Retained,Tmp +1degC,-0.8498064412143793,"Δ Total SOC, 0–30 cm",Temperature,105.40939866383185
+Mineral fertiliser | Residue Retained,Tmp +2degC,-1.8258700824289735,"Δ Total SOC, 0–30 cm",Temperature,109.28947017944404
+Mineral fertiliser | Residue Retained,Tmp +3degC,-4.189541127277795,"Δ Total SOC, 0–30 cm",Temperature,103.98470194244118
+Mineral fertiliser | Residue Retained,Tmp -2degC,8.496707815549707,"Δ Total SOC, 0–30 cm",Temperature,60.164223976591124
+Mineral fertiliser | Residue Retained,Tmp -3degC,9.165945168795599,"Δ Total SOC, 0–30 cm",Temperature,40.219330685605705
+Mineral fertiliser | Residue Retained,Tmp 0degC,1.1241977163289658,"Δ Total SOC, 0–30 cm",Temperature,94.96465826864811
+Mineral fertiliser | Residue Retained,Wind -20%,0.027929894306052937,"Δ Total SOC, 0–30 cm",Wind,99.12250936271442
+Mineral fertiliser | Residue Retained,Wind -30%,0.01486643758561372,"Δ Total SOC, 0–30 cm",Wind,98.97154011345675
+Mineral fertiliser | Residue Retained,Wind -40%,-0.0037862757090307043,"Δ Total SOC, 0–30 cm",Wind,98.75624049608722
+Mineral fertiliser | Residue Retained,Wind -50%,-0.019889114905622195,"Δ Total SOC, 0–30 cm",Wind,98.58783142280076
+Mineral fertiliser | Residue Retained,Wind -60%,-0.044234522201767455,"Δ Total SOC, 0–30 cm",Wind,98.39216646440727
+Mineral fertiliser | Residue Retained,Wind -70%,-0.06085521434580524,"Δ Total SOC, 0–30 cm",Wind,98.18701928205064
+Mineral fertiliser | Residue Retained,Wind 0%,0.04373712482808864,"Δ Total SOC, 0–30 cm",Wind,99.4162922411067
+Biogas digestate | Residue Removed,Rad -10%,-18.289152505001663,Δ Actual evapotranspiration,Radiation,73.35857465745745
+Biogas digestate | Residue Removed,Rad -20%,-24.73461570100316,Δ Actual evapotranspiration,Radiation,63.185206480605004
+Biogas digestate | Residue Removed,Rad -30%,-31.382584618238027,Δ Actual evapotranspiration,Radiation,47.59714654045869
+Biogas digestate | Residue Removed,Rad -5%,-15.184174409820438,Δ Actual evapotranspiration,Radiation,75.4270831992136
+Biogas digestate | Residue Removed,Rad 0%,-11.958268916761499,Δ Actual evapotranspiration,Radiation,79.05643869902147
+Biogas digestate | Residue Removed,Tmp +0.5degC,-0.45255237910668294,Δ Actual evapotranspiration,Temperature,100.1022126865476
+Biogas digestate | Residue Removed,Tmp +1degC,4.315636078512071,Δ Actual evapotranspiration,Temperature,114.26855631867176
+Biogas digestate | Residue Removed,Tmp +2degC,11.446985696065799,Δ Actual evapotranspiration,Temperature,124.5250607346544
+Biogas digestate | Residue Removed,Tmp +3degC,16.829645560045908,Δ Actual evapotranspiration,Temperature,126.31157757605143
+Biogas digestate | Residue Removed,Tmp -2degC,-20.34854747866594,Δ Actual evapotranspiration,Temperature,67.88079560702616
+Biogas digestate | Residue Removed,Tmp -3degC,-28.83856562148278,Δ Actual evapotranspiration,Temperature,48.716411244111825
+Biogas digestate | Residue Removed,Tmp 0degC,-4.12760727304279,Δ Actual evapotranspiration,Temperature,98.18044125528432
+Biogas digestate | Residue Removed,Wind -20%,-3.7705264937729406,Δ Actual evapotranspiration,Wind,100.267411578364
+Biogas digestate | Residue Removed,Wind -30%,-4.593957873372825,Δ Actual evapotranspiration,Wind,100.32657603241502
+Biogas digestate | Residue Removed,Wind -40%,-5.450255558912269,Δ Actual evapotranspiration,Wind,100.38345247926217
+Biogas digestate | Residue Removed,Wind -50%,-6.332604088406485,Δ Actual evapotranspiration,Wind,100.43147794741492
+Biogas digestate | Residue Removed,Wind -60%,-7.363128555981547,Δ Actual evapotranspiration,Wind,98.50790479900722
+Biogas digestate | Residue Removed,Wind -70%,-8.276257879059035,Δ Actual evapotranspiration,Wind,98.57619408001827
+Biogas digestate | Residue Removed,Wind 0%,-2.2293005436799507,Δ Actual evapotranspiration,Wind,100.13429843852367
+Biogas digestate | Residue Retained,Rad -10%,-18.3034932550394,Δ Actual evapotranspiration,Radiation,63.61621599040766
+Biogas digestate | Residue Retained,Rad -20%,-24.978543660679993,Δ Actual evapotranspiration,Radiation,50.66326974488452
+Biogas digestate | Residue Retained,Rad -30%,-31.431333963541892,Δ Actual evapotranspiration,Radiation,37.86035422634616
+Biogas digestate | Residue Retained,Rad -5%,-15.132104251455194,Δ Actual evapotranspiration,Radiation,69.38891606312518
+Biogas digestate | Residue Retained,Rad 0%,-11.711109166305059,Δ Actual evapotranspiration,Radiation,74.97302029798523
+Biogas digestate | Residue Retained,Tmp +0.5degC,0.006662737955337658,Δ Actual evapotranspiration,Temperature,100.49089314623834
+Biogas digestate | Residue Retained,Tmp +1degC,4.169341092347795,Δ Actual evapotranspiration,Temperature,104.16696773055861
+Biogas digestate | Residue Retained,Tmp +2degC,11.377254391370782,Δ Actual evapotranspiration,Temperature,107.69440588323096
+Biogas digestate | Residue Retained,Tmp +3degC,16.967958000110762,Δ Actual evapotranspiration,Temperature,101.71207231734653
+Biogas digestate | Residue Retained,Tmp -2degC,-20.481854388308864,Δ Actual evapotranspiration,Temperature,59.4843565240977
+Biogas digestate | Residue Retained,Tmp -3degC,-28.832313947755452,Δ Actual evapotranspiration,Temperature,39.389765280169094
+Biogas digestate | Residue Retained,Tmp 0degC,-4.5221386844240135,Δ Actual evapotranspiration,Temperature,94.45651322360143
+Biogas digestate | Residue Retained,Wind -20%,-3.751224294760899,Δ Actual evapotranspiration,Wind,99.42433080117398
+Biogas digestate | Residue Retained,Wind -30%,-4.575354899810628,Δ Actual evapotranspiration,Wind,99.25869820078846
+Biogas digestate | Residue Retained,Wind -40%,-5.431485308043948,Δ Actual evapotranspiration,Wind,99.08164724201944
+Biogas digestate | Residue Retained,Wind -50%,-6.310846754589669,Δ Actual evapotranspiration,Wind,98.77189851287766
+Biogas digestate | Residue Retained,Wind -60%,-7.351345918767378,Δ Actual evapotranspiration,Wind,98.26885240743857
+Biogas digestate | Residue Retained,Wind -70%,-8.268254054939648,Δ Actual evapotranspiration,Wind,98.07639830330463
+Biogas digestate | Residue Retained,Wind 0%,-2.2210852977461206,Δ Actual evapotranspiration,Wind,99.70401861076064
+Mineral fertiliser | Residue Removed,Rad -10%,-18.18750294445938,Δ Actual evapotranspiration,Radiation,73.35764013424827
+Mineral fertiliser | Residue Removed,Rad -20%,-24.108304982145636,Δ Actual evapotranspiration,Radiation,68.2519762339746
+Mineral fertiliser | Residue Removed,Rad -30%,-30.35017106234413,Δ Actual evapotranspiration,Radiation,59.502899581350704
+Mineral fertiliser | Residue Removed,Rad -5%,-15.309687205470471,Δ Actual evapotranspiration,Radiation,73.22011701774812
+Mineral fertiliser | Residue Removed,Rad 0%,-11.799532455192535,Δ Actual evapotranspiration,Radiation,79.10934831932413
+Mineral fertiliser | Residue Removed,Tmp +0.5degC,0.09243071144978925,Δ Actual evapotranspiration,Temperature,108.27590158236718
+Mineral fertiliser | Residue Removed,Tmp +1degC,4.512262457828564,Δ Actual evapotranspiration,Temperature,117.57031453065088
+Mineral fertiliser | Residue Removed,Tmp +2degC,11.531597636057151,Δ Actual evapotranspiration,Temperature,127.20944216509733
+Mineral fertiliser | Residue Removed,Tmp +3degC,16.83835881784823,Δ Actual evapotranspiration,Temperature,128.46458151424244
+Mineral fertiliser | Residue Removed,Tmp -2degC,-19.857621323093802,Δ Actual evapotranspiration,Temperature,71.24786173052102
+Mineral fertiliser | Residue Removed,Tmp -3degC,-28.369855200800757,Δ Actual evapotranspiration,Temperature,52.40980094546659
+Mineral fertiliser | Residue Removed,Tmp 0degC,-3.8030379523000017,Δ Actual evapotranspiration,Temperature,101.48976332465726
+Mineral fertiliser | Residue Removed,Wind -20%,-3.5857468793888625,Δ Actual evapotranspiration,Wind,101.90215800144868
+Mineral fertiliser | Residue Removed,Wind -30%,-4.397481556364909,Δ Actual evapotranspiration,Wind,102.06802670193524
+Mineral fertiliser | Residue Removed,Wind -40%,-5.246972178741759,Δ Actual evapotranspiration,Wind,102.00136291163177
+Mineral fertiliser | Residue Removed,Wind -50%,-6.1279506062137985,Δ Actual evapotranspiration,Wind,101.99905227227954
+Mineral fertiliser | Residue Removed,Wind -60%,-7.013519811239757,Δ Actual evapotranspiration,Wind,102.10488545817613
+Mineral fertiliser | Residue Removed,Wind -70%,-7.923999190433661,Δ Actual evapotranspiration,Wind,102.15760674439656
+Mineral fertiliser | Residue Removed,Wind 0%,-2.1836225434038536,Δ Actual evapotranspiration,Wind,100.47894764479356
+Mineral fertiliser | Residue Retained,Rad -10%,-18.41009202158204,Δ Actual evapotranspiration,Radiation,65.19766664994854
+Mineral fertiliser | Residue Retained,Rad -20%,-24.34739675892902,Δ Actual evapotranspiration,Radiation,52.548244410516
+Mineral fertiliser | Residue Retained,Rad -30%,-30.8114156273517,Δ Actual evapotranspiration,Radiation,39.2689418583933
+Mineral fertiliser | Residue Retained,Rad -5%,-15.56742972182692,Δ Actual evapotranspiration,Radiation,70.62900761951188
+Mineral fertiliser | Residue Retained,Rad 0%,-12.235234747973564,Δ Actual evapotranspiration,Radiation,76.3837266907792
+Mineral fertiliser | Residue Retained,Tmp +0.5degC,-0.2332817833262252,Δ Actual evapotranspiration,Temperature,100.63244493629946
+Mineral fertiliser | Residue Retained,Tmp +1degC,3.9191225305685533,Δ Actual evapotranspiration,Temperature,105.40939866383185
+Mineral fertiliser | Residue Retained,Tmp +2degC,11.14852242425309,Δ Actual evapotranspiration,Temperature,109.28947017944404
+Mineral fertiliser | Residue Retained,Tmp +3degC,16.45225277264633,Δ Actual evapotranspiration,Temperature,103.98470194244118
+Mineral fertiliser | Residue Retained,Tmp -2degC,-20.057454008734055,Δ Actual evapotranspiration,Temperature,60.164223976591124
+Mineral fertiliser | Residue Retained,Tmp -3degC,-28.84209563446378,Δ Actual evapotranspiration,Temperature,40.219330685605705
+Mineral fertiliser | Residue Retained,Tmp 0degC,-4.267126033576491,Δ Actual evapotranspiration,Temperature,94.96465826864811
+Mineral fertiliser | Residue Retained,Wind -20%,-3.693624108747006,Δ Actual evapotranspiration,Wind,99.12250936271442
+Mineral fertiliser | Residue Retained,Wind -30%,-4.512071429847698,Δ Actual evapotranspiration,Wind,98.97154011345675
+Mineral fertiliser | Residue Retained,Wind -40%,-5.362336050804657,Δ Actual evapotranspiration,Wind,98.75624049608722
+Mineral fertiliser | Residue Retained,Wind -50%,-6.237619435834674,Δ Actual evapotranspiration,Wind,98.58783142280076
+Mineral fertiliser | Residue Retained,Wind -60%,-7.134266109967736,Δ Actual evapotranspiration,Wind,98.39216646440727
+Mineral fertiliser | Residue Retained,Wind -70%,-8.042153512499992,Δ Actual evapotranspiration,Wind,98.18701928205064
+Mineral fertiliser | Residue Retained,Wind 0%,-2.178423066576611,Δ Actual evapotranspiration,Wind,99.4162922411067

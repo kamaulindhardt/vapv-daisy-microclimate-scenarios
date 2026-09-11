@@ -1,0 +1,133 @@
+component,scen_label,mean_mm,sd_mm,n_rotation_years,driver
+Precipitation,Rad -10%,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Rad -20%,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Rad -30%,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Rad -5%,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Rad 0%,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Tmp +0.5degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp +1degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp +2degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp +3degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp -2degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp -3degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Tmp 0degC,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Wind -20%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind -30%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind -40%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind -50%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind -60%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind -70%,672.8518518518518,123.07175741482733,108,Wind
+Precipitation,Wind 0%,672.8518518518518,123.07175741482733,108,Wind
+Potential ET,Rad -10%,402.5195462962963,49.586292478320054,108,Radiation
+Potential ET,Rad -20%,367.8260462962963,46.24555751584261,108,Radiation
+Potential ET,Rad -30%,335.1227037037037,41.75416674003181,108,Radiation
+Potential ET,Rad -5%,419.3976944444444,50.99606491295871,108,Radiation
+Potential ET,Rad 0%,437.65687962962966,52.20172657360817,108,Radiation
+Potential ET,Tmp +0.5degC,503.05441666666667,56.0678147566955,108,Temperature
+Potential ET,Tmp +1degC,527.7030277777778,56.70913520624648,108,Temperature
+Potential ET,Tmp +2degC,577.5923148148148,60.850346419221125,108,Temperature
+Potential ET,Tmp +3degC,624.9751759259259,70.08243711366772,108,Temperature
+Potential ET,Tmp -2degC,392.55096296296296,54.9807315838371,108,Temperature
+Potential ET,Tmp -3degC,349.4933888888889,50.11952855109274,108,Temperature
+Potential ET,Tmp 0degC,477.69431481481485,55.37246070085914,108,Temperature
+Potential ET,Wind -20%,482.6046111111111,51.33582671034205,108,Wind
+Potential ET,Wind -30%,477.757537037037,50.3910631977028,108,Wind
+Potential ET,Wind -40%,472.7535,49.4328650545836,108,Wind
+Potential ET,Wind -50%,467.6456574074074,48.48485866706889,108,Wind
+Potential ET,Wind -60%,461.8199351851852,47.40982935098182,108,Wind
+Potential ET,Wind -70%,456.6343240740741,46.51691514185517,108,Wind
+Potential ET,Wind 0%,491.7971574074074,53.18575178484287,108,Wind
+Actual ET,Rad -10%,397.2564351851852,47.30091456828039,108,Radiation
+Actual ET,Rad -20%,364.79841666666664,44.38754828622718,108,Radiation
+Actual ET,Rad -30%,333.4211574074074,40.45790909038239,108,Radiation
+Actual ET,Rad -5%,412.6775925925926,48.402706753894414,108,Radiation
+Actual ET,Rad 0%,429.3124814814815,49.66160207545251,108,Radiation
+Actual ET,Tmp +0.5degC,486.2911759259259,53.164125555059975,108,Temperature
+Actual ET,Tmp +1degC,506.5325648148148,55.48527789217119,108,Temperature
+Actual ET,Tmp +2degC,541.5816759259259,63.128126681048286,108,Temperature
+Actual ET,Tmp +3degC,568.766962962963,72.00898194532648,108,Temperature
+Actual ET,Tmp -2degC,386.66396296296296,50.575796269906256,108,Temperature
+Actual ET,Tmp -3degC,346.05912037037035,47.15155047959966,108,Temperature
+Actual ET,Tmp 0degC,464.2694814814815,51.44326686594442,108,Temperature
+Actual ET,Wind -20%,468.01812037037035,49.69966659767402,108,Wind
+Actual ET,Wind -30%,464.01071296296294,48.94220396006132,108,Wind
+Actual ET,Wind -40%,459.8477037037037,48.18716612971053,108,Wind
+Actual ET,Wind -50%,455.5717314814815,47.42119942542486,108,Wind
+Actual ET,Wind -60%,450.51221296296296,46.37170150479223,108,Wind
+Actual ET,Wind -70%,446.0536666666667,45.60286443147119,108,Wind
+Actual ET,Wind 0%,475.45855555555556,51.20992806750589,108,Wind
+Percolation (below profile),Rad -10%,271.7962444444444,118.79831057343966,108,Radiation
+Percolation (below profile),Rad -20%,304.1946564814815,124.77115175695711,108,Radiation
+Percolation (below profile),Rad -30%,335.613762037037,127.86794708322802,108,Radiation
+Percolation (below profile),Rad -5%,256.3404268518519,116.8594932742805,108,Radiation
+Percolation (below profile),Rad 0%,239.8321574074074,114.6379143637819,108,Radiation
+Percolation (below profile),Tmp +0.5degC,184.28810833333333,105.71523947590644,108,Temperature
+Percolation (below profile),Tmp +1degC,164.3346388888889,104.84321413988883,108,Temperature
+Percolation (below profile),Tmp +2degC,129.63699583333334,100.53663280399078,108,Temperature
+Percolation (below profile),Tmp +3degC,102.90297453703704,95.32362664939564,108,Temperature
+Percolation (below profile),Tmp -2degC,282.7158101851852,116.64853915916352,108,Temperature
+Percolation (below profile),Tmp -3degC,323.116937962963,122.42743351140876,108,Temperature
+Percolation (below profile),Tmp 0degC,206.00631203703705,106.32136961826833,108,Temperature
+Percolation (below profile),Wind -20%,201.90167592592593,109.41584044825039,108,Wind
+Percolation (below profile),Wind -30%,205.9007462962963,109.81692435219612,108,Wind
+Percolation (below profile),Wind -40%,210.04782962962963,110.26199772880399,108,Wind
+Percolation (below profile),Wind -50%,214.30847222222224,110.7130253300813,108,Wind
+Percolation (below profile),Wind -60%,219.35240555555555,110.3845711606412,108,Wind
+Percolation (below profile),Wind -70%,223.79538703703705,110.82642977286862,108,Wind
+Percolation (below profile),Wind 0%,194.50591666666668,108.59737219528823,108,Wind
+Drain flow (lateral),Rad -10%,0,0,108,Radiation
+Drain flow (lateral),Rad -20%,0,0,108,Radiation
+Drain flow (lateral),Rad -30%,0,0,108,Radiation
+Drain flow (lateral),Rad -5%,0,0,108,Radiation
+Drain flow (lateral),Rad 0%,0,0,108,Radiation
+Drain flow (lateral),Tmp +0.5degC,0,0,108,Temperature
+Drain flow (lateral),Tmp +1degC,0,0,108,Temperature
+Drain flow (lateral),Tmp +2degC,0,0,108,Temperature
+Drain flow (lateral),Tmp +3degC,0,0,108,Temperature
+Drain flow (lateral),Tmp -2degC,0,0,108,Temperature
+Drain flow (lateral),Tmp -3degC,0,0,108,Temperature
+Drain flow (lateral),Tmp 0degC,0,0,108,Temperature
+Drain flow (lateral),Wind -20%,0,0,108,Wind
+Drain flow (lateral),Wind -30%,0,0,108,Wind
+Drain flow (lateral),Wind -40%,0,0,108,Wind
+Drain flow (lateral),Wind -50%,0,0,108,Wind
+Drain flow (lateral),Wind -60%,0,0,108,Wind
+Drain flow (lateral),Wind -70%,0,0,108,Wind
+Drain flow (lateral),Wind 0%,0,0,108,Wind
+Surface runoff,Rad -10%,0,0,108,Radiation
+Surface runoff,Rad -20%,0,0,108,Radiation
+Surface runoff,Rad -30%,0,0,108,Radiation
+Surface runoff,Rad -5%,0,0,108,Radiation
+Surface runoff,Rad 0%,0,0,108,Radiation
+Surface runoff,Tmp +0.5degC,0,0,108,Temperature
+Surface runoff,Tmp +1degC,0,0,108,Temperature
+Surface runoff,Tmp +2degC,0,0,108,Temperature
+Surface runoff,Tmp +3degC,0,0,108,Temperature
+Surface runoff,Tmp -2degC,0,0,108,Temperature
+Surface runoff,Tmp -3degC,0,0,108,Temperature
+Surface runoff,Tmp 0degC,0,0,108,Temperature
+Surface runoff,Wind -20%,0,0,108,Wind
+Surface runoff,Wind -30%,0,0,108,Wind
+Surface runoff,Wind -40%,0,0,108,Wind
+Surface runoff,Wind -50%,0,0,108,Wind
+Surface runoff,Wind -60%,0,0,108,Wind
+Surface runoff,Wind -70%,0,0,108,Wind
+Surface runoff,Wind 0%,0,0,108,Wind
+Precipitation,Reference,672.8518518518518,123.07175741482733,108,Radiation
+Precipitation,Reference,672.8518518518518,123.07175741482733,108,Temperature
+Precipitation,Reference,672.8518518518518,123.07175741482733,108,Wind
+Potential ET,Reference,505.78303703703705,55.993558833992786,108,Radiation
+Potential ET,Reference,505.78303703703705,55.993558833992786,108,Temperature
+Potential ET,Reference,505.78303703703705,55.993558833992786,108,Wind
+Actual ET,Reference,486.25877777777777,53.44108363235745,108,Radiation
+Actual ET,Reference,486.25877777777777,53.44108363235745,108,Temperature
+Actual ET,Reference,486.25877777777777,53.44108363235745,108,Wind
+Percolation (below profile),Reference,183.77725185185184,107.2491886023556,108,Radiation
+Percolation (below profile),Reference,183.77725185185184,107.2491886023556,108,Temperature
+Percolation (below profile),Reference,183.77725185185184,107.2491886023556,108,Wind
+Drain flow (lateral),Reference,0,0,108,Radiation
+Drain flow (lateral),Reference,0,0,108,Temperature
+Drain flow (lateral),Reference,0,0,108,Wind
+Surface runoff,Reference,0,0,108,Radiation
+Surface runoff,Reference,0,0,108,Temperature
+Surface runoff,Reference,0,0,108,Wind

@@ -1,0 +1,501 @@
+fertilisation,residue,crop_renamed,weather_factor,weather_signed_change_pct,strip_position,relative_effect_pct_new,relative_effect_pct_legacy,abs_diff,rel_diff
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,-30,Center,-56.86391328869478,-56.86391328869478,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,-30,Center,-97.84373421492835,-97.84373421492836,1.4210854715202004e-14,1.4524031435662239e-16
+Biogas digestate,Residue Removed,Soybean,Radiation,-30,Center,-32.990607888299515,-32.990607888299515,0,0
+Biogas digestate,Residue Removed,Spring Barley,Radiation,-30,Center,-15.175975991517827,-15.175975991517827,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,-30,Center,-57.89654020782327,-57.89654020782327,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,-20,Center,-36.94103389622746,-36.94103389622746,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,-20,Center,-91.84861450979697,-91.84861450979696,1.4210854715202004e-14,1.547204036886829e-16
+Biogas digestate,Residue Removed,Soybean,Radiation,-20,Center,-24.411046263280014,-24.411046263280017,3.552713678800501e-15,1.455371326768825e-16
+Biogas digestate,Residue Removed,Spring Barley,Radiation,-20,Center,-10.970091616424781,-10.97009161642478,1.7763568394002505e-15,1.6192725653636575e-16
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,-20,Center,-45.10797880020236,-45.10797880020236,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,-10,Center,-26.065318832650267,-26.065318832650267,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,-10,Center,-81.91280394531792,-81.91280394531792,0,0
+Biogas digestate,Residue Removed,Soybean,Radiation,-10,Center,-17.094623870215212,-17.094623870215212,0,0
+Biogas digestate,Residue Removed,Spring Barley,Radiation,-10,Center,-8.026461730670958,-8.026461730670958,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,-10,Center,-32.882572964587766,-32.882572964587766,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,-5,Center,-25.303265700817004,-25.303265700817004,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,-5,Center,-77.60166376689175,-77.60166376689175,0,0
+Biogas digestate,Residue Removed,Soybean,Radiation,-5,Center,-14.581010934854465,-14.581010934854463,1.7763568394002505e-15,1.2182672705868737e-16
+Biogas digestate,Residue Removed,Spring Barley,Radiation,-5,Center,-6.926967588311536,-6.926967588311536,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,-5,Center,-27.493573560215292,-27.493573560215292,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,0,Center,-21.925525744058547,-21.925525744058547,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,0,Center,-72.0174005003009,-72.0174005003009,0,0
+Biogas digestate,Residue Removed,Soybean,Radiation,0,Center,-12.495620721215028,-12.495620721215028,0,0
+Biogas digestate,Residue Removed,Spring Barley,Radiation,0,Center,-6.043153286443905,-6.043153286443905,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,0,Center,-21.75153600727212,-21.75153600727212,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,0,East,-28.174851033302275,-28.174851033302275,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,0,East,-83.55228758207461,-83.55228758207461,0,0
+Biogas digestate,Residue Removed,Soybean,Radiation,0,East,-22.584780958530587,-22.584780958530587,0,0
+Biogas digestate,Residue Removed,Spring Barley,Radiation,0,East,-7.064713050626696,-7.064713050626696,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,0,East,-34.61512019044905,-34.61512019044905,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Radiation,0,West,-26.519854709881468,-26.519854709881468,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Radiation,0,West,-85.04267354446516,-85.04267354446516,0,0
+Biogas digestate,Residue Removed,Soybean,Radiation,0,West,-28.117070283476444,-28.117070283476444,0,0
+Biogas digestate,Residue Removed,Spring Barley,Radiation,0,West,-7.789083124619618,-7.789083124619618,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Radiation,0,West,-42.38479581992427,-42.38479581992427,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,-3,Center,-52.847044081201055,-52.847044081201055,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,-3,Center,-87.77604214902578,-87.77604214902578,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,-3,Center,-44.24007264390183,-44.24007264390183,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,-3,Center,-25.04243325952057,-25.04243325952057,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,-3,Center,-35.95943987172898,-35.95943987172898,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,-2,Center,-32.23087616007149,-32.23087616007149,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,-2,Center,-65.00160856773093,-65.00160856773093,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,-2,Center,-28.252160234034125,-28.252160234034125,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,-2,Center,-16.272188958445387,-16.272188958445387,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,-2,Center,-21.59166885048435,-21.59166885048435,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,0,Center,-1.0049103080590613,-1.0049103080590611,2.220446049250313e-16,2.2095962509718945e-16
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,0,Center,5.706108419568012,5.706108419568012,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,0,Center,-4.283494733527804,-4.283494733527804,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,0,Center,-1.3669133530867517,-1.3669133530867517,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,0,Center,-2.0035361154756015,-2.0035361154756015,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,0,East,-0.09736271977080777,-0.09736271977080777,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,0,East,6.370675495518746,6.370675495518746,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,0,East,-4.268594403410791,-4.268594403410791,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,0,East,-1.3572692824513164,-1.3572692824513164,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,0,East,-2.301986576199032,-2.301986576199032,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,0,West,-1.641405300034197,-1.641405300034197,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,0,West,-3.344656975549826,-3.344656975549826,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,0,West,-4.720150561782339,-4.720150561782339,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,0,West,-1.3214050597308606,-1.3214050597308606,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,0,West,-2.1180518262051327,-2.1180518262051327,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,0.5,Center,-0.843339184448342,-0.843339184448342,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,0.5,Center,8.201401704932392,8.201401704932392,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,0.5,Center,-0.07759619829663973,-0.07759619829663973,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,0.5,Center,0.49280652499839733,0.49280652499839733,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,0.5,Center,0.6526307642808514,0.6526307642808514,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,1,Center,22.648816029719665,22.648816029719665,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,1,Center,2.35210322442761,2.35210322442761,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,1,Center,3.609153951250731,3.609153951250731,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,1,Center,3.1689055433260434,3.1689055433260434,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,1,Center,2.68835267694578,2.68835267694578,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,2,Center,40.13520382309903,40.13520382309903,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,2,Center,-3.5597713519247685,-3.5597713519247685,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,2,Center,4.920148937502537,4.920148937502537,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,2,Center,5.210222247594193,5.210222247594193,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,2,Center,4.347887597913179,4.347887597913179,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Temperature,3,Center,46.50098374354876,46.50098374354876,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Temperature,3,Center,-0.6583295940183638,-0.6583295940183638,0,0
+Biogas digestate,Residue Removed,Soybean,Temperature,3,Center,4.414401285169158,4.414401285169158,0,0
+Biogas digestate,Residue Removed,Spring Barley,Temperature,3,Center,4.78182563733059,4.78182563733059,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Temperature,3,Center,-3.405224074107865,-3.405224074107865,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-70,Center,-2.447252308792402,-2.447252308792402,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-70,Center,1.9789467959532054,1.9789467959532057,2.220446049250313e-16,1.1220342324467513e-16
+Biogas digestate,Residue Removed,Soybean,Wind,-70,Center,1.8492020226783354,1.8492020226783352,2.220446049250313e-16,1.2007590420187177e-16
+Biogas digestate,Residue Removed,Spring Barley,Wind,-70,Center,0.3137291561836931,0.3137291561836931,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-70,Center,-2.804588390316581,-2.804588390316581,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-60,Center,-2.5333839586143134,-2.5333839586143134,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-60,Center,1.5533327930209415,1.5533327930209415,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,-60,Center,1.699624046103285,1.699624046103285,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,-60,Center,0.22607684890387644,0.22607684890387644,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-60,Center,-2.568170455852344,-2.568170455852344,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-50,Center,0.5045750212426569,0.5045750212426569,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-50,Center,1.6438024260924253,1.643802426092425,2.220446049250313e-16,1.350798620323648e-16
+Biogas digestate,Residue Removed,Soybean,Wind,-50,Center,1.5381344482353623,1.5381344482353625,2.220446049250313e-16,1.4435968531864937e-16
+Biogas digestate,Residue Removed,Spring Barley,Wind,-50,Center,0.6704768540557043,0.6704768540557043,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-50,Center,-1.992081773182427,-1.992081773182427,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-40,Center,0.4139512714513197,0.4139512714513197,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-40,Center,0.9775995957996797,0.9775995957996796,1.1102230246251565e-16,1.1356623196197115e-16
+Biogas digestate,Residue Removed,Soybean,Wind,-40,Center,1.4533434725570633,1.4533434725570633,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,-40,Center,0.5937848326270934,0.5937848326270934,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-40,Center,-1.680250177446199,-1.680250177446199,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-30,Center,0.3167643569983625,0.3167643569983625,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-30,Center,0.7632615296928719,0.7632615296928719,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,-30,Center,1.384526092822214,1.384526092822214,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,-30,Center,0.5258668019761146,0.5258668019761146,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-30,Center,-1.4623206404293254,-1.4623206404293254,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,-20,Center,0.2194628813741667,0.2194628813741667,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,-20,Center,0.9272147925700918,0.9272147925700918,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,-20,Center,1.1724994888420985,1.1724994888420983,2.220446049250313e-16,1.8937714432976975e-16
+Biogas digestate,Residue Removed,Spring Barley,Wind,-20,Center,0.452528953621574,0.452528953621574,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,-20,Center,-1.1972547083592824,-1.1972547083592824,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,0,Center,0.04474271312082592,0.04474271312082592,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,0,Center,0.7888151990565159,0.7888151990565159,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,0,Center,0.7460758865219687,0.7460758865219687,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,0,Center,0.3042618256577519,0.3042618256577519,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,0,Center,-0.7668881331565834,-0.7668881331565834,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,0,East,0.057639891990101,0.057639891990101,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,0,East,0.575452975369434,0.575452975369434,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,0,East,0.7088256988130813,0.7088256988130813,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,0,East,0.3414256765579024,0.3414256765579024,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,0,East,-0.7156649551403022,-0.7156649551403022,0,0
+Biogas digestate,Residue Removed,Grass-Clover,Wind,0,West,0.04675487812619726,0.04675487812619726,0,0
+Biogas digestate,Residue Removed,Ryegrass (undersown),Wind,0,West,0.7141909935005353,0.7141909935005353,0,0
+Biogas digestate,Residue Removed,Soybean,Wind,0,West,0.7321684866903084,0.7321684866903084,0,0
+Biogas digestate,Residue Removed,Spring Barley,Wind,0,West,0.27162275446091555,0.27162275446091555,0,0
+Biogas digestate,Residue Removed,Winter Wheat,Wind,0,West,-0.8535782247987099,-0.8535782247987099,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,-30,Center,-59.72208213099729,-59.72208213099729,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,-30,Center,-97.8525827749296,-97.8525827749296,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,-30,Center,-38.7243514619628,-38.7243514619628,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,-30,Center,-15.116387139727147,-15.116387139727149,1.7763568394002505e-15,1.175119969461376e-16
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,-30,Center,-57.97571690199823,-57.97571690199823,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,-20,Center,-45.08228236232661,-45.08228236232661,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,-20,Center,-91.88676561809532,-91.88676561809532,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,-20,Center,-30.00683119997437,-30.00683119997437,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,-20,Center,-11.126573318121595,-11.126573318121595,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,-20,Center,-45.89565808799436,-45.89565808799436,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,-10,Center,-28.87617522526319,-28.87617522526319,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,-10,Center,-82.02091400551662,-82.02091400551662,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,-10,Center,-21.269658133714366,-21.26965813371437,3.552713678800501e-15,1.670320066484342e-16
+Biogas digestate,Residue Retained,Spring Barley,Radiation,-10,Center,-8.06035905671743,-8.06035905671743,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,-10,Center,-33.742340247333935,-33.742340247333935,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,-5,Center,-27.22464978543254,-27.22464978543254,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,-5,Center,-77.74620426168622,-77.74620426168622,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,-5,Center,-17.600569145616248,-17.600569145616248,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,-5,Center,-6.797961981460886,-6.797961981460886,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,-5,Center,-28.330681195967667,-28.330681195967667,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,0,Center,-19.99898752071658,-19.99898752071658,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,0,Center,-72.17828526786664,-72.17828526786664,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,0,Center,-14.019816323744642,-14.019816323744642,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,0,Center,-5.71434958131584,-5.71434958131584,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,0,Center,-23.05166759367008,-23.05166759367008,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,0,East,-27.865005345062464,-27.865005345062464,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,0,East,-83.63943701503565,-83.63943701503565,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,0,East,-20.0162980286738,-20.0162980286738,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,0,East,-6.957256830641531,-6.957256830641531,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,0,East,-35.31726101329447,-35.31726101329447,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Radiation,0,West,-27.586698313201513,-27.586698313201513,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Radiation,0,West,-85.13549217060995,-85.13549217060995,0,0
+Biogas digestate,Residue Retained,Soybean,Radiation,0,West,-24.19004961471834,-24.19004961471834,0,0
+Biogas digestate,Residue Retained,Spring Barley,Radiation,0,West,-7.720217529671151,-7.720217529671151,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Radiation,0,West,-42.79262198047357,-42.79262198047357,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,-3,Center,-56.248740981473546,-56.248740981473546,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,-3,Center,-87.84699280681609,-87.84699280681609,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,-3,Center,-69.40505591414343,-69.40505591414343,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,-3,Center,-25.105210088846523,-25.105210088846523,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,-3,Center,-46.343062483093085,-46.343062483093085,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,-2,Center,-39.61757313139074,-39.61757313139074,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,-2,Center,-65.14055096255383,-65.14055096255383,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,-2,Center,-51.49380117614236,-51.49380117614236,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,-2,Center,-16.58325015848836,-16.58325015848836,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,-2,Center,-28.888407909863734,-28.888407909863737,3.552713678800501e-15,1.2298059795768297e-16
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,0,Center,-9.409752656063779,-9.40975265606378,1.7763568394002505e-15,1.8877827126046086e-16
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,0,Center,5.052741021928459,5.052741021928459,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,0,Center,-10.240718944851675,-10.240718944851675,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,0,Center,-2.05589575344401,-2.05589575344401,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,0,Center,-2.9359159146953693,-2.9359159146953693,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,0,East,-9.044735555753007,-9.044735555753007,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,0,East,5.896697919020835,5.896697919020835,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,0,East,-9.873632139838712,-9.873632139838712,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,0,East,-2.0472810245252466,-2.047281024525246,4.440892098500626e-16,2.169165857203432e-16
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,0,East,-3.157386364197237,-3.157386364197237,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,0,West,-6.840340993068114,-6.840340993068114,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,0,West,-3.925062885436666,-3.925062885436666,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,0,West,-10.236947327023765,-10.236947327023763,1.7763568394002505e-15,1.7352407731072102e-16
+Biogas digestate,Residue Retained,Spring Barley,Temperature,0,West,-1.6862635101981465,-1.6862635101981465,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,0,West,-2.787077521388427,-2.787077521388427,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,0.5,Center,11.06616719375624,11.06616719375624,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,0.5,Center,7.834156755131165,7.834156755131165,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,0.5,Center,0.3801873576400714,0.3801873576400714,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,0.5,Center,1.1383077483184605,1.1383077483184605,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,0.5,Center,0.5146022887893219,0.5146022887893219,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,1,Center,19.959634419745644,19.959634419745644,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,1,Center,1.8466241792119067,1.8466241792119067,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,1,Center,7.613516665407036,7.613516665407036,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,1,Center,2.583200740246626,2.583200740246626,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,1,Center,2.08227012862105,2.08227012862105,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,2,Center,39.95251902806302,39.95251902806302,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,2,Center,-4.064794654623855,-4.064794654623855,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,2,Center,13.588527313467825,13.588527313467823,1.7763568394002505e-15,1.3072475025602462e-16
+Biogas digestate,Residue Retained,Spring Barley,Temperature,2,Center,5.034123106806689,5.034123106806689,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,2,Center,3.861021424211575,3.861021424211575,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Temperature,3,Center,48.79363509670548,48.79363509670548,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Temperature,3,Center,-1.1806968490909373,-1.1806968490909373,0,0
+Biogas digestate,Residue Retained,Soybean,Temperature,3,Center,13.745733944993134,13.745733944993134,0,0
+Biogas digestate,Residue Retained,Spring Barley,Temperature,3,Center,4.935808340457417,4.935808340457417,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Temperature,3,Center,-3.193359088694002,-3.193359088694002,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-70,Center,-1.814569393090956,-1.814569393090956,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-70,Center,1.4580207194579868,1.4580207194579868,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-70,Center,2.1360959824730736,2.1360959824730736,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,-70,Center,0.3037722493643547,0.3037722493643547,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-70,Center,-3.026845464287657,-3.026845464287657,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-60,Center,-1.8438567030346258,-1.8438567030346256,2.220446049250313e-16,1.2042400288460027e-16
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-60,Center,1.048945765931394,1.048945765931394,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-60,Center,1.9887758031432354,1.9887758031432352,2.220446049250313e-16,1.116488870058116e-16
+Biogas digestate,Residue Retained,Spring Barley,Wind,-60,Center,0.24385609279058754,0.2438560927905875,2.7755575615628914e-17,1.1381948795293843e-16
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-60,Center,-2.741347127692081,-2.741347127692081,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-50,Center,1.3727165030976527,1.3727165030976527,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-50,Center,1.0881400312232925,1.0881400312232925,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-50,Center,1.8120497416894528,1.8120497416894528,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,-50,Center,0.6950816287825222,0.6950816287825222,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-50,Center,-2.1360279413694134,-2.1360279413694134,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-40,Center,1.293363795499604,1.293363795499604,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-40,Center,0.4573199866281021,0.4573199866281021,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-40,Center,1.6973452782004317,1.6973452782004317,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,-40,Center,0.609526652097623,0.609526652097623,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-40,Center,-1.710692435704013,-1.710692435704013,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-30,Center,1.210018293906598,1.210018293906598,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-30,Center,0.38384510983395453,0.38384510983395453,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-30,Center,1.621035242612031,1.621035242612031,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,-30,Center,0.5496500760350292,0.5496500760350292,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-30,Center,-1.429673916837483,-1.429673916837483,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,-20,Center,1.1648427986403431,1.1648427986403431,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,-20,Center,0.42821428521704,0.42821428521704,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,-20,Center,1.3671647657930965,1.3671647657930963,2.220446049250313e-16,1.624124688411075e-16
+Biogas digestate,Residue Retained,Spring Barley,Wind,-20,Center,0.47362427238631566,0.47362427238631566,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,-20,Center,-1.14335635976386,-1.14335635976386,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,0,Center,0.7313396073023348,0.7313396073023348,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,0,Center,0.25488143672856856,0.25488143672856856,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,0,Center,0.8712141672958104,0.8712141672958104,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,0,Center,0.2944620179018623,0.2944620179018623,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,0,Center,-0.6498591993052367,-0.6498591993052367,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,0,East,0.7581742322999044,0.7581742322999044,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,0,East,0.1644345255687301,0.1644345255687301,0,0
+Biogas digestate,Residue Retained,Soybean,Wind,0,East,0.7525783212148143,0.7525783212148143,0,0
+Biogas digestate,Residue Retained,Spring Barley,Wind,0,East,0.3425284554296923,0.3425284554296923,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,0,East,-0.6062184455830398,-0.6062184455830398,0,0
+Biogas digestate,Residue Retained,Grass-Clover,Wind,0,West,0.8174717915166417,0.8174717915166417,0,0
+Biogas digestate,Residue Retained,Ryegrass (undersown),Wind,0,West,0.21952369095375462,0.21952369095375465,2.7755575615628914e-17,1.2643544528173938e-16
+Biogas digestate,Residue Retained,Soybean,Wind,0,West,0.9373264385371887,0.9373264385371888,1.1102230246251565e-16,1.1844571741279312e-16
+Biogas digestate,Residue Retained,Spring Barley,Wind,0,West,0.26245959107432987,0.26245959107432987,0,0
+Biogas digestate,Residue Retained,Winter Wheat,Wind,0,West,-0.7468536483943885,-0.7468536483943885,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,-30,Center,-36.97320599617175,-36.97320599617175,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,-30,Center,-97.86467644525163,-97.86467644525165,1.4210854715202004e-14,1.4520923413211272e-16
+Mineral fertiliser,Residue Removed,Soybean,Radiation,-30,Center,-33.00983289010328,-33.00983289010328,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,-30,Center,-12.677105012131365,-12.677105012131364,1.7763568394002505e-15,1.401232251133334e-16
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,-30,Center,-55.82873708729255,-55.82873708729255,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,-20,Center,-29.62133641784784,-29.62133641784784,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,-20,Center,-91.8568491231831,-91.8568491231831,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,-20,Center,-24.439571991926545,-24.439571991926545,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,-20,Center,-9.29619874029203,-9.29619874029203,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,-20,Center,-42.57064957203838,-42.57064957203838,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,-10,Center,-27.577970432561827,-27.577970432561827,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,-10,Center,-81.92283612159734,-81.92283612159734,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,-10,Center,-17.13099222908304,-17.13099222908304,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,-10,Center,-7.1419511300356735,-7.1419511300356735,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,-10,Center,-30.960268306644746,-30.960268306644743,3.552713678800501e-15,1.1475073935447813e-16
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,-5,Center,-31.183677097262557,-31.183677097262557,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,-5,Center,-77.56951748963766,-77.56951748963766,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,-5,Center,-14.622969197512077,-14.622969197512075,1.7763568394002505e-15,1.214771648224819e-16
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,-5,Center,-6.427010145708474,-6.427010145708474,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,-5,Center,-25.199175235036087,-25.199175235036087,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,0,Center,-23.755762602040928,-23.755762602040928,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,0,Center,-72.03763630827157,-72.03763630827157,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,0,Center,-12.53921510775539,-12.53921510775539,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,0,Center,-4.9798432555252985,-4.9798432555252985,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,0,Center,-19.477717027289174,-19.477717027289177,3.552713678800501e-15,1.8239887528004365e-16
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,0,East,-27.583232092515743,-27.583232092515743,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,0,East,-83.65847384459383,-83.65847384459383,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,0,East,-22.62089483842119,-22.62089483842119,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,0,East,-6.250058021451041,-6.250058021451041,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,0,East,-32.713644123710885,-32.713644123710885,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Radiation,0,West,-34.318436166222725,-34.318436166222725,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Radiation,0,West,-85.0222343262724,-85.0222343262724,0,0
+Mineral fertiliser,Residue Removed,Soybean,Radiation,0,West,-28.148741486179787,-28.148741486179787,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Radiation,0,West,-7.287263176919166,-7.287263176919166,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Radiation,0,West,-40.36156723076451,-40.36156723076451,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,-3,Center,-47.1201023011694,-47.1201023011694,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,-3,Center,-87.871595856709,-87.871595856709,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,-3,Center,-44.25095650012541,-44.25095650012541,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,-3,Center,-23.80943625538959,-23.80943625538959,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,-3,Center,-33.745118001799796,-33.745118001799796,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,-2,Center,-27.20515547080684,-27.20515547080684,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,-2,Center,-65.46324025175498,-65.46324025175498,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,-2,Center,-28.28116429630951,-28.28116429630951,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,-2,Center,-15.215124863629349,-15.215124863629349,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,-2,Center,-19.84723383827162,-19.84723383827162,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,0,Center,4.016457585836538,4.016457585836538,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,0,Center,4.739684162646796,4.739684162646796,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,0,Center,-4.34354517370855,-4.34354517370855,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,0,Center,-0.30245298144095184,-0.30245298144095184,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,0,Center,-1.878912052316276,-1.878912052316276,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,0,East,4.198382094129467,4.198382094129467,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,0,East,5.057798674447939,5.057798674447939,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,0,East,-4.331163323025889,-4.331163323025889,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,0,East,-0.36765076074129893,-0.367650760741299,5.551115123125783e-17,1.5098881101001932e-16
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,0,East,-2.1745165930633648,-2.1745165930633648,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,0,West,-0.058225356021417894,-0.05822535602141789,6.938893903907228e-18,1.1917306098317018e-16
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,0,West,-4.948502525475521,-4.948502525475521,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,0,West,-4.779350026766793,-4.779350026766793,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,0,West,-0.8092712901402737,-0.8092712901402737,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,0,West,-2.0613554569824815,-2.0613554569824815,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,0.5,Center,13.126890493275917,13.126890493275916,1.7763568394002505e-15,1.353219820269063e-16
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,0.5,Center,7.98040681170585,7.98040681170585,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,0.5,Center,-0.15295341467888313,-0.15295341467888313,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,0.5,Center,1.7924081008883834,1.7924081008883834,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,0.5,Center,0.8686931731703434,0.8686931731703434,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,1,Center,27.097916904151035,27.097916904151035,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,1,Center,2.9582378211728657,2.9582378211728657,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,1,Center,3.5188825567233843,3.5188825567233843,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,1,Center,4.266230314700516,4.266230314700516,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,1,Center,3.9465126084866546,3.946512608486654,4.440892098500626e-16,1.1252699633977728e-16
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,2,Center,43.062612658819646,43.062612658819646,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,2,Center,-3.395188091757652,-3.395188091757652,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,2,Center,4.779174237945046,4.779174237945046,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,2,Center,6.212326891225754,6.212326891225754,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,2,Center,6.34528264616905,6.34528264616905,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Temperature,3,Center,48.14565491336545,48.14565491336545,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Temperature,3,Center,-1.1320075524142608,-1.1320075524142608,0,0
+Mineral fertiliser,Residue Removed,Soybean,Temperature,3,Center,4.201862216404223,4.201862216404223,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Temperature,3,Center,5.694709975746547,5.694709975746547,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Temperature,3,Center,-0.7123202305899174,-0.7123202305899174,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-70,Center,3.069523588272084,3.069523588272084,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-70,Center,1.3285171059988419,1.328517105998842,2.220446049250313e-16,1.6713718169107627e-16
+Mineral fertiliser,Residue Removed,Soybean,Wind,-70,Center,1.7861301577095428,1.7861301577095428,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-70,Center,1.5193187370059371,1.5193187370059371,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-70,Center,-2.2424596539287682,-2.242459653928768,4.440892098500626e-16,1.980366554519822e-16
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-60,Center,2.9705768724296213,2.9705768724296213,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-60,Center,0.9205269676354624,0.9205269676354624,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,-60,Center,1.7043764569206792,1.7043764569206792,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-60,Center,1.4478274737777739,1.447827473777774,2.220446049250313e-16,1.5336399463788098e-16
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-60,Center,-1.9629189535723048,-1.9629189535723048,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-50,Center,2.819940323335102,2.819940323335102,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-50,Center,0.3174562710831554,0.3174562710831554,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,-50,Center,1.4770402899848694,1.4770402899848694,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-50,Center,1.3575045271615809,1.3575045271615809,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-50,Center,-1.6428422610030387,-1.6428422610030389,2.220446049250313e-16,1.3515880994530892e-16
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-40,Center,2.827064388284776,2.827064388284776,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-40,Center,0.47862087871357994,0.47862087871357994,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,-40,Center,1.451087145641134,1.451087145641134,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-40,Center,1.2586272156680054,1.2586272156680054,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-40,Center,-1.404625061091038,-1.404625061091038,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-30,Center,2.969613635953834,2.969613635953834,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-30,Center,0.4384563169294675,0.4384563169294675,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,-30,Center,1.317342590551156,1.317342590551156,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-30,Center,1.1729628853949088,1.1729628853949088,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-30,Center,-1.1002064727338452,-1.1002064727338452,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,-20,Center,2.6940430867763454,2.6940430867763454,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,-20,Center,-0.02764222801510984,-0.02764222801510984,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,-20,Center,1.1054901466739115,1.1054901466739115,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,-20,Center,1.1040652440645526,1.1040652440645526,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,-20,Center,-0.8521957781058136,-0.8521957781058136,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,0,Center,0.6648211759063188,0.6648211759063188,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,0,Center,0.1379386410727655,0.1379386410727655,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,0,Center,0.6738668294881955,0.6738668294881955,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,0,Center,0.3489352365049548,0.3489352365049548,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,0,Center,-0.5879717241394926,-0.5879717241394926,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,0,East,0.6809336572336865,0.6809336572336865,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,0,East,0.19776368239943304,0.19776368239943304,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,0,East,0.6363713996080211,0.6363713996080211,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,0,East,0.41264539666668937,0.41264539666668937,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,0,East,-0.5124872426059852,-0.5124872426059852,0,0
+Mineral fertiliser,Residue Removed,Grass-Clover,Wind,0,West,0.7002045891705466,0.7002045891705466,0,0
+Mineral fertiliser,Residue Removed,Ryegrass (undersown),Wind,0,West,-0.12032000384591848,-0.12032000384591848,0,0
+Mineral fertiliser,Residue Removed,Soybean,Wind,0,West,0.658922088272275,0.658922088272275,0,0
+Mineral fertiliser,Residue Removed,Spring Barley,Wind,0,West,0.3235122440633177,0.3235122440633177,0,0
+Mineral fertiliser,Residue Removed,Winter Wheat,Wind,0,West,-0.6954738219727926,-0.6954738219727926,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,-30,Center,-47.310311174147934,-47.310311174147934,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,-30,Center,-97.864305380852,-97.864305380852,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,-30,Center,-38.749115950178016,-38.749115950178016,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,-30,Center,-13.867757957880837,-13.867757957880835,1.7763568394002505e-15,1.2809257594453282e-16
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,-30,Center,-56.22303402845424,-56.22303402845424,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,-20,Center,-35.96327070955051,-35.96327070955051,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,-20,Center,-91.86414135937777,-91.86414135937775,1.4210854715202004e-14,1.5469425289252235e-16
+Mineral fertiliser,Residue Retained,Soybean,Radiation,-20,Center,-30.04778866544363,-30.04778866544363,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,-20,Center,-10.295566750367275,-10.295566750367277,1.7763568394002505e-15,1.7253609077294187e-16
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,-20,Center,-43.64070230002601,-43.64070230002601,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,-10,Center,-33.96697590936142,-33.96697590936142,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,-10,Center,-81.94274206626311,-81.94274206626311,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,-10,Center,-21.32267682407936,-21.32267682407936,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,-10,Center,-7.9462364538948975,-7.9462364538948975,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,-10,Center,-31.810005039767084,-31.810005039767084,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,-5,Center,-37.48276838965057,-37.48276838965057,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,-5,Center,-77.57826423540295,-77.57826423540295,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,-5,Center,-17.661095198518844,-17.661095198518844,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,-5,Center,-7.6263939984701015,-7.626393998470101,8.881784197001252e-16,1.164611243371768e-16
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,-5,Center,-26.74327850369463,-26.74327850369463,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,0,Center,-31.862002589503014,-31.862002589503017,3.552713678800501e-15,1.1150315077718772e-16
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,0,Center,-72.02334684065794,-72.02334684065794,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,0,Center,-14.08116335245815,-14.08116335245815,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,0,Center,-6.311191557065839,-6.311191557065839,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,0,Center,-21.312575152137708,-21.312575152137708,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,0,East,-38.0830603885269,-38.0830603885269,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,0,East,-83.62189507849423,-83.62189507849423,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,0,East,-20.07210170809734,-20.07210170809734,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,0,East,-7.647229736367725,-7.647229736367725,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,0,East,-33.795639435227585,-33.795639435227585,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Radiation,0,West,-35.022688911424545,-35.022688911424545,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Radiation,0,West,-85.08206335044535,-85.08206335044535,0,0
+Mineral fertiliser,Residue Retained,Soybean,Radiation,0,West,-24.236785156738126,-24.23678515673813,3.552713678800501e-15,1.4658353638179616e-16
+Mineral fertiliser,Residue Retained,Spring Barley,Radiation,0,West,-7.728243589585712,-7.728243589585712,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Radiation,0,West,-40.607835662067345,-40.607835662067345,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,-3,Center,-59.01659081316023,-59.01659081316023,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,-3,Center,-87.81533001600005,-87.81533001600005,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,-3,Center,-69.41494039562622,-69.41494039562622,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,-3,Center,-24.81692654884015,-24.81692654884015,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,-3,Center,-44.77116308582835,-44.77116308582835,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,-2,Center,-34.009639452663066,-34.009639452663066,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,-2,Center,-65.45266570736261,-65.45266570736261,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,-2,Center,-51.522925350579804,-51.52292535057981,7.105427357601002e-15,1.3790807313934944e-16
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,-2,Center,-16.1149144909823,-16.1149144909823,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,-2,Center,-27.613641093460437,-27.613641093460437,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,0,Center,-5.644489341933225,-5.644489341933225,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,0,Center,4.848079115380331,4.848079115380331,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,0,Center,-10.313009188519548,-10.313009188519548,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,0,Center,-1.5601806926128492,-1.5601806926128492,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,0,Center,-2.287515375099928,-2.287515375099928,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,0,East,-5.714786268108339,-5.714786268108339,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,0,East,5.029186585335862,5.029186585335862,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,0,East,-9.949246542812162,-9.949246542812162,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,0,East,-1.614270252119105,-1.614270252119105,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,0,East,-2.6285492066831173,-2.6285492066831173,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,0,West,-6.652446234587805,-6.652446234587805,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,0,West,-5.183864882816936,-5.183864882816936,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,0,West,-10.31348042478699,-10.31348042478699,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,0,West,-1.5373128364577295,-1.5373128364577295,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,0,West,-2.443631881272015,-2.443631881272015,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,0.5,Center,7.133766670543684,7.133766670543684,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,0.5,Center,7.984667705953416,7.984667705953416,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,0.5,Center,0.2876888724201445,0.2876888724201445,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,0.5,Center,0.7967944993264556,0.7967944993264556,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,0.5,Center,0.7253024308112351,0.7253024308112351,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,1,Center,12.702052037068862,12.702052037068862,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,1,Center,3.059233365548653,3.059233365548653,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,1,Center,7.502549296582009,7.502549296582009,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,1,Center,2.374987471669262,2.374987471669262,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,1,Center,3.401703305383022,3.401703305383022,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,2,Center,30.983020484496375,30.983020484496375,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,2,Center,-3.4950376584261678,-3.495037658426168,4.440892098500626e-16,1.2706278250805403e-16
+Mineral fertiliser,Residue Retained,Soybean,Temperature,2,Center,13.391050713657249,13.391050713657249,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,2,Center,5.076308281202067,5.076308281202067,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,2,Center,5.637957508657993,5.637957508657993,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Temperature,3,Center,35.158066631034984,35.158066631034984,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Temperature,3,Center,-1.1782567030019049,-1.1782567030019049,0,0
+Mineral fertiliser,Residue Retained,Soybean,Temperature,3,Center,13.454276782231453,13.454276782231451,1.7763568394002505e-15,1.32029158322818e-16
+Mineral fertiliser,Residue Retained,Spring Barley,Temperature,3,Center,4.545584234754122,4.545584234754122,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Temperature,3,Center,-0.6575598085765095,-0.6575598085765095,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-70,Center,2.0540127052068105,2.0540127052068105,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-70,Center,0.7242872866217284,0.7242872866217284,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-70,Center,2.055384734997634,2.055384734997634,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-70,Center,1.1439263589296003,1.1439263589296005,2.220446049250313e-16,1.94107429374041e-16
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-70,Center,-3.0073714342202598,-3.00737143422026,4.440892098500626e-16,1.4766689767577858e-16
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-60,Center,1.8032524345592589,1.8032524345592589,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-60,Center,0.5356576679438791,0.5356576679438791,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-60,Center,1.986771597044872,1.986771597044872,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-60,Center,1.0443661910881128,1.0443661910881128,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-60,Center,-2.7089024125746377,-2.7089024125746377,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-50,Center,1.5813478161279244,1.5813478161279244,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-50,Center,0.5832983992983495,0.5832983992983495,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-50,Center,1.7318977036456231,1.7318977036456231,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-50,Center,0.9643311661569637,0.9643311661569636,1.1102230246251565e-16,1.1512881296262556e-16
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-50,Center,-2.390609514155614,-2.390609514155614,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-40,Center,1.4630571359739173,1.4630571359739173,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-40,Center,0.1042558686478628,0.1042558686478628,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-40,Center,1.6837842121835114,1.6837842121835114,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-40,Center,0.8713019904083253,0.8713019904083253,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-40,Center,-2.1065793490309095,-2.1065793490309095,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-30,Center,1.2942978218191514,1.2942978218191514,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-30,Center,0.21973874954871864,0.21973874954871864,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-30,Center,1.5361278647654244,1.5361278647654244,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-30,Center,0.780886472712811,0.780886472712811,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-30,Center,-1.7778092609727956,-1.7778092609727956,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,-20,Center,1.1398740003155199,1.13987400031552,2.220446049250313e-16,1.9479749942850593e-16
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,-20,Center,0.07612843743434032,0.07612843743434032,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,-20,Center,1.2786843672339836,1.2786843672339836,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,-20,Center,0.7159673602994452,0.7159673602994452,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,-20,Center,-1.505489858408456,-1.505489858408456,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,0,Center,0.8224798042763818,0.8224798042763818,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,0,Center,-0.09774032743924037,-0.09774032743924035,1.3877787807814457e-17,1.4198630362110761e-16
+Mineral fertiliser,Residue Retained,Soybean,Wind,0,Center,0.7783562506182937,0.7783562506182937,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,0,Center,0.49271867035402694,0.49271867035402694,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,0,Center,-0.9851404967489882,-0.9851404967489882,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,0,East,0.810021822101617,0.810021822101617,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,0,East,0.10924324725538773,0.10924324725538773,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,0,East,0.6587980962762621,0.6587980962762621,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,0,East,0.5510986914529381,0.5510986914529381,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,0,East,-0.911264366713364,-0.911264366713364,0,0
+Mineral fertiliser,Residue Retained,Grass-Clover,Wind,0,West,0.8015226170005876,0.8015226170005876,0,0
+Mineral fertiliser,Residue Retained,Ryegrass (undersown),Wind,0,West,-0.07382497110882616,-0.07382497110882616,0,0
+Mineral fertiliser,Residue Retained,Soybean,Wind,0,West,0.8482543486110976,0.8482543486110976,0,0
+Mineral fertiliser,Residue Retained,Spring Barley,Wind,0,West,0.48456086686933214,0.48456086686933214,0,0
+Mineral fertiliser,Residue Retained,Winter Wheat,Wind,0,West,-1.0872750993082292,-1.0872750993082292,0,0

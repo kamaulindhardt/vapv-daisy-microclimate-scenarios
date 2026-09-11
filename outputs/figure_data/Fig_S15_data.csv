@@ -1,0 +1,30 @@
+outcome,scen_label,mean_v,sd_v,n_rotations,strip,driver
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Rad 0% C,9.079083701388889,0.6622489720001921,4,Centre,Radiation
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Rad 0% E,8.210208938046296,0.24943989715550663,4,East,Radiation
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Rad 0% W,8.073483191277777,0.3277160753691313,4,West,Radiation
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Reference,11.48430646611111,1.187072494095085,4,Open field,Open field
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Tmp 0degC C,11.275342763537036,0.6883428156836083,4,Centre,Temperature
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Tmp 0degC E,11.33105723603889,0.7431716107770927,4,East,Temperature
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Tmp 0degC W,11.20612305538889,0.6093442941856649,4,West,Temperature
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Wind 0% C,11.49972971037037,1.2264233486019749,4,Centre,Wind
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Wind 0% E,11.502623319259259,1.2224998479921336,4,East,Wind
+Annualised system yield (t DM ha⁻¹ yr⁻¹),Wind 0% W,11.496090140185185,1.2273337781180185,4,West,Wind
+N leaching (kg N ha⁻¹ yr⁻¹),Rad 0% C,25.255716817592592,4.204081496431254,4,Centre,Radiation
+N leaching (kg N ha⁻¹ yr⁻¹),Rad 0% E,25.535120099074074,4.346366500756225,4,East,Radiation
+N leaching (kg N ha⁻¹ yr⁻¹),Rad 0% W,26.774110724074074,4.165815197504537,4,West,Radiation
+N leaching (kg N ha⁻¹ yr⁻¹),Reference,27.19956437788889,1.7440500848343652,4,Open field,Open field
+N leaching (kg N ha⁻¹ yr⁻¹),Tmp 0degC C,24.966966585185183,3.747550901681875,4,Centre,Temperature
+N leaching (kg N ha⁻¹ yr⁻¹),Tmp 0degC E,24.964052833333334,3.7156773043584987,4,East,Temperature
+N leaching (kg N ha⁻¹ yr⁻¹),Tmp 0degC W,23.937764476851854,4.878920081708523,4,West,Temperature
+N leaching (kg N ha⁻¹ yr⁻¹),Wind 0% C,26.914943395648148,1.7358241363425062,4,Centre,Wind
+N leaching (kg N ha⁻¹ yr⁻¹),Wind 0% E,26.964396084999997,1.7933592727758931,4,East,Wind
+N leaching (kg N ha⁻¹ yr⁻¹),Wind 0% W,26.92905733387037,1.7534080390671618,4,West,Wind
+"ΔTotal SOC, 0–30 cm (%)",Rad 0% C,-2.1105911041187415,1.3549881645930995,4,Centre,Radiation
+"ΔTotal SOC, 0–30 cm (%)",Rad 0% E,-3.2779194380830172,1.1483930818152288,4,East,Radiation
+"ΔTotal SOC, 0–30 cm (%)",Rad 0% W,-3.837443377301657,1.2108491527238452,4,West,Radiation
+"ΔTotal SOC, 0–30 cm (%)",Tmp 0degC C,1.319732408135963,1.1696432247162694,4,Centre,Temperature
+"ΔTotal SOC, 0–30 cm (%)",Tmp 0degC E,1.363114279680877,1.181826054626258,4,East,Temperature
+"ΔTotal SOC, 0–30 cm (%)",Tmp 0degC W,1.725491958622582,1.631139028576937,4,West,Temperature
+"ΔTotal SOC, 0–30 cm (%)",Wind 0% C,-0.057797371104439214,0.04599733685654854,4,Centre,Wind
+"ΔTotal SOC, 0–30 cm (%)",Wind 0% E,-0.05639825317654818,0.04506389568292753,4,East,Wind
+"ΔTotal SOC, 0–30 cm (%)",Wind 0% W,-0.06354923244867719,0.046847350624923755,4,West,Wind

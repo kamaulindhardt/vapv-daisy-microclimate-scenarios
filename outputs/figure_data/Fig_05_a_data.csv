@@ -1,0 +1,43 @@
+fertilisation,residue,management_label,scen_label,flux,mean_kgN_ha,sd_kgN_ha,n_rotations,driver
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Mineralisation,242.4772574074074,17.105022598941844,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Crop N uptake,267.7174212962963,15.8305433950576,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Biological N fixation,168.88508582037036,35.32750332398702,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad 0%,Mineralisation,220.6318525925926,9.904261096092638,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad 0%,Crop N uptake,239.01856944444444,12.328787715382566,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad 0%,Biological N fixation,131.07830979307408,20.424239310231798,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -5%,Mineralisation,216.63179277777778,2.7760236210420803,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -5%,Crop N uptake,233.33346851851852,6.891006697185388,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -5%,Biological N fixation,123.73969128981481,6.7275864373725405,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -10%,Mineralisation,216.14162166666668,5.740604200517002,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -10%,Crop N uptake,229.85478518518516,9.671978010950369,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -10%,Biological N fixation,124.02970771662038,8.616677400940304,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -20%,Mineralisation,199.7492425,6.5621253114215765,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -20%,Crop N uptake,212.70829444444445,10.096238127972308,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -20%,Biological N fixation,94.55904817174796,10.546529270908364,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -30%,Mineralisation,176.52748712962963,10.844225812240786,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -30%,Crop N uptake,190.2187574074074,10.598692178632144,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Rad -30%,Biological N fixation,43.437925538912964,17.3861355739524,4,Radiation
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Mineralisation,242.4772574074074,17.105022598941844,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Crop N uptake,267.7174212962963,15.8305433950576,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Reference,Biological N fixation,168.88508582037036,35.32750332398702,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -3degC,Mineralisation,179.77003,12.55102464105151,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -3degC,Crop N uptake,219.99456111111112,12.363451634750499,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -3degC,Biological N fixation,68.89943869444444,18.774762930963103,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -2degC,Mineralisation,209.6435888888889,3.6583141095226237,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -2degC,Crop N uptake,241.79017685185184,8.105970415184474,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp -2degC,Biological N fixation,115.2593096824074,8.788298422888793,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp 0degC,Mineralisation,246.4827487037037,8.669612938666685,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp 0degC,Crop N uptake,269.435787962963,13.470616971044391,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp 0degC,Biological N fixation,172.0661871296296,13.997500615004638,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +0.5degC,Mineralisation,243.47994787037038,20.83712253342903,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +0.5degC,Crop N uptake,268.17157592592594,17.44405054654799,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +0.5degC,Biological N fixation,165.6272211957778,37.075786203912855,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +1degC,Mineralisation,272.91933925925923,8.634417664073347,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +1degC,Crop N uptake,291.9533527777778,10.615162558023473,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +1degC,Biological N fixation,215.31153399074077,19.423430450178156,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +2degC,Mineralisation,292.0424546296296,5.113965293904982,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +2degC,Crop N uptake,308.824212962963,9.005273569125071,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +2degC,Biological N fixation,244.08266842592593,12.586730111808642,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +3degC,Mineralisation,300.2018166666667,2.4087339181934757,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +3degC,Crop N uptake,318.80789166666665,5.574754634007312,4,Temperature
+Biogas digestate,Residue Removed,Biogas digestate | Residue Removed,Tmp +3degC,Biological N fixation,250.94476822416667,7.832366860131749,4,Temperature

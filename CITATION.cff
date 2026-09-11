@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and this repository."
+title: "vapv-daisy-microclimate-scenarios"
+type: software
+authors:
+  - family-names: "Lindhardt"
+    given-names: "Magnus Kamau K."
+    email: "kamaulindhardt@gmail.com"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: add ORCID
+  # TODO: add remaining co-authors here, in author order, same two-field format
+license: MIT
+repository-code: "https://github.com/TODO-org-or-user/vapv-daisy-microclimate-scenarios"
+version: "1.0.0"  # TODO: bump to match each GitHub release tag / Zenodo software version
+date-released: "2026-01-01"  # TODO: set to the actual release date
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.TODO"  # TODO: software DOI, minted when the GitHub release is archived on Zenodo
+    description: "Archived snapshot of the code on Zenodo"
+  - type: doi
+    value: "10.5281/zenodo.TODO-DATA"  # TODO: DOI of the data deposit (Daisy setup files, simulation inputs, output)
+    description: "Daisy/SPAWN/NWAPS setup files, simulation inputs, and simulation output archived on Zenodo"
+preferred-citation:
+  type: article
+  title: "Vertical agrivoltaic microclimate scenarios in a Danish five-course rotation: a DAISY simulation study"  # TODO: confirm exact published title
+  authors:
+    - family-names: "Lindhardt"
+      given-names: "Magnus Kamau K."
+    # TODO: add remaining authors here, in author order
+  journal: "TODO"        # TODO: journal name
+  year: 2026              # TODO: publication year
+  volume: "TODO"          # TODO
+  doi: "10.0000/TODO"     # TODO: article DOI, once assigned

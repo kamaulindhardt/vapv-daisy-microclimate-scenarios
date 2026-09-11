@@ -1,0 +1,111 @@
+crop_renamed,fertiliser_type,residue_policy,scen_label,mean_resp,sd_resp,n_rot,driver,is_reference,is_vapv_zero
+Winter Wheat,Biogas digestate,Residue removed,Reference,8.850566900833334,0.7055393190088297,4,Radiation,TRUE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Reference,10.946585761666666,1.5474834722802322,4,Radiation,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,5.8815811,0.2870881072235258,4,Radiation,TRUE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Reference,0.6088628190833333,0.13861523172250378,4,Radiation,TRUE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Reference,15.360888377821968,1.7658690160851478,4,Radiation,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad 0%,6.641024181666666,0.7244235133049964,4,Radiation,FALSE,TRUE
+Spring Barley,Biogas digestate,Residue removed,Rad 0%,9.437652647416666,0.8969577827020873,4,Radiation,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Rad 0%,5.146641033333333,0.15101807479140453,4,Radiation,FALSE,TRUE
+Ryegrass (undersown),Biogas digestate,Residue removed,Rad 0%,0.17037564416666667,0.024088627972064135,4,Radiation,FALSE,TRUE
+Grass-Clover,Biogas digestate,Residue removed,Rad 0%,11.992932842026516,1.1693559056690046,4,Radiation,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Rad -5%,6.056222146666666,0.6726726142623922,4,Radiation,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Rad -5%,9.216738654783335,0.8122560236893547,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -5%,5.0239871166666665,0.1274904796750069,4,Radiation,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Rad -5%,0.13637514141666668,0.018906008273734957,4,Radiation,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Rad -5%,11.474081977575757,0.3685633929350119,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -10%,5.508430765,0.6249102664757196,4,Radiation,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Rad -10%,8.944706012166666,0.7609307256985206,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -10%,4.876146933333333,0.13459515742967057,4,Radiation,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Rad -10%,0.11012621179166668,0.013616455046568745,4,Radiation,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Rad -10%,11.357023846615151,0.5487886009049785,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -20%,4.2668562733333335,0.5628400110826464,4,Radiation,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Rad -20%,8.216022102416666,0.578017717911797,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -20%,4.445825616666666,0.18230454327763096,4,Radiation,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Rad -20%,0.049630755490000004,0.01536056317637857,4,Radiation,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Rad -20%,9.68641739540909,0.7904502407600388,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -30%,2.9701628991666666,0.4266735541784703,4,Radiation,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Rad -30%,7.184508914416666,0.42404804770258786,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -30%,3.9412117416666668,0.14095506534888502,4,Radiation,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Rad -30%,0.013128700645916666,0.0077235224655233066,4,Radiation,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Rad -30%,6.626086130284091,0.8208401308596924,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Reference,8.850566900833334,0.7055393190088297,4,Temperature,TRUE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Reference,10.946585761666666,1.5474834722802322,4,Temperature,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,5.8815811,0.2870881072235258,4,Temperature,TRUE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Reference,0.6088628190833333,0.13861523172250378,4,Temperature,TRUE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Reference,15.360888377821968,1.7658690160851478,4,Temperature,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp -3degC,5.193013159166666,1.1469291760622127,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp -3degC,4.771212172875,0.7755180133983057,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp -3degC,3.27956534875,0.20964896190414728,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp -3degC,0.07442713437500001,0.14885426875000002,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp -3degC,7.243112925530303,1.2202049716311734,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp -2degC,6.651929795,1.255098099416566,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp -2degC,6.93381266625,1.008923806525138,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp -2degC,4.219907383333333,0.24432396671370202,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp -2degC,0.21309219270833335,0.14538731272982497,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp -2degC,10.409939467679356,0.27411594765428227,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC,8.642950452500001,0.8209472481343658,4,Temperature,FALSE,TRUE
+Spring Barley,Biogas digestate,Residue removed,Tmp 0degC,10.603358173958334,1.3867220324696812,4,Temperature,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Tmp 0degC,5.629643883333333,0.26142773009669446,4,Temperature,FALSE,TRUE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp 0degC,0.6436051916666667,0.026682166096350234,4,Temperature,FALSE,TRUE
+Grass-Clover,Biogas digestate,Residue removed,Tmp 0degC,15.206525227103787,0.5573195224291931,4,Temperature,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +0.5degC,8.915036197500001,0.780342519234488,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp +0.5degC,11.072538714083333,1.7384066665352242,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +0.5degC,5.877017216666666,0.3303713120194986,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp +0.5degC,0.6587981047083333,0.14484361592031905,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp +0.5degC,15.231343987052425,2.238226872648594,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +1degC,9.119885780833332,0.8751473664979003,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp +1degC,11.7227187975,1.5326268571417112,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +1degC,6.093856416666666,0.2748475555375923,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp +1degC,0.6231839010833333,0.13277215549638918,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp +1degC,18.839947727045455,0.8673539604528315,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +2degC,9.288147471666667,0.520657578301181,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp +2degC,12.222048465833334,1.5322509395191877,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +2degC,6.17096365,0.37618864542244945,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp +2degC,0.5871886948770834,0.16991532321550826,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp +2degC,21.526012237299547,0.3625496987831195,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +3degC,8.500192790833333,0.35277781277228387,4,Temperature,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Tmp +3degC,12.1163601125,1.5573465811947582,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +3degC,6.141217691666666,0.5687988264705178,4,Temperature,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp +3degC,0.6048544949583333,0.22936155985806933,4,Temperature,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Tmp +3degC,22.503852585257633,0.4057740795832083,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Reference,8.850566900833334,0.7055393190088297,4,Wind,TRUE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Reference,10.946585761666666,1.5474834722802322,4,Wind,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,5.8815811,0.2870881072235258,4,Wind,TRUE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Reference,0.6088628190833333,0.13861523172250378,4,Wind,TRUE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Reference,15.360888377821968,1.7658690160851478,4,Wind,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind 0%,8.772096022500001,0.7117731455942251,4,Wind,FALSE,TRUE
+Spring Barley,Biogas digestate,Residue removed,Wind 0%,11.019160274499999,1.5130791706560511,4,Wind,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Wind 0%,5.925462158333334,0.275019464646833,4,Wind,FALSE,TRUE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind 0%,0.6136656215416667,0.1379337410566013,4,Wind,FALSE,TRUE
+Grass-Clover,Biogas digestate,Residue removed,Wind 0%,15.367761256041668,1.8517601635608398,4,Wind,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Wind -20%,8.728224669166666,0.7016178145756047,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -20%,11.054056905666668,1.4808485784451582,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -20%,5.9505426083333335,0.268180951450041,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -20%,0.6145082852083333,0.13760690004872728,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -20%,15.394599826060606,1.866592180612063,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -30%,8.70117366,0.6920941699859541,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -30%,11.07102000275,1.460328320600118,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -30%,5.963013125,0.2638604654774359,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -30%,0.61351003475,0.13410006268511326,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -30%,15.409546197121212,1.874523217051591,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -40%,8.678898708333334,0.6833771350861793,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -40%,11.087000131,1.4467235114726227,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -40%,5.967060675,0.268259877102109,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -40%,0.6148150595416666,0.1343103099765461,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -40%,15.42447497056818,1.8811597590572895,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -50%,8.647291749166666,0.6697608483970204,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -50%,11.104957838999999,1.4302490208701835,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -50%,5.9720477249999995,0.269960076861275,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -50%,0.618871320875,0.1362738974006043,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -50%,15.438395583617424,1.8868933709249858,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -60%,8.589062659166666,0.6914968238530691,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -60%,10.992165742666668,1.3867138778258687,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -60%,5.981545866666666,0.26601915098060397,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -60%,0.6183204849166667,0.13382754983598874,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -60%,14.971738095757576,2.509953786961377,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -70%,8.564986335,0.6863632639620683,4,Wind,FALSE,FALSE
+Spring Barley,Biogas digestate,Residue removed,Wind -70%,11.012284373416666,1.3599160722034587,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -70%,5.990343416666667,0.26204674919457277,4,Wind,FALSE,FALSE
+Ryegrass (undersown),Biogas digestate,Residue removed,Wind -70%,0.6209118903333334,0.1355442549733828,4,Wind,FALSE,FALSE
+Grass-Clover,Biogas digestate,Residue removed,Wind -70%,14.984968682344697,2.518673617140557,4,Wind,FALSE,FALSE

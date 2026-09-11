@@ -1,0 +1,4 @@
+# Reference-only legacy scripts - not part of this project's actual dependency
+# graph, just kept for traceable extraction. Excluding them keeps renv's
+# dependency scan (and thus snapshot time) focused on real project code.
+reference/legacy_snapshot/
