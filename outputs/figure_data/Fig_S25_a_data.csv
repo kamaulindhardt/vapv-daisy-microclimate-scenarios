@@ -1,0 +1,1345 @@
+scen_label,month_date,flux,monthly_kgN_ha
+Rad -10%,1998-01-01,Biological N fixation,0
+Rad -10%,1998-01-01,Mineralisation,1.7317442299999999
+Rad -10%,1998-01-01,Crop N uptake,0
+Rad -10%,1998-01-01,N leaching,0.06627193
+Rad -10%,1998-02-01,Biological N fixation,0
+Rad -10%,1998-02-01,Mineralisation,1.99354035
+Rad -10%,1998-02-01,Crop N uptake,0
+Rad -10%,1998-02-01,N leaching,0.05070416
+Rad -10%,1998-03-01,Biological N fixation,0
+Rad -10%,1998-03-01,Mineralisation,1.24046782
+Rad -10%,1998-03-01,Crop N uptake,0.8061658
+Rad -10%,1998-03-01,N leaching,0.05226329
+Rad -10%,1998-04-01,Biological N fixation,0
+Rad -10%,1998-04-01,Mineralisation,-9.11305511
+Rad -10%,1998-04-01,Crop N uptake,1.64476162
+Rad -10%,1998-04-01,N leaching,0.05141828
+Rad -10%,1998-05-01,Biological N fixation,0
+Rad -10%,1998-05-01,Mineralisation,4.57984057
+Rad -10%,1998-05-01,Crop N uptake,11.142479
+Rad -10%,1998-05-01,N leaching,0.0585335
+Rad -10%,1998-06-01,Biological N fixation,0
+Rad -10%,1998-06-01,Mineralisation,27.004457
+Rad -10%,1998-06-01,Crop N uptake,25.630762
+Rad -10%,1998-06-01,N leaching,0.06460998
+Rad -10%,1998-07-01,Biological N fixation,0
+Rad -10%,1998-07-01,Mineralisation,36.01152
+Rad -10%,1998-07-01,Crop N uptake,36.199668
+Rad -10%,1998-07-01,N leaching,0.07653478
+Rad -10%,1998-08-01,Biological N fixation,0
+Rad -10%,1998-08-01,Mineralisation,31.243678
+Rad -10%,1998-08-01,Crop N uptake,10.644901
+Rad -10%,1998-08-01,N leaching,0.08680094
+Rad -10%,1998-09-01,Biological N fixation,0
+Rad -10%,1998-09-01,Mineralisation,24.923943
+Rad -10%,1998-09-01,Crop N uptake,5.084329
+Rad -10%,1998-09-01,N leaching,0.09873904
+Rad -10%,1998-10-01,Biological N fixation,0
+Rad -10%,1998-10-01,Mineralisation,17.977402
+Rad -10%,1998-10-01,Crop N uptake,6.2496685
+Rad -10%,1998-10-01,N leaching,0.33540868
+Rad -10%,1998-11-01,Biological N fixation,0
+Rad -10%,1998-11-01,Mineralisation,5.4548045
+Rad -10%,1998-11-01,Crop N uptake,0.7143831
+Rad -10%,1998-11-01,N leaching,6.772879
+Rad -10%,1998-12-01,Biological N fixation,0
+Rad -10%,1998-12-01,Mineralisation,3.98410994
+Rad -10%,1998-12-01,Crop N uptake,0.2271701
+Rad -10%,1998-12-01,N leaching,2.2760367
+Rad -10%,1999-01-01,Biological N fixation,0
+Rad -10%,1999-01-01,Mineralisation,5.51376065
+Rad -10%,1999-01-01,Crop N uptake,0.51747085
+Rad -10%,1999-01-01,N leaching,1.8506504
+Rad -10%,1999-02-01,Biological N fixation,0
+Rad -10%,1999-02-01,Mineralisation,2.144293353
+Rad -10%,1999-02-01,Crop N uptake,1.18522305
+Rad -10%,1999-02-01,N leaching,1.9510136
+Rad -10%,1999-03-01,Biological N fixation,0
+Rad -10%,1999-03-01,Mineralisation,4.39357105
+Rad -10%,1999-03-01,Crop N uptake,4.00403242
+Rad -10%,1999-03-01,N leaching,1.9385532
+Rad -10%,1999-04-01,Biological N fixation,0.00192247
+Rad -10%,1999-04-01,Mineralisation,9.909266
+Rad -10%,1999-04-01,Crop N uptake,40.793563
+Rad -10%,1999-04-01,N leaching,1.6794172
+Rad -10%,1999-05-01,Biological N fixation,0.15173347
+Rad -10%,1999-05-01,Mineralisation,11.891185
+Rad -10%,1999-05-01,Crop N uptake,78.244464
+Rad -10%,1999-05-01,N leaching,1.0788206
+Rad -10%,1999-06-01,Biological N fixation,2.1732209
+Rad -10%,1999-06-01,Mineralisation,12.538819
+Rad -10%,1999-06-01,Crop N uptake,37.017818
+Rad -10%,1999-06-01,N leaching,0.5783697
+Rad -10%,1999-07-01,Biological N fixation,4.33106604
+Rad -10%,1999-07-01,Mineralisation,28.346748
+Rad -10%,1999-07-01,Crop N uptake,28.532063
+Rad -10%,1999-07-01,N leaching,0.49415359999999997
+Rad -10%,1999-08-01,Biological N fixation,13.9747757
+Rad -10%,1999-08-01,Mineralisation,33.601638
+Rad -10%,1999-08-01,Crop N uptake,32.095967
+Rad -10%,1999-08-01,N leaching,0.6357203
+Rad -10%,1999-09-01,Biological N fixation,44.0812311
+Rad -10%,1999-09-01,Mineralisation,36.95281
+Rad -10%,1999-09-01,Crop N uptake,35.454145
+Rad -10%,1999-09-01,N leaching,0.36912632
+Rad -10%,1999-10-01,Biological N fixation,19.54903613
+Rad -10%,1999-10-01,Mineralisation,28.490876
+Rad -10%,1999-10-01,Crop N uptake,29.351628
+Rad -10%,1999-10-01,N leaching,0.24763214
+Rad -10%,1999-11-01,Biological N fixation,2.0488088118
+Rad -10%,1999-11-01,Mineralisation,17.440491
+Rad -10%,1999-11-01,Crop N uptake,6.715141
+Rad -10%,1999-11-01,N leaching,0.30241156
+Rad -10%,1999-12-01,Biological N fixation,0
+Rad -10%,1999-12-01,Mineralisation,8.1925025
+Rad -10%,1999-12-01,Crop N uptake,0
+Rad -10%,1999-12-01,N leaching,0.7174697
+Rad -10%,2000-01-01,Biological N fixation,0
+Rad -10%,2000-01-01,Mineralisation,10.0488333
+Rad -10%,2000-01-01,Crop N uptake,0
+Rad -10%,2000-01-01,N leaching,2.2112236
+Rad -10%,2000-02-01,Biological N fixation,0
+Rad -10%,2000-02-01,Mineralisation,8.8805216
+Rad -10%,2000-02-01,Crop N uptake,0
+Rad -10%,2000-02-01,N leaching,1.4479756
+Rad -10%,2000-03-01,Biological N fixation,0
+Rad -10%,2000-03-01,Mineralisation,8.668142
+Rad -10%,2000-03-01,Crop N uptake,6.2571233
+Rad -10%,2000-03-01,N leaching,1.4939001
+Rad -10%,2000-04-01,Biological N fixation,23.620220930000002
+Rad -10%,2000-04-01,Mineralisation,15.149003
+Rad -10%,2000-04-01,Crop N uptake,28.767511
+Rad -10%,2000-04-01,N leaching,0.7563813
+Rad -10%,2000-05-01,Biological N fixation,135.625709
+Rad -10%,2000-05-01,Mineralisation,40.02649
+Rad -10%,2000-05-01,Crop N uptake,50.735009
+Rad -10%,2000-05-01,N leaching,0.4207913
+Rad -10%,2000-06-01,Biological N fixation,107.812619
+Rad -10%,2000-06-01,Mineralisation,54.98503
+Rad -10%,2000-06-01,Crop N uptake,75.44921
+Rad -10%,2000-06-01,N leaching,0.2459677
+Rad -10%,2000-07-01,Biological N fixation,118.64157
+Rad -10%,2000-07-01,Mineralisation,63.17363
+Rad -10%,2000-07-01,Crop N uptake,91.71712
+Rad -10%,2000-07-01,N leaching,0.16114483
+Rad -10%,2000-08-01,Biological N fixation,59.6955966
+Rad -10%,2000-08-01,Mineralisation,55.54438
+Rad -10%,2000-08-01,Crop N uptake,105.99743
+Rad -10%,2000-08-01,N leaching,0.11300032
+Rad -10%,2000-09-01,Biological N fixation,32.748159
+Rad -10%,2000-09-01,Mineralisation,49.120689999999996
+Rad -10%,2000-09-01,Crop N uptake,51.17168
+Rad -10%,2000-09-01,N leaching,0.07856357
+Rad -10%,2000-10-01,Biological N fixation,14.694008499999999
+Rad -10%,2000-10-01,Mineralisation,41.1761
+Rad -10%,2000-10-01,Crop N uptake,44.55397
+Rad -10%,2000-10-01,N leaching,0.05880579
+Rad -10%,2000-11-01,Biological N fixation,0
+Rad -10%,2000-11-01,Mineralisation,22.631094
+Rad -10%,2000-11-01,Crop N uptake,16.171368
+Rad -10%,2000-11-01,N leaching,0.042461689999999996
+Rad -10%,2000-12-01,Biological N fixation,0
+Rad -10%,2000-12-01,Mineralisation,17.9042665
+Rad -10%,2000-12-01,Crop N uptake,0
+Rad -10%,2000-12-01,N leaching,0.32472726
+Rad -10%,2001-01-01,Biological N fixation,0
+Rad -10%,2001-01-01,Mineralisation,6.7758246
+Rad -10%,2001-01-01,Crop N uptake,0
+Rad -10%,2001-01-01,N leaching,0.6872057
+Rad -10%,2001-02-01,Biological N fixation,0
+Rad -10%,2001-02-01,Mineralisation,4.147082549
+Rad -10%,2001-02-01,Crop N uptake,0
+Rad -10%,2001-02-01,N leaching,0.4013733
+Rad -10%,2001-03-01,Biological N fixation,0
+Rad -10%,2001-03-01,Mineralisation,4.57473133864222
+Rad -10%,2001-03-01,Crop N uptake,0
+Rad -10%,2001-03-01,N leaching,0.4041462
+Rad -10%,2001-04-01,Biological N fixation,0
+Rad -10%,2001-04-01,Mineralisation,29.105766
+Rad -10%,2001-04-01,Crop N uptake,0.06998362
+Rad -10%,2001-04-01,N leaching,0.26595087
+Rad -10%,2001-05-01,Biological N fixation,0
+Rad -10%,2001-05-01,Mineralisation,56.02744
+Rad -10%,2001-05-01,Crop N uptake,63.9000548
+Rad -10%,2001-05-01,N leaching,0.27431902
+Rad -10%,2001-06-01,Biological N fixation,0
+Rad -10%,2001-06-01,Mineralisation,50.54288
+Rad -10%,2001-06-01,Crop N uptake,107.13863
+Rad -10%,2001-06-01,N leaching,0.22813294
+Rad -10%,2001-07-01,Biological N fixation,0
+Rad -10%,2001-07-01,Mineralisation,50.9599
+Rad -10%,2001-07-01,Crop N uptake,67.06978
+Rad -10%,2001-07-01,N leaching,0.14133894
+Rad -10%,2001-08-01,Biological N fixation,0
+Rad -10%,2001-08-01,Mineralisation,40.16029
+Rad -10%,2001-08-01,Crop N uptake,45.7493
+Rad -10%,2001-08-01,N leaching,0.07815264
+Rad -10%,2001-09-01,Biological N fixation,0
+Rad -10%,2001-09-01,Mineralisation,27.336805000000002
+Rad -10%,2001-09-01,Crop N uptake,32.218865
+Rad -10%,2001-09-01,N leaching,0.039130662
+Rad -10%,2001-10-01,Biological N fixation,0
+Rad -10%,2001-10-01,Mineralisation,25.4686
+Rad -10%,2001-10-01,Crop N uptake,25.012468
+Rad -10%,2001-10-01,N leaching,0.024406955
+Rad -10%,2001-11-01,Biological N fixation,0
+Rad -10%,2001-11-01,Mineralisation,12.052077
+Rad -10%,2001-11-01,Crop N uptake,9.953124776000001
+Rad -10%,2001-11-01,N leaching,0.015791553
+Rad -10%,2001-12-01,Biological N fixation,0
+Rad -10%,2001-12-01,Mineralisation,3.9487585100000002
+Rad -10%,2001-12-01,Crop N uptake,0
+Rad -10%,2001-12-01,N leaching,0.012609992
+Rad -10%,2002-01-01,Biological N fixation,0
+Rad -10%,2002-01-01,Mineralisation,4.367490134
+Rad -10%,2002-01-01,Crop N uptake,0
+Rad -10%,2002-01-01,N leaching,0.017622745
+Rad -10%,2002-02-01,Biological N fixation,0
+Rad -10%,2002-02-01,Mineralisation,6.0721051
+Rad -10%,2002-02-01,Crop N uptake,0.06873195
+Rad -10%,2002-02-01,N leaching,0.420927863
+Rad -10%,2002-03-01,Biological N fixation,0
+Rad -10%,2002-03-01,Mineralisation,4.6851769
+Rad -10%,2002-03-01,Crop N uptake,0.19910833
+Rad -10%,2002-03-01,N leaching,0.37888698
+Rad -10%,2002-04-01,Biological N fixation,0
+Rad -10%,2002-04-01,Mineralisation,8.746526
+Rad -10%,2002-04-01,Crop N uptake,0.66156552
+Rad -10%,2002-04-01,N leaching,0.16214082999999999
+Rad -10%,2002-05-01,Biological N fixation,0
+Rad -10%,2002-05-01,Mineralisation,-4.094700799999999
+Rad -10%,2002-05-01,Crop N uptake,0.7941917000000001
+Rad -10%,2002-05-01,N leaching,0.07419541
+Rad -10%,2002-06-01,Biological N fixation,26.6693467
+Rad -10%,2002-06-01,Mineralisation,11.078193
+Rad -10%,2002-06-01,Crop N uptake,23.868087
+Rad -10%,2002-06-01,N leaching,0.046073829999999996
+Rad -10%,2002-07-01,Biological N fixation,81.322344
+Rad -10%,2002-07-01,Mineralisation,15.778976
+Rad -10%,2002-07-01,Crop N uptake,12.372303
+Rad -10%,2002-07-01,N leaching,0.034474038
+Rad -10%,2002-08-01,Biological N fixation,16.81049466
+Rad -10%,2002-08-01,Mineralisation,16.937622
+Rad -10%,2002-08-01,Crop N uptake,13.7381277
+Rad -10%,2002-08-01,N leaching,0.031199468
+Rad -10%,2002-09-01,Biological N fixation,0
+Rad -10%,2002-09-01,Mineralisation,8.6200329
+Rad -10%,2002-09-01,Crop N uptake,0.38135959999999997
+Rad -10%,2002-09-01,N leaching,0.025572311
+Rad -10%,2002-10-01,Biological N fixation,0
+Rad -10%,2002-10-01,Mineralisation,17.447887
+Rad -10%,2002-10-01,Crop N uptake,0
+Rad -10%,2002-10-01,N leaching,0.018412191
+Rad -10%,2002-11-01,Biological N fixation,0
+Rad -10%,2002-11-01,Mineralisation,13.579039
+Rad -10%,2002-11-01,Crop N uptake,0
+Rad -10%,2002-11-01,N leaching,0.012278066
+Rad -10%,2002-12-01,Biological N fixation,0
+Rad -10%,2002-12-01,Mineralisation,3.8250294
+Rad -10%,2002-12-01,Crop N uptake,0
+Rad -10%,2002-12-01,N leaching,0.010039211
+Rad -10%,2003-01-01,Biological N fixation,0
+Rad -10%,2003-01-01,Mineralisation,6.23915665069
+Rad -10%,2003-01-01,Crop N uptake,0
+Rad -10%,2003-01-01,N leaching,0.027484299
+Rad -10%,2003-02-01,Biological N fixation,0
+Rad -10%,2003-02-01,Mineralisation,0.14974364404731316
+Rad -10%,2003-02-01,Crop N uptake,0
+Rad -10%,2003-02-01,N leaching,0.07987735
+Rad -10%,2003-03-01,Biological N fixation,0
+Rad -10%,2003-03-01,Mineralisation,6.99295832000086
+Rad -10%,2003-03-01,Crop N uptake,0
+Rad -10%,2003-03-01,N leaching,0.09590055
+Rad -10%,2003-04-01,Biological N fixation,0
+Rad -10%,2003-04-01,Mineralisation,15.7378617
+Rad -10%,2003-04-01,Crop N uptake,1.6681016
+Rad -10%,2003-04-01,N leaching,0.06936435
+Rad -10%,2003-05-01,Biological N fixation,0
+Rad -10%,2003-05-01,Mineralisation,28.520304
+Rad -10%,2003-05-01,Crop N uptake,11.665051
+Rad -10%,2003-05-01,N leaching,0.06180802
+Rad -10%,2003-06-01,Biological N fixation,0
+Rad -10%,2003-06-01,Mineralisation,36.607169999999996
+Rad -10%,2003-06-01,Crop N uptake,29.04407
+Rad -10%,2003-06-01,N leaching,0.09795368
+Rad -10%,2003-07-01,Biological N fixation,0
+Rad -10%,2003-07-01,Mineralisation,38.22646
+Rad -10%,2003-07-01,Crop N uptake,50.377611
+Rad -10%,2003-07-01,N leaching,0.18594611
+Rad -10%,2003-08-01,Biological N fixation,0
+Rad -10%,2003-08-01,Mineralisation,30.65533
+Rad -10%,2003-08-01,Crop N uptake,11.878731
+Rad -10%,2003-08-01,N leaching,0.25329813
+Rad -10%,2003-09-01,Biological N fixation,0
+Rad -10%,2003-09-01,Mineralisation,22.29656
+Rad -10%,2003-09-01,Crop N uptake,7.4018537
+Rad -10%,2003-09-01,N leaching,0.23038328
+Rad -10%,2003-10-01,Biological N fixation,0
+Rad -10%,2003-10-01,Mineralisation,13.55949
+Rad -10%,2003-10-01,Crop N uptake,7.20048343
+Rad -10%,2003-10-01,N leaching,0.19222723
+Rad -10%,2003-11-01,Biological N fixation,0
+Rad -10%,2003-11-01,Mineralisation,10.625298
+Rad -10%,2003-11-01,Crop N uptake,1.82422095
+Rad -10%,2003-11-01,N leaching,0.15634983
+Rad -10%,2003-12-01,Biological N fixation,0
+Rad -10%,2003-12-01,Mineralisation,7.2467809
+Rad -10%,2003-12-01,Crop N uptake,0.09145923
+Rad -10%,2003-12-01,N leaching,0.20752754
+Rad -10%,2004-01-01,Biological N fixation,0
+Rad -10%,2004-01-01,Mineralisation,0.7801828680999999
+Rad -10%,2004-01-01,Crop N uptake,0.40034899999999995
+Rad -10%,2004-01-01,N leaching,1.6811986
+Rad -10%,2004-02-01,Biological N fixation,0
+Rad -10%,2004-02-01,Mineralisation,2.5623800509
+Rad -10%,2004-02-01,Crop N uptake,1.57500439
+Rad -10%,2004-02-01,N leaching,3.8311977
+Rad -10%,2004-03-01,Biological N fixation,0
+Rad -10%,2004-03-01,Mineralisation,3.57356266497
+Rad -10%,2004-03-01,Crop N uptake,4.791532
+Rad -10%,2004-03-01,N leaching,2.6740778
+Rad -10%,2004-04-01,Biological N fixation,0
+Rad -10%,2004-04-01,Mineralisation,8.410061
+Rad -10%,2004-04-01,Crop N uptake,27.664482
+Rad -10%,2004-04-01,N leaching,2.6784594
+Rad -10%,2004-05-01,Biological N fixation,0
+Rad -10%,2004-05-01,Mineralisation,13.28145
+Rad -10%,2004-05-01,Crop N uptake,122.62162
+Rad -10%,2004-05-01,N leaching,3.649754
+Rad -10%,2004-06-01,Biological N fixation,0.2603785
+Rad -10%,2004-06-01,Mineralisation,9.020508
+Rad -10%,2004-06-01,Crop N uptake,49.118632
+Rad -10%,2004-06-01,N leaching,2.8313334
+Rad -10%,2004-07-01,Biological N fixation,1.6396211299999999
+Rad -10%,2004-07-01,Mineralisation,22.196809
+Rad -10%,2004-07-01,Crop N uptake,27.694137
+Rad -10%,2004-07-01,N leaching,1.736478
+Rad -10%,2004-08-01,Biological N fixation,9.765549343
+Rad -10%,2004-08-01,Mineralisation,38.686621
+Rad -10%,2004-08-01,Crop N uptake,36.957016
+Rad -10%,2004-08-01,N leaching,1.2285027
+Rad -10%,2004-09-01,Biological N fixation,36.4925908
+Rad -10%,2004-09-01,Mineralisation,36.43497
+Rad -10%,2004-09-01,Crop N uptake,37.49789
+Rad -10%,2004-09-01,N leaching,0.9819501
+Rad -10%,2004-10-01,Biological N fixation,16.162015897
+Rad -10%,2004-10-01,Mineralisation,30.657142
+Rad -10%,2004-10-01,Crop N uptake,34.465385
+Rad -10%,2004-10-01,N leaching,0.7612108
+Rad -10%,2004-11-01,Biological N fixation,0.00280098
+Rad -10%,2004-11-01,Mineralisation,17.545012
+Rad -10%,2004-11-01,Crop N uptake,11.197368
+Rad -10%,2004-11-01,N leaching,0.6566464
+Rad -10%,2004-12-01,Biological N fixation,0
+Rad -10%,2004-12-01,Mineralisation,13.924705
+Rad -10%,2004-12-01,Crop N uptake,0
+Rad -10%,2004-12-01,N leaching,4.9414039
+Rad -30%,1998-01-01,Biological N fixation,0
+Rad -30%,1998-01-01,Mineralisation,1.73461206
+Rad -30%,1998-01-01,Crop N uptake,0
+Rad -30%,1998-01-01,N leaching,0.07058472
+Rad -30%,1998-02-01,Biological N fixation,0
+Rad -30%,1998-02-01,Mineralisation,1.988417486
+Rad -30%,1998-02-01,Crop N uptake,0
+Rad -30%,1998-02-01,N leaching,0.056505799999999995
+Rad -30%,1998-03-01,Biological N fixation,0
+Rad -30%,1998-03-01,Mineralisation,1.25682225
+Rad -30%,1998-03-01,Crop N uptake,0
+Rad -30%,1998-03-01,N leaching,0.06181769
+Rad -30%,1998-04-01,Biological N fixation,0
+Rad -30%,1998-04-01,Mineralisation,-6.60147528
+Rad -30%,1998-04-01,Crop N uptake,0.7676285359999999
+Rad -30%,1998-04-01,N leaching,0.06495706
+Rad -30%,1998-05-01,Biological N fixation,0
+Rad -30%,1998-05-01,Mineralisation,3.4251822
+Rad -30%,1998-05-01,Crop N uptake,7.9831365
+Rad -30%,1998-05-01,N leaching,0.07855966
+Rad -30%,1998-06-01,Biological N fixation,0
+Rad -30%,1998-06-01,Mineralisation,29.340565
+Rad -30%,1998-06-01,Crop N uptake,13.400997
+Rad -30%,1998-06-01,N leaching,0.09158536
+Rad -30%,1998-07-01,Biological N fixation,0
+Rad -30%,1998-07-01,Mineralisation,36.3853
+Rad -30%,1998-07-01,Crop N uptake,21.021318
+Rad -30%,1998-07-01,N leaching,0.11833803
+Rad -30%,1998-08-01,Biological N fixation,0
+Rad -30%,1998-08-01,Mineralisation,31.977710000000002
+Rad -30%,1998-08-01,Crop N uptake,6.684603
+Rad -30%,1998-08-01,N leaching,0.16466627
+Rad -30%,1998-09-01,Biological N fixation,0
+Rad -30%,1998-09-01,Mineralisation,25.056717
+Rad -30%,1998-09-01,Crop N uptake,3.3949
+Rad -30%,1998-09-01,N leaching,1.35605779
+Rad -30%,1998-10-01,Biological N fixation,0
+Rad -30%,1998-10-01,Mineralisation,17.548386
+Rad -30%,1998-10-01,Crop N uptake,3.76229381
+Rad -30%,1998-10-01,N leaching,4.2807483
+Rad -30%,1998-11-01,Biological N fixation,0
+Rad -30%,1998-11-01,Mineralisation,5.3053972
+Rad -30%,1998-11-01,Crop N uptake,0.34846910000000003
+Rad -30%,1998-11-01,N leaching,6.2747078
+Rad -30%,1998-12-01,Biological N fixation,0
+Rad -30%,1998-12-01,Mineralisation,3.834668
+Rad -30%,1998-12-01,Crop N uptake,0.11716215999999999
+Rad -30%,1998-12-01,N leaching,1.9671642
+Rad -30%,1999-01-01,Biological N fixation,0
+Rad -30%,1999-01-01,Mineralisation,5.32422104
+Rad -30%,1999-01-01,Crop N uptake,0.25947309
+Rad -30%,1999-01-01,N leaching,1.6602611
+Rad -30%,1999-02-01,Biological N fixation,0
+Rad -30%,1999-02-01,Mineralisation,2.069820209
+Rad -30%,1999-02-01,Crop N uptake,0.80916476
+Rad -30%,1999-02-01,N leaching,1.8232962
+Rad -30%,1999-03-01,Biological N fixation,0
+Rad -30%,1999-03-01,Mineralisation,4.24543244
+Rad -30%,1999-03-01,Crop N uptake,2.48265944
+Rad -30%,1999-03-01,N leaching,2.0434804
+Rad -30%,1999-04-01,Biological N fixation,0
+Rad -30%,1999-04-01,Mineralisation,9.716353
+Rad -30%,1999-04-01,Crop N uptake,22.417288
+Rad -30%,1999-04-01,N leaching,1.9742924
+Rad -30%,1999-05-01,Biological N fixation,4.18138e-5
+Rad -30%,1999-05-01,Mineralisation,12.547363
+Rad -30%,1999-05-01,Crop N uptake,87.1105
+Rad -30%,1999-05-01,N leaching,1.4497907
+Rad -30%,1999-06-01,Biological N fixation,1.3796874
+Rad -30%,1999-06-01,Mineralisation,11.775935
+Rad -30%,1999-06-01,Crop N uptake,45.359082
+Rad -30%,1999-06-01,N leaching,0.8274548
+Rad -30%,1999-07-01,Biological N fixation,3.404501449
+Rad -30%,1999-07-01,Mineralisation,25.942871
+Rad -30%,1999-07-01,Crop N uptake,25.787397
+Rad -30%,1999-07-01,N leaching,1.5977160000000001
+Rad -30%,1999-08-01,Biological N fixation,9.408159
+Rad -30%,1999-08-01,Mineralisation,33.57192
+Rad -30%,1999-08-01,Crop N uptake,32.039535
+Rad -30%,1999-08-01,N leaching,1.2522027
+Rad -30%,1999-09-01,Biological N fixation,0.258482981
+Rad -30%,1999-09-01,Mineralisation,32.36192
+Rad -30%,1999-09-01,Crop N uptake,32.262040999999996
+Rad -30%,1999-09-01,N leaching,0.6257097
+Rad -30%,1999-10-01,Biological N fixation,0
+Rad -30%,1999-10-01,Mineralisation,20.803084
+Rad -30%,1999-10-01,Crop N uptake,22.425033
+Rad -30%,1999-10-01,N leaching,0.7192789
+Rad -30%,1999-11-01,Biological N fixation,0
+Rad -30%,1999-11-01,Mineralisation,11.4129519
+Rad -30%,1999-11-01,Crop N uptake,11.742367999999999
+Rad -30%,1999-11-01,N leaching,1.40813
+Rad -30%,1999-12-01,Biological N fixation,0
+Rad -30%,1999-12-01,Mineralisation,4.2743077
+Rad -30%,1999-12-01,Crop N uptake,6.3693064
+Rad -30%,1999-12-01,N leaching,1.6684237
+Rad -30%,2000-01-01,Biological N fixation,0
+Rad -30%,2000-01-01,Mineralisation,4.889008
+Rad -30%,2000-01-01,Crop N uptake,4.3814082
+Rad -30%,2000-01-01,N leaching,2.7300732
+Rad -30%,2000-02-01,Biological N fixation,0
+Rad -30%,2000-02-01,Mineralisation,4.9007964
+Rad -30%,2000-02-01,Crop N uptake,2.28442717
+Rad -30%,2000-02-01,N leaching,1.635529
+Rad -30%,2000-03-01,Biological N fixation,0
+Rad -30%,2000-03-01,Mineralisation,5.4466284
+Rad -30%,2000-03-01,Crop N uptake,6.8700121
+Rad -30%,2000-03-01,N leaching,1.5649159
+Rad -30%,2000-04-01,Biological N fixation,0
+Rad -30%,2000-04-01,Mineralisation,10.231079
+Rad -30%,2000-04-01,Crop N uptake,49.712934
+Rad -30%,2000-04-01,N leaching,0.7204014
+Rad -30%,2000-05-01,Biological N fixation,0
+Rad -30%,2000-05-01,Mineralisation,18.753303
+Rad -30%,2000-05-01,Crop N uptake,53.716642
+Rad -30%,2000-05-01,N leaching,0.39385121
+Rad -30%,2000-06-01,Biological N fixation,0
+Rad -30%,2000-06-01,Mineralisation,20.048898
+Rad -30%,2000-06-01,Crop N uptake,35.464302000000004
+Rad -30%,2000-06-01,N leaching,0.22479209
+Rad -30%,2000-07-01,Biological N fixation,0
+Rad -30%,2000-07-01,Mineralisation,29.884549
+Rad -30%,2000-07-01,Crop N uptake,37.908187
+Rad -30%,2000-07-01,N leaching,0.14875477
+Rad -30%,2000-08-01,Biological N fixation,8.53026e-5
+Rad -30%,2000-08-01,Mineralisation,36.098938
+Rad -30%,2000-08-01,Crop N uptake,34.785988
+Rad -30%,2000-08-01,N leaching,0.1071802
+Rad -30%,2000-09-01,Biological N fixation,0
+Rad -30%,2000-09-01,Mineralisation,29.725365
+Rad -30%,2000-09-01,Crop N uptake,29.708942
+Rad -30%,2000-09-01,N leaching,0.07644162
+Rad -30%,2000-10-01,Biological N fixation,0
+Rad -30%,2000-10-01,Mineralisation,28.154114
+Rad -30%,2000-10-01,Crop N uptake,28.362342
+Rad -30%,2000-10-01,N leaching,0.06489921
+Rad -30%,2000-11-01,Biological N fixation,0
+Rad -30%,2000-11-01,Mineralisation,14.818986
+Rad -30%,2000-11-01,Crop N uptake,15.925939
+Rad -30%,2000-11-01,N leaching,0.21780564
+Rad -30%,2000-12-01,Biological N fixation,0
+Rad -30%,2000-12-01,Mineralisation,10.0161201
+Rad -30%,2000-12-01,Crop N uptake,11.1369721
+Rad -30%,2000-12-01,N leaching,0.5697033
+Rad -30%,2001-01-01,Biological N fixation,0
+Rad -30%,2001-01-01,Mineralisation,3.0921127999999998
+Rad -30%,2001-01-01,Crop N uptake,2.1591279
+Rad -30%,2001-01-01,N leaching,0.23412638
+Rad -30%,2001-02-01,Biological N fixation,0
+Rad -30%,2001-02-01,Mineralisation,2.005083491
+Rad -30%,2001-02-01,Crop N uptake,0.39427639
+Rad -30%,2001-02-01,N leaching,0.11463104
+Rad -30%,2001-03-01,Biological N fixation,0
+Rad -30%,2001-03-01,Mineralisation,3.0805983617373007
+Rad -30%,2001-03-01,Crop N uptake,0.10064909999999999
+Rad -30%,2001-03-01,N leaching,0.10220411
+Rad -30%,2001-04-01,Biological N fixation,0
+Rad -30%,2001-04-01,Mineralisation,22.823831
+Rad -30%,2001-04-01,Crop N uptake,0
+Rad -30%,2001-04-01,N leaching,0.0626323
+Rad -30%,2001-05-01,Biological N fixation,0
+Rad -30%,2001-05-01,Mineralisation,41.8838
+Rad -30%,2001-05-01,Crop N uptake,53.0896553
+Rad -30%,2001-05-01,N leaching,0.06418758
+Rad -30%,2001-06-01,Biological N fixation,0
+Rad -30%,2001-06-01,Mineralisation,38.15168
+Rad -30%,2001-06-01,Crop N uptake,82.12243
+Rad -30%,2001-06-01,N leaching,0.04677969
+Rad -30%,2001-07-01,Biological N fixation,0
+Rad -30%,2001-07-01,Mineralisation,40.74069
+Rad -30%,2001-07-01,Crop N uptake,40.3895
+Rad -30%,2001-07-01,N leaching,0.02847509
+Rad -30%,2001-08-01,Biological N fixation,0
+Rad -30%,2001-08-01,Mineralisation,34.175245000000004
+Rad -30%,2001-08-01,Crop N uptake,37.1056
+Rad -30%,2001-08-01,N leaching,0.016603785
+Rad -30%,2001-09-01,Biological N fixation,0
+Rad -30%,2001-09-01,Mineralisation,22.830638
+Rad -30%,2001-09-01,Crop N uptake,26.543582
+Rad -30%,2001-09-01,N leaching,0.0091
+Rad -30%,2001-10-01,Biological N fixation,0
+Rad -30%,2001-10-01,Mineralisation,20.422436
+Rad -30%,2001-10-01,Crop N uptake,19.304629
+Rad -30%,2001-10-01,N leaching,0.005973629
+Rad -30%,2001-11-01,Biological N fixation,0
+Rad -30%,2001-11-01,Mineralisation,9.833981
+Rad -30%,2001-11-01,Crop N uptake,10.178773
+Rad -30%,2001-11-01,N leaching,0.005494318
+Rad -30%,2001-12-01,Biological N fixation,0
+Rad -30%,2001-12-01,Mineralisation,3.24716053
+Rad -30%,2001-12-01,Crop N uptake,2.7859949
+Rad -30%,2001-12-01,N leaching,0.016048832
+Rad -30%,2002-01-01,Biological N fixation,0
+Rad -30%,2002-01-01,Mineralisation,3.582272321
+Rad -30%,2002-01-01,Crop N uptake,9.21616e-4
+Rad -30%,2002-01-01,N leaching,0.026718325
+Rad -30%,2002-02-01,Biological N fixation,0
+Rad -30%,2002-02-01,Mineralisation,4.9856023
+Rad -30%,2002-02-01,Crop N uptake,0.060287396
+Rad -30%,2002-02-01,N leaching,0.066949351
+Rad -30%,2002-03-01,Biological N fixation,0
+Rad -30%,2002-03-01,Mineralisation,3.8288701
+Rad -30%,2002-03-01,Crop N uptake,0.17489082
+Rad -30%,2002-03-01,N leaching,0.036431928
+Rad -30%,2002-04-01,Biological N fixation,0
+Rad -30%,2002-04-01,Mineralisation,7.177547
+Rad -30%,2002-04-01,Crop N uptake,0.50416863
+Rad -30%,2002-04-01,N leaching,0.014394284
+Rad -30%,2002-05-01,Biological N fixation,0
+Rad -30%,2002-05-01,Mineralisation,-4.6469389
+Rad -30%,2002-05-01,Crop N uptake,0.5338404
+Rad -30%,2002-05-01,N leaching,0.006317224
+Rad -30%,2002-06-01,Biological N fixation,12.175984
+Rad -30%,2002-06-01,Mineralisation,10.169488
+Rad -30%,2002-06-01,Crop N uptake,19.391796
+Rad -30%,2002-06-01,N leaching,0.003936717
+Rad -30%,2002-07-01,Biological N fixation,78.26237
+Rad -30%,2002-07-01,Mineralisation,14.011016
+Rad -30%,2002-07-01,Crop N uptake,8.145551
+Rad -30%,2002-07-01,N leaching,0.0032607738
+Rad -30%,2002-08-01,Biological N fixation,13.22486722
+Rad -30%,2002-08-01,Mineralisation,19.17334
+Rad -30%,2002-08-01,Crop N uptake,10.0660703
+Rad -30%,2002-08-01,N leaching,0.004886434
+Rad -30%,2002-09-01,Biological N fixation,0
+Rad -30%,2002-09-01,Mineralisation,28.066192
+Rad -30%,2002-09-01,Crop N uptake,0
+Rad -30%,2002-09-01,N leaching,0.0034459159
+Rad -30%,2002-10-01,Biological N fixation,0
+Rad -30%,2002-10-01,Mineralisation,19.161272
+Rad -30%,2002-10-01,Crop N uptake,0
+Rad -30%,2002-10-01,N leaching,0.0021984538
+Rad -30%,2002-11-01,Biological N fixation,0
+Rad -30%,2002-11-01,Mineralisation,11.625527
+Rad -30%,2002-11-01,Crop N uptake,0
+Rad -30%,2002-11-01,N leaching,0.0013808032
+Rad -30%,2002-12-01,Biological N fixation,0
+Rad -30%,2002-12-01,Mineralisation,3.2034480000000003
+Rad -30%,2002-12-01,Crop N uptake,0
+Rad -30%,2002-12-01,N leaching,0.0040203247
+Rad -30%,2003-01-01,Biological N fixation,0
+Rad -30%,2003-01-01,Mineralisation,4.9989781027
+Rad -30%,2003-01-01,Crop N uptake,0
+Rad -30%,2003-01-01,N leaching,0.006381899
+Rad -30%,2003-02-01,Biological N fixation,0
+Rad -30%,2003-02-01,Mineralisation,0.13021477965592881
+Rad -30%,2003-02-01,Crop N uptake,0
+Rad -30%,2003-02-01,N leaching,0.009588137
+Rad -30%,2003-03-01,Biological N fixation,0
+Rad -30%,2003-03-01,Mineralisation,5.476420370000843
+Rad -30%,2003-03-01,Crop N uptake,0
+Rad -30%,2003-03-01,N leaching,0.023432393
+Rad -30%,2003-04-01,Biological N fixation,0
+Rad -30%,2003-04-01,Mineralisation,12.0775431
+Rad -30%,2003-04-01,Crop N uptake,0.255033
+Rad -30%,2003-04-01,N leaching,0.037599336
+Rad -30%,2003-05-01,Biological N fixation,0
+Rad -30%,2003-05-01,Mineralisation,22.10144
+Rad -30%,2003-05-01,Crop N uptake,7.4204122
+Rad -30%,2003-05-01,N leaching,0.05299654
+Rad -30%,2003-06-01,Biological N fixation,0
+Rad -30%,2003-06-01,Mineralisation,29.193945
+Rad -30%,2003-06-01,Crop N uptake,16.26181042
+Rad -30%,2003-06-01,N leaching,0.20638256
+Rad -30%,2003-07-01,Biological N fixation,0
+Rad -30%,2003-07-01,Mineralisation,31.597417
+Rad -30%,2003-07-01,Crop N uptake,27.023247
+Rad -30%,2003-07-01,N leaching,0.5723614
+Rad -30%,2003-08-01,Biological N fixation,0
+Rad -30%,2003-08-01,Mineralisation,26.555182
+Rad -30%,2003-08-01,Crop N uptake,7.368565
+Rad -30%,2003-08-01,N leaching,0.8644251
+Rad -30%,2003-09-01,Biological N fixation,0
+Rad -30%,2003-09-01,Mineralisation,19.416182
+Rad -30%,2003-09-01,Crop N uptake,5.3487523
+Rad -30%,2003-09-01,N leaching,0.7514487
+Rad -30%,2003-10-01,Biological N fixation,0
+Rad -30%,2003-10-01,Mineralisation,11.684884
+Rad -30%,2003-10-01,Crop N uptake,4.700400725
+Rad -30%,2003-10-01,N leaching,0.6308783
+Rad -30%,2003-11-01,Biological N fixation,0
+Rad -30%,2003-11-01,Mineralisation,9.173132
+Rad -30%,2003-11-01,Crop N uptake,1.061386
+Rad -30%,2003-11-01,N leaching,0.5562148
+Rad -30%,2003-12-01,Biological N fixation,0
+Rad -30%,2003-12-01,Mineralisation,6.2735908
+Rad -30%,2003-12-01,Crop N uptake,0.084846402
+Rad -30%,2003-12-01,N leaching,1.4920549
+Rad -30%,2004-01-01,Biological N fixation,0
+Rad -30%,2004-01-01,Mineralisation,0.6753160463
+Rad -30%,2004-01-01,Crop N uptake,0.200175
+Rad -30%,2004-01-01,N leaching,5.2501354000000005
+Rad -30%,2004-02-01,Biological N fixation,0
+Rad -30%,2004-02-01,Mineralisation,2.1767236159
+Rad -30%,2004-02-01,Crop N uptake,1.3034849
+Rad -30%,2004-02-01,N leaching,8.108104
+Rad -30%,2004-03-01,Biological N fixation,0
+Rad -30%,2004-03-01,Mineralisation,3.03281792496
+Rad -30%,2004-03-01,Crop N uptake,4.14411202
+Rad -30%,2004-03-01,N leaching,5.061676
+Rad -30%,2004-04-01,Biological N fixation,0
+Rad -30%,2004-04-01,Mineralisation,7.093676
+Rad -30%,2004-04-01,Crop N uptake,26.89415
+Rad -30%,2004-04-01,N leaching,5.211499
+Rad -30%,2004-05-01,Biological N fixation,0
+Rad -30%,2004-05-01,Mineralisation,11.332736
+Rad -30%,2004-05-01,Crop N uptake,111.15453
+Rad -30%,2004-05-01,N leaching,7.092112
+Rad -30%,2004-06-01,Biological N fixation,0.29129478
+Rad -30%,2004-06-01,Mineralisation,8.016754
+Rad -30%,2004-06-01,Crop N uptake,44.955286
+Rad -30%,2004-06-01,N leaching,5.024639
+Rad -30%,2004-07-01,Biological N fixation,2.009707074
+Rad -30%,2004-07-01,Mineralisation,20.6485
+Rad -30%,2004-07-01,Crop N uptake,24.699443
+Rad -30%,2004-07-01,N leaching,2.9576972
+Rad -30%,2004-08-01,Biological N fixation,7.67301924464
+Rad -30%,2004-08-01,Mineralisation,36.695972
+Rad -30%,2004-08-01,Crop N uptake,35.019324
+Rad -30%,2004-08-01,N leaching,2.587113
+Rad -30%,2004-09-01,Biological N fixation,0.0882445952
+Rad -30%,2004-09-01,Mineralisation,29.383484
+Rad -30%,2004-09-01,Crop N uptake,30.318186
+Rad -30%,2004-09-01,N leaching,2.3427232
+Rad -30%,2004-10-01,Biological N fixation,0
+Rad -30%,2004-10-01,Mineralisation,21.809522
+Rad -30%,2004-10-01,Crop N uptake,24.119761
+Rad -30%,2004-10-01,N leaching,1.7888452
+Rad -30%,2004-11-01,Biological N fixation,0
+Rad -30%,2004-11-01,Mineralisation,11.664101
+Rad -30%,2004-11-01,Crop N uptake,12.695423
+Rad -30%,2004-11-01,N leaching,9.6553005
+Rad -30%,2004-12-01,Biological N fixation,0
+Rad -30%,2004-12-01,Mineralisation,7.8012021
+Rad -30%,2004-12-01,Crop N uptake,8.516385
+Rad -30%,2004-12-01,N leaching,11.509511
+Rad 0%,1998-01-01,Biological N fixation,0
+Rad 0%,1998-01-01,Mineralisation,1.73326332
+Rad 0%,1998-01-01,Crop N uptake,0
+Rad 0%,1998-01-01,N leaching,0.0649029
+Rad 0%,1998-02-01,Biological N fixation,0
+Rad 0%,1998-02-01,Mineralisation,1.995782984
+Rad 0%,1998-02-01,Crop N uptake,0
+Rad 0%,1998-02-01,N leaching,0.04903287
+Rad 0%,1998-03-01,Biological N fixation,0
+Rad 0%,1998-03-01,Mineralisation,1.22879744
+Rad 0%,1998-03-01,Crop N uptake,1.337409842
+Rad 0%,1998-03-01,N leaching,0.04957275
+Rad 0%,1998-04-01,Biological N fixation,0
+Rad 0%,1998-04-01,Mineralisation,-9.8120446
+Rad 0%,1998-04-01,Crop N uptake,1.9494444
+Rad 0%,1998-04-01,N leaching,0.047586
+Rad 0%,1998-05-01,Biological N fixation,0
+Rad 0%,1998-05-01,Mineralisation,4.6476896000000005
+Rad 0%,1998-05-01,Crop N uptake,12.566346
+Rad 0%,1998-05-01,N leaching,0.0527413
+Rad 0%,1998-06-01,Biological N fixation,0
+Rad 0%,1998-06-01,Mineralisation,24.977155
+Rad 0%,1998-06-01,Crop N uptake,28.248418
+Rad 0%,1998-06-01,N leaching,0.05670361
+Rad 0%,1998-07-01,Biological N fixation,0
+Rad 0%,1998-07-01,Mineralisation,35.420167
+Rad 0%,1998-07-01,Crop N uptake,35.836737
+Rad 0%,1998-07-01,N leaching,0.06518142
+Rad 0%,1998-08-01,Biological N fixation,0
+Rad 0%,1998-08-01,Mineralisation,30.746406
+Rad 0%,1998-08-01,Crop N uptake,12.707432
+Rad 0%,1998-08-01,N leaching,0.07116973
+Rad 0%,1998-09-01,Biological N fixation,0
+Rad 0%,1998-09-01,Mineralisation,24.80905
+Rad 0%,1998-09-01,Crop N uptake,5.946534
+Rad 0%,1998-09-01,N leaching,0.07207473
+Rad 0%,1998-10-01,Biological N fixation,0
+Rad 0%,1998-10-01,Mineralisation,18.240556
+Rad 0%,1998-10-01,Crop N uptake,7.7790527
+Rad 0%,1998-10-01,N leaching,0.08658393
+Rad 0%,1998-11-01,Biological N fixation,0
+Rad 0%,1998-11-01,Mineralisation,5.5386902
+Rad 0%,1998-11-01,Crop N uptake,0.8515199851999999
+Rad 0%,1998-11-01,N leaching,4.54112458
+Rad 0%,1998-12-01,Biological N fixation,0
+Rad 0%,1998-12-01,Mineralisation,4.07545283
+Rad 0%,1998-12-01,Crop N uptake,0.3522629
+Rad 0%,1998-12-01,N leaching,2.4717188
+Rad 0%,1999-01-01,Biological N fixation,0
+Rad 0%,1999-01-01,Mineralisation,5.61642942
+Rad 0%,1999-01-01,Crop N uptake,0.57575743
+Rad 0%,1999-01-01,N leaching,2.0339734
+Rad 0%,1999-02-01,Biological N fixation,0
+Rad 0%,1999-02-01,Mineralisation,2.192522447
+Rad 0%,1999-02-01,Crop N uptake,1.6303949
+Rad 0%,1999-02-01,N leaching,2.1801275
+Rad 0%,1999-03-01,Biological N fixation,0
+Rad 0%,1999-03-01,Mineralisation,4.49267494
+Rad 0%,1999-03-01,Crop N uptake,4.70915315
+Rad 0%,1999-03-01,N leaching,2.1497182
+Rad 0%,1999-04-01,Biological N fixation,0.62973
+Rad 0%,1999-04-01,Mineralisation,9.981687
+Rad 0%,1999-04-01,Crop N uptake,49.442075
+Rad 0%,1999-04-01,N leaching,1.8727662
+Rad 0%,1999-05-01,Biological N fixation,0.12487901
+Rad 0%,1999-05-01,Mineralisation,11.266564
+Rad 0%,1999-05-01,Crop N uptake,71.24712099999999
+Rad 0%,1999-05-01,N leaching,1.1674408
+Rad 0%,1999-06-01,Biological N fixation,2.457444178
+Rad 0%,1999-06-01,Mineralisation,13.443297
+Rad 0%,1999-06-01,Crop N uptake,36.132951
+Rad 0%,1999-06-01,N leaching,0.6226769
+Rad 0%,1999-07-01,Biological N fixation,4.327905186
+Rad 0%,1999-07-01,Mineralisation,28.908093
+Rad 0%,1999-07-01,Crop N uptake,29.681072
+Rad 0%,1999-07-01,N leaching,0.4450309
+Rad 0%,1999-08-01,Biological N fixation,17.599806
+Rad 0%,1999-08-01,Mineralisation,33.204398
+Rad 0%,1999-08-01,Crop N uptake,31.644813
+Rad 0%,1999-08-01,N leaching,0.4919671
+Rad 0%,1999-09-01,Biological N fixation,58.486373
+Rad 0%,1999-09-01,Mineralisation,37.46419
+Rad 0%,1999-09-01,Crop N uptake,36.109735
+Rad 0%,1999-09-01,N leaching,0.33548168
+Rad 0%,1999-10-01,Biological N fixation,20.22793727
+Rad 0%,1999-10-01,Mineralisation,30.812526
+Rad 0%,1999-10-01,Crop N uptake,30.499964000000002
+Rad 0%,1999-10-01,N leaching,0.22610333
+Rad 0%,1999-11-01,Biological N fixation,0.638530939
+Rad 0%,1999-11-01,Mineralisation,19.705504
+Rad 0%,1999-11-01,Crop N uptake,3.9495226999999997
+Rad 0%,1999-11-01,N leaching,0.17657846
+Rad 0%,1999-12-01,Biological N fixation,0
+Rad 0%,1999-12-01,Mineralisation,8.7325452
+Rad 0%,1999-12-01,Crop N uptake,0
+Rad 0%,1999-12-01,N leaching,0.27795369
+Rad 0%,2000-01-01,Biological N fixation,0
+Rad 0%,2000-01-01,Mineralisation,10.2976613
+Rad 0%,2000-01-01,Crop N uptake,0
+Rad 0%,2000-01-01,N leaching,2.1937625
+Rad 0%,2000-02-01,Biological N fixation,0
+Rad 0%,2000-02-01,Mineralisation,8.9976565
+Rad 0%,2000-02-01,Crop N uptake,0
+Rad 0%,2000-02-01,N leaching,1.6944754
+Rad 0%,2000-03-01,Biological N fixation,0
+Rad 0%,2000-03-01,Mineralisation,8.757068
+Rad 0%,2000-03-01,Crop N uptake,7.8310441
+Rad 0%,2000-03-01,N leaching,1.8228228
+Rad 0%,2000-04-01,Biological N fixation,24.071382825
+Rad 0%,2000-04-01,Mineralisation,15.417997
+Rad 0%,2000-04-01,Crop N uptake,30.161152
+Rad 0%,2000-04-01,N leaching,0.9635667
+Rad 0%,2000-05-01,Biological N fixation,142.81767
+Rad 0%,2000-05-01,Mineralisation,41.20996
+Rad 0%,2000-05-01,Crop N uptake,49.518591
+Rad 0%,2000-05-01,N leaching,0.5448346
+Rad 0%,2000-06-01,Biological N fixation,117.33243
+Rad 0%,2000-06-01,Mineralisation,56.99083
+Rad 0%,2000-06-01,Crop N uptake,75.89274
+Rad 0%,2000-06-01,N leaching,0.31914311
+Rad 0%,2000-07-01,Biological N fixation,126.38024
+Rad 0%,2000-07-01,Mineralisation,65.22262
+Rad 0%,2000-07-01,Crop N uptake,96.33824
+Rad 0%,2000-07-01,N leaching,0.20805692
+Rad 0%,2000-08-01,Biological N fixation,61.041702
+Rad 0%,2000-08-01,Mineralisation,56.4571
+Rad 0%,2000-08-01,Crop N uptake,108.91613
+Rad 0%,2000-08-01,N leaching,0.14295174
+Rad 0%,2000-09-01,Biological N fixation,33.8118109
+Rad 0%,2000-09-01,Mineralisation,50.319160000000004
+Rad 0%,2000-09-01,Crop N uptake,55.03743
+Rad 0%,2000-09-01,N leaching,0.09657606
+Rad 0%,2000-10-01,Biological N fixation,17.7965357
+Rad 0%,2000-10-01,Mineralisation,43.30966
+Rad 0%,2000-10-01,Crop N uptake,47.22996
+Rad 0%,2000-10-01,N leaching,0.06990366
+Rad 0%,2000-11-01,Biological N fixation,0
+Rad 0%,2000-11-01,Mineralisation,23.890584
+Rad 0%,2000-11-01,Crop N uptake,17.752882
+Rad 0%,2000-11-01,N leaching,0.04864334
+Rad 0%,2000-12-01,Biological N fixation,0
+Rad 0%,2000-12-01,Mineralisation,18.7427815
+Rad 0%,2000-12-01,Crop N uptake,0
+Rad 0%,2000-12-01,N leaching,0.05239028
+Rad 0%,2001-01-01,Biological N fixation,0
+Rad 0%,2001-01-01,Mineralisation,7.0457927
+Rad 0%,2001-01-01,Crop N uptake,0
+Rad 0%,2001-01-01,N leaching,0.74565454
+Rad 0%,2001-02-01,Biological N fixation,0
+Rad 0%,2001-02-01,Mineralisation,4.309998917
+Rad 0%,2001-02-01,Crop N uptake,0
+Rad 0%,2001-02-01,N leaching,0.6130512
+Rad 0%,2001-03-01,Biological N fixation,0
+Rad 0%,2001-03-01,Mineralisation,4.712904843990631
+Rad 0%,2001-03-01,Crop N uptake,0
+Rad 0%,2001-03-01,N leaching,0.6337178
+Rad 0%,2001-04-01,Biological N fixation,0
+Rad 0%,2001-04-01,Mineralisation,30.025252
+Rad 0%,2001-04-01,Crop N uptake,0.0973395
+Rad 0%,2001-04-01,N leaching,0.4235316
+Rad 0%,2001-05-01,Biological N fixation,0
+Rad 0%,2001-05-01,Mineralisation,58.258700000000005
+Rad 0%,2001-05-01,Crop N uptake,66.4087584
+Rad 0%,2001-05-01,N leaching,0.4280891
+Rad 0%,2001-06-01,Biological N fixation,0
+Rad 0%,2001-06-01,Mineralisation,52.31782
+Rad 0%,2001-06-01,Crop N uptake,109.39459
+Rad 0%,2001-06-01,N leaching,0.36650579
+Rad 0%,2001-07-01,Biological N fixation,0
+Rad 0%,2001-07-01,Mineralisation,51.52631
+Rad 0%,2001-07-01,Crop N uptake,68.37102
+Rad 0%,2001-07-01,N leaching,0.22817277
+Rad 0%,2001-08-01,Biological N fixation,0
+Rad 0%,2001-08-01,Mineralisation,39.82487
+Rad 0%,2001-08-01,Crop N uptake,46.58108
+Rad 0%,2001-08-01,N leaching,0.12281871999999999
+Rad 0%,2001-09-01,Biological N fixation,0
+Rad 0%,2001-09-01,Mineralisation,27.815995
+Rad 0%,2001-09-01,Crop N uptake,33.32996
+Rad 0%,2001-09-01,N leaching,0.06095806
+Rad 0%,2001-10-01,Biological N fixation,0
+Rad 0%,2001-10-01,Mineralisation,27.017723
+Rad 0%,2001-10-01,Crop N uptake,27.22773
+Rad 0%,2001-10-01,N leaching,0.037680679
+Rad 0%,2001-11-01,Biological N fixation,0
+Rad 0%,2001-11-01,Mineralisation,12.76559
+Rad 0%,2001-11-01,Crop N uptake,10.922629
+Rad 0%,2001-11-01,N leaching,0.02402996
+Rad 0%,2001-12-01,Biological N fixation,0
+Rad 0%,2001-12-01,Mineralisation,4.17094151
+Rad 0%,2001-12-01,Crop N uptake,0
+Rad 0%,2001-12-01,N leaching,0.017625848
+Rad 0%,2002-01-01,Biological N fixation,0
+Rad 0%,2002-01-01,Mineralisation,4.617758075
+Rad 0%,2002-01-01,Crop N uptake,0
+Rad 0%,2002-01-01,N leaching,0.014227688
+Rad 0%,2002-02-01,Biological N fixation,0
+Rad 0%,2002-02-01,Mineralisation,6.4279226
+Rad 0%,2002-02-01,Crop N uptake,0.02265239
+Rad 0%,2002-02-01,N leaching,0.364233659
+Rad 0%,2002-03-01,Biological N fixation,0
+Rad 0%,2002-03-01,Mineralisation,4.9308194
+Rad 0%,2002-03-01,Crop N uptake,0.12095819000000001
+Rad 0%,2002-03-01,N leaching,0.7729517
+Rad 0%,2002-04-01,Biological N fixation,0
+Rad 0%,2002-04-01,Mineralisation,9.204366
+Rad 0%,2002-04-01,Crop N uptake,0.68377082
+Rad 0%,2002-04-01,N leaching,0.34005093000000003
+Rad 0%,2002-05-01,Biological N fixation,0
+Rad 0%,2002-05-01,Mineralisation,-3.6943976999999997
+Rad 0%,2002-05-01,Crop N uptake,0.7993974
+Rad 0%,2002-05-01,N leaching,0.15623606
+Rad 0%,2002-06-01,Biological N fixation,35.08894754
+Rad 0%,2002-06-01,Mineralisation,11.432837
+Rad 0%,2002-06-01,Crop N uptake,25.477165
+Rad 0%,2002-06-01,N leaching,0.09559508
+Rad 0%,2002-07-01,Biological N fixation,83.1547326
+Rad 0%,2002-07-01,Mineralisation,16.086405
+Rad 0%,2002-07-01,Crop N uptake,13.6810553
+Rad 0%,2002-07-01,N leaching,0.06972075999999999
+Rad 0%,2002-08-01,Biological N fixation,19.32741905
+Rad 0%,2002-08-01,Mineralisation,16.809838
+Rad 0%,2002-08-01,Crop N uptake,14.8874013
+Rad 0%,2002-08-01,N leaching,0.05524565
+Rad 0%,2002-09-01,Biological N fixation,0
+Rad 0%,2002-09-01,Mineralisation,6.8364196
+Rad 0%,2002-09-01,Crop N uptake,0.5634916
+Rad 0%,2002-09-01,N leaching,0.04211085
+Rad 0%,2002-10-01,Biological N fixation,0
+Rad 0%,2002-10-01,Mineralisation,16.291383
+Rad 0%,2002-10-01,Crop N uptake,0
+Rad 0%,2002-10-01,N leaching,0.030002977
+Rad 0%,2002-11-01,Biological N fixation,0
+Rad 0%,2002-11-01,Mineralisation,13.682831
+Rad 0%,2002-11-01,Crop N uptake,0
+Rad 0%,2002-11-01,N leaching,0.019976694
+Rad 0%,2002-12-01,Biological N fixation,0
+Rad 0%,2002-12-01,Mineralisation,3.9114651
+Rad 0%,2002-12-01,Crop N uptake,0
+Rad 0%,2002-12-01,N leaching,0.014973449
+Rad 0%,2003-01-01,Biological N fixation,0
+Rad 0%,2003-01-01,Mineralisation,6.34115261848
+Rad 0%,2003-01-01,Crop N uptake,0
+Rad 0%,2003-01-01,N leaching,0.015756319
+Rad 0%,2003-02-01,Biological N fixation,0
+Rad 0%,2003-02-01,Mineralisation,0.15941258483905185
+Rad 0%,2003-02-01,Crop N uptake,0
+Rad 0%,2003-02-01,N leaching,0.060704896
+Rad 0%,2003-03-01,Biological N fixation,0
+Rad 0%,2003-03-01,Mineralisation,7.165480830000875
+Rad 0%,2003-03-01,Crop N uptake,0
+Rad 0%,2003-03-01,N leaching,0.16064503
+Rad 0%,2003-04-01,Biological N fixation,0
+Rad 0%,2003-04-01,Mineralisation,16.1146367
+Rad 0%,2003-04-01,Crop N uptake,2.3549488
+Rad 0%,2003-04-01,N leaching,0.11123684
+Rad 0%,2003-05-01,Biological N fixation,0
+Rad 0%,2003-05-01,Mineralisation,29.506164
+Rad 0%,2003-05-01,Crop N uptake,13.897949
+Rad 0%,2003-05-01,N leaching,0.08780464
+Rad 0%,2003-06-01,Biological N fixation,0
+Rad 0%,2003-06-01,Mineralisation,37.82808
+Rad 0%,2003-06-01,Crop N uptake,39.616
+Rad 0%,2003-06-01,N leaching,0.09952353
+Rad 0%,2003-07-01,Biological N fixation,0
+Rad 0%,2003-07-01,Mineralisation,39.22925
+Rad 0%,2003-07-01,Crop N uptake,66.42852
+Rad 0%,2003-07-01,N leaching,0.14765797
+Rad 0%,2003-08-01,Biological N fixation,0
+Rad 0%,2003-08-01,Mineralisation,30.592129
+Rad 0%,2003-08-01,Crop N uptake,15.052491
+Rad 0%,2003-08-01,N leaching,0.16538239999999998
+Rad 0%,2003-09-01,Biological N fixation,0
+Rad 0%,2003-09-01,Mineralisation,22.701123
+Rad 0%,2003-09-01,Crop N uptake,8.1808745
+Rad 0%,2003-09-01,N leaching,0.14357612
+Rad 0%,2003-10-01,Biological N fixation,0
+Rad 0%,2003-10-01,Mineralisation,14.101755
+Rad 0%,2003-10-01,Crop N uptake,8.031979
+Rad 0%,2003-10-01,N leaching,0.11810725
+Rad 0%,2003-11-01,Biological N fixation,0
+Rad 0%,2003-11-01,Mineralisation,11.119014
+Rad 0%,2003-11-01,Crop N uptake,2.32236295
+Rad 0%,2003-11-01,N leaching,0.09197158
+Rad 0%,2003-12-01,Biological N fixation,0
+Rad 0%,2003-12-01,Mineralisation,7.5849697
+Rad 0%,2003-12-01,Crop N uptake,0.15031124
+Rad 0%,2003-12-01,N leaching,0.08849923
+Rad 0%,2004-01-01,Biological N fixation,0
+Rad 0%,2004-01-01,Mineralisation,0.8215625504
+Rad 0%,2004-01-01,Crop N uptake,0.400435
+Rad 0%,2004-01-01,N leaching,0.67968333
+Rad 0%,2004-02-01,Biological N fixation,0
+Rad 0%,2004-02-01,Mineralisation,2.6816375369
+Rad 0%,2004-02-01,Crop N uptake,1.866542
+Rad 0%,2004-02-01,N leaching,2.5491767
+Rad 0%,2004-03-01,Biological N fixation,0
+Rad 0%,2004-03-01,Mineralisation,3.73601381841
+Rad 0%,2004-03-01,Crop N uptake,5.201463
+Rad 0%,2004-03-01,N leaching,1.9211955
+Rad 0%,2004-04-01,Biological N fixation,0
+Rad 0%,2004-04-01,Mineralisation,8.742652
+Rad 0%,2004-04-01,Crop N uptake,34.355315
+Rad 0%,2004-04-01,N leaching,1.9062623
+Rad 0%,2004-05-01,Biological N fixation,0
+Rad 0%,2004-05-01,Mineralisation,13.69567
+Rad 0%,2004-05-01,Crop N uptake,122.58113
+Rad 0%,2004-05-01,N leaching,2.5640394
+Rad 0%,2004-06-01,Biological N fixation,0.8505921999999999
+Rad 0%,2004-06-01,Mineralisation,9.321178
+Rad 0%,2004-06-01,Crop N uptake,45.356633
+Rad 0%,2004-06-01,N leaching,2.0286775
+Rad 0%,2004-07-01,Biological N fixation,2.974749601
+Rad 0%,2004-07-01,Mineralisation,23.72792
+Rad 0%,2004-07-01,Crop N uptake,28.841897
+Rad 0%,2004-07-01,N leaching,1.265738
+Rad 0%,2004-08-01,Biological N fixation,12.9115217
+Rad 0%,2004-08-01,Mineralisation,39.527402
+Rad 0%,2004-08-01,Crop N uptake,37.621055
+Rad 0%,2004-08-01,N leaching,0.8651426
+Rad 0%,2004-09-01,Biological N fixation,47.712352
+Rad 0%,2004-09-01,Mineralisation,38.16542
+Rad 0%,2004-09-01,Crop N uptake,39.55604
+Rad 0%,2004-09-01,N leaching,0.6454223
+Rad 0%,2004-10-01,Biological N fixation,17.84580503
+Rad 0%,2004-10-01,Mineralisation,31.240784
+Rad 0%,2004-10-01,Crop N uptake,35.834736
+Rad 0%,2004-10-01,N leaching,0.4919753
+Rad 0%,2004-11-01,Biological N fixation,0.02923229
+Rad 0%,2004-11-01,Mineralisation,17.931812999999998
+Rad 0%,2004-11-01,Crop N uptake,10.49356
+Rad 0%,2004-11-01,N leaching,0.3583909
+Rad 0%,2004-12-01,Biological N fixation,0
+Rad 0%,2004-12-01,Mineralisation,14.426746
+Rad 0%,2004-12-01,Crop N uptake,0
+Rad 0%,2004-12-01,N leaching,0.9533211
+Reference,1998-01-01,Biological N fixation,0
+Reference,1998-01-01,Mineralisation,1.73050637
+Reference,1998-01-01,Crop N uptake,0.032025235
+Reference,1998-01-01,N leaching,0.06290795
+Reference,1998-02-01,Biological N fixation,0
+Reference,1998-02-01,Mineralisation,1.989610246
+Reference,1998-02-01,Crop N uptake,1.33043299
+Reference,1998-02-01,N leaching,0.04686561
+Reference,1998-03-01,Biological N fixation,0
+Reference,1998-03-01,Mineralisation,1.16343389
+Reference,1998-03-01,Crop N uptake,2.002551854
+Reference,1998-03-01,N leaching,0.04626926
+Reference,1998-04-01,Biological N fixation,0
+Reference,1998-04-01,Mineralisation,-15.66633526
+Reference,1998-04-01,Crop N uptake,3.3799396
+Reference,1998-04-01,N leaching,0.04294925
+Reference,1998-05-01,Biological N fixation,0
+Reference,1998-05-01,Mineralisation,3.4257097
+Reference,1998-05-01,Crop N uptake,15.824238
+Reference,1998-05-01,N leaching,0.04566811
+Reference,1998-06-01,Biological N fixation,0
+Reference,1998-06-01,Mineralisation,18.603494
+Reference,1998-06-01,Crop N uptake,16.463597
+Reference,1998-06-01,N leaching,0.04691419
+Reference,1998-07-01,Biological N fixation,0
+Reference,1998-07-01,Mineralisation,29.872399
+Reference,1998-07-01,Crop N uptake,29.689344
+Reference,1998-07-01,N leaching,0.05133779
+Reference,1998-08-01,Biological N fixation,0
+Reference,1998-08-01,Mineralisation,28.547926999999998
+Reference,1998-08-01,Crop N uptake,12.677458
+Reference,1998-08-01,N leaching,0.05269651
+Reference,1998-09-01,Biological N fixation,0
+Reference,1998-09-01,Mineralisation,26.001704
+Reference,1998-09-01,Crop N uptake,8.0668472
+Reference,1998-09-01,N leaching,0.04916789
+Reference,1998-10-01,Biological N fixation,0
+Reference,1998-10-01,Mineralisation,20.661004
+Reference,1998-10-01,Crop N uptake,12.383622
+Reference,1998-10-01,N leaching,0.04624703
+Reference,1998-11-01,Biological N fixation,0
+Reference,1998-11-01,Mineralisation,6.0965
+Reference,1998-11-01,Crop N uptake,1.62375476
+Reference,1998-11-01,N leaching,0.06329161999999999
+Reference,1998-12-01,Biological N fixation,0
+Reference,1998-12-01,Mineralisation,4.55711974
+Reference,1998-12-01,Crop N uptake,0.690515
+Reference,1998-12-01,N leaching,1.15999435
+Reference,1999-01-01,Biological N fixation,0
+Reference,1999-01-01,Mineralisation,6.26113166
+Reference,1999-01-01,Crop N uptake,1.09276514
+Reference,1999-01-01,N leaching,2.2950969
+Reference,1999-02-01,Biological N fixation,0
+Reference,1999-02-01,Mineralisation,2.444161265
+Reference,1999-02-01,Crop N uptake,2.22216
+Reference,1999-02-01,N leaching,2.8393624
+Reference,1999-03-01,Biological N fixation,0
+Reference,1999-03-01,Mineralisation,5.0192506
+Reference,1999-03-01,Crop N uptake,7.4132658
+Reference,1999-03-01,N leaching,2.862265
+Reference,1999-04-01,Biological N fixation,1.56679864
+Reference,1999-04-01,Mineralisation,10.924672
+Reference,1999-04-01,Crop N uptake,72.690351
+Reference,1999-04-01,N leaching,2.6152688
+Reference,1999-05-01,Biological N fixation,1.45650718
+Reference,1999-05-01,Mineralisation,9.458906
+Reference,1999-05-01,Crop N uptake,50.287592
+Reference,1999-05-01,N leaching,1.5324739
+Reference,1999-06-01,Biological N fixation,4.704551446
+Reference,1999-06-01,Mineralisation,16.083146
+Reference,1999-06-01,Crop N uptake,37.278874
+Reference,1999-06-01,N leaching,0.8196771
+Reference,1999-07-01,Biological N fixation,3.8047663
+Reference,1999-07-01,Mineralisation,29.862279
+Reference,1999-07-01,Crop N uptake,32.787307
+Reference,1999-07-01,N leaching,0.5214378
+Reference,1999-08-01,Biological N fixation,38.914338
+Reference,1999-08-01,Mineralisation,33.222901
+Reference,1999-08-01,Crop N uptake,30.915247
+Reference,1999-08-01,N leaching,0.4067625
+Reference,1999-09-01,Biological N fixation,91.66550720000001
+Reference,1999-09-01,Mineralisation,38.47397
+Reference,1999-09-01,Crop N uptake,37.74779
+Reference,1999-09-01,N leaching,0.28834302
+Reference,1999-10-01,Biological N fixation,24.97781385
+Reference,1999-10-01,Mineralisation,33.674513
+Reference,1999-10-01,Crop N uptake,34.181584
+Reference,1999-10-01,N leaching,0.19919022
+Reference,1999-11-01,Biological N fixation,0.93632472
+Reference,1999-11-01,Mineralisation,21.763852
+Reference,1999-11-01,Crop N uptake,5.5293058
+Reference,1999-11-01,N leaching,0.13111193
+Reference,1999-12-01,Biological N fixation,0
+Reference,1999-12-01,Mineralisation,9.726139400000001
+Reference,1999-12-01,Crop N uptake,0
+Reference,1999-12-01,N leaching,0.10096678
+Reference,2000-01-01,Biological N fixation,0
+Reference,2000-01-01,Mineralisation,11.2927822
+Reference,2000-01-01,Crop N uptake,0
+Reference,2000-01-01,N leaching,0.4559275
+Reference,2000-02-01,Biological N fixation,0
+Reference,2000-02-01,Mineralisation,9.8366128
+Reference,2000-02-01,Crop N uptake,0.9009
+Reference,2000-02-01,N leaching,2.2074301
+Reference,2000-03-01,Biological N fixation,0
+Reference,2000-03-01,Mineralisation,9.579524
+Reference,2000-03-01,Crop N uptake,10.7500523
+Reference,2000-03-01,N leaching,2.6483832
+Reference,2000-04-01,Biological N fixation,30.2633641
+Reference,2000-04-01,Mineralisation,16.84572
+Reference,2000-04-01,Crop N uptake,32.425108
+Reference,2000-04-01,N leaching,1.4857947
+Reference,2000-05-01,Biological N fixation,166.39952
+Reference,2000-05-01,Mineralisation,44.59639
+Reference,2000-05-01,Crop N uptake,55.311619
+Reference,2000-05-01,N leaching,0.8431932
+Reference,2000-06-01,Biological N fixation,134.65765
+Reference,2000-06-01,Mineralisation,62.68704
+Reference,2000-06-01,Crop N uptake,89.76005
+Reference,2000-06-01,N leaching,0.4811968
+Reference,2000-07-01,Biological N fixation,107.78571
+Reference,2000-07-01,Mineralisation,64.83993
+Reference,2000-07-01,Crop N uptake,121.85571999999999
+Reference,2000-07-01,N leaching,0.30308875
+Reference,2000-08-01,Biological N fixation,87.879197
+Reference,2000-08-01,Mineralisation,53.94581
+Reference,2000-08-01,Crop N uptake,72.54053
+Reference,2000-08-01,N leaching,0.19556586
+Reference,2000-09-01,Biological N fixation,40.9685505
+Reference,2000-09-01,Mineralisation,50.25239
+Reference,2000-09-01,Crop N uptake,53.71253
+Reference,2000-09-01,N leaching,0.12624309
+Reference,2000-10-01,Biological N fixation,26.656153
+Reference,2000-10-01,Mineralisation,47.30237
+Reference,2000-10-01,Crop N uptake,51.74073
+Reference,2000-10-01,N leaching,0.0898772
+Reference,2000-11-01,Biological N fixation,0
+Reference,2000-11-01,Mineralisation,27.235713
+Reference,2000-11-01,Crop N uptake,26.757693
+Reference,2000-11-01,N leaching,0.06168193
+Reference,2000-12-01,Biological N fixation,0
+Reference,2000-12-01,Mineralisation,20.00786
+Reference,2000-12-01,Crop N uptake,0
+Reference,2000-12-01,N leaching,0.0469431
+Reference,2001-01-01,Biological N fixation,0
+Reference,2001-01-01,Mineralisation,7.3966605
+Reference,2001-01-01,Crop N uptake,0
+Reference,2001-01-01,N leaching,0.040996490000000003
+Reference,2001-02-01,Biological N fixation,0
+Reference,2001-02-01,Mineralisation,4.603699898
+Reference,2001-02-01,Crop N uptake,0
+Reference,2001-02-01,N leaching,0.18014737
+Reference,2001-03-01,Biological N fixation,0
+Reference,2001-03-01,Mineralisation,5.000405988449422
+Reference,2001-03-01,Crop N uptake,1.2293814
+Reference,2001-03-01,N leaching,0.8012552
+Reference,2001-04-01,Biological N fixation,0
+Reference,2001-04-01,Mineralisation,32.016083
+Reference,2001-04-01,Crop N uptake,0.2026659
+Reference,2001-04-01,N leaching,0.7048693
+Reference,2001-05-01,Biological N fixation,0
+Reference,2001-05-01,Mineralisation,63.44521
+Reference,2001-05-01,Crop N uptake,82.11510799999999
+Reference,2001-05-01,N leaching,0.6772159
+Reference,2001-06-01,Biological N fixation,0
+Reference,2001-06-01,Mineralisation,51.206967
+Reference,2001-06-01,Crop N uptake,95.858336
+Reference,2001-06-01,N leaching,0.6000362
+Reference,2001-07-01,Biological N fixation,0
+Reference,2001-07-01,Mineralisation,37.823365
+Reference,2001-07-01,Crop N uptake,11.897748
+Reference,2001-07-01,N leaching,0.38679298
+Reference,2001-08-01,Biological N fixation,0
+Reference,2001-08-01,Mineralisation,51.32917
+Reference,2001-08-01,Crop N uptake,16.216932
+Reference,2001-08-01,N leaching,0.23990113
+Reference,2001-09-01,Biological N fixation,0
+Reference,2001-09-01,Mineralisation,37.14869
+Reference,2001-09-01,Crop N uptake,7.03415898
+Reference,2001-09-01,N leaching,0.14952635
+Reference,2001-10-01,Biological N fixation,0
+Reference,2001-10-01,Mineralisation,34.398816
+Reference,2001-10-01,Crop N uptake,3.5822489
+Reference,2001-10-01,N leaching,0.10637494
+Reference,2001-11-01,Biological N fixation,0
+Reference,2001-11-01,Mineralisation,16.419482
+Reference,2001-11-01,Crop N uptake,1.13646885
+Reference,2001-11-01,N leaching,0.1094854
+Reference,2001-12-01,Biological N fixation,0
+Reference,2001-12-01,Mineralisation,5.4459971
+Reference,2001-12-01,Crop N uptake,0
+Reference,2001-12-01,N leaching,0.38531885
+Reference,2002-01-01,Biological N fixation,0
+Reference,2002-01-01,Mineralisation,5.976387896
+Reference,2002-01-01,Crop N uptake,0
+Reference,2002-01-01,N leaching,0.6683982
+Reference,2002-02-01,Biological N fixation,0
+Reference,2002-02-01,Mineralisation,8.099123
+Reference,2002-02-01,Crop N uptake,0.74986663
+Reference,2002-02-01,N leaching,2.1568417
+Reference,2002-03-01,Biological N fixation,0
+Reference,2002-03-01,Mineralisation,6.0003352
+Reference,2002-03-01,Crop N uptake,3.4963267499999997
+Reference,2002-03-01,N leaching,2.6902614
+Reference,2002-04-01,Biological N fixation,0
+Reference,2002-04-01,Mineralisation,10.697666
+Reference,2002-04-01,Crop N uptake,21.034928999999998
+Reference,2002-04-01,N leaching,2.3868608
+Reference,2002-05-01,Biological N fixation,0
+Reference,2002-05-01,Mineralisation,8.756687
+Reference,2002-05-01,Crop N uptake,21.374041000000002
+Reference,2002-05-01,N leaching,1.5860946
+Reference,2002-06-01,Biological N fixation,0.3244908
+Reference,2002-06-01,Mineralisation,26.314945
+Reference,2002-06-01,Crop N uptake,83.16171
+Reference,2002-06-01,N leaching,1.1488432
+Reference,2002-07-01,Biological N fixation,43.751515
+Reference,2002-07-01,Mineralisation,32.993321
+Reference,2002-07-01,Crop N uptake,41.734917
+Reference,2002-07-01,N leaching,0.9333621
+Reference,2002-08-01,Biological N fixation,16.19238022
+Reference,2002-08-01,Mineralisation,29.426736000000002
+Reference,2002-08-01,Crop N uptake,35.1811136
+Reference,2002-08-01,N leaching,0.7426704
+Reference,2002-09-01,Biological N fixation,0
+Reference,2002-09-01,Mineralisation,13.757623
+Reference,2002-09-01,Crop N uptake,0
+Reference,2002-09-01,N leaching,0.5490558
+Reference,2002-10-01,Biological N fixation,0
+Reference,2002-10-01,Mineralisation,11.215701
+Reference,2002-10-01,Crop N uptake,0
+Reference,2002-10-01,N leaching,0.4084561
+Reference,2002-11-01,Biological N fixation,0
+Reference,2002-11-01,Mineralisation,8.525185
+Reference,2002-11-01,Crop N uptake,0
+Reference,2002-11-01,N leaching,0.28691181
+Reference,2002-12-01,Biological N fixation,0
+Reference,2002-12-01,Mineralisation,2.6848791
+Reference,2002-12-01,Crop N uptake,0
+Reference,2002-12-01,N leaching,0.22237425
+Reference,2003-01-01,Biological N fixation,0
+Reference,2003-01-01,Mineralisation,3.336306976557
+Reference,2003-01-01,Crop N uptake,0
+Reference,2003-01-01,N leaching,0.17472593
+Reference,2003-02-01,Biological N fixation,0
+Reference,2003-02-01,Mineralisation,0.16234698444547263
+Reference,2003-02-01,Crop N uptake,0
+Reference,2003-02-01,N leaching,0.15320905
+Reference,2003-03-01,Biological N fixation,0
+Reference,2003-03-01,Mineralisation,3.729699920000735
+Reference,2003-03-01,Crop N uptake,0
+Reference,2003-03-01,N leaching,0.62744149
+Reference,2003-04-01,Biological N fixation,0
+Reference,2003-04-01,Mineralisation,8.4217827
+Reference,2003-04-01,Crop N uptake,4.2437861
+Reference,2003-04-01,N leaching,1.7613828
+Reference,2003-05-01,Biological N fixation,0
+Reference,2003-05-01,Mineralisation,16.156556000000002
+Reference,2003-05-01,Crop N uptake,22.057107300000002
+Reference,2003-05-01,N leaching,1.8748532
+Reference,2003-06-01,Biological N fixation,0
+Reference,2003-06-01,Mineralisation,21.885825
+Reference,2003-06-01,Crop N uptake,72.22933
+Reference,2003-06-01,N leaching,1.6853846
+Reference,2003-07-01,Biological N fixation,0
+Reference,2003-07-01,Mineralisation,23.725686
+Reference,2003-07-01,Crop N uptake,104.68871
+Reference,2003-07-01,N leaching,1.8787062
+Reference,2003-08-01,Biological N fixation,0
+Reference,2003-08-01,Mineralisation,16.345666
+Reference,2003-08-01,Crop N uptake,19.189297
+Reference,2003-08-01,N leaching,1.658296
+Reference,2003-09-01,Biological N fixation,0
+Reference,2003-09-01,Mineralisation,13.643838
+Reference,2003-09-01,Crop N uptake,12.6773732
+Reference,2003-09-01,N leaching,1.2588998
+Reference,2003-10-01,Biological N fixation,0
+Reference,2003-10-01,Mineralisation,10.963605
+Reference,2003-10-01,Crop N uptake,15.8305733
+Reference,2003-10-01,N leaching,0.9698544
+Reference,2003-11-01,Biological N fixation,0
+Reference,2003-11-01,Mineralisation,8.959389
+Reference,2003-11-01,Crop N uptake,5.2083036
+Reference,2003-11-01,N leaching,0.6959668
+Reference,2003-12-01,Biological N fixation,0
+Reference,2003-12-01,Mineralisation,6.2813870000000005
+Reference,2003-12-01,Crop N uptake,0.71708912
+Reference,2003-12-01,N leaching,0.5504017999999999
+Reference,2004-01-01,Biological N fixation,0
+Reference,2004-01-01,Mineralisation,0.731987389
+Reference,2004-01-01,Crop N uptake,0.5649951
+Reference,2004-01-01,N leaching,0.5228349
+Reference,2004-02-01,Biological N fixation,0
+Reference,2004-02-01,Mineralisation,2.1839655979
+Reference,2004-02-01,Crop N uptake,3.7937533
+Reference,2004-02-01,N leaching,7.6924846
+Reference,2004-03-01,Biological N fixation,0
+Reference,2004-03-01,Mineralisation,3.02069588737
+Reference,2004-03-01,Crop N uptake,10.6670173
+Reference,2004-03-01,N leaching,5.9202580000000005
+Reference,2004-04-01,Biological N fixation,4.561492687
+Reference,2004-04-01,Mineralisation,6.683084
+Reference,2004-04-01,Crop N uptake,60.747902
+Reference,2004-04-01,N leaching,4.102513
+Reference,2004-05-01,Biological N fixation,4.0400169402
+Reference,2004-05-01,Mineralisation,6.303857
+Reference,2004-05-01,Crop N uptake,34.263579
+Reference,2004-05-01,N leaching,4.021962
+Reference,2004-06-01,Biological N fixation,11.002700023
+Reference,2004-06-01,Mineralisation,12.08244
+Reference,2004-06-01,Crop N uptake,29.53404
+Reference,2004-06-01,N leaching,2.6834857
+Reference,2004-07-01,Biological N fixation,3.089789446
+Reference,2004-07-01,Mineralisation,22.193025
+Reference,2004-07-01,Crop N uptake,30.876097
+Reference,2004-07-01,N leaching,1.5689512
+Reference,2004-08-01,Biological N fixation,0.905194717
+Reference,2004-08-01,Mineralisation,30.841042
+Reference,2004-08-01,Crop N uptake,28.11696
+Reference,2004-08-01,N leaching,0.9714984
+Reference,2004-09-01,Biological N fixation,68.742515
+Reference,2004-09-01,Mineralisation,31.666996
+Reference,2004-09-01,Crop N uptake,31.754907
+Reference,2004-09-01,N leaching,0.632427
+Reference,2004-10-01,Biological N fixation,24.822482477
+Reference,2004-10-01,Mineralisation,29.062359999999998
+Reference,2004-10-01,Crop N uptake,31.839236
+Reference,2004-10-01,N leaching,0.4425116
+Reference,2004-11-01,Biological N fixation,0.16354400000000002
+Reference,2004-11-01,Mineralisation,18.1958
+Reference,2004-11-01,Crop N uptake,8.670131
+Reference,2004-11-01,N leaching,0.30054059
+Reference,2004-12-01,Biological N fixation,0
+Reference,2004-12-01,Mineralisation,13.95979
+Reference,2004-12-01,Crop N uptake,0
+Reference,2004-12-01,N leaching,0.22994966

@@ -14,14 +14,16 @@ tar_option_set(
   )
 )
 
-# here::here(), not a bare "R" string: this file can get sourced by
-# tar_make() calls from callers whose working directory isn't the project
-# root, and a relative path would silently fail to find anything there.
+# here::here(), not a bare "R" string: this file gets sourced by tar_make()
+# calls from callers whose working directory isn't the project root (e.g.
+# analysis/manuscript.Rmd runs with its own folder as the working directory),
+# and a relative path would silently fail to find anything there.
 tar_source(here::here("R"))
 
 raw_data_dir <- here::here("data", "raw", "nwaps_full_run")
 figures_main_dir <- here::here("outputs", "figures", "main")
 figures_supp_dir <- here::here("outputs", "figures", "supplementary")
+figures_supp_v2_dir <- here::here("outputs", "figures", "supplementary_v2")
 weather_dir <- here::here("data", "raw", "spawn_common_setup_files", "WEATHER")
 gc_calibration_dir <- here::here("data", "raw", "gc_calibration")
 
@@ -43,17 +45,42 @@ list(
   tar_target(contrast_years, select_contrast_years(crop_drought_years, rotation_crop_years)),
 
   # --- Whole-system productivity -------------------------------------------
-  # Headline ASY - see R/productivity.R for the evaluation-period definition.
+  # Headline ASY. Definition and the 11.48-vs-10.46 decision: docs/workflow.md
   tar_target(system_asy, calculate_system_asy(harvest_annual)),
   tar_target(system_asy_csv, {
     path <- here::here("outputs", "figure_data", "system_asy.csv")
     fs::dir_create(dirname(path)); readr::write_csv(system_asy, path); path
   }, format = "file"),
 
+  # --- Methods figure: site context and rotation design --------------------
+  # Climatology and design context, as distinct from Fig. S1's daily record.
+  # See R/methods_figure.R for the division of labour between the two.
+  tar_target(fig_mm_temperature, prepare_fig_mm_temperature(openfield_weather_daily)),
+  tar_target(fig_mm_water, prepare_fig_mm_water(monthly_water_balance)),
+  tar_target(fig_mm_calendar, prepare_fig_mm_calendar(harvest_annual, crop_drought_years)),
+  tar_target(fig_mm_spei12, prepare_fig_mm_spei12(monthly_water_balance)),
+  tar_target(site_climate, summarise_site_climate(openfield_weather_daily,
+                                                   monthly_water_balance)),
+  tar_target(fig_02_mm_plot, plot_fig_mm(fig_mm_temperature, fig_mm_water,
+                                          fig_mm_calendar, fig_mm_spei12, site_climate)),
+  tar_target(
+    fig_02_mm_saved,
+    save_manuscript_plot(
+      fig_02_mm_plot, "Fig_02_M_n_M_site_and_design_context.png", figures_main_dir,
+      width = figure_specs$fig_02_mm$width, height = figure_specs$fig_02_mm$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_02_mm_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_02_M_n_M_calendar.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_mm_calendar, path); path
+  }, format = "file"),
+
   # --- Manuscript Figure 2: crop productivity response ---------------------
   tar_target(fig_02_a_data, prepare_fig_02_a_data(harvest_annual)),
   tar_target(fig_02_b_data, prepare_fig_02_b_data(harvest_annual)),
-  tar_target(fig_02_plot, plot_fig_02(fig_02_a_data, fig_02_b_data)),
+  tar_target(fig_02_a_system_data, prepare_fig_02_a_system_data(harvest_annual)),
+  tar_target(fig_02_plot, plot_fig_02(fig_02_a_data, fig_02_b_data, fig_02_a_system_data)),
   tar_target(
     fig_02_saved,
     save_manuscript_plot(
@@ -65,6 +92,10 @@ list(
   tar_target(fig_02_a_csv, {
     path <- here::here("outputs", "figure_data", "Fig_02_a_data.csv")
     fs::dir_create(dirname(path)); readr::write_csv(fig_02_a_data, path); path
+  }, format = "file"),
+  tar_target(fig_02_a_system_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_02_a_system_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_02_a_system_data, path); path
   }, format = "file"),
   tar_target(fig_02_b_csv, {
     path <- here::here("outputs", "figure_data", "Fig_02_b_data.csv")
@@ -167,7 +198,7 @@ list(
   tar_target(grain_asy, calculate_system_asy(harvest_annual, "grain_MgDM_ha", crops = crop_levels_grain)),
   tar_target(fig_07_a_data, prepare_fig_07_a_data(system_asy, n_flux_summary)),
   tar_target(fig_07_b_data, prepare_fig_07_b_data(grain_asy, n_flux_summary)),
-  tar_target(fig_07_plot, plot_fig_07(fig_07_a_data, fig_07_b_data)),
+  tar_target(fig_07_plot, plot_fig_07(fig_07_a_data)),
   tar_target(
     fig_07_saved,
     save_manuscript_plot(
@@ -206,7 +237,7 @@ list(
   }, format = "file"),
 
   # --- Supplementary figures ------------------------------------------------
-  # S6/S7: the wind mechanism. Daily SWater is the only source of separated
+  # S7/S8: the wind mechanism. Daily SWater is the only source of separated
   # transpiration; the .dwf weather files are the only source of wind speed
   # (an input to the simulations, so absent from every NWAPS output).
   tar_target(daily_swater, read_daily_swater(raw_data_dir)),
@@ -217,75 +248,75 @@ list(
   # weather_substrip_center_rad0.dwf is the radiation 0-level: it carries the
   # modelled between-panel radiation but leaves wind at its open-field values,
   # so reading wind from it returns the open-field speed and makes the two
-  # reference lines in S6a coincide.
+  # reference lines in S7a coincide.
   tar_target(vapv_weather_daily,
              summarise_daily_weather(read_daisy_weather(
                file.path(weather_dir, "weather_substrip_center_win0.dwf")))),
 
-  tar_target(fig_s06_a_data, prepare_fig_s06_a_data(openfield_weather_daily, vapv_weather_daily)),
-  tar_target(fig_s06_b_data, prepare_fig_s06_b_data(daily_swater)),
-  tar_target(fig_s06_c_data, prepare_fig_s06_c_data(harvest_annual)),
-  tar_target(fig_s06_plot, plot_fig_s06(fig_s06_a_data, fig_s06_b_data, fig_s06_c_data)),
-  tar_target(
-    fig_s06_saved,
-    save_manuscript_plot(
-      fig_s06_plot, "Fig_S06_wind_hydrological_not_agronomic.png", figures_supp_dir,
-      width = figure_specs$fig_s06$width, height = figure_specs$fig_s06$height
-    ),
-    format = "file"
-  ),
-
-  tar_target(daily_pf, read_daily_pf(raw_data_dir, keep_years = s08_crop_years)),
-  tar_target(fig_s07_a_data, prepare_fig_s07_a_data(field_water_daily, daily_pf, daily_crop_production_wind)),
-  tar_target(fig_s07_b_data, prepare_fig_s07_b_data(daily_swater, openfield_weather_daily)),
+  tar_target(fig_s07_a_data, prepare_fig_s07_a_data(openfield_weather_daily, vapv_weather_daily)),
+  tar_target(fig_s07_b_data, prepare_fig_s07_b_data(daily_swater)),
   tar_target(fig_s07_c_data, prepare_fig_s07_c_data(harvest_annual)),
   tar_target(fig_s07_plot, plot_fig_s07(fig_s07_a_data, fig_s07_b_data, fig_s07_c_data)),
   tar_target(
     fig_s07_saved,
     save_manuscript_plot(
-      fig_s07_plot, "Fig_S07_wind_vs_radiation_temperature.png", figures_supp_dir,
+      fig_s07_plot, "Fig_S07_wind_hydrological_not_agronomic.png", figures_supp_dir,
       width = figure_specs$fig_s07$width, height = figure_specs$fig_s07$height
     ),
     format = "file"
   ),
-  # S8: canopy size and cumulative water use, dose-response by driver.
-  # Winter wheat 2018 and soybean 2013 - the critical dry seasons used in the
-  # draft. Read across every Centre scenario, but only those two crop-years, so
-  # the 700 MB/crop files resolve to a few thousand rows.
-  # Winter wheat 2018 and soybean 2022 - both dry seasons that exist in
-  # Rotation 1 (see prepare_fig_s08_data for why not the draft's SY 2013).
-  tar_target(s08_crop_years, c(2018L, 2022L)),
-  tar_target(daily_crop_production_wind,
-             import_daily_crop_production(
-               raw_data_dir, keep_years = s08_crop_years, keep_weather = NULL,
-               crops = c("Winter Wheat", "Soybean"))),
-  tar_target(daily_swater_s08, read_daily_swater(raw_data_dir, keep_years = s08_crop_years)),
-  tar_target(fig_s08_data, prepare_fig_s08_data(daily_crop_production_wind, daily_swater_s08)),
-  tar_target(fig_s08_plot, plot_fig_s08(fig_s08_data)),
+
+  tar_target(daily_pf, read_daily_pf(raw_data_dir, keep_years = s09_crop_years)),
+  tar_target(fig_s08_a_data, prepare_fig_s08_a_data(field_water_daily, daily_pf, daily_crop_production_wind)),
+  tar_target(fig_s08_b_data, prepare_fig_s08_b_data(daily_swater, openfield_weather_daily)),
+  tar_target(fig_s08_c_data, prepare_fig_s08_c_data(harvest_annual)),
+  tar_target(fig_s08_plot, plot_fig_s08(fig_s08_a_data, fig_s08_b_data, fig_s08_c_data)),
   tar_target(
     fig_s08_saved,
     save_manuscript_plot(
-      fig_s08_plot, "Fig_S08_canopy_and_water_use_dose_response.png", figures_supp_dir,
+      fig_s08_plot, "Fig_S08_wind_vs_radiation_temperature.png", figures_supp_dir,
       width = figure_specs$fig_s08$width, height = figure_specs$fig_s08$height
     ),
     format = "file"
   ),
+  # S9: canopy size and cumulative water use, dose-response by driver.
+  # Winter wheat 2018 and soybean 2013 - the critical dry seasons used in the
+  # draft. Read across every Centre scenario, but only those two crop-years, so
+  # the 700 MB/crop files resolve to a few thousand rows.
+  # Winter wheat 2018 and soybean 2022 - both dry seasons that exist in
+  # Rotation 1 (see prepare_fig_s09_data for why not the draft's SY 2013).
+  tar_target(s09_crop_years, c(2018L, 2022L)),
+  tar_target(daily_crop_production_wind,
+             import_daily_crop_production(
+               raw_data_dir, keep_years = s09_crop_years, keep_weather = NULL,
+               crops = c("Winter Wheat", "Soybean"))),
+  tar_target(daily_swater_s09, read_daily_swater(raw_data_dir, keep_years = s09_crop_years)),
+  tar_target(fig_s09_data, prepare_fig_s09_data(daily_crop_production_wind, daily_swater_s09)),
+  tar_target(fig_s09_plot, plot_fig_s09(fig_s09_data)),
+  tar_target(
+    fig_s09_saved,
+    save_manuscript_plot(
+      fig_s09_plot, "Fig_S09_canopy_and_water_use_dose_response.png", figures_supp_dir,
+      width = figure_specs$fig_s09$width, height = figure_specs$fig_s09$height
+    ),
+    format = "file"
+  ),
 
-  # S10: continuous SOC dynamics with a crop-calendar overlay. Weekly OM
+  # S14: continuous SOC dynamics with a crop-calendar overlay. Weekly OM
   # resolution shows the within-year sawtooth that the annual September
   # snapshots behind Figure 6 cannot.
   tar_target(weekly_om_to30, read_weekly_om(raw_data_dir)),
-  tar_target(fig_s10_data, prepare_fig_s10_data(weekly_om_to30)),
+  tar_target(fig_s14_data, prepare_fig_s14_data(weekly_om_to30)),
   tar_target(daily_crop_production_calendar,
              import_daily_crop_production(raw_data_dir, keep_years = 1998:2024,
                                            keep_weather = "weatherBaselineopen")),
   tar_target(crop_calendar, prepare_crop_calendar(daily_crop_production_calendar)),
-  tar_target(fig_s10_plot, plot_fig_s10(fig_s10_data, crop_calendar)),
+  tar_target(fig_s14_plot, plot_fig_s14(fig_s14_data, crop_calendar)),
   tar_target(
-    fig_s10_saved,
+    fig_s14_saved,
     save_manuscript_plot(
-      fig_s10_plot, "Fig_S10_soc_dynamics_crop_calendar.png", figures_supp_dir,
-      width = figure_specs$fig_s10$width, height = figure_specs$fig_s10$height
+      fig_s14_plot, "Fig_S14_soc_dynamics_crop_calendar.png", figures_supp_dir,
+      width = figure_specs$fig_s14$width, height = figure_specs$fig_s14$height
     ),
     format = "file"
   ),
@@ -316,43 +347,43 @@ list(
     format = "file"
   ),
 
-  # S16-S18: additional material supporting text claims that currently have
+  # S06-S19: additional material supporting text claims that currently have
   # no figure - the rotation composition behind the ASY headline, the N budget
   # the flux discussion sits in, and the permutation-vs-scenario comparison
   # asserted in the Discussion.
-  tar_target(fig_s16_data, prepare_fig_s16_data(harvest_annual)),
-  tar_target(fig_s16_plot, plot_fig_s16(fig_s16_data)),
+  tar_target(fig_s06_data, prepare_fig_s06_data(harvest_annual)),
+  tar_target(fig_s06_plot, plot_fig_s06(fig_s06_data)),
   tar_target(
-    fig_s16_saved,
+    fig_s06_saved,
     save_manuscript_plot(
-      fig_s16_plot, "Fig_S16_rotation_yield_composition.png", figures_supp_dir,
-      width = figure_specs$fig_s16$width, height = figure_specs$fig_s16$height
+      fig_s06_plot, "Fig_S06_rotation_yield_composition.png", figures_supp_dir,
+      width = figure_specs$fig_s06$width, height = figure_specs$fig_s06$height
     ),
     format = "file"
   ),
-  tar_target(fig_s17_data, prepare_fig_s17_data(n_annual)),
-  tar_target(fig_s17_plot, plot_fig_s17(fig_s17_data)),
+  tar_target(fig_s12_data, prepare_fig_s12_data(n_annual)),
+  tar_target(fig_s12_plot, plot_fig_s12(fig_s12_data)),
   tar_target(
-    fig_s17_saved,
+    fig_s12_saved,
     save_manuscript_plot(
-      fig_s17_plot, "Fig_S17_nitrogen_budget.png", figures_supp_dir,
-      width = figure_specs$fig_s17$width, height = figure_specs$fig_s17$height
+      fig_s12_plot, "Fig_S12_nitrogen_budget.png", figures_supp_dir,
+      width = figure_specs$fig_s12$width, height = figure_specs$fig_s12$height
     ),
     format = "file"
   ),
-  tar_target(fig_s18_data, prepare_fig_s18_data(harvest_annual)),
-  tar_target(fig_s18_plot, plot_fig_s18(fig_s18_data)),
+  tar_target(fig_s19_data, prepare_fig_s19_data(harvest_annual)),
+  tar_target(fig_s19_plot, plot_fig_s19(fig_s19_data)),
   tar_target(
-    fig_s18_saved,
+    fig_s19_saved,
     save_manuscript_plot(
-      fig_s18_plot, "Fig_S18_permutation_vs_scenario_effect.png", figures_supp_dir,
-      width = figure_specs$fig_s18$width, height = figure_specs$fig_s18$height
+      fig_s19_plot, "Fig_S19_permutation_vs_scenario_effect.png", figures_supp_dir,
+      width = figure_specs$fig_s19$width, height = figure_specs$fig_s19$height
     ),
     format = "file"
   ),
-  tar_target(fig_s18_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S18_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s18_data, path); path
+  tar_target(fig_s19_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S19_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s19_data, path); path
   }, format = "file"),
 
   # S5: grass-clover calibration. Reads artefacts from the separate
@@ -370,105 +401,105 @@ list(
     format = "file"
   ),
 
-  # S11: Total SOC by depth layer - absolute stocks and all three layers,
+  # S15: Total SOC by depth layer - absolute stocks and all three layers,
   # both of which Figure 6 omits.
-  tar_target(fig_s11_a_data, prepare_fig_s11_a_data(soc_by_depth)),
-  tar_target(fig_s11_b_data, prepare_fig_s11_b_data(soc_relative_change)),
-  tar_target(fig_s11_plot, plot_fig_s11(fig_s11_a_data, fig_s11_b_data)),
+  tar_target(fig_s15_a_data, prepare_fig_s15_a_data(soc_by_depth)),
+  tar_target(fig_s15_b_data, prepare_fig_s15_b_data(soc_relative_change)),
+  tar_target(fig_s15_plot, plot_fig_s15(fig_s15_a_data, fig_s15_b_data)),
   tar_target(
-    fig_s11_saved,
+    fig_s15_saved,
     save_manuscript_plot(
-      fig_s11_plot, "Fig_S11_total_soc_by_depth.png", figures_supp_dir,
-      width = figure_specs$fig_s11$width, height = figure_specs$fig_s11$height
+      fig_s15_plot, "Fig_S15_total_soc_by_depth.png", figures_supp_dir,
+      width = figure_specs$fig_s15$width, height = figure_specs$fig_s15$height
     ),
     format = "file"
   ),
-  tar_target(fig_s11_b_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S11_b_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s11_b_data, path); path
+  tar_target(fig_s15_b_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S15_b_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s15_b_data, path); path
   }, format = "file"),
 
   # S13: canonical simulation index (FAIR artefact; Methods cite 416 runs but
   # no list exists).
   tar_target(simulation_index, build_simulation_index(harvest_annual)),
   tar_target(simulation_index_csv, {
-    path <- here::here("outputs", "tables", "supplementary", "Table_S13_simulation_index.csv")
+    path <- here::here("outputs", "tables", "supplementary", "Table_S1_simulation_index.csv")
     fs::dir_create(dirname(path)); readr::write_csv(simulation_index, path); path
   }, format = "file"),
   tar_target(simulation_index_summary, summarise_simulation_index(simulation_index)),
 
-  # S14: full annual water balance - settles the percolation vs drainage
+  # S10: full annual water balance - settles the percolation vs drainage
   # question raised in review.
   tar_target(field_water_sep, prepare_generic_outcomes(get_imported_object(nwaps_imported, "field_water_sep"))),
-  tar_target(fig_s14_data, prepare_fig_s14_data(field_water_sep)),
-  tar_target(fig_s14_plot, plot_fig_s14(fig_s14_data)),
+  tar_target(fig_s10_data, prepare_fig_s10_data(field_water_sep)),
+  tar_target(fig_s10_plot, plot_fig_s10(fig_s10_data)),
   tar_target(
-    fig_s14_saved,
+    fig_s10_saved,
     save_manuscript_plot(
-      fig_s14_plot, "Fig_S14_annual_water_balance_components.png", figures_supp_dir,
-      width = figure_specs$fig_s14$width, height = figure_specs$fig_s14$height
+      fig_s10_plot, "Fig_S10_annual_water_balance_components.png", figures_supp_dir,
+      width = figure_specs$fig_s10$width, height = figure_specs$fig_s10$height
     ),
     format = "file"
   ),
-  tar_target(fig_s14_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S14_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s14_data, path); path
+  tar_target(fig_s10_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S10_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s10_data, path); path
   }, format = "file"),
 
-  # S15: substrip West/Centre/East across all three outcome domains.
-  tar_target(fig_s15_data, prepare_fig_s15_data(harvest_annual, n_annual, soc_relative_change)),
-  tar_target(fig_s15_plot, plot_fig_s15(fig_s15_data)),
+  # S18: substrip West/Centre/East across all three outcome domains.
+  tar_target(fig_s18_data, prepare_fig_s18_data(harvest_annual, n_annual, soc_relative_change)),
+  tar_target(fig_s18_plot, plot_fig_s18(fig_s18_data)),
   tar_target(
-    fig_s15_saved,
+    fig_s18_saved,
     save_manuscript_plot(
-      fig_s15_plot, "Fig_S15_substrip_position_effects.png", figures_supp_dir,
-      width = figure_specs$fig_s15$width, height = figure_specs$fig_s15$height
+      fig_s18_plot, "Fig_S18_substrip_position_effects.png", figures_supp_dir,
+      width = figure_specs$fig_s18$width, height = figure_specs$fig_s18$height
     ),
     format = "file"
   ),
-  tar_target(fig_s15_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S15_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s15_data, path); path
+  tar_target(fig_s18_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S18_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s18_data, path); path
   }, format = "file"),
 
-  tar_target(fig_s06_b_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S06_b_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s06_b_data, path); path
+  tar_target(fig_s07_b_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S07_b_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s07_b_data, path); path
   }, format = "file"),
-  tar_target(fig_s07_c_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S07_c_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s07_c_data, path); path
+  tar_target(fig_s08_c_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S08_c_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s08_c_data, path); path
   }, format = "file"),
 
-  # S9: N fluxes across all management regimes (Fig 5 shows Dig-Rem only)
-  tar_target(fig_s09_a_data, prepare_fig_s09_a_data(n_flux_summary)),
-  tar_target(fig_s09_plot, plot_fig_s09(fig_s09_a_data, fig_05_b_data)),
+  # S11: N fluxes across all management regimes (Fig 5 shows Dig-Rem only)
+  tar_target(fig_s11_a_data, prepare_fig_s11_a_data(n_flux_summary)),
+  tar_target(fig_s11_plot, plot_fig_s11(fig_s11_a_data, fig_05_b_data)),
   tar_target(
-    fig_s09_saved,
+    fig_s11_saved,
     save_manuscript_plot(
-      fig_s09_plot, "Fig_S09_nitrogen_fluxes_all_managements.png", figures_supp_dir,
-      width = figure_specs$fig_s09$width, height = figure_specs$fig_s09$height
+      fig_s11_plot, "Fig_S11_nitrogen_fluxes_all_managements.png", figures_supp_dir,
+      width = figure_specs$fig_s11$width, height = figure_specs$fig_s11$height
     ),
     format = "file"
   ),
-  tar_target(fig_s09_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_S09_data.csv")
-    fs::dir_create(dirname(path)); readr::write_csv(fig_s09_a_data, path); path
+  tar_target(fig_s11_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S11_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s11_a_data, path); path
   }, format = "file"),
 
-  # S12: yield-SOC trade-off. Also produces the OLS slope table that settles
+  # S17: yield-SOC trade-off. Also produces the OLS slope table that settles
   # the contradictory values quoted in Results 3.3 vs Discussion 4.5.
-  tar_target(fig_s12_a_data, prepare_fig_s12_data(fig_07_a_data, soc_relative_change)),
-  tar_target(fig_s12_b_data, prepare_fig_s12_data(fig_07_b_data, soc_relative_change)),
+  tar_target(fig_s17_a_data, prepare_fig_s17_data(fig_07_a_data, soc_relative_change)),
+  tar_target(fig_s17_b_data, prepare_fig_s17_data(fig_07_b_data, soc_relative_change)),
   tar_target(yield_soc_slopes,
-             dplyr::bind_rows(fit_yield_soc_slopes(fig_s12_a_data),
-                              fit_yield_soc_slopes(fig_s12_b_data))),
-  tar_target(fig_s12_plot, plot_fig_s12(fig_s12_a_data, fig_s12_b_data, yield_soc_slopes)),
+             dplyr::bind_rows(fit_yield_soc_slopes(fig_s17_a_data),
+                              fit_yield_soc_slopes(fig_s17_b_data))),
+  tar_target(fig_s17_plot, plot_fig_s17(fig_s17_a_data, fig_s17_b_data, yield_soc_slopes)),
   tar_target(
-    fig_s12_saved,
+    fig_s17_saved,
     save_manuscript_plot(
-      fig_s12_plot, "Fig_S12_yield_soc_tradeoff.png", figures_supp_dir,
-      width = figure_specs$fig_s12$width, height = figure_specs$fig_s12$height
+      fig_s17_plot, "Fig_S17_yield_soc_tradeoff.png", figures_supp_dir,
+      width = figure_specs$fig_s17$width, height = figure_specs$fig_s17$height
     ),
     format = "file"
   ),
@@ -476,6 +507,202 @@ list(
     path <- here::here("outputs", "figure_data", "yield_soc_slopes.csv")
     fs::dir_create(dirname(path)); readr::write_csv(yield_soc_slopes, path); path
   }, format = "file"),
+
+  # --- S20: interannual yield stability and downside risk -------------------
+  # Every productivity result elsewhere is a 27-year mean; this is the only
+  # place the manuscript's resilience framing can actually be tested.
+  tar_target(fig_s20_data, prepare_fig_s20_data(harvest_annual)),
+  tar_target(fig_s20_relative, add_s20_relative(fig_s20_data)),
+  tar_target(s20_buffering, summarise_s20_buffering(fig_s20_relative)),
+  tar_target(fig_s20_plot, plot_fig_s20(fig_s20_data, fig_s20_relative)),
+  tar_target(
+    fig_s20_saved,
+    save_manuscript_plot(
+      fig_s20_plot, "Fig_S20_yield_stability_downside_risk.png", figures_supp_dir,
+      width = figure_specs$fig_s20$width, height = figure_specs$fig_s20$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s20_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S20_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s20_relative, path); path
+  }, format = "file"),
+  tar_target(s20_buffering_csv, {
+    path <- here::here("outputs", "tables", "supplementary", "Table_S2_tail_buffering.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(s20_buffering, path); path
+  }, format = "file"),
+
+  # --- S21: distance from carbon equilibrium --------------------------------
+  # Quantifies the Discussion's "not yet at equilibrium after 26 years" caveat.
+  tar_target(fig_s21_data, prepare_fig_s21_data(soc_by_depth)),
+  tar_target(soc_equilibrium_fits, fit_soc_equilibrium(fig_s21_data)),
+  tar_target(soc_curvature, fit_soc_curvature(fig_s21_data)),
+  tar_target(soc_projection, project_soc_equilibrium(soc_equilibrium_fits)),
+  tar_target(fig_s21_plot,
+             plot_fig_s21(fig_s21_data, soc_projection, soc_equilibrium_fits, soc_curvature)),
+  tar_target(
+    fig_s21_saved,
+    save_manuscript_plot(
+      fig_s21_plot, "Fig_S21_soc_distance_from_equilibrium.png", figures_supp_dir,
+      width = figure_specs$fig_s21$width, height = figure_specs$fig_s21$height
+    ),
+    format = "file"
+  ),
+  tar_target(soc_equilibrium_csv, {
+    path <- here::here("outputs", "tables", "supplementary", "Table_S3_soc_equilibrium_fits.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(soc_equilibrium_fits, path); path
+  }, format = "file"),
+
+  # --- S16: SOC change by rotation phase ------------------------------------
+  # Evidence for the per-crop-phase rates quoted in Results 3.2, which have no
+  # figure anywhere in the manuscript or the legacy script.
+  tar_target(rotation_phase_crop, assign_rotation_phase_crop(harvest_annual)),
+  tar_target(fig_s16_data, prepare_fig_s16_data(soc_by_depth, harvest_annual)),
+  tar_target(fig_s16_plot, plot_fig_s16(fig_s16_data)),
+  tar_target(
+    fig_s16_saved,
+    save_manuscript_plot(
+      fig_s16_plot, "Fig_S16_soc_change_by_rotation_phase.png", figures_supp_dir,
+      width = figure_specs$fig_s16$width, height = figure_specs$fig_s16$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s16_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S16_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s16_data, path); path
+  }, format = "file"),
+
+  # --- S13: seasonal distribution of nitrate leaching -----------------------
+  # The 959 MB daily N file is the only within-year N source; read once, with
+  # the column selection and rotation filter applied inside the reader.
+  tar_target(daily_n, read_daily_n(raw_data_dir)),
+  # Profile-bottom annual N, used ONLY to verify what basis the daily file is
+  # on. No manuscript figure reads it - see read_daily_n() for why it exists.
+  tar_target(field_n_apr_profile,
+             prepare_n_annual(prepare_generic_outcomes(
+               get_imported_object(nwaps_imported, "field_n_apr_profile")))),
+  tar_target(daily_vs_annual_leaching,
+             check_daily_vs_annual_leaching(daily_n, field_n_apr_profile, n_annual)),
+  tar_target(fig_s13_data, prepare_fig_s13_data(daily_n)),
+  tar_target(fig_s13_delta, prepare_fig_s13_delta(fig_s13_data)),
+  tar_target(fig_s13_plot, plot_fig_s13(fig_s13_data, fig_s13_delta)),
+  tar_target(
+    fig_s13_saved,
+    save_manuscript_plot(
+      fig_s13_plot, "Fig_S13_seasonal_nitrate_leaching.png", figures_supp_dir,
+      width = figure_specs$fig_s13$width, height = figure_specs$fig_s13$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s13_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S13_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s13_data, path); path
+  }, format = "file"),
+  tar_target(daily_vs_annual_csv, {
+    path <- here::here("outputs", "diagnostics", "daily_vs_annual_leaching.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(daily_vs_annual_leaching, path); path
+  }, format = "file"),
+
+  # S24: seasonal nitrate-leaching dynamics + crop calendar, structurally
+  # paired with S14 (SOC). Reuses daily_n, field_water_daily and crop_calendar
+  # - all already built above - rather than any new heavy read. Design
+  # rationale in R/nitrogen.R, immediately above prepare_fig_s24_a_data().
+  tar_target(fig_s24_a_data, prepare_fig_s24_a_data(n_annual)),
+  tar_target(fig_s24_b_data, prepare_fig_s24_b_data(daily_n)),
+  tar_target(fig_s24_percolation, prepare_fig_s24_percolation(field_water_daily)),
+  tar_target(fig_s24_windows, prepare_fig_s24_windows_data(crop_calendar)),
+  tar_target(fig_s24_plot, plot_fig_s24(fig_s24_a_data, fig_s24_b_data,
+                                         fig_s24_percolation, fig_s24_windows, crop_calendar)),
+  tar_target(
+    fig_s24_saved,
+    save_manuscript_plot(
+      fig_s24_plot, "Fig_S24_seasonal_nitrate_leaching_dynamics.png", figures_supp_dir,
+      width = figure_specs$fig_s24$width, height = figure_specs$fig_s24$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s24_a_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S24_a_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s24_a_data, path); path
+  }, format = "file"),
+  tar_target(fig_s24_b_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S24_b_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s24_b_data, path); path
+  }, format = "file"),
+
+  # S25: nitrogen-supply mechanism behind the radiation ladder's leaching
+  # response, vs the real substrip shading pattern. Built directly to answer
+  # why the Rad -X% ladder in Fig. 5/S24 shows LESS leaching under more
+  # shading - reuses daily_n (now carrying mineralisation/uptake/fixation
+  # too - see read_daily_n() in R/import.R), n_flux_summary and n_annual, all
+  # already built above. Design rationale in R/nitrogen.R, immediately above
+  # prepare_fig_s25_a_data().
+  tar_target(fig_s25_a_data, prepare_fig_s25_a_data(daily_n)),
+  tar_target(fig_s25_b_data, prepare_fig_s25_b_data(n_flux_summary)),
+  tar_target(fig_s25_c_data, prepare_fig_s25_c_data(n_annual)),
+  tar_target(fig_s25_plot, plot_fig_s25(fig_s25_a_data, fig_s25_b_data,
+                                         fig_s25_c_data, crop_calendar)),
+  tar_target(
+    fig_s25_saved,
+    save_manuscript_plot(
+      fig_s25_plot, "Fig_S25_nitrogen_supply_mechanism_radiation.png", figures_supp_dir,
+      width = figure_specs$fig_s25$width, height = figure_specs$fig_s25$height
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s25_a_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S25_a_data.csv")
+    fs::dir_create(dirname(path)); readr::write_csv(fig_s25_a_data, path); path
+  }, format = "file"),
+  tar_target(fig_s25_bc_csv, {
+    path <- here::here("outputs", "figure_data", "Fig_S25_bc_data.csv")
+    fs::dir_create(dirname(path))
+    readr::write_csv(dplyr::bind_rows(fig_s25_b_data, fig_s25_c_data), path)
+    path
+  }, format = "file"),
+
+  # --- Supplement v2 composites --------------------------------------------
+  # Figure S7 (water and nitrogen mass balance): the S10, S11(a), S12 and S13
+  # panels stacked on one page. Its original builder was lost, so it is rebuilt
+  # here; plot_fig_s07_v2() records how that rebuild was checked against the
+  # 14 Sept file. Panel (b) is now Figure 5's design (fluxes and leaching on a
+  # secondary axis) for all four regimes, so it also reads fig_05_b_data.
+  tar_target(fig_s07_v2_plot, plot_fig_s07_v2(fig_s10_data, fig_s11_a_data, fig_05_b_data,
+                                               fig_s12_data, fig_s13_data, fig_s13_delta)),
+  tar_target(
+    fig_s07_v2_saved,
+    save_manuscript_plot(
+      fig_s07_v2_plot, "Fig_S07_water_nitrogen_mass_balance.png", figures_supp_v2_dir,
+      width = figure_specs$fig_s07_v2$width, height = figure_specs$fig_s07_v2$height,
+      dpi = figure_specs$fig_s07_v2$dpi
+    ),
+    format = "file"
+  ),
+  # The same figure in two parts for the Word supplement: panels (a)-(c) and
+  # (d)-(f), each on a canvas shaped for the 6 x 9 in text block (see figure_specs).
+  tar_target(fig_s07_v2_part1_plot, plot_fig_s07_v2_part1(fig_s10_data, fig_s11_a_data,
+                                                           fig_05_b_data, fig_s12_data)),
+  tar_target(
+    fig_s07_v2_part1_saved,
+    save_manuscript_plot(
+      fig_s07_v2_part1_plot, "Fig_S07_water_nitrogen_mass_balance_part1_abc.png",
+      figures_supp_v2_dir,
+      width = figure_specs$fig_s07_v2_part1$width, height = figure_specs$fig_s07_v2_part1$height,
+      dpi = figure_specs$fig_s07_v2_part1$dpi
+    ),
+    format = "file"
+  ),
+  tar_target(fig_s07_v2_part2_plot, plot_fig_s07_v2_part2(fig_s13_data, fig_s13_delta)),
+  tar_target(
+    fig_s07_v2_part2_saved,
+    save_manuscript_plot(
+      fig_s07_v2_part2_plot, "Fig_S07_water_nitrogen_mass_balance_part2_def.png",
+      figures_supp_v2_dir,
+      width = figure_specs$fig_s07_v2_part2$width, height = figure_specs$fig_s07_v2_part2$height,
+      dpi = figure_specs$fig_s07_v2_part2$dpi
+    ),
+    format = "file"
+  ),
 
   # --- Retired legacy-numbered figures (not manuscript figures) ------------
   tar_target(fig04_data, prepare_fig04_data(harvest_annual)),
@@ -488,8 +715,14 @@ list(
     ),
     format = "file"
   ),
+  # Distinct filename, matching this target's own figure. It previously wrote
+  # to Fig_04_data.csv - the same path as fig_04_csv, the MANUSCRIPT Figure 4
+  # (soil water during dry periods). The two clobbered each other on every run,
+  # so the exported CSV held whichever target finished last and one of the pair
+  # was permanently out of date. Nothing upstream reads these files, so no
+  # figure was affected, but the export itself was unreliable.
   tar_target(fig04_data_csv, {
-    path <- here::here("outputs", "figure_data", "Fig_04_data.csv")
+    path <- here::here("outputs", "figure_data", "Figure_04_legacy_heatmap_data.csv")
     fs::dir_create(dirname(path))
     readr::write_csv(fig04_data, path)
     path

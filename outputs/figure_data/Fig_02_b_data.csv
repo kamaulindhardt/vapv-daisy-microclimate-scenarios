@@ -1,77 +1,89 @@
-crop_renamed,fertiliser_type,residue_policy,scen_label,mean_resp,sd_resp,n_rot,driver,is_vapv_zero
-Winter Wheat,Biogas digestate,Residue removed,Rad 0%,0,0,4,Radiation,TRUE
-Winter Wheat,Biogas digestate,Residue retained,Rad 0%,0,0,4,Radiation,TRUE
-Soybean,Biogas digestate,Residue removed,Rad 0%,0,0,4,Radiation,TRUE
-Soybean,Biogas digestate,Residue retained,Rad 0%,0,0,4,Radiation,TRUE
-Winter Wheat,Biogas digestate,Residue removed,Rad -5%,-8.509560817620633,3.105105745007274,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Rad -5%,-8.521481265510474,3.1785399802858745,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue removed,Rad -5%,-4.8457823710003325,0.48209020659028023,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue retained,Rad -5%,-4.845727844169913,0.48217744208246216,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Rad -10%,-16.679364364601458,4.661570675144631,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Rad -10%,-17.186444498484086,4.168851965296805,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue removed,Rad -10%,-9.688550281223971,1.5654126587932982,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue retained,Rad -10%,-9.688469394438462,1.565529874992505,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Rad -20%,-35.136120794277645,6.350001533538282,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Rad -20%,-36.61766801653013,4.8498714138788594,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue removed,Rad -20%,-20.7848573149901,3.266561823243389,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue retained,Rad -20%,-20.784810303563276,3.2666255835961535,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Rad -30%,-54.86951116022767,5.245019650671163,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Rad -30%,-55.90204611891183,4.324547426115209,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue removed,Rad -30%,-31.404984058107054,3.7807985358907445,4,Radiation,FALSE
-Soybean,Biogas digestate,Residue retained,Rad -30%,-31.404943528507808,3.780835165892005,4,Radiation,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp -3degC,-51.09059051638755,12.231716281366,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp -3degC,-53.05535998984254,12.057292285122708,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp -3degC,-78.73413985765498,2.4709210757047884,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp -3degC,-78.73395156285963,2.4713466451272827,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp -2degC,-31.142566648119768,8.407823012783858,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp -2degC,-32.0953863036222,9.133405161411734,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp -2degC,-55.955441922985955,2.5011803311364385,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp -2degC,-55.95546638898158,2.501172013541341,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC,0,0,4,Temperature,TRUE
-Winter Wheat,Biogas digestate,Residue retained,Tmp 0degC,0,0,4,Temperature,TRUE
-Soybean,Biogas digestate,Residue removed,Tmp 0degC,0,0,4,Temperature,TRUE
-Soybean,Biogas digestate,Residue retained,Tmp 0degC,0,0,4,Temperature,TRUE
-Winter Wheat,Biogas digestate,Residue removed,Tmp +0.5degC,5.0736557028252625,3.903746475602844,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp +0.5degC,4.357321970505262,3.471008015353747,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp +0.5degC,13.096291473536292,2.426529200421454,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp +0.5degC,13.09551125653789,2.4276337318171666,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp +1degC,8.974731203718626,2.924956058022289,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp +1degC,6.178386473525351,2.7743895519407484,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp +1degC,22.60546026949449,5.441105022044566,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp +1degC,22.6046627635599,5.441466035245489,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp +2degC,12.659930508476059,6.7119806412211505,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp +2degC,8.71592311535882,5.804766387458151,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp +2degC,29.94636678624768,11.812135072131335,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp +2degC,29.9461301164338,11.812031287522135,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp +3degC,4.523518771082896,8.69732154979926,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Tmp +3degC,0.2558832030589381,7.63546500848928,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue removed,Tmp +3degC,29.52460238065295,16.74144649519513,4,Temperature,FALSE
-Soybean,Biogas digestate,Residue retained,Tmp +3degC,29.52616194738273,16.741425626083352,4,Temperature,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind 0%,0,0,4,Wind,TRUE
-Winter Wheat,Biogas digestate,Residue retained,Wind 0%,0,0,4,Wind,TRUE
-Soybean,Biogas digestate,Residue removed,Wind 0%,0,0,4,Wind,TRUE
-Soybean,Biogas digestate,Residue retained,Wind 0%,0,0,4,Wind,TRUE
-Winter Wheat,Biogas digestate,Residue removed,Wind -20%,-0.586316903047032,0.2250909138030729,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -20%,-0.5796588330358113,0.24908417301470756,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -20%,0.6079904659257416,0.21229956073110617,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -20%,0.6078794742108167,0.21218893368894914,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind -30%,-0.9443102991206989,0.41064419071258573,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -30%,-0.9152446500877411,0.4362406471515388,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -30%,0.9334930868393083,0.35979831714907184,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -30%,0.9333887470966182,0.3596729053054386,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind -40%,-1.2373592689001722,0.5936912953135595,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -40%,-1.2450058406692306,0.5995251180433891,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -40%,1.1952408932087362,0.41258383225758033,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -40%,1.1950910155881114,0.4124246387756901,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind -50%,-1.6456159773064443,0.6279240018503497,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -50%,-1.7333599061433729,0.5724442825681989,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -50%,1.483939752484738,0.5353875696330719,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -50%,1.4838079425236879,0.5351837665703186,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind -60%,-2.457300412528344,0.6436554026012363,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -60%,-2.4517429958112706,0.6740551202852483,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -60%,1.7680377379860108,0.7005759097496683,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -60%,1.7673155915270629,0.6999016589720747,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Wind -70%,-2.777979249418411,0.6704059551424846,4,Wind,FALSE
-Winter Wheat,Biogas digestate,Residue retained,Wind -70%,-2.785111137414744,0.7260563531590862,4,Wind,FALSE
-Soybean,Biogas digestate,Residue removed,Wind -70%,1.9908891768733956,0.7843830337227741,4,Wind,FALSE
-Soybean,Biogas digestate,Residue retained,Wind -70%,1.9904432173258257,0.7842454974396721,4,Wind,FALSE
+crop_renamed,fertiliser_type,residue_policy,scen_label,mean_resp,sd_resp,n_rot,driver,is_reference,is_vapv_zero
+Winter Wheat,Biogas digestate,Residue removed,Reference,0,0,4,Radiation,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Reference,0,0,4,Radiation,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,0,0,4,Radiation,TRUE,FALSE
+Soybean,Biogas digestate,Residue retained,Reference,0,0,4,Radiation,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad 0%,-24.875449944599946,3.9883457401133233,4,Radiation,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue retained,Rad 0%,-27.08243606011636,3.334332922735269,4,Radiation,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Rad 0%,-16.716908319215005,1.5172948445159216,4,Radiation,FALSE,TRUE
+Soybean,Biogas digestate,Residue retained,Rad 0%,-16.716766309330257,1.51764002643211,4,Radiation,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Rad -5%,-31.225748069563966,5.147377371440812,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Rad -5%,-33.25778440003083,4.633072768618302,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -5%,-20.749172108350944,1.7194531812578122,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Rad -5%,-20.748992234830652,1.719703168533235,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -10%,-37.33917282826398,5.877096241267236,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Rad -10%,-39.565436368105296,4.983922803045429,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -10%,-24.773162753163618,2.454228990310602,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Rad -10%,-24.772968392377784,2.4543976783030774,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -20%,-51.1845612721476,6.422096372568638,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Rad -20%,-53.74010653591405,4.743320670541667,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -20%,-34.01297676393053,3.3710790337844267,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Rad -20%,-34.012835357737174,3.37095547679777,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Rad -30%,-66.04367646330601,4.8990353890915594,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Rad -30%,-67.82119750748096,3.7908182943727593,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Rad -30%,-42.84289448337047,3.928337113271618,4,Radiation,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Rad -30%,-42.84276825288086,3.9283351642282454,4,Radiation,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Reference,0,0,4,Temperature,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Reference,0,0,4,Temperature,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,0,0,4,Temperature,TRUE,FALSE
+Soybean,Biogas digestate,Residue retained,Reference,0,0,4,Temperature,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC,-3.8049885728641355,5.077378051285987,4,Temperature,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue retained,Tmp 0degC,-3.5733285440539424,3.672141028657057,4,Temperature,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Tmp 0degC,-11.429700084347623,2.5336387692249365,4,Temperature,FALSE,TRUE
+Soybean,Biogas digestate,Residue retained,Tmp 0degC,-11.429220417362915,2.5341963398819773,4,Temperature,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Tmp -3degC,-52.53371563426653,13.966045618583468,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp -3degC,-54.45180681225178,13.056824443852582,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp -3degC,-81.12269063997573,2.733408643450721,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp -3degC,-81.12240750209172,2.7339147347121733,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp -2degC,-33.48969404397999,10.89301923439814,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp -2degC,-34.29780893082235,10.815783896757585,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp -2degC,-60.94561501988993,3.3300997818398312,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp -2degC,-60.94541944380625,3.3302940737921696,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +0.5degC,0.9390436633912425,2.465549556516611,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp +0.5degC,0.5471943203276886,2.0864634772523747,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +0.5degC,0.12402467536874318,0.7358313850901543,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp +0.5degC,0.12384421584622385,0.7353479012922791,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +1degC,4.740490126882724,3.795547665327906,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp +1degC,2.3404680069134223,3.2583793991046925,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +1degC,8.498923352989063,2.4558951091974297,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp +1degC,8.498774592272138,2.4556120051286197,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +2degC,8.224669046694247,5.6015443281859705,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp +2degC,4.711003616164357,3.5950043610142313,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +2degC,14.93396782282394,8.447286789690548,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp +2degC,14.934342188398961,8.446754000458087,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp +3degC,0.4683817348313249,8.819529795657884,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Tmp +3degC,-3.415366182325093,6.61413937723872,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Tmp +3degC,14.499840443202805,12.798675444946877,4,Temperature,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Tmp +3degC,14.501763323732725,12.797984704896772,4,Temperature,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Reference,0,0,4,Wind,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Reference,0,0,4,Wind,TRUE,FALSE
+Soybean,Biogas digestate,Residue removed,Reference,0,0,4,Wind,TRUE,FALSE
+Soybean,Biogas digestate,Residue retained,Reference,0,0,4,Wind,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind 0%,-1.0575045750449992,0.7789509410990043,4,Wind,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue retained,Wind 0%,-0.7560077458016679,0.36651732363349115,4,Wind,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Wind 0%,1.1022169990498378,0.4289832101327456,4,Wind,FALSE,TRUE
+Soybean,Biogas digestate,Residue retained,Wind 0%,1.1029356937798198,0.4299354887333597,4,Wind,FALSE,TRUE
+Winter Wheat,Biogas digestate,Residue removed,Wind -20%,-1.6367619917935707,0.9354686712118037,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -20%,-1.330611596255165,0.6086024739381409,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -20%,1.717579793550026,0.6437658567111368,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -20%,1.718191795281034,0.644614254338577,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -30%,-1.9903783237441215,1.0680408784126236,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -30%,-1.6631552089389567,0.7918392454275563,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -30%,2.0471115544802716,0.7892656639652458,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -30%,2.047733453113461,0.790077386071061,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -40%,-2.279566998477918,1.2308373147308844,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -40%,-1.989986117014484,0.9513981706163073,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -40%,2.3118730457062733,0.8375962721498885,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -40%,2.3124508259415926,0.8383465245877028,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -50%,-2.6837731226934136,1.2166023849306156,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -50%,-2.474965203883399,0.8871309235043995,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -50%,2.6040508499862143,0.9510066561604952,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -50%,2.604649000827346,0.9516290024883552,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -60%,-3.4886703219432724,1.0127991749240113,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -60%,-3.1876297403919285,0.991635476329935,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -60%,2.8916250650573536,1.1005254323007478,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -60%,2.8916276058300863,1.1006265082860243,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Wind -70%,-3.8055260826532384,1.0802792618373485,4,Wind,FALSE,FALSE
+Winter Wheat,Biogas digestate,Residue retained,Wind -70%,-3.5182300970639155,1.0561231332482401,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue removed,Wind -70%,3.116984649592269,1.164206917586379,4,Wind,FALSE,FALSE
+Soybean,Biogas digestate,Residue retained,Wind -70%,3.117268710394278,1.1647089287365027,4,Wind,FALSE,FALSE

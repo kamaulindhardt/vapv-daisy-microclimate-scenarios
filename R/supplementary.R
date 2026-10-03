@@ -7,11 +7,11 @@
 #        exists. A canonical index with stable IDs makes every figure traceable
 #        to the runs behind it, and is the FAIR-critical artefact for the
 #        Zenodo release.
-#   S14  Full annual water balance. Reviewers asked directly whether
+#   S10  Full annual water balance. Reviewers asked directly whether
 #        "percolation" and "drainage" are distinct model outputs or used
 #        interchangeably. They are distinct, and showing all components
 #        together settles it.
-#   S15  Substrip (West/Centre/East) effects. The text asserts that substrip
+#   S18  Substrip (West/Centre/East) effects. The text asserts that substrip
 #        position has little effect and a reviewer asked for the substrip
 #        columns to be shown or removed. This shows them once, across all
 #        outcomes, so the assertion is evidenced rather than repeated.
@@ -21,7 +21,7 @@
 # ---------------------------------------------------------------------------
 # Documents what actually drove the simulations, over one complete traversal of
 # the rotation. The crop calendar is detected from daily biomass presence
-# rather than assumed from sowing dates, for the same reason as S10: two crops
+# rather than assumed from sowing dates, for the same reason as S14: two crops
 # can occupy one calendar year, and undersown ryegrass persists across the
 # boundary.
 #
@@ -161,22 +161,35 @@ prepare_fig_s04_season <- function(daily_crop_production_wind, crop = "Soybean")
 }
 
 # ---------------------------------------------------------------------------
-# S16 - rotation yield composition
+# S06 - rotation yield composition
 # ---------------------------------------------------------------------------
 # Supports the opening sentence of Results, which states a system ASY and a
 # grass-clover share but shows neither. Also makes visible WHICH crop each
 # driver takes the yield from, which the aggregate ASY hides.
-prepare_fig_s16_data <- function(harvest_annual, rotations = paste("Rotation", 1:4),
+prepare_fig_s06_data <- function(harvest_annual, rotations = paste("Rotation", 1:4),
                                   fert = "Biogas digestate", residue_policy = "Residue removed") {
-  prepare_harvest_center(harvest_annual) |>
+  crop_year <- prepare_harvest_center(harvest_annual) |>
     dplyr::filter(rotation %in% rotations,
                   fertiliser_type == fert, residue_policy == !!residue_policy) |>
     dplyr::group_by(scen_label, crop_renamed, rotation, year) |>
-    dplyr::summarise(v = sum(harvested_agb_removed_MgDM_ha, na.rm = TRUE), .groups = "drop") |>
-    # Mean across YEARS then across rotations, so each crop's contribution is
-    # its share of the annual system total rather than of its own crop-years.
+    dplyr::summarise(v = sum(harvested_agb_removed_MgDM_ha, na.rm = TRUE), .groups = "drop")
+
+  # Each crop's annualised contribution is its total harvested biomass divided
+  # by the number of calendar years in the rotation (across ALL crops), then
+  # averaged across rotations - the same 3-step aggregation as
+  # calculate_system_asy(). Dividing by the crop's OWN growing-years instead
+  # (n_distinct(year) inside the crop x rotation group) returns the mean yield
+  # in a year that crop is grown, so the bars sum to the sum of per-crop-year
+  # means (~41.6) rather than to system ASY (~11.5) and the shares are wrong.
+  rotation_years <- crop_year |>
+    dplyr::group_by(scen_label, rotation) |>
+    dplyr::summarise(n_years = dplyr::n_distinct(year), .groups = "drop")
+
+  crop_year |>
     dplyr::group_by(scen_label, crop_renamed, rotation) |>
-    dplyr::summarise(v = sum(v, na.rm = TRUE) / dplyr::n_distinct(year), .groups = "drop") |>
+    dplyr::summarise(crop_sum = sum(v, na.rm = TRUE), .groups = "drop") |>
+    dplyr::left_join(rotation_years, by = c("scen_label", "rotation")) |>
+    dplyr::mutate(v = crop_sum / n_years) |>
     dplyr::group_by(scen_label, crop_renamed) |>
     dplyr::summarise(mean_contribution = mean(v, na.rm = TRUE), .groups = "drop") |>
     dplyr::group_by(scen_label) |>
@@ -193,13 +206,13 @@ prepare_fig_s16_data <- function(harvest_annual, rotations = paste("Rotation", 1
 }
 
 # ---------------------------------------------------------------------------
-# S17 - complete nitrogen budget
+# S12 - complete nitrogen budget
 # ---------------------------------------------------------------------------
 # The manuscript discusses individual N fluxes but never the budget they sit
 # in. Showing inputs against outputs makes the surplus explicit and lets a
 # reader see whether leaching is supply-driven or demand-driven under each
 # scenario - the mechanism Results 3.2 argues for verbally.
-prepare_fig_s17_data <- function(n_annual, rotations = paste("Rotation", 1:4)) {
+prepare_fig_s12_data <- function(n_annual, rotations = paste("Rotation", 1:4)) {
   n_annual |>
     dplyr::filter(rotation %in% rotations) |>
     add_scenario_labels(grid = "center") |>
@@ -234,14 +247,14 @@ prepare_fig_s17_data <- function(n_annual, rotations = paste("Rotation", 1:4)) {
 }
 
 # ---------------------------------------------------------------------------
-# S18 - rotation-permutation spread against scenario effect size
+# S19 - rotation-permutation spread against scenario effect size
 # ---------------------------------------------------------------------------
 # Evidences a Discussion claim that is currently asserted without a figure:
 # that winter wheat AGB varies by up to ~22% across the four permutations from
 # weather-year assignment alone, "comparable to one full radiation-scenario
 # step". If true, it is the strongest argument in the paper for why a
 # single fixed rotation would have been inadequate - and it is checkable.
-prepare_fig_s18_data <- function(harvest_annual, rotations = paste("Rotation", 1:4),
+prepare_fig_s19_data <- function(harvest_annual, rotations = paste("Rotation", 1:4),
                                   fert = "Biogas digestate", residue_policy = "Residue removed") {
   per_rotation <- prepare_harvest_center(harvest_annual) |>
     dplyr::filter(rotation %in% rotations,
@@ -327,7 +340,7 @@ summarise_simulation_index <- function(simulation_index) {
 }
 
 # ---------------------------------------------------------------------------
-# S14 - annual water balance components
+# S10 - annual water balance components
 # ---------------------------------------------------------------------------
 # DAISY reports percolation and drainage as SEPARATE outputs and they are not
 # interchangeable:
@@ -335,7 +348,7 @@ summarise_simulation_index <- function(simulation_index) {
 #   drainage    - lateral flux intercepted by field drains
 # Both are further split into matrix and biopore (macropore) pathways. Water
 # leaving via drains does not percolate, so summing them would double-count.
-prepare_fig_s14_data <- function(field_water_sep, start_year = ANALYSIS_START_YEAR,
+prepare_fig_s10_data <- function(field_water_sep, start_year = ANALYSIS_START_YEAR,
                                   rotations = paste("Rotation", 1:4),
                                   fert = "Biogas digestate", residue_policy = "Residue Retained") {
   df <- field_water_sep |>
@@ -379,13 +392,13 @@ prepare_fig_s14_data <- function(field_water_sep, start_year = ANALYSIS_START_YE
 }
 
 # ---------------------------------------------------------------------------
-# S15 - substrip position effects
+# S18 - substrip position effects
 # ---------------------------------------------------------------------------
 # Compares West / Centre / East at each driver's VAPV 0-level, against the
 # open field, across productivity, nitrogen and carbon. If the three substrips
 # are indistinguishable the figure says so in one place, which is what lets the
 # main-text figures legitimately show the Centre strip alone.
-prepare_fig_s15_data <- function(harvest_annual, n_annual, soc_relative_change,
+prepare_fig_s18_data <- function(harvest_annual, n_annual, soc_relative_change,
                                   rotations = paste("Rotation", 1:4),
                                   fert = "Biogas digestate", residue_policy = "Residue Removed") {
   zero_levels <- c("Rad 0% W", "Rad 0% C", "Rad 0% E",

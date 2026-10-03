@@ -7,9 +7,10 @@
 #     (the "17K"-suffixed pipeline - confirmed by tracing which chunk actually
 #     calls save_ms_fig("Figure_04_manuscript_heatmap_ASY_AGB_per_crop.png", ...);
 #     a separate, never-fully-reconciled "18_1"-suffixed pipeline earlier in the
-#     script computes something structurally similar but does NOT feed Figure 4)
+#     script computes something structurally similar but does NOT feed Figure 4 -
+#     see docs/workflow.md once written)
 #   - Figure 5 data (relative grain yield, W/C/E strip positions): chunk
-#     `s18_1_6_data_4rot` (prep_harvest_ecw_18 / build_4rot_rel_ecw_18)
+#     `s19_1_6_data_4rot` (prep_harvest_ecw_18 / build_4rot_rel_ecw_18)
 
 ANALYSIS_START_YEAR <- 1998L
 
@@ -104,7 +105,7 @@ prepare_harvest_annual <- function(harvest_prepped) {
 # 0degC/Wind 0% = VAPV centre-strip reference level" axis means.
 #
 # Ported from reference/legacy_snapshot/SPAWN_NWAPS_MANUSCRIPT_VIZ.Rmd,
-# chunk `s18_1_6_data_4rot` (prep_harvest_18 / build_4rot_asy_18).
+# chunk `s19_1_6_data_4rot` (prep_harvest_18 / build_4rot_asy_18).
 # ---------------------------------------------------------------------------
 
 # Scenario levels actually simulated, Centre strip only (see Methods Table 2:
@@ -115,6 +116,20 @@ scen_order_center <- c(
   paste0("Rad ", rad_levels, "%"),
   paste0("Wind ", wind_levels, "%"),
   paste0("Tmp ", ifelse(tmp_levels > 0, "+", ""), tmp_levels, "degC")
+)
+
+# Figure 3 x-axis order: Ref first, then each driver's VAPV 0-level, then that
+# driver's remaining levels in ladder order. Radiation and Wind already put the
+# 0-level immediately after Ref in scen_order_center; only Temperature differs
+# (its 0 degC level moves ahead of the sub-zero cooling steps), so panels a and
+# b read left-to-right as Ref -> 0-level -> perturbations for every driver.
+scen_order_fig3 <- c(
+  "Reference",
+  "Rad 0%", paste0("Rad ", rad_levels[rad_levels != 0], "%"),
+  "Wind 0%", paste0("Wind ", wind_levels[wind_levels != 0], "%"),
+  "Tmp 0degC",
+  paste0("Tmp ", tmp_levels[tmp_levels < 0], "degC"),
+  paste0("Tmp +", tmp_levels[tmp_levels > 0], "degC")
 )
 
 prepare_harvest_center <- function(harvest_annual, crop_filter = NULL) {
@@ -185,6 +200,25 @@ build_4rot_asy <- function(harvest_center, response_col) {
     )
 }
 
+# Same aggregation with the crop dimension collapsed: step 1 sums harvest across
+# ALL crops within a year, so the result is the scenario's total annualised
+# system yield (ASY), computed exactly as calculate_system_asy() does and
+# directly comparable with the per-crop values from build_4rot_asy().
+build_4rot_system_asy <- function(harvest_center, response_col) {
+  harvest_center |>
+    dplyr::group_by(fertiliser_type, residue_policy, scen_label, rotation, year) |>
+    dplyr::summarise(annual_system_total = sum(.data[[response_col]], na.rm = TRUE), .groups = "drop") |>
+    dplyr::group_by(fertiliser_type, residue_policy, scen_label, rotation) |>
+    dplyr::summarise(rot_asy = mean(annual_system_total, na.rm = TRUE), .groups = "drop") |>
+    dplyr::group_by(fertiliser_type, residue_policy, scen_label) |>
+    dplyr::summarise(
+      mean_asy = mean(rot_asy, na.rm = TRUE),
+      sd_asy = sd(rot_asy, na.rm = TRUE),
+      n_rot = dplyr::n(),
+      .groups = "drop"
+    )
+}
+
 # Relative response (% change), computed per rotation against that rotation's
 # own reference before averaging - unbiased with respect to rotation-specific
 # baseline levels.
@@ -194,7 +228,7 @@ build_4rot_asy <- function(harvest_center, response_col) {
 #   "vapv_zero"  - that driver's VAPV 0-level (Rad 0% / Tmp 0degC / Wind 0%)
 # These are NOT interchangeable and give materially different numbers; the
 # manuscript Results text for Figure 2b states "% of VAPV 0-level", so that is
-# the default here.
+# the default here. See docs/workflow.md for the check against the reported values.
 build_4rot_relative <- function(harvest_center, response_col,
                                  reference = c("vapv_zero", "openfield")) {
   reference <- match.arg(reference)
@@ -273,6 +307,7 @@ build_4rot_relative <- function(harvest_center, response_col,
 #     deterministic simulation ensemble.
 #
 # Reported open-field Dig-Rem value under this definition: 11.48 t DM/ha/yr.
+# See docs/workflow.md for how this relates to the 10.46 in the v12 draft.
 # ---------------------------------------------------------------------------
 
 calculate_system_asy <- function(harvest_annual,
@@ -328,7 +363,7 @@ prepare_fig_02_a_data <- function(harvest_annual,
   dplyr::bind_rows(base |> dplyr::filter(driver %in% drivers), reference_rows) |>
     dplyr::mutate(
       driver = factor(driver, levels = drivers),
-      scen_label = factor(scen_label, levels = scen_order_center),
+      scen_label = factor(scen_label, levels = scen_order_fig3),
       crop_renamed = factor(crop_renamed, levels = crop_levels_all),
       is_reference = scen_label == "Reference",
       is_vapv_zero = scen_label %in% c("Rad 0%", "Wind 0%", "Tmp 0degC")
@@ -337,15 +372,58 @@ prepare_fig_02_a_data <- function(harvest_annual,
     dplyr::arrange(driver, scen_label, crop_renamed)
 }
 
-prepare_fig_02_b_data <- function(harvest_annual, fert = "Biogas digestate") {
-  prepare_harvest_center(harvest_annual, crop_filter = crop_levels_grain) |>
-    build_4rot_relative("grain_MgDM_ha", reference = "vapv_zero") |>
-    dplyr::filter(fertiliser_type == fert) |>
+# Scenario-specific TOTAL ASY (all crops) drawn as grey bars behind the per-crop
+# points of panel (a). Same management filter and the same open-field anchor in
+# every driver facet as prepare_fig_02_a_data(). Residue removed is the
+# management for which harvested_agb_removed is the full exported biomass, so
+# this reproduces system_asy.csv (11.48 t DM/ha/yr open field).
+prepare_fig_02_a_system_data <- function(harvest_annual,
+                                          management = list(fert = "Biogas digestate",
+                                                            residue = "Residue removed")) {
+  base <- prepare_harvest_center(harvest_annual) |>
+    build_4rot_system_asy("harvested_agb_removed_MgDM_ha") |>
+    dplyr::filter(fertiliser_type == management$fert, residue_policy == management$residue) |>
+    dplyr::mutate(driver = driver_of_scen_label(scen_label))
+
+  drivers <- c("Radiation", "Temperature", "Wind")
+  reference_rows <- base |>
+    dplyr::filter(driver == "Reference") |>
+    dplyr::select(-driver) |>
+    tidyr::crossing(driver = drivers)
+
+  dplyr::bind_rows(base |> dplyr::filter(driver %in% drivers), reference_rows) |>
     dplyr::mutate(
-      driver = factor(driver_of_scen_label(scen_label),
-                      levels = c("Radiation", "Temperature", "Wind")),
-      scen_label = factor(scen_label, levels = scen_order_center),
+      driver = factor(driver, levels = drivers),
+      scen_label = factor(scen_label, levels = scen_order_fig3)
+    ) |>
+    dplyr::filter(!is.na(scen_label), !is.na(driver)) |>
+    dplyr::arrange(driver, scen_label)
+}
+
+prepare_fig_02_b_data <- function(harvest_annual, fert = "Biogas digestate") {
+  # Grain-yield response as % change from the OPEN-FIELD baseline (not the
+  # driver's VAPV 0-level), so panel (b) shares panel (a)'s reference and the
+  # 0-level bars carry the actual VAPV effect. See build_4rot_relative().
+  rel <- prepare_harvest_center(harvest_annual, crop_filter = crop_levels_grain) |>
+    build_4rot_relative("grain_MgDM_ha", reference = "openfield") |>
+    dplyr::filter(fertiliser_type == fert) |>
+    dplyr::mutate(driver = driver_of_scen_label(scen_label))
+
+  # The open field is 0% by construction and is dropped by build_4rot_relative();
+  # add it back into every driver facet so the x-axis reads Ref -> 0-level ->
+  # perturbations, matching panel (a).
+  drivers <- c("Radiation", "Temperature", "Wind")
+  reference_rows <- rel |>
+    dplyr::distinct(crop_renamed, fertiliser_type, residue_policy) |>
+    tidyr::crossing(driver = drivers, scen_label = "Reference",
+                    mean_resp = 0, sd_resp = 0, n_rot = 4L)
+
+  dplyr::bind_rows(rel |> dplyr::filter(driver %in% drivers), reference_rows) |>
+    dplyr::mutate(
+      driver = factor(driver, levels = drivers),
+      scen_label = factor(scen_label, levels = scen_order_fig3),
       crop_renamed = factor(crop_renamed, levels = crop_levels_grain),
+      is_reference = scen_label == "Reference",
       is_vapv_zero = scen_label %in% c("Rad 0%", "Wind 0%", "Tmp 0degC")
     ) |>
     dplyr::filter(!is.na(crop_renamed), !is.na(scen_label), !is.na(driver)) |>

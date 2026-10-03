@@ -12,26 +12,60 @@ figure_specs <- list(
   fig_02 = list(width = 11, height = 8),
   fig_03 = list(width = 12, height = 7.5),
   fig_04 = list(width = 11, height = 5),
-  fig_05 = list(width = 10, height = 8.5),
+  fig_05 = list(width = 10, height = 6.6),
   fig_06 = list(width = 10, height = 8.5),
-  fig_07 = list(width = 11, height = 8),
-  fig_08 = list(width = 11, height = 8.5),
-  # Supplementary
-  fig_s01 = list(width = 11, height = 10),
-  fig_s04 = list(width = 11, height = 13),
-  fig_s05 = list(width = 11, height = 4.2),
-  fig_s16 = list(width = 11, height = 9),
-  fig_s17 = list(width = 11, height = 9),
-  fig_s18 = list(width = 9, height = 5.5),
-  fig_s06 = list(width = 12, height = 4.2),
-  fig_s07 = list(width = 11, height = 12),
-  fig_s08 = list(width = 11, height = 7),
-  fig_s10 = list(width = 11, height = 11),
-  fig_s11 = list(width = 11, height = 9),
-  fig_s14 = list(width = 12, height = 7),
-  fig_s15 = list(width = 10, height = 7),
-  fig_s09 = list(width = 11, height = 9),
-  fig_s12 = list(width = 11, height = 8),
+  fig_07 = list(width = 11, height = 4.6),
+  fig_08 = list(width = 11, height = 10.5),
+  # Methods figure (site context + rotation design); see R/methods_figure.R
+  fig_02_mm = list(width = 12, height = 12),
+  # -------------------------------------------------------------------------
+  # Supplementary, in manuscript citation order. S02 and S03 (microclimate
+  # model validation against HOBOnet sensor observations) have no entry: they
+  # belong to the weather-generation step upstream of this pipeline, which
+  # consumes its .dwf output as fixed input. The gap is expected, not missing
+  # work - see docs/workflow.md.
+  # -------------------------------------------------------------------------
+  # Methods
+  fig_s01 = list(width = 11, height = 10),   # weather + crop calendar
+  fig_s04 = list(width = 11, height = 13),   # soybean parameterisation
+  fig_s05 = list(width = 11, height = 4.2),  # grass-clover calibration
+  # Results 3.1 - productivity
+  fig_s06 = list(width = 11, height = 9),    # rotation yield composition
+  fig_s07 = list(width = 12, height = 4.2),  # wind: hydrological not agronomic
+  fig_s08 = list(width = 11, height = 12),   # wind vs radiation/temperature
+  # Results 3.2 - water
+  fig_s09 = list(width = 11, height = 7),    # canopy + cumulative water use
+  fig_s10 = list(width = 12, height = 7),    # annual water balance components
+  # Results 3.2 - nitrogen
+  fig_s11 = list(width = 11, height = 11),   # N fluxes, all managements
+  fig_s12 = list(width = 11, height = 9),    # nitrogen budget
+  fig_s13 = list(width = 12, height = 9),    # seasonal nitrate leaching
+  # Results 3.2 - soil organic carbon
+  fig_s14 = list(width = 11, height = 11),   # SOC dynamics + crop calendar
+  fig_s15 = list(width = 11, height = 9),    # total SOC by depth
+  fig_s16 = list(width = 10, height = 8),    # SOC change by rotation phase
+  # Results 3.3 - trade-offs and cross-cutting
+  fig_s17 = list(width = 11, height = 8),    # yield-SOC trade-off
+  fig_s18 = list(width = 10, height = 7),    # substrip position effects
+  # Discussion
+  fig_s19 = list(width = 9, height = 5.5),   # permutation vs scenario effect
+  fig_s20 = list(width = 12, height = 10),   # yield stability / downside risk
+  fig_s21 = list(width = 11, height = 12),   # SOC distance from equilibrium
+  # Added after the 2026-08-22 renumbering (which stopped at S21); appended
+  # rather than slotted into Results 3.2 (N) to avoid re-running that
+  # renumbering for one figure - see docs/workflow.md.
+  fig_s24 = list(width = 11, height = 12.5), # seasonal N-leaching dynamics + crop calendar
+  fig_s25 = list(width = 11, height = 13),   # N-supply mechanism: ladder vs substrip
+  # Supplement v2 composite (plot_fig_s07_v2): a 9:16 page-shaped canvas saved at
+  # 320 dpi. Both matter - the panels' text is drawn at native size, so changing
+  # either changes how crowded the composite looks.
+  fig_s07_v2 = list(width = 9, height = 16, dpi = 320),
+  # ... and the same figure in two parts, panels (a)-(c) and (d)-(f), each on a
+  # canvas shaped for the Word supplement's 6 x 9 in text block: the 9 in width
+  # scales to 5.95 in on the page, so 12.5 in of height becomes 8.3 in, and 8.1 in
+  # becomes 5.35 in, which leaves the caption room on the second page.
+  fig_s07_v2_part1 = list(width = 9, height = 12.5, dpi = 320),
+  fig_s07_v2_part2 = list(width = 9, height = 8.1, dpi = 320),
   # Retired legacy-numbered figures (not manuscript figures - see productivity.R)
   fig04 = list(width = 14, height = 4.5),
   fig05 = list(width = 10, height = 8)
@@ -39,25 +73,37 @@ figure_specs <- list(
 
 # ===========================================================================
 # MANUSCRIPT FIGURE 2 - Crop productivity response to radiation, temperature
-# and wind. (This was Figure 3 before a later renumbering restructure.)
+# and wind. (Manuscript v12 numbering: this was Figure 3 before the
+# restructure; see docs/workflow.md for the full old -> new figure mapping.)
 #
 # One message: radiation is the dominant productivity constraint, temperature
 # is secondary at system level but larger and asymmetric per crop, wind is
 # negligible.
 #
 # (a) absolute annualised harvested AGB per crop across all three drivers
-# (b) grain-yield response (% of that driver's VAPV 0-level) for WW + SY
+# (b) grain-yield response (% of the open-field baseline) for WW + SY
 #
 # Caption discipline (co-author feedback): the caption states what is plotted,
 # the aggregation, and what the error bars are - no mechanism, no
 # interpretation. Those belong in the Results text.
 # ===========================================================================
 
-plot_fig_02_a_agb_by_crop <- function(fig_02_a_data) {
+plot_fig_02_a_agb_by_crop <- function(fig_02_a_data, fig_02_a_system_data) {
   ggplot2::ggplot(
     fig_02_a_data,
     ggplot2::aes(x = scen_label, y = mean_resp, colour = crop_renamed, group = crop_renamed)
   ) +
+    # Scenario-specific total ASY (all crops) as grey bars behind the per-crop
+    # points. Drawn first so it sits underneath; mapped to fill so it gets its
+    # own legend key next to the crop colours. No error bars on the bars: they
+    # would sit on top of the crop whiskers at the same x. The SD across
+    # rotations is in the source data (Fig_02_a_system_data.csv).
+    ggplot2::geom_col(
+      data = fig_02_a_system_data,
+      ggplot2::aes(x = scen_label, y = mean_asy, fill = "Total ASY (all crops)"),
+      width = 0.7, inherit.aes = FALSE
+    ) +
+    ggplot2::scale_fill_manual(values = c("Total ASY (all crops)" = "grey82"), name = "System") +
     # Mark the open-field anchor so "Ref" is visually distinct from the VAPV
     # 0-level immediately to its right - reviewers asked for these to be
     # unambiguous.
@@ -72,12 +118,18 @@ plot_fig_02_a_agb_by_crop <- function(fig_02_a_data) {
     ggplot2::geom_point(size = 1.9) +
     ggplot2::scale_colour_manual(values = crop_palette, name = "Crop") +
     ggplot2::scale_x_discrete(labels = scen_axis_label) +
-    ggplot2::scale_y_continuous(name = expression("Harvested AGB (t DM ha"^-1~"yr"^-1*")")) +
+    ggplot2::scale_y_continuous(
+      name = expression("Harvested AGB (t DM ha"^-1~"yr"^-1*")"),
+      breaks = seq(0, 25, 2.5)
+    ) +
+    ggplot2::guides(colour = ggplot2::guide_legend(order = 1),
+                    fill = ggplot2::guide_legend(order = 2)) +
     ggplot2::facet_grid(~driver, scales = "free_x", space = "free_x") +
     ggplot2::labs(x = NULL, tag = "a") +
     theme_manuscript() +
     ggplot2::theme(
       axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
+      panel.grid.major.y = ggplot2::element_line(linewidth = 0.3, colour = "grey90"),
       legend.position = "right"
     )
 }
@@ -88,6 +140,8 @@ plot_fig_02_b_grain_response <- function(fig_02_b_data) {
     ggplot2::aes(x = scen_label, y = mean_resp, fill = crop_renamed, pattern = residue_policy)
   ) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.5) +
+    # Separate the open-field Ref from the VAPV 0-level, as in panel (a).
+    ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
     ggpattern::geom_col_pattern(
       position = ggplot2::position_dodge(width = 0.8), width = 0.78,
       colour = "grey25", linewidth = 0.15,
@@ -106,12 +160,16 @@ plot_fig_02_b_grain_response <- function(fig_02_b_data) {
     ) +
     ggplot2::scale_fill_manual(values = crop_palette, name = "Crop") +
     ggplot2::scale_x_discrete(labels = scen_axis_label) +
-    ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::scale_y_continuous(
+      breaks = seq(-100, 60, 10),
+      labels = scales::label_number(suffix = "%", accuracy = 1)
+    ) +
     ggplot2::facet_grid(~driver, scales = "free_x", space = "free_x") +
-    ggplot2::labs(x = NULL, y = "Grain yield response\n(% of VAPV 0-level)", tag = "b") +
+    ggplot2::labs(x = NULL, y = "Grain yield response\n(% of open field)", tag = "b") +
     theme_manuscript() +
     ggplot2::theme(
       axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
+      panel.grid.major.y = ggplot2::element_line(linewidth = 0.3, colour = "grey90"),
       legend.position = "right"
     )
 }
@@ -331,79 +389,133 @@ plot_fig_04 <- function(fig_04_data) {
 
 # ===========================================================================
 # MANUSCRIPT FIGURE 5 - Nitrogen-cycle fluxes and leaching.
-# (v12 draft Figure 6.)
+# (v12 draft Figure 6; "Figure 6" in the submitted-manuscript numbering, which
+# counts the Figure 1 study-design schematic.)
 #
 # One message: radiation and temperature restructure the whole nitrogen cycle,
 # not leaching alone - fixation is the most radiation-sensitive flux, while
 # temperature drives the leaching response.
 #
-# Panel (a) is the supply/demand side, panel (b) the resulting leaching, so the
-# two read as cause and consequence. That ordering is deliberate: a reviewer
-# asked why these three N processes in particular were selected.
+# The supply/demand fluxes (biogas digestate, residue removed) and the leaching
+# they feed share ONE panel per driver, so they read as cause and consequence.
+# Fluxes use the left y axis; leaching, for all four fertilisation x residue
+# regimes, uses a secondary (right) axis. Co-author feedback asked for the former
+# panels (a) and (b) to be merged and for every management option to be shown;
+# the fourth regime, Mineral fertiliser | Residue Retained, had been left out of
+# the leaching panel.
+#
+# HOW THE SECONDARY AXIS WORKS. ggplot2 can only rescale an axis, not plot a
+# second variable on its own, so leaching is PLOTTED at fig_05_leach_scale x its
+# value on the left scale and the right axis divides it back. The exported source
+# tables (Fig_05_a_data.csv, Fig_05_b_data.csv) stay in real kg N/ha/yr; only the
+# drawing is rescaled. The factor is a free choice. 3 keeps leaching in a band of
+# its own beneath the fluxes (shaded, so it is clear which axis applies); 5 or
+# more puts the leaching markers on top of the flux markers. The price is that
+# leaching gets about a third of the vertical resolution it had as a separate
+# panel, and that vertical distances are not comparable between the two axes -
+# the caption says so. Even at 3, fixation dips into the leaching band at four
+# levels (Rad -20 / -30 %, Tmp -3 / -2 degC).
+#
+# All series are dodged as ONE group: the three fluxes sit left of each tick and
+# the leaching regimes right of it, so the left cluster belongs to the left axis
+# and the right cluster to the right axis. The two-column legend gets its
+# headings from pseudo-levels ("hdr_*", "blank") that hold no data: drop = FALSE
+# keeps them in the legend and their keys are transparent. (One colour scale
+# cannot produce two separate legends, and ggnewscale is not in this project.)
 #
 # No connecting lines between scenario levels - independent simulation runs.
 # ===========================================================================
 
-plot_fig_05_a_fluxes <- function(fig_05_a_data) {
+# Regime encodings, shared with Fig. S11 panel (b) so a regime looks the same in
+# both. The three regimes the leaching series always showed keep their colours and
+# shapes; Mineral | Residue Retained takes the dark purple it has in the other
+# four-regime figures, with a diamond because the other three shapes are taken.
+fig_05_regime_cols <- c("Mineral fertiliser | Residue Removed" = "#998EC3",
+                        "Mineral fertiliser | Residue Retained" = "#542788",
+                        "Biogas digestate | Residue Removed" = "#F5A641",
+                        "Biogas digestate | Residue Retained" = "#B35806")
+fig_05_regime_shapes <- c("Mineral fertiliser | Residue Removed" = 16,
+                          "Mineral fertiliser | Residue Retained" = 18,
+                          "Biogas digestate | Residue Removed" = 17,
+                          "Biogas digestate | Residue Retained" = 15)
+
+fig_05_leach_scale <- 3      # leaching is drawn at 3 x its value; right axis = left axis / 3
+fig_05_leach_axis_max <- 40  # top of the right axis, kg N/ha/yr (the data reach ~34 with +1 SD)
+fig_05_flux_axis_max <- 350  # top of the left axis, kg N/ha/yr
+
+plot_fig_05 <- function(fig_05_a_data, fig_05_b_data) {
+  k <- fig_05_leach_scale
+  band_top <- fig_05_leach_axis_max * k
+
   flux_cols <- c("Mineralisation" = "#8C6D31",
                  "Crop N uptake" = "#4EA72E",
                  "Biological N fixation" = "#0072B2")
+  flux_shapes <- c("Mineralisation" = 16, "Crop N uptake" = 17, "Biological N fixation" = 15)
+  regimes <- levels(fig_05_b_data$management_label)
 
-  ggplot2::ggplot(
-    fig_05_a_data,
-    ggplot2::aes(x = scen_label, y = mean_kgN_ha, colour = flux, shape = flux)
-  ) +
+  fluxes <- fig_05_a_data |>
+    dplyr::transmute(series = as.character(flux), scen_label, driver, y = mean_kgN_ha,
+                     lo = mean_kgN_ha - sd_kgN_ha, hi = mean_kgN_ha + sd_kgN_ha)
+  leaching <- fig_05_b_data |>
+    dplyr::transmute(series = as.character(management_label), scen_label, driver,
+                     y = k * mean_kgN_ha,
+                     lo = k * (mean_kgN_ha - sd_kgN_ha), hi = k * (mean_kgN_ha + sd_kgN_ha))
+  if (any(leaching$hi > band_top)) {
+    warning("plot_fig_05(): a leaching error bar reaches above the right axis maximum (",
+            fig_05_leach_axis_max, " kg N/ha/yr); raise fig_05_leach_axis_max.")
+  }
+
+  # "blank" pads the flux column (3 fluxes + heading) to the height of the
+  # leaching column (4 regimes + heading) so the two legend columns line up.
+  lv <- c("hdr_flux", names(flux_cols), "blank", "hdr_leach", regimes)
+  d <- dplyr::bind_rows(fluxes, leaching) |>
+    dplyr::mutate(series = factor(series, levels = lv))
+  cols <- c(hdr_flux = "transparent", flux_cols, blank = "transparent",
+            hdr_leach = "transparent", fig_05_regime_cols[regimes])
+  shapes <- c(hdr_flux = NA, flux_shapes, blank = NA, hdr_leach = NA, fig_05_regime_shapes[regimes])
+  labels <- c(hdr_flux = "**N fluxes** (left axis; biogas digestate, residue removed)",
+              stats::setNames(names(flux_cols), names(flux_cols)),
+              blank = "",
+              hdr_leach = "**N leaching** (right axis; by management)",
+              stats::setNames(regimes, regimes))
+  dodge <- ggplot2::position_dodge(width = 0.86)
+
+  ggplot2::ggplot(d, ggplot2::aes(x = scen_label, y = y, colour = series, shape = series)) +
+    # The band marks where the RIGHT axis applies and its white lines are that
+    # axis' gridlines. It is opaque so the left-axis gridline at 100 does not run
+    # through the leaching values.
+    ggplot2::annotate("rect", xmin = -Inf, xmax = Inf, ymin = 0, ymax = band_top, fill = "grey95") +
+    ggplot2::geom_hline(yintercept = k * seq(10, fig_05_leach_axis_max - 10, 10),
+                        colour = "white", linewidth = 0.5) +
+    ggplot2::geom_hline(yintercept = band_top, colour = "grey75", linewidth = 0.3) +
     ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
-    ggplot2::geom_errorbar(
-      ggplot2::aes(ymin = mean_kgN_ha - sd_kgN_ha, ymax = mean_kgN_ha + sd_kgN_ha),
-      width = 0.18, linewidth = 0.35, alpha = 0.7,
-      position = ggplot2::position_dodge(width = 0.45)
-    ) +
-    ggplot2::geom_point(size = 2, position = ggplot2::position_dodge(width = 0.45)) +
-    ggplot2::scale_colour_manual(values = flux_cols, name = NULL) +
-    ggplot2::scale_shape_manual(values = c(16, 17, 15), name = NULL) +
+    ggplot2::geom_errorbar(ggplot2::aes(ymin = lo, ymax = hi),
+                           width = 0.14, linewidth = 0.3, alpha = 0.75, position = dodge) +
+    ggplot2::geom_point(size = 1.9, position = dodge) +
+    ggplot2::scale_colour_manual(name = NULL, values = cols, breaks = lv, labels = labels, drop = FALSE) +
+    ggplot2::scale_shape_manual(name = NULL, values = shapes, breaks = lv, labels = labels, drop = FALSE) +
     ggplot2::scale_x_discrete(labels = scen_axis_label) +
-    ggplot2::scale_y_continuous(name = expression("N flux (kg N ha"^-1~"yr"^-1*")")) +
-    ggplot2::facet_grid(~driver, scales = "free_x", space = "free_x") +
-    ggplot2::labs(x = NULL, tag = "a") +
-    theme_manuscript() +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
-                    legend.position = "right")
-}
-
-plot_fig_05_b_leaching <- function(fig_05_b_data) {
-  mgmt_cols <- c("Mineral fertiliser | Residue Removed" = "#998EC3",
-                 "Biogas digestate | Residue Removed" = "#F5A641",
-                 "Biogas digestate | Residue Retained" = "#B35806")
-
-  ggplot2::ggplot(
-    fig_05_b_data,
-    ggplot2::aes(x = scen_label, y = mean_kgN_ha, colour = management_label, shape = management_label)
-  ) +
-    ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
-    ggplot2::geom_errorbar(
-      ggplot2::aes(ymin = mean_kgN_ha - sd_kgN_ha, ymax = mean_kgN_ha + sd_kgN_ha),
-      width = 0.18, linewidth = 0.35, alpha = 0.7,
-      position = ggplot2::position_dodge(width = 0.45)
+    ggplot2::scale_y_continuous(
+      name = expression("N flux (kg N ha"^-1~"yr"^-1*")"),
+      breaks = seq(0, 300, 100), limits = c(0, max(fig_05_flux_axis_max, d$hi)),
+      expand = ggplot2::expansion(mult = c(0, 0.02)),
+      sec.axis = ggplot2::sec_axis(~ . / k, name = expression("N leaching (kg N ha"^-1~"yr"^-1*")"),
+                                   breaks = seq(0, fig_05_leach_axis_max, 10))
     ) +
-    ggplot2::geom_point(size = 2, position = ggplot2::position_dodge(width = 0.45)) +
-    ggplot2::scale_colour_manual(values = mgmt_cols, name = "Management") +
-    ggplot2::scale_shape_manual(values = c(16, 17, 15), name = "Management") +
-    ggplot2::scale_x_discrete(labels = scen_axis_label) +
-    ggplot2::scale_y_continuous(name = expression("N leaching (kg N ha"^-1~"yr"^-1*")")) +
     ggplot2::facet_grid(~driver, scales = "free_x", space = "free_x") +
-    ggplot2::labs(x = NULL, tag = "b") +
+    ggplot2::labs(x = NULL) +
     theme_manuscript() +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
-                    legend.position = "right")
-}
-
-plot_fig_05 <- function(fig_05_a_data, fig_05_b_data) {
-  patchwork::wrap_plots(
-    plot_fig_05_a_fluxes(fig_05_a_data),
-    plot_fig_05_b_leaching(fig_05_b_data),
-    ncol = 1, heights = c(1, 1)
-  )
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 9),
+      # The right title reads top to bottom, so hjust = 1 puts it at the bottom,
+      # beside the leaching band.
+      axis.title.y.right = ggplot2::element_text(hjust = 1),
+      legend.position = "bottom",
+      legend.text = ggtext::element_markdown(size = 9),
+      legend.key.height = ggplot2::unit(0.9, "lines")
+    ) +
+    ggplot2::guides(colour = ggplot2::guide_legend(nrow = 5, byrow = FALSE),
+                    shape = ggplot2::guide_legend(nrow = 5, byrow = FALSE))
 }
 
 # ===========================================================================
@@ -509,9 +621,9 @@ plot_fig_06 <- function(fig_06_a_data, fig_06_b_data) {
 # the quadrant a point falls in reads directly: upper-left = worse on both,
 # lower-right = better on both.
 #
-# A reviewer asked whether panel (b) is necessary given panel (a). Both are kept
-# at the author's request; (a) is the whole-system signal, (b) the marketable-
-# grain signal, and they do not have to move together.
+# A reviewer (Jeroen) asked whether the grain-only panel (b) was needed; it was
+# dropped, so the figure now shows the all-crop ASY AGB signal only. The grain
+# data (fig_07_b_data) is still built because Supplementary S12 uses it.
 # ===========================================================================
 
 tradeoff_driver_palette <- c(
@@ -521,14 +633,25 @@ tradeoff_driver_palette <- c(
   "Wind" = "#1B7837"
 )
 
-plot_fig_07_panel <- function(tradeoff_data, y_lab, tag) {
-  reference_lines <- build_tradeoff_reference_lines(tradeoff_data)
+plot_fig_07 <- function(fig_07_a_data) {
+  reference_lines <- build_tradeoff_reference_lines(fig_07_a_data)
+
+  # Shaded region = favourable quadrant: yield at or above openfield parity and
+  # N leaching at or below the management-matched openfield value.
+  shade <- reference_lines |>
+    dplyr::transmute(management_label, xmin = reference_yield_pct, xmax = Inf,
+                     ymin = -Inf, ymax = reference_leaching_kgN_ha)
 
   ggplot2::ggplot(
-    tradeoff_data,
+    fig_07_a_data,
     ggplot2::aes(x = relative_yield_pct, y = leaching_kgN_ha,
                  colour = driver, shape = driver)
   ) +
+    ggplot2::geom_rect(
+      data = shade, inherit.aes = FALSE,
+      ggplot2::aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      fill = "#1B7837", alpha = 0.07
+    ) +
     ggplot2::geom_vline(
       data = reference_lines,
       ggplot2::aes(xintercept = reference_yield_pct),
@@ -540,12 +663,26 @@ plot_fig_07_panel <- function(tradeoff_data, y_lab, tag) {
       linetype = "dashed", colour = "grey50", linewidth = 0.4
     ) +
     ggplot2::geom_point(size = 2.1, alpha = 0.9) +
-    ggplot2::scale_colour_manual(values = tradeoff_driver_palette, name = "Driver") +
+    ggplot2::geom_text(
+      data = dplyr::mutate(shade, label = "higher yield,
+less leaching"),
+      inherit.aes = FALSE,
+      ggplot2::aes(x = Inf, y = -Inf, label = label),
+      hjust = 1.05, vjust = -0.4, size = 2.4, fontface = "italic",
+      colour = "#1B7837", lineheight = 0.9
+    ) +
+    ggplot2::scale_colour_manual(values = tradeoff_driver_palette, name = "Driver",
+                                  labels = c("Open field" = "Openfield")) +
     ggplot2::scale_shape_manual(values = c("Open field" = 15, "Radiation" = 16,
-                                            "Temperature" = 17, "Wind" = 3), name = "Driver") +
+                                            "Temperature" = 17, "Wind" = 3), name = "Driver",
+                                 labels = c("Open field" = "Openfield")) +
     ggplot2::scale_x_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
     ggplot2::facet_wrap(~management_label, nrow = 1) +
-    ggplot2::labs(x = y_lab, y = expression("N leaching (kg N ha"^-1~"yr"^-1*")"), tag = tag) +
+    ggplot2::labs(
+      x = "Relative all-crop ASY AGB (% of openfield)",
+      y = expression("N leaching (kg N ha"^-1~"yr"^-1*")"),
+      caption = "Shaded region = yield at or above openfield parity with N leaching at or below the openfield value."
+    ) +
     theme_manuscript() +
     ggplot2::theme(
       axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
@@ -554,35 +691,27 @@ plot_fig_07_panel <- function(tradeoff_data, y_lab, tag) {
     )
 }
 
-plot_fig_07 <- function(fig_07_a_data, fig_07_b_data) {
-  patchwork::wrap_plots(
-    plot_fig_07_panel(fig_07_a_data, "Relative all-crop ASY AGB (% of open field)", "a"),
-    plot_fig_07_panel(fig_07_b_data, "Relative grain ASY, WW + SY (% of open field)", "b"),
-    ncol = 1
-  ) + patchwork::plot_layout(guides = "collect")
-}
-
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S6 - wind: hydrological effect, no agronomic effect.
+# SUPPLEMENTARY FIGURE S7 - wind: hydrological effect, no agronomic effect.
 # (a) FAO-56 aerodynamic fraction vs wind speed (analytical)
 # (b) simulated ET0 / PET / AET across the wind-shelter ladder
 # (c) per-crop AGB across the same ladder
 # ===========================================================================
 
-plot_fig_s06_a <- function(fig_s06_a_data) {
-  ggplot2::ggplot(fig_s06_a_data$curve, ggplot2::aes(x = wind_m_s, y = 100 * aero_fraction)) +
+plot_fig_s07_a <- function(fig_s07_a_data) {
+  ggplot2::ggplot(fig_s07_a_data$curve, ggplot2::aes(x = wind_m_s, y = 100 * aero_fraction)) +
     ggplot2::geom_line(linewidth = 0.8, colour = "grey20") +
     ggplot2::geom_vline(
-      data = fig_s06_a_data$reference_speeds,
+      data = fig_s07_a_data$reference_speeds,
       ggplot2::aes(xintercept = wind_m_s, colour = label),
       linetype = "dashed", linewidth = 0.5
     ) +
     ggplot2::geom_point(
-      data = fig_s06_a_data$reference_speeds,
+      data = fig_s07_a_data$reference_speeds,
       ggplot2::aes(x = wind_m_s, y = 100 * aero_fraction, colour = label), size = 2.4
     ) +
     ggrepel::geom_text_repel(
-      data = fig_s06_a_data$reference_speeds,
+      data = fig_s07_a_data$reference_speeds,
       ggplot2::aes(x = wind_m_s, y = 100 * aero_fraction,
                    label = sprintf("%.1f m s⁻¹\n%.0f%%", wind_m_s, 100 * aero_fraction),
                    colour = label),
@@ -602,8 +731,8 @@ plot_fig_s06_a <- function(fig_s06_a_data) {
                     legend.title = ggplot2::element_text(size = 8))
 }
 
-plot_fig_s06_b <- function(fig_s06_b_data) {
-  ggplot2::ggplot(fig_s06_b_data,
+plot_fig_s07_b <- function(fig_s07_b_data) {
+  ggplot2::ggplot(fig_s07_b_data,
                   ggplot2::aes(x = shelter_pct, y = mean_relative_pct,
                                colour = flux, shape = flux)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
@@ -629,8 +758,8 @@ plot_fig_s06_b <- function(fig_s06_b_data) {
                     legend.title = ggplot2::element_text(size = 8))
 }
 
-plot_fig_s06_c <- function(fig_s06_c_data) {
-  ggplot2::ggplot(fig_s06_c_data,
+plot_fig_s07_c <- function(fig_s07_c_data) {
+  ggplot2::ggplot(fig_s07_c_data,
                   ggplot2::aes(x = shelter_pct, y = mean_relative_pct, colour = crop_renamed)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
     ggplot2::geom_ribbon(
@@ -653,24 +782,25 @@ plot_fig_s06_c <- function(fig_s06_c_data) {
                     legend.title = ggplot2::element_text(size = 8))
 }
 
-plot_fig_s06 <- function(fig_s06_a_data, fig_s06_b_data, fig_s06_c_data) {
+plot_fig_s07 <- function(fig_s07_a_data, fig_s07_b_data, fig_s07_c_data) {
   patchwork::wrap_plots(
-    plot_fig_s06_a(fig_s06_a_data),
-    plot_fig_s06_b(fig_s06_b_data),
-    plot_fig_s06_c(fig_s06_c_data),
+    plot_fig_s07_a(fig_s07_a_data),
+    plot_fig_s07_b(fig_s07_b_data),
+    plot_fig_s07_c(fig_s07_c_data),
     nrow = 1
   )
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S7 - wind benchmarked against radiation and temperature.
+# SUPPLEMENTARY FIGURE S8 - wind benchmarked against radiation and temperature.
 # (b) demand-vs-use decomposition; (c) yield response range per driver.
 #
-# A soil water / pF / stress-ladder panel is not reproduced here.
+# Panel (a) of the draft's S8 (soil water / pF / stress ladders) is not
+# reproduced here - see docs/workflow.md.
 # ===========================================================================
 
-plot_fig_s07_b <- function(fig_s07_b_data) {
-  ggplot2::ggplot(fig_s07_b_data, ggplot2::aes(x = wind_m_s, y = delta_mm, colour = term)) +
+plot_fig_s08_b <- function(fig_s08_b_data) {
+  ggplot2::ggplot(fig_s08_b_data, ggplot2::aes(x = wind_m_s, y = delta_mm, colour = term)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
     ggplot2::geom_point(alpha = 0.10, size = 0.5) +
     ggplot2::geom_smooth(method = "loess", formula = y ~ x, se = TRUE, linewidth = 0.8) +
@@ -685,8 +815,8 @@ plot_fig_s07_b <- function(fig_s07_b_data) {
                     legend.position = "bottom")
 }
 
-plot_fig_s07_c <- function(fig_s07_c_data) {
-  ggplot2::ggplot(fig_s07_c_data,
+plot_fig_s08_c <- function(fig_s08_c_data) {
+  ggplot2::ggplot(fig_s08_c_data,
                   ggplot2::aes(x = crop_renamed, y = mean_response, fill = driver)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
     ggplot2::geom_col(position = ggplot2::position_dodge(width = 0.8), width = 0.75) +
@@ -708,14 +838,14 @@ plot_fig_s07_c <- function(fig_s07_c_data) {
                     legend.position = "bottom")
 }
 
-plot_fig_s07_a <- function(fig_s07_a_data) {
-  labels <- levels(fig_s07_a_data$scen_label)
+plot_fig_s08_a <- function(fig_s08_a_data) {
+  labels <- levels(fig_s08_a_data$scen_label)
   ramp <- c("Reference" = "grey10",
-            s08_driver_ramp(setdiff(labels, "Reference"), "Wind"))
+            s09_driver_ramp(setdiff(labels, "Reference"), "Wind"))
 
   wilting <- tibble::tibble(variable = "Root-zone pF", y = WILTING_POINT_PF)
 
-  ggplot2::ggplot(fig_s07_a_data,
+  ggplot2::ggplot(fig_s08_a_data,
                   ggplot2::aes(x = day_of_year, y = value,
                                colour = scen_label, group = scen_label)) +
     ggplot2::geom_hline(data = wilting, ggplot2::aes(yintercept = y),
@@ -733,20 +863,20 @@ plot_fig_s07_a <- function(fig_s07_a_data) {
                     legend.position = "right")
 }
 
-plot_fig_s07 <- function(fig_s07_a_data, fig_s07_b_data, fig_s07_c_data) {
+plot_fig_s08 <- function(fig_s08_a_data, fig_s08_b_data, fig_s08_c_data) {
   patchwork::wrap_plots(
-    plot_fig_s07_a(fig_s07_a_data),
-    plot_fig_s07_b(fig_s07_b_data),
-    plot_fig_s07_c(fig_s07_c_data),
+    plot_fig_s08_a(fig_s08_a_data),
+    plot_fig_s08_b(fig_s08_b_data),
+    plot_fig_s08_c(fig_s08_c_data),
     ncol = 1, heights = c(1.5, 1, 1.1)
   )
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S10 - continuous SOC dynamics with crop calendar.
+# SUPPLEMENTARY FIGURE S14 - continuous SOC dynamics with crop calendar.
 # ===========================================================================
 
-plot_fig_s10 <- function(fig_s10_data, crop_calendar, zoom_years = 1998:2004) {
+plot_fig_s14 <- function(fig_s14_data, crop_calendar, zoom_years = 1998:2004, tags = c("a", "b")) {
   scen_cols <- c(
     "Reference" = "grey10",
     "Rad 0%" = "#FDBE85", "Rad -10%" = "#FD8D3C", "Rad -30%" = "#A63603",
@@ -787,8 +917,8 @@ plot_fig_s10 <- function(fig_s10_data, crop_calendar, zoom_years = 1998:2004) {
                       panel.grid.major.y = ggplot2::element_blank())
   }
 
-  full <- fig_s10_data |> dplyr::filter(family != "Open field" | TRUE)
-  zoom <- fig_s10_data |> dplyr::filter(lubridate::year(date) %in% zoom_years)
+  full <- fig_s14_data |> dplyr::filter(family != "Open field" | TRUE)
+  zoom <- fig_s14_data |> dplyr::filter(lubridate::year(date) %in% zoom_years)
 
   full_range <- range(full$date, na.rm = TRUE)
   zoom_range <- range(zoom$date, na.rm = TRUE)
@@ -804,14 +934,275 @@ plot_fig_s10 <- function(fig_s10_data, crop_calendar, zoom_years = 1998:2004) {
   }
 
   (calendar_panel(crop_calendar, full_range) /
-     soc_panel(add_reference(full), "a", "Full evaluation period (1998–2024)") /
+     soc_panel(add_reference(full), tags[1], "Full evaluation period (1998–2024)") /
      calendar_panel(crop_calendar, zoom_range) /
-     soc_panel(add_reference(zoom), "b", "One rotation cycle, zoomed")) +
+     soc_panel(add_reference(zoom), tags[2], "One rotation cycle, zoomed")) +
     patchwork::plot_layout(heights = c(0.5, 3, 0.5, 3), guides = "collect")
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S8 - canopy size and cumulative water use.
+# SUPPLEMENTARY FIGURE S24 - seasonal nitrate-leaching dynamics with crop
+# calendar and residual-N crop-phase attribution. Design rationale, the
+# 1-April vs 1-September agrohydrological-year decision, and the
+# percolation-not-drain-flow basis are all in R/nitrogen.R, immediately above
+# prepare_fig_s24_a_data() - read that before changing this.
+# ===========================================================================
+
+plot_fig_s24 <- function(fig_s24_a_data, fig_s24_b_data, fig_s24_percolation,
+                          fig_s24_windows, crop_calendar,
+                          zoom_years = s24_zoom_years, tags = c("a", "b")) {
+  scen_cols <- c(
+    "Reference" = "grey10",
+    "Rad 0%" = "#FDBE85", "Rad -10%" = "#FD8D3C", "Rad -30%" = "#A63603",
+    "Tmp 0degC" = "#C6DBEF", "Tmp -3degC" = "#1A3D6F", "Tmp +3degC" = "#B2182B"
+  )
+
+  # The open-field reference belongs in both driver facets as the black
+  # anchor (same approach as plot_fig_s14's add_reference()).
+  add_reference <- function(d) {
+    ref <- d |> dplyr::filter(family == "Open field") |> dplyr::select(-family)
+    if (nrow(ref) == 0) return(d |> dplyr::filter(family != "Open field"))
+    dplyr::bind_rows(
+      d |> dplyr::filter(family %in% c("Radiation", "Temperature")),
+      tidyr::crossing(ref, family = c("Radiation", "Temperature"))
+    )
+  }
+
+  calendar_panel <- function(cal, date_range) {
+    cal <- cal |> dplyr::filter(start_date >= date_range[1], end_date <= date_range[2])
+    ggplot2::ggplot(cal) +
+      ggplot2::geom_segment(
+        ggplot2::aes(x = start_date, xend = end_date,
+                     y = crop_renamed, yend = crop_renamed, colour = crop_renamed),
+        linewidth = 3.2
+      ) +
+      ggplot2::scale_colour_manual(values = crop_palette, guide = "none") +
+      ggplot2::scale_x_date(limits = date_range) +
+      ggplot2::labs(x = NULL, y = NULL) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                      axis.text.y = ggplot2::element_text(size = 7),
+                      panel.grid.major.y = ggplot2::element_blank())
+  }
+
+  # Second calendar-like row, directly under the standing-crop row: which
+  # crop is the residual-N source for each drainage window, which is not
+  # always the crop the row above shows as standing (see the header note).
+  attribution_panel <- function(windows, date_range) {
+    # Clamp rather than rely on scale-level censoring: a window that straddles
+    # the panel edge (e.g. the last zoom-year's Oct-Mar window running past
+    # the zoom cutoff) has one endpoint outside date_range, and geom_segment
+    # drops the WHOLE row when either endpoint is censored to NA - leaving a
+    # gap for the months that ARE in range rather than a clipped segment.
+    windows <- windows |>
+      dplyr::filter(window_end >= date_range[1], window_start <= date_range[2]) |>
+      dplyr::mutate(window_start = pmax(window_start, date_range[1]),
+                    window_end = pmin(window_end, date_range[2]))
+    ggplot2::ggplot(windows) +
+      ggplot2::geom_segment(
+        ggplot2::aes(x = window_start, xend = window_end,
+                     y = "Residual-N\nsource", yend = "Residual-N\nsource",
+                     colour = preceding_crop),
+        linewidth = 3.2
+      ) +
+      ggplot2::scale_colour_manual(values = crop_palette, guide = "none") +
+      ggplot2::scale_x_date(limits = date_range) +
+      ggplot2::labs(x = NULL, y = NULL) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                      axis.text.y = ggplot2::element_text(size = 6.5),
+                      panel.grid.major.y = ggplot2::element_blank())
+  }
+
+  # Panel (a): one point per agrohydrological year, not a continuous line -
+  # leaching is an annual flow, unlike Fig. S14's continuous SOC stock.
+  annual_panel <- function(d, tag, title) {
+    ggplot2::ggplot(d, ggplot2::aes(x = year, y = leaching_kgN_ha,
+                                     colour = scen_label, group = scen_label)) +
+      # Line only, matching monthly_panel's single geom_line layer (and
+      # Fig. S14's soc_panel): patchwork's guides = "collect" only merges two
+      # panels' legends into one when their guides match, which in practice
+      # means the colour-mapped LAYERS have to match too, not just the scale -
+      # a line+point panel and a line-only panel produced two stacked
+      # "Scenario" legends instead of one, even with an identical scale.
+      ggplot2::geom_line(linewidth = 0.55) +
+      ggplot2::scale_colour_manual(values = scen_cols, name = "Scenario",
+                                    labels = scen_axis_label) +
+      ggplot2::scale_x_continuous(breaks = scales::breaks_pretty()) +
+      ggplot2::scale_y_continuous(
+        name = expression("N leaching, 100 cm (kg N ha"^-1*" yr"^-1*")")) +
+      ggplot2::facet_wrap(~family, ncol = 1, scales = "free_y") +
+      ggplot2::labs(x = NULL, tag = tag, title = title,
+                    subtitle = "Agrohydrological year (1 Apr–31 Mar), Rotation 1, Dig–Rem") +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7),
+                      plot.title = ggplot2::element_text(face = "bold", size = 9),
+                      legend.position = "right")
+  }
+
+  # Panel (b): monthly leaching, zoomed, with the drainage-season bands and
+  # the open-field percolation reference from the header note.
+  monthly_panel <- function(d, perc, windows, tag, title, date_range) {
+    perc_in_range <- perc |> dplyr::filter(month_date >= date_range[1], month_date <= date_range[2])
+    perc_scale <- max(d$monthly_leaching_kgN_ha, na.rm = TRUE) /
+      max(perc_in_range$monthly_percolation_mm, na.rm = TRUE)
+    perc_both <- tidyr::crossing(perc_in_range, family = c("Radiation", "Temperature"))
+    windows_both <- windows |>
+      dplyr::filter(window_end >= date_range[1], window_start <= date_range[2]) |>
+      dplyr::mutate(window_start = pmax(window_start, date_range[1]),
+                    window_end = pmin(window_end, date_range[2])) |>
+      tidyr::crossing(family = c("Radiation", "Temperature"))
+
+    ggplot2::ggplot(d, ggplot2::aes(x = month_date, y = monthly_leaching_kgN_ha,
+                                     colour = scen_label, group = scen_label)) +
+      ggplot2::geom_rect(
+        data = windows_both,
+        ggplot2::aes(xmin = window_start, xmax = window_end, ymin = -Inf, ymax = Inf),
+        fill = "grey80", alpha = 0.35, inherit.aes = FALSE
+      ) +
+      ggplot2::geom_area(
+        data = perc_both,
+        ggplot2::aes(x = month_date, y = monthly_percolation_mm * perc_scale),
+        fill = "grey50", alpha = 0.3, inherit.aes = FALSE
+      ) +
+      ggplot2::geom_line(linewidth = 0.55) +
+      ggplot2::scale_colour_manual(values = scen_cols, name = "Scenario",
+                                    labels = scen_axis_label) +
+      ggplot2::scale_x_date(limits = date_range) +
+      ggplot2::scale_y_continuous(
+        name = expression("N leaching, profile-bottom (kg N ha"^-1*" month"^-1*")"),
+        sec.axis = ggplot2::sec_axis(~ . / perc_scale,
+                                      name = expression(atop("Open-field percolation", "(mm month"^-1*")")))
+      ) +
+      ggplot2::facet_wrap(~family, ncol = 1, scales = "free_y") +
+      ggplot2::labs(
+        x = NULL, tag = tag, title = title,
+        caption = paste(
+          "Shaded bands: nominal 1 Oct–31 Mar drainage season (63–71% of annual leaching, Fig. S13). Grey area: open-field percolation, the flux leaching is carried on (drain flow is zero throughout, Fig. S10).",
+          "Profile-bottom basis — not directly comparable to panel (a)'s 100 cm annual totals (Fig. 5 basis; see Fig. S13).",
+          sep = "\n"
+        )
+      ) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7),
+                      plot.title = ggplot2::element_text(face = "bold", size = 9),
+                      plot.caption = ggplot2::element_text(size = 6.5),
+                      legend.position = "right")
+  }
+
+  full_range <- range(fig_s24_a_data$year, na.rm = TRUE)
+  full_date_range <- as.Date(sprintf(c("%d-01-01", "%d-12-31"), full_range))
+  zoom_date_range <- range(fig_s24_b_data$month_date, na.rm = TRUE)
+  zoom_date_range[2] <- lubridate::ceiling_date(zoom_date_range[2], "month") - 1
+
+  (calendar_panel(crop_calendar, full_date_range) /
+     annual_panel(add_reference(fig_s24_a_data), tags[1], "Full evaluation period (1998–2024)") /
+     calendar_panel(crop_calendar, zoom_date_range) /
+     attribution_panel(fig_s24_windows, zoom_date_range) /
+     monthly_panel(add_reference(fig_s24_b_data), fig_s24_percolation, fig_s24_windows,
+                   tags[2], "One rotation cycle, zoomed", zoom_date_range)) +
+    patchwork::plot_layout(heights = c(0.5, 3, 0.5, 0.45, 3), guides = "collect")
+}
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S25 - nitrogen-supply mechanism behind the radiation
+# ladder's leaching response, and why it has the opposite sign from the real
+# substrip shading pattern. Motivation, the verified numbers, and what this
+# figure does and doesn't establish are all in R/nitrogen.R, immediately
+# above prepare_fig_s25_a_data() - read that before changing this.
+# ===========================================================================
+
+plot_fig_s25 <- function(fig_s25_a_data, fig_s25_b_data, fig_s25_c_data, crop_calendar,
+                          zoom_years = s24_zoom_years, tags = c("a", "b")) {
+  scen_cols <- c("Reference" = "grey10", "Rad 0%" = "#FDBE85",
+                  "Rad -10%" = "#FD8D3C", "Rad -30%" = "#A63603")
+  flux_cols <- c("Biological N fixation" = "#1B7837", "Mineralisation" = "#8C6D31",
+                  "Crop N uptake" = "#2166AC", "N leaching" = "#B2182B")
+
+  calendar_panel <- function(cal, date_range) {
+    cal <- cal |> dplyr::filter(start_date >= date_range[1], end_date <= date_range[2])
+    ggplot2::ggplot(cal) +
+      ggplot2::geom_segment(
+        ggplot2::aes(x = start_date, xend = end_date,
+                     y = crop_renamed, yend = crop_renamed, colour = crop_renamed),
+        linewidth = 3.2
+      ) +
+      ggplot2::scale_colour_manual(values = crop_palette, guide = "none") +
+      ggplot2::scale_x_date(limits = date_range) +
+      ggplot2::labs(x = NULL, y = NULL) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_blank(),
+                      axis.text.y = ggplot2::element_text(size = 7),
+                      panel.grid.major.y = ggplot2::element_blank())
+  }
+
+  # Panel (a): four N-budget terms as rows, radiation scenarios as coloured
+  # lines, one rotation cycle - fixation and mineralisation pulling down
+  # alongside uptake is the seasonal face of the mechanism.
+  seasonal_panel <- function(d, tag, date_range) {
+    ggplot2::ggplot(d, ggplot2::aes(x = month_date, y = monthly_kgN_ha,
+                                     colour = scen_label, group = scen_label)) +
+      ggplot2::geom_line(linewidth = 0.55) +
+      ggplot2::scale_colour_manual(values = scen_cols, name = "Scenario",
+                                    labels = scen_axis_label) +
+      ggplot2::scale_x_date(limits = date_range) +
+      ggplot2::facet_wrap(~flux, ncol = 1, scales = "free_y") +
+      ggplot2::labs(
+        x = NULL, y = expression("kg N ha"^-1*" month"^-1), tag = tag,
+        title = "Seasonal N-budget dynamics, one rotation cycle",
+        subtitle = "Rotation 1, Dig–Rem; profile-bottom basis, as Fig. S24b"
+      ) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7),
+                      plot.title = ggplot2::element_text(face = "bold", size = 9),
+                      strip.text = ggplot2::element_text(size = 8),
+                      legend.position = "right")
+  }
+
+  # Panel (b): the ladder and the real substrip response for the same four
+  # terms, side by side on one % axis - the direct sign-flip comparison.
+  # facet_grid(scales/space = "free") gives the 4-level ladder and the
+  # 2-level substrip group proportional width rather than equal panels, the
+  # same technique plot_fig04() uses for uneven scenario counts per facet.
+  mechanism_panel <- function(d, tag) {
+    ggplot2::ggplot(d, ggplot2::aes(x = condition, y = pct_change, fill = flux)) +
+      ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.45) +
+      ggplot2::geom_col(position = ggplot2::position_dodge(width = 0.82), width = 0.78,
+                         colour = "grey20", linewidth = 0.15) +
+      ggplot2::scale_fill_manual(values = flux_cols, name = NULL) +
+      ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%")) +
+      ggplot2::facet_grid(~comparison_group, scales = "free_x", space = "free_x") +
+      ggplot2::labs(
+        x = NULL, y = "Change from own 0-level reference", tag = tag,
+        title = "Same driver, opposite sign on leaching: ladder vs real substrip shading",
+        caption = "Ladder: % change from Rad 0% (Centre). Substrip: % change from Centre, at each driver's 0-level (the actually-simulated microclimate). Both Biogas digestate, Residue Removed, 1998–2024, 4-rotation mean."
+      ) +
+      theme_manuscript() +
+      ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 8),
+                      strip.text = ggplot2::element_text(size = 8),
+                      plot.title = ggplot2::element_text(face = "bold", size = 9),
+                      plot.caption = ggplot2::element_text(size = 6.5),
+                      legend.position = "bottom")
+  }
+
+  zoom_date_range <- range(fig_s25_a_data$month_date, na.rm = TRUE)
+  zoom_date_range[2] <- lubridate::ceiling_date(zoom_date_range[2], "month") - 1
+  bc_data <- dplyr::bind_rows(fig_s25_b_data, fig_s25_c_data) |>
+    dplyr::mutate(
+      condition = factor(condition, levels = c("Rad -5%", "Rad -10%", "Rad -20%", "Rad -30%",
+                                                 "West", "East")),
+      comparison_group = factor(comparison_group, levels = c(
+        "Uniform radiation ladder\n(Centre strip)", "Real substrip position\n(0-level, vs Centre)"))
+    )
+
+  (calendar_panel(crop_calendar, zoom_date_range) /
+     seasonal_panel(fig_s25_a_data, tags[1], zoom_date_range) /
+     mechanism_panel(bc_data, tags[2])) +
+    patchwork::plot_layout(heights = c(0.35, 3.5, 2.2))
+}
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S9 - canopy size and cumulative water use.
 #
 # The mechanistic close of the wind argument. Radiation and temperature each
 # produce graded, dose-dependent divergence in both LAI and cumulative
@@ -822,7 +1213,7 @@ plot_fig_s10 <- function(fig_s10_data, crop_calendar, zoom_years = 1998:2004) {
 # the drivers are separated by facet so the three ramps are not confused.
 # ===========================================================================
 
-s08_driver_ramp <- function(labels, family) {
+s09_driver_ramp <- function(labels, family) {
   n <- length(labels)
   pal <- switch(family,
     "Radiation" = colorRampPalette(c("#FEE8C8", "#A63603"))(n),
@@ -833,7 +1224,7 @@ s08_driver_ramp <- function(labels, family) {
   stats::setNames(pal, labels)
 }
 
-plot_fig_s08_row <- function(d, y_col, y_lab, tag, show_x = TRUE) {
+plot_fig_s09_row <- function(d, y_col, y_lab, tag, show_x = TRUE) {
   families <- c("Radiation", "Wind", "Temperature")
   d <- d |>
     dplyr::mutate(family = classify_scenario_family(scen_label)) |>
@@ -853,7 +1244,7 @@ plot_fig_s08_row <- function(d, y_col, y_lab, tag, show_x = TRUE) {
     dplyr::arrange(family, scen_label)
   ramp <- unlist(lapply(families, \(f) {
     labs <- ordered_labels$scen_label[ordered_labels$family == f]
-    s08_driver_ramp(labs, f)
+    s09_driver_ramp(labs, f)
   }))
 
   ggplot2::ggplot(scenarios, ggplot2::aes(x = day_of_year, y = .data[[y_col]],
@@ -871,14 +1262,14 @@ plot_fig_s08_row <- function(d, y_col, y_lab, tag, show_x = TRUE) {
                     strip.text = ggplot2::element_text(size = 8))
 }
 
-plot_fig_s08 <- function(fig_s08_data) {
-  lai <- fig_s08_data$lai
-  transp <- fig_s08_data$transpiration |>
+plot_fig_s09 <- function(fig_s09_data) {
+  lai <- fig_s09_data$lai
+  transp <- fig_s09_data$transpiration |>
     dplyr::inner_join(dplyr::distinct(lai, crop_renamed, year), by = "year")
 
   patchwork::wrap_plots(
-    plot_fig_s08_row(lai, "lai", expression("LAI (m"^2~"m"^-2*")"), "a", show_x = FALSE),
-    plot_fig_s08_row(transp, "cumulative_transpiration_mm",
+    plot_fig_s09_row(lai, "lai", expression("LAI (m"^2~"m"^-2*")"), "a", show_x = FALSE),
+    plot_fig_s09_row(transp, "cumulative_transpiration_mm",
                       "Cumulative actual\ntranspiration (mm)", "b"),
     ncol = 1
   )
@@ -957,7 +1348,7 @@ plot_fig_s01 <- function(fig_s01_weather, fig_s01_calendar) {
 # ensemble, against the Foulum 2024 field target.
 # ===========================================================================
 
-plot_fig_s05 <- function(fig_s05_data) {
+plot_fig_s05 <- function(fig_s05_data, tags = c("a", "b")) {
   if (is.null(fig_s05_data) || nrow(fig_s05_data) == 0) return(patchwork::plot_spacer())
 
   best <- fig_s05_data |> dplyr::slice_min(abs(deviation_pct), n = 1, with_ties = FALSE)
@@ -971,7 +1362,7 @@ plot_fig_s05 <- function(fig_s05_data) {
                        label = sprintf("Field target\n%.2f t DM ha⁻¹", GC_FIELD_TARGET_T_DM_HA),
                        hjust = 1.05, vjust = 1.2, size = 2.6, colour = "#B2182B") +
     ggplot2::labs(x = expression("Simulated annual AGB (t DM ha"^-1~"yr"^-1*")"),
-                   y = "Parameter sets", tag = "a") +
+                   y = "Parameter sets", tag = tags[1]) +
     theme_manuscript() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5))
 
@@ -983,7 +1374,7 @@ plot_fig_s05 <- function(fig_s05_data) {
                        label = sprintf("Selected: %+.2f%%", best$deviation_pct),
                        hjust = -0.05, vjust = 1.6, size = 2.6, colour = "#1B7837") +
     ggplot2::scale_x_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
-    ggplot2::labs(x = "Deviation from field target", y = "Parameter sets", tag = "b") +
+    ggplot2::labs(x = "Deviation from field target", y = "Parameter sets", tag = tags[2]) +
     theme_manuscript() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5))
 
@@ -1076,11 +1467,11 @@ plot_fig_s04 <- function(fig_s04_data, fig_s04_season) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S16 - rotation yield composition.
+# SUPPLEMENTARY FIGURE S06 - rotation yield composition.
 # ===========================================================================
 
-plot_fig_s16 <- function(fig_s16_data) {
-  p_abs <- ggplot2::ggplot(fig_s16_data,
+plot_fig_s06 <- function(fig_s06_data) {
+  p_abs <- ggplot2::ggplot(fig_s06_data,
                             ggplot2::aes(x = scen_label, y = mean_contribution, fill = crop_renamed)) +
     ggplot2::geom_col(width = 0.8) +
     ggplot2::scale_fill_manual(values = crop_palette, name = "Crop") +
@@ -1091,7 +1482,7 @@ plot_fig_s16 <- function(fig_s16_data) {
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
                     legend.position = "right")
 
-  p_share <- ggplot2::ggplot(fig_s16_data,
+  p_share <- ggplot2::ggplot(fig_s06_data,
                               ggplot2::aes(x = scen_label, y = share_pct, fill = crop_renamed)) +
     ggplot2::geom_col(width = 0.8) +
     ggplot2::scale_fill_manual(values = crop_palette, name = "Crop") +
@@ -1107,19 +1498,19 @@ plot_fig_s16 <- function(fig_s16_data) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S17 - complete nitrogen budget.
+# SUPPLEMENTARY FIGURE S12 - complete nitrogen budget.
 # Inputs above the axis, outputs below; the gap between them is the surplus
 # available to leach.
 # ===========================================================================
 
-plot_fig_s17 <- function(fig_s17_data) {
+plot_fig_s12 <- function(fig_s12_data) {
   term_cols <- c(
     "Mineral fertiliser" = "#998EC3", "Organic fertiliser" = "#F5A641",
     "Biological fixation" = "#0072B2", "Net mineralisation" = "#8C6D31",
     "Crop uptake" = "#4EA72E", "Leaching" = "#B2182B"
   )
 
-  ggplot2::ggplot(fig_s17_data,
+  ggplot2::ggplot(fig_s12_data,
                   ggplot2::aes(x = scen_label, y = mean_kgN_ha, fill = term)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey30", linewidth = 0.5) +
     ggplot2::geom_col(width = 0.8) +
@@ -1136,13 +1527,13 @@ plot_fig_s17 <- function(fig_s17_data) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S18 - rotation-permutation spread vs scenario step.
+# SUPPLEMENTARY FIGURE S19 - rotation-permutation spread vs scenario step.
 # Evidences the Discussion claim that weather-year assignment alone moves
 # yield by an amount comparable to one radiation-scenario step.
 # ===========================================================================
 
-plot_fig_s18 <- function(fig_s18_data) {
-  ggplot2::ggplot(fig_s18_data,
+plot_fig_s19 <- function(fig_s19_data) {
+  ggplot2::ggplot(fig_s19_data,
                   ggplot2::aes(x = crop_renamed, y = pct, fill = source)) +
     ggplot2::geom_col(position = ggplot2::position_dodge(width = 0.8), width = 0.75) +
     ggplot2::geom_text(
@@ -1150,7 +1541,7 @@ plot_fig_s18 <- function(fig_s18_data) {
       position = ggplot2::position_dodge(width = 0.8), vjust = -0.4, size = 2.4, colour = "grey25"
     ) +
     ggplot2::scale_fill_manual(
-      values = stats::setNames(c("#7A7A7A", "#E69F00"), unique(fig_s18_data$source)), name = NULL) +
+      values = stats::setNames(c("#7A7A7A", "#E69F00"), unique(fig_s19_data$source)), name = NULL) +
     ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1),
                                  expand = ggplot2::expansion(mult = c(0, 0.12))) +
     ggplot2::labs(x = NULL, y = "Change in mean AGB",
@@ -1175,21 +1566,33 @@ plot_fig_s18 <- function(fig_s18_data) {
 # ===========================================================================
 
 plot_fig_three_domain <- function(three_domain_data, win_win = NULL) {
-  # Shading marks the favourable region: yield at or above open-field parity,
-  # and the environmental outcome on its better side of zero.
+  # Jeroen asked for change in ASY alongside the environmental outcomes. It is
+  # derived here from the same yield column (not added to three_domain_data), so
+  # find_win_win_scenarios() still tests only the three environmental domains.
+  asy_lab <- "Δ ASY AGB"
+  asy_rows <- three_domain_data |>
+    dplyr::distinct(management_label, scen_label, driver, relative_yield_pct) |>
+    dplyr::mutate(value = relative_yield_pct - 100, outcome = asy_lab)
+  plot_data <- three_domain_data |>
+    dplyr::mutate(outcome = as.character(outcome)) |>
+    dplyr::bind_rows(asy_rows) |>
+    dplyr::mutate(outcome = factor(outcome, levels = c(asy_lab, levels(three_domain_data$outcome))))
+
+  # Shading marks the favourable region: yield at or above openfield parity,
+  # and the outcome on its better side of zero.
   shade <- tibble::tibble(
-    outcome = factor(levels(three_domain_data$outcome), levels = levels(three_domain_data$outcome)),
-    ymin = c(-Inf, 0, -Inf),
-    ymax = c(0, Inf, 0)
+    outcome = factor(levels(plot_data$outcome), levels = levels(plot_data$outcome)),
+    ymin = c(0, -Inf, 0, -Inf),
+    ymax = c(Inf, 0, Inf, 0)
   )
   labels <- tibble::tibble(
     outcome = shade$outcome,
-    label = c("less leaching", "SOC gain", "less water use"),
-    y = c(-Inf, Inf, -Inf),
-    vjust = c(-0.6, 1.4, -0.6)
+    label = c("yield gain", "less leaching", "SOC gain", "less water use"),
+    y = c(Inf, -Inf, Inf, -Inf),
+    vjust = c(1.4, -0.6, 1.4, -0.6)
   )
 
-  ggplot2::ggplot(three_domain_data,
+  ggplot2::ggplot(plot_data,
                   ggplot2::aes(x = relative_yield_pct, y = value)) +
     ggplot2::geom_rect(
       data = shade, inherit.aes = FALSE,
@@ -1214,9 +1617,9 @@ plot_fig_three_domain <- function(three_domain_data, win_win = NULL) {
                            management_label = ggplot2::label_wrap_gen(18),
                            outcome = ggplot2::label_wrap_gen(16))) +
     ggplot2::labs(
-      x = "Relative all-crop ASY AGB (% of open field)",
-      y = "Change vs open field",
-      caption = "Shaded region = yield at or above open-field parity with the environmental outcome improved. A scenario benefiting all three domains would fall in the shaded region of all three rows."
+      x = "Relative all-crop ASY AGB (% of openfield)",
+      y = "Change vs openfield",
+      caption = "Shaded region = yield at or above openfield parity with the outcome improved. A scenario benefiting all three environmental domains would fall in the shaded region of the lower three rows."
     ) +
     theme_manuscript() +
     ggplot2::theme(
@@ -1228,13 +1631,13 @@ plot_fig_three_domain <- function(three_domain_data, win_win = NULL) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S11 - Total SOC by depth layer.
+# SUPPLEMENTARY FIGURE S15 - Total SOC by depth layer.
 # (a) absolute stocks through time; (b) end-of-simulation change by depth.
 # Complements Figure 6, which shows only 0-30/30-60 cm and only relative change.
 # ===========================================================================
 
-plot_fig_s11 <- function(fig_s11_a_data, fig_s11_b_data) {
-  p_a <- ggplot2::ggplot(fig_s11_a_data,
+plot_fig_s15 <- function(fig_s15_a_data, fig_s15_b_data, tags = c("a", "b")) {
+  p_a <- ggplot2::ggplot(fig_s15_a_data,
                           ggplot2::aes(x = year, y = mean_soc_tC_ha,
                                        colour = scen_label, fill = scen_label)) +
     ggplot2::geom_ribbon(
@@ -1247,7 +1650,7 @@ plot_fig_s11 <- function(fig_s11_a_data, fig_s11_b_data) {
     ggplot2::scale_fill_manual(values = c("Reference" = "grey15", soc_scenario_palette),
                                 name = "Scenario", labels = scen_axis_label) +
     ggplot2::facet_wrap(~depth, ncol = 3, scales = "free_y") +
-    ggplot2::labs(x = NULL, y = expression("Total SOC (t C ha"^-1*")"), tag = "a") +
+    ggplot2::labs(x = NULL, y = expression("Total SOC (t C ha"^-1*")"), tag = tags[1]) +
     theme_manuscript() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7),
                     legend.position = "right")
@@ -1259,7 +1662,7 @@ plot_fig_s11 <- function(fig_s11_a_data, fig_s11_b_data) {
     "Biogas digestate | Residue Retained" = "#B35806"
   )
 
-  p_b <- ggplot2::ggplot(fig_s11_b_data,
+  p_b <- ggplot2::ggplot(fig_s15_b_data,
                           ggplot2::aes(x = scen_label, y = mean_delta_soc_pct,
                                        colour = management_label, shape = management_label)) +
     ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.4) +
@@ -1275,7 +1678,7 @@ plot_fig_s11 <- function(fig_s11_a_data, fig_s11_b_data) {
     ggplot2::scale_x_discrete(labels = scen_axis_label) +
     ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
     ggplot2::facet_grid(depth ~ driver, scales = "free", space = "free_x") +
-    ggplot2::labs(x = NULL, y = "ΔTotal SOC at 2024 (% of open field)", tag = "b") +
+    ggplot2::labs(x = NULL, y = "ΔTotal SOC at 2024 (% of open field)", tag = tags[2]) +
     theme_manuscript() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
                     legend.position = "right")
@@ -1284,14 +1687,14 @@ plot_fig_s11 <- function(fig_s11_a_data, fig_s11_b_data) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S14 - annual water balance components.
+# SUPPLEMENTARY FIGURE S10 - annual water balance components.
 # Percolation (vertical, below profile) and drain flow (lateral, intercepted)
 # are separate DAISY outputs; showing them side by side settles the
 # terminology question raised in review.
 # ===========================================================================
 
-plot_fig_s14 <- function(fig_s14_data) {
-  ggplot2::ggplot(fig_s14_data,
+plot_fig_s10 <- function(fig_s10_data) {
+  ggplot2::ggplot(fig_s10_data,
                   ggplot2::aes(x = scen_label, y = mean_mm, colour = component, shape = component)) +
     ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
     ggplot2::geom_errorbar(
@@ -1316,14 +1719,14 @@ plot_fig_s14 <- function(fig_s14_data) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S15 - substrip (West/Centre/East) effects.
+# SUPPLEMENTARY FIGURE S18 - substrip (West/Centre/East) effects.
 # Shows once, across all three outcome domains, that substrip position is a
 # minor axis of variation - which is what justifies the main-text figures
 # using the Centre strip alone.
 # ===========================================================================
 
-plot_fig_s15 <- function(fig_s15_data) {
-  ggplot2::ggplot(fig_s15_data,
+plot_fig_s18 <- function(fig_s18_data) {
+  ggplot2::ggplot(fig_s18_data,
                   ggplot2::aes(x = strip, y = mean_v, colour = driver, shape = driver)) +
     ggplot2::geom_errorbar(
       ggplot2::aes(ymin = mean_v - sd_v, ymax = mean_v + sd_v),
@@ -1346,17 +1749,54 @@ plot_fig_s15 <- function(fig_s15_data) {
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S9 - N fluxes and leaching, all management regimes.
-# Companion to main-text Figure 5, which shows Dig-Rem only.
+# SUPPLEMENTARY FIGURE S11 - N fluxes and leaching, all four management regimes.
+# Companion to main-text Figure 5, which draws the fluxes for Dig-Rem only.
+#
+# Panel (a) repeats the fluxes for every fertilisation x residue regime, one row
+# each, on a shared y axis so the regimes can be compared directly. Panel (b) is
+# the leaching series of Figure 5 (fig_05_b_data) on its own axis: the merged
+# Figure 5 draws it at a third of its true vertical scale on the shared secondary
+# axis, and this panel is where it can be read at full resolution.
 # ===========================================================================
 
-plot_fig_s09 <- function(fig_s09_a_data, fig_05_b_data) {
+# Panel (b): leaching for every regime in the table it is given. Encodings come
+# from fig_05_regime_cols / fig_05_regime_shapes (Figure 5's block above).
+plot_fig_s11_b_leaching <- function(fig_05_b_data) {
+  regimes <- levels(fig_05_b_data$management_label)
+  # 0.15 of a tick per series, so the group widens with the number of regimes
+  # instead of crowding the markers.
+  dodge <- ggplot2::position_dodge(width = 0.15 * length(regimes))
+
+  ggplot2::ggplot(
+    fig_05_b_data,
+    ggplot2::aes(x = scen_label, y = mean_kgN_ha, colour = management_label, shape = management_label)
+  ) +
+    ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
+    ggplot2::geom_errorbar(
+      ggplot2::aes(ymin = mean_kgN_ha - sd_kgN_ha, ymax = mean_kgN_ha + sd_kgN_ha),
+      width = 0.18, linewidth = 0.35, alpha = 0.7,
+      position = dodge
+    ) +
+    ggplot2::geom_point(size = 2, position = dodge) +
+    ggplot2::scale_colour_manual(values = fig_05_regime_cols[regimes], name = "Management") +
+    ggplot2::scale_shape_manual(values = fig_05_regime_shapes[regimes], name = "Management") +
+    ggplot2::scale_x_discrete(labels = scen_axis_label) +
+    ggplot2::scale_y_continuous(name = expression("N leaching (kg N ha"^-1~"yr"^-1*")")) +
+    ggplot2::facet_grid(~driver, scales = "free_x", space = "free_x") +
+    ggplot2::labs(x = NULL, tag = "b") +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 8),
+                    legend.position = "right")
+}
+
+# Panel (a): the three fluxes, one row per regime, on a shared y axis.
+plot_fig_s11_a_fluxes <- function(fig_s11_a_data) {
   flux_cols <- c("Mineralisation" = "#8C6D31",
                  "Crop N uptake" = "#4EA72E",
                  "Biological N fixation" = "#0072B2")
 
-  p_a <- ggplot2::ggplot(
-    fig_s09_a_data,
+  ggplot2::ggplot(
+    fig_s11_a_data,
     ggplot2::aes(x = scen_label, y = mean_kgN_ha, colour = flux, shape = flux)
   ) +
     ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
@@ -1377,14 +1817,18 @@ plot_fig_s09 <- function(fig_s09_a_data, fig_05_b_data) {
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
                     strip.text.y = ggplot2::element_text(size = 7, angle = 0),
                     legend.position = "right")
+}
 
-  p_b <- plot_fig_05_b_leaching(fig_05_b_data)
-
-  patchwork::wrap_plots(p_a, p_b, ncol = 1, heights = c(1.7, 1))
+plot_fig_s11 <- function(fig_s11_a_data, fig_05_b_data) {
+  patchwork::wrap_plots(
+    plot_fig_s11_a_fluxes(fig_s11_a_data),
+    plot_fig_s11_b_leaching(fig_05_b_data),
+    ncol = 1, heights = c(2.3, 1)
+  )
 }
 
 # ===========================================================================
-# SUPPLEMENTARY FIGURE S12 - yield-SOC trade-off.
+# SUPPLEMENTARY FIGURE S17 - yield-SOC trade-off.
 #
 # Companion to main-text Figure 7 (yield vs N leaching): same axes and
 # quadrant logic, SOC substituted for leaching. The fitted OLS slope per
@@ -1392,7 +1836,7 @@ plot_fig_s09 <- function(fig_s09_a_data, fig_05_b_data) {
 # text and currently has two contradictory values in the draft.
 # ===========================================================================
 
-plot_fig_s12_panel <- function(d, slopes, y_lab, tag) {
+plot_fig_s17_panel <- function(d, slopes, y_lab, tag) {
   slope_labels <- slopes |>
     dplyr::group_by(management_label) |>
     dplyr::summarise(
@@ -1425,22 +1869,626 @@ plot_fig_s12_panel <- function(d, slopes, y_lab, tag) {
     )
 }
 
-plot_fig_s12 <- function(fig_s12_a_data, fig_s12_b_data, yield_soc_slopes) {
+plot_fig_s17 <- function(fig_s17_a_data, fig_s17_b_data, yield_soc_slopes) {
   slopes_a <- yield_soc_slopes |> dplyr::filter(yield_metric == "All-crop ASY AGB")
   slopes_b <- yield_soc_slopes |> dplyr::filter(yield_metric == "Grain ASY (WW + SY)")
 
   patchwork::wrap_plots(
-    plot_fig_s12_panel(fig_s12_a_data, slopes_a,
+    plot_fig_s17_panel(fig_s17_a_data, slopes_a,
                         "Relative all-crop ASY AGB (% of open field)", "a"),
-    plot_fig_s12_panel(fig_s12_b_data, slopes_b,
+    plot_fig_s17_panel(fig_s17_b_data, slopes_b,
                         "Relative grain ASY, WW + SY (% of open field)", "b"),
     ncol = 1
   ) + patchwork::plot_layout(guides = "collect")
 }
 
-plot_fig_02 <- function(fig_02_a_data, fig_02_b_data) {
+# ===========================================================================
+# Shared scenario palette for the S20-S13 block.
+#
+# Extends soc_scenario_palette (Figures 6/S14/S15) with the wind extremes and
+# the two 0-levels, so a given scenario keeps one colour across every figure in
+# the supplement. Diverging within each driver: temperature cool-to-warm,
+# radiation light-to-dark, wind on its own blue.
+# ===========================================================================
+scenario_palette_extended <- c(
+  "Reference"  = "grey15",
+  "Rad 0%"     = "#FDBE85",
+  "Rad -10%"   = "#E6550D",
+  "Rad -30%"   = "#A63603",
+  "Wind 0%"    = "#9ECAE1",
+  "Wind -70%"  = "#08519C",
+  "Tmp 0degC"  = "#BDBDBD",
+  "Tmp -3degC" = "#2166AC",
+  "Tmp +3degC" = "#B2182B"
+)
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S20 - interannual yield stability and downside risk.
+#
+# (a) coefficient of variation of crop yield across the simulated crop-years
+# (b) risk-return plane: does VAPV trade yield level against yield stability?
+# (c) worst-year test: are bad years protected more, or less, than average ones?
+#
+# See R/resilience.R for why variability is computed within crop rather than on
+# the whole-system annual total.
+# ===========================================================================
+
+plot_fig_s20_a <- function(fig_s20_data) {
+  drivers <- c("Radiation", "Temperature", "Wind")
+  d <- add_reference_to_each_driver(fig_s20_data, drivers) |>
+    dplyr::mutate(
+      scen_label = factor(scen_label, levels = scen_order_center),
+      driver = factor(driver, levels = drivers)
+    ) |>
+    dplyr::filter(!is.na(scen_label))
+
+  ggplot2::ggplot(d, ggplot2::aes(x = scen_label, y = cv_pct,
+                                   colour = crop_phase, shape = crop_phase)) +
+    # Open-field CV for each crop phase, as a horizontal anchor. Without it the
+    # reader cannot tell whether a 20% CV is high or normal for that crop.
+    ggplot2::geom_hline(
+      data = dplyr::filter(d, scen_label == "Reference") |>
+        dplyr::select(crop_phase, ref_cv = cv_pct) |> dplyr::distinct(),
+      ggplot2::aes(yintercept = ref_cv, colour = crop_phase),
+      linetype = "dotted", linewidth = 0.4, alpha = 0.7, inherit.aes = FALSE
+    ) +
+    ggplot2::geom_point(size = 1.9, position = ggplot2::position_dodge(width = 0.6)) +
+    ggplot2::scale_colour_manual(values = s20_crop_phase_palette, name = "Crop phase") +
+    ggplot2::scale_shape_manual(values = c(16, 17, 15, 18, 8), name = "Crop phase") +
+    ggplot2::scale_x_discrete(labels = scen_axis_label) +
+    ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::facet_grid(. ~ driver, scales = "free_x", space = "free_x") +
+    ggplot2::labs(
+      x = NULL,
+      y = "Interannual CV of harvested AGB (%)",
+      tag = "a",
+      subtitle = "Dotted line = that crop phase's open-field CV"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
+                    legend.position = "right")
+}
+
+# Panels (b) and (c) share one driver shape scale, declared identically in both
+# with drop = FALSE. Without that, panel (c) - which has no open-field row -
+# builds a three-level scale, panel (b) a four-level one, and patchwork's
+# guide collection emits two separate "Driver" legends instead of merging them.
+s20_driver_levels <- c("Reference", "Radiation", "Temperature", "Wind")
+s20_driver_shapes <- c("Reference" = 4, "Radiation" = 16,
+                       "Temperature" = 17, "Wind" = 15)
+
+plot_fig_s20_b <- function(fig_s20_relative, scenarios = s20_scenarios_highlight) {
+  d <- fig_s20_relative |>
+    dplyr::filter(scen_label %in% scenarios) |>
+    dplyr::mutate(driver = factor(driver, levels = s20_driver_levels))
+
+  ggplot2::ggplot(d, ggplot2::aes(x = mean_pct_of_openfield, y = cv_pct)) +
+    ggplot2::geom_vline(xintercept = 100, linetype = "dashed", colour = "grey50",
+                         linewidth = 0.4) +
+    ggplot2::geom_point(ggplot2::aes(colour = crop_phase, shape = driver),
+                         size = 2.2, alpha = 0.9) +
+    ggrepel::geom_text_repel(
+      ggplot2::aes(label = scen_axis_label(scen_label), colour = crop_phase),
+      size = 2.1, show.legend = FALSE, max.overlaps = 20, seed = 1,
+      min.segment.length = 0.2, segment.size = 0.2
+    ) +
+    ggplot2::scale_colour_manual(values = s20_crop_phase_palette, name = "Crop phase") +
+    ggplot2::scale_shape_manual(values = s20_driver_shapes, name = "Driver",
+                                 limits = s20_driver_levels, drop = FALSE) +
+    ggplot2::scale_x_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::labs(
+      x = "Mean yield (% of open field)",
+      y = "Interannual CV (%)",
+      tag = "b",
+      subtitle = "Down and to the right = more yield, less variable"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 8),
+                    legend.position = "right")
+}
+
+plot_fig_s20_c <- function(fig_s20_relative, scenarios = s20_scenarios_highlight) {
+  d <- fig_s20_relative |>
+    dplyr::filter(scen_label %in% scenarios, scen_label != "Reference") |>
+    dplyr::mutate(driver = factor(driver, levels = s20_driver_levels))
+
+  ggplot2::ggplot(d, ggplot2::aes(x = mean_pct_of_openfield, y = p10_pct_of_openfield)) +
+    # The 1:1 line is the whole test: above it, the poor years lost
+    # proportionally less than the average year.
+    ggplot2::geom_abline(slope = 1, intercept = 0, linetype = "dashed",
+                          colour = "grey45", linewidth = 0.45) +
+    ggplot2::geom_point(ggplot2::aes(colour = crop_phase, shape = driver),
+                         size = 2.2, alpha = 0.9) +
+    ggrepel::geom_text_repel(
+      ggplot2::aes(label = scen_axis_label(scen_label), colour = crop_phase),
+      size = 2.1, show.legend = FALSE, max.overlaps = 20, seed = 1,
+      min.segment.length = 0.2, segment.size = 0.2
+    ) +
+    ggplot2::scale_colour_manual(values = s20_crop_phase_palette, name = "Crop phase") +
+    # Shape guide suppressed: panels (b) and (c) sit side by side and share one
+    # collected legend area, and the two shape scales are not byte-identical
+    # (panel (c) has no open-field rows), so patchwork emits a second "Driver"
+    # legend instead of merging them. Panel (b)'s guide covers both.
+    ggplot2::scale_shape_manual(values = s20_driver_shapes,
+                                 limits = s20_driver_levels, drop = FALSE,
+                                 guide = "none") +
+    ggplot2::scale_x_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::labs(
+      x = "Mean yield (% of open-field mean)",
+      y = "Poor-year yield (% of open-field p10)",
+      tag = "c",
+      subtitle = "Above the 1:1 line = poor years buffered (p10 of that crop's years)"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 8),
+                    legend.position = "right")
+}
+
+plot_fig_s20 <- function(fig_s20_data, fig_s20_relative) {
   patchwork::wrap_plots(
-    plot_fig_02_a_agb_by_crop(fig_02_a_data),
+    plot_fig_s20_a(fig_s20_data),
+    patchwork::wrap_plots(
+      plot_fig_s20_b(fig_s20_relative),
+      plot_fig_s20_c(fig_s20_relative),
+      ncol = 2
+    ) + patchwork::plot_layout(guides = "collect"),
+    ncol = 1, heights = c(1, 1.15)
+  )
+}
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S21 - distance from carbon equilibrium.
+#
+# (a) simulated SOC (solid) with the fitted first-order approach projected
+#     forward (dashed); (b) fraction of the total change achieved by 2024;
+# (c) time to close 95% of the gap, against the 27-year simulated record.
+#
+# The point of the figure is the SHORTFALL, not the projection: it quantifies
+# the Discussion's "not yet at equilibrium" caveat. See R/soc.R for the model
+# and for why unidentifiable fits are labelled rather than plotted.
+# ===========================================================================
+
+plot_fig_s21_a <- function(fig_s21_data, soc_projection) {
+  ggplot2::ggplot(mapping = ggplot2::aes(x = year, y = soc_tC_ha, colour = scen_label)) +
+    ggplot2::geom_line(data = soc_projection, linetype = "22", linewidth = 0.45,
+                        alpha = 0.85) +
+    ggplot2::geom_line(data = fig_s21_data, linewidth = 0.75) +
+    ggplot2::geom_vline(xintercept = 2024, linetype = "dotted", colour = "grey45",
+                         linewidth = 0.4) +
+    ggplot2::annotate("text", x = 2024, y = Inf, label = " end of simulation",
+                       hjust = 0, vjust = 1.6, size = 2.3, colour = "grey35",
+                       fontface = "italic") +
+    # Full scenario labels, not scen_axis_label: this legend spans two drivers,
+    # so a stripped "0%" would be indistinguishable from "0degC" at a glance.
+    ggplot2::scale_colour_manual(values = scenario_palette_extended,
+                                  name = "Scenario") +
+    ggplot2::facet_wrap(~depth, ncol = 2, scales = "free_y") +
+    ggplot2::labs(
+      x = NULL, y = expression("Total SOC (t C ha"^-1*")"), tag = "a",
+      subtitle = "Solid = simulated; dashed = fitted projection (50 yr)"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 8),
+                    legend.position = "right")
+}
+
+# Panel (b) is the robust diagnostic and, as it turns out, the main result:
+# comparing the rate of SOC change in the first half of the record with the
+# second. Equal slopes mean the trajectory has not begun to level off.
+# Verdict is encoded as POINT COLOUR rather than as per-point text. Scenario is
+# already on the x-axis, so colouring by scenario was redundant, and six rotated
+# text labels per facet collided with the points they annotated.
+soc_verdict_palette <- c(
+  "accelerating" = "#B2182B",
+  "still linear" = "#EF8A62",
+  "decelerating" = "#67A9CF",
+  "near equilibrium" = "#2166AC",
+  "effectively flat" = "grey55",
+  "reversed direction" = "#762A83"
+)
+
+plot_fig_s21_b <- function(soc_curvature_long, soc_curvature) {
+  d <- soc_curvature_long |>
+    dplyr::mutate(scen_label = factor(as.character(scen_label), levels = s21_scenarios))
+
+  ggplot2::ggplot(d, ggplot2::aes(x = scen_label, y = slope)) +
+    ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.45) +
+    # The connector shows the CHANGE in rate; a short segment means the rate
+    # barely moved between the two halves, i.e. no approach to equilibrium.
+    ggplot2::geom_line(ggplot2::aes(group = scen_label), colour = "grey60",
+                        linewidth = 0.45) +
+    ggplot2::geom_point(ggplot2::aes(colour = verdict, shape = half), size = 2.6) +
+    ggplot2::scale_colour_manual(values = soc_verdict_palette, name = "Curvature") +
+    ggplot2::scale_shape_manual(values = c(1, 16), name = "Period") +
+    ggplot2::scale_x_discrete(labels = scen_axis_label) +
+    ggplot2::facet_wrap(~depth, ncol = 2, scales = "free_y") +
+    ggplot2::labs(
+      x = NULL, y = expression("SOC trend (t C ha"^-1*" yr"^-1*")"), tag = "b",
+      subtitle = "Open → filled shows how the rate changed; a flat pair means no approach to equilibrium"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
+                    legend.position = "right")
+}
+
+# Panel (c) keeps every scenario on the axis, including those with no fit, so
+# the reader can see how many trajectories could not be extrapolated at all -
+# that count is part of the result, not a gap in the figure.
+plot_fig_s21_c <- function(soc_equilibrium_fits) {
+  d <- soc_equilibrium_fits |>
+    dplyr::mutate(scen_label = factor(as.character(scen_label), levels = s21_scenarios))
+
+  # One summary label per facet rather than one per unfitted point: with five
+  # of six topsoil series unfitted, per-point labels were six overlapping
+  # rotated strings saying the same thing.
+  unfitted <- d |>
+    dplyr::group_by(depth) |>
+    dplyr::summarise(
+      n_missing = sum(is.na(t95_years)), n_total = dplyr::n(), .groups = "drop") |>
+    dplyr::filter(n_missing > 0) |>
+    dplyr::mutate(label = sprintf(
+      "%d of %d trajectories have no fittable curvature", n_missing, n_total))
+
+  ggplot2::ggplot(d, ggplot2::aes(x = scen_label, y = t95_years, colour = scen_label)) +
+    ggplot2::geom_hline(yintercept = 26, linetype = "dashed", colour = "grey35",
+                         linewidth = 0.45) +
+    ggplot2::annotate("text", x = Inf, y = 26, label = "simulated record ",
+                       hjust = 1, vjust = -0.6, size = 2.2, colour = "grey30",
+                       fontface = "italic") +
+    ggplot2::geom_linerange(ggplot2::aes(ymin = 0, ymax = t95_years),
+                             linewidth = 0.45, alpha = 0.6, na.rm = TRUE) +
+    ggplot2::geom_point(size = 2.6, na.rm = TRUE) +
+    ggplot2::geom_text(
+      data = unfitted, inherit.aes = FALSE,
+      ggplot2::aes(x = -Inf, y = Inf, label = label),
+      hjust = -0.04, vjust = 1.6, size = 2.3, colour = "grey35", fontface = "italic"
+    ) +
+    ggplot2::scale_colour_manual(values = scenario_palette_extended, guide = "none") +
+    ggplot2::scale_x_discrete(labels = scen_axis_label) +
+    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0.02, 0.18))) +
+    ggplot2::facet_wrap(~depth, ncol = 2) +
+    ggplot2::labs(
+      x = NULL, y = "Years to 95% of fitted equilibrium", tag = "c",
+      caption = "Fitted horizons far exceed the simulated record, and most topsoil trajectories have no fittable curvature at all — both indicate the simulation ends well short of a new carbon steady state."
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7))
+}
+
+plot_fig_s21 <- function(fig_s21_data, soc_projection, soc_equilibrium_fits,
+                          soc_curvature) {
+  patchwork::wrap_plots(
+    plot_fig_s21_a(fig_s21_data, soc_projection),
+    plot_fig_s21_b(soc_curvature_long(soc_curvature), soc_curvature),
+    plot_fig_s21_c(soc_equilibrium_fits),
+    ncol = 1, heights = c(1.25, 1, 1)
+  )
+}
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S16 - SOC change attributed to rotation phase.
+#
+# Evidence for the per-crop-phase accumulation rates quoted in Results 3.2,
+# which currently have no figure anywhere. Note the attribution convention
+# documented in R/soc.R: these are crop-years ENDING with the named crop, not
+# carbon fluxes caused by it.
+# ===========================================================================
+
+plot_fig_s16 <- function(fig_s16_data) {
+  ggplot2::ggplot(fig_s16_data,
+                  ggplot2::aes(x = phase_crop, y = mean_d_soc_MgC_ha_yr,
+                               colour = scen_label, shape = scen_label)) +
+    ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.45) +
+    ggplot2::geom_errorbar(
+      ggplot2::aes(ymin = mean_d_soc_MgC_ha_yr - sd_d_soc_MgC_ha_yr,
+                   ymax = mean_d_soc_MgC_ha_yr + sd_d_soc_MgC_ha_yr),
+      width = 0.2, linewidth = 0.3, alpha = 0.65,
+      position = ggplot2::position_dodge(width = 0.65)
+    ) +
+    ggplot2::geom_point(size = 2.1, position = ggplot2::position_dodge(width = 0.65)) +
+    # Crop-year count per phase, so the reader can see how much each mean rests
+    # on - this is what the manuscript's "21 crop-years" claim refers to.
+    ggplot2::geom_text(
+      data = fig_s16_data |>
+        dplyr::group_by(depth, phase_crop) |>
+        dplyr::summarise(n = max(n_crop_years), .groups = "drop"),
+      ggplot2::aes(x = phase_crop, y = -Inf, label = paste0("n=", n)),
+      inherit.aes = FALSE, vjust = -0.8, size = 2.1, colour = "grey45"
+    ) +
+    # Full labels: this legend mixes radiation and temperature scenarios, and a
+    # stripped "0%" next to "0degC" is ambiguous about which driver it is.
+    ggplot2::scale_colour_manual(values = scenario_palette_extended, name = "Scenario") +
+    ggplot2::scale_shape_manual(values = c(4, 16, 17, 15, 18), name = "Scenario") +
+    ggplot2::facet_wrap(~depth, ncol = 1, scales = "free_y") +
+    ggplot2::labs(
+      x = NULL,
+      y = expression("ΔTotal SOC (Mg C ha"^-1*" yr"^-1*")"),
+      caption = "Crop-year = 1 Sep to 1 Sep, ending with the harvest of the named crop; error bars are ±1 SD across crop-years pooled over the four rotation permutations."
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 8.5),
+                    legend.position = "right")
+}
+
+# ===========================================================================
+# SUPPLEMENTARY FIGURE S13 - seasonal distribution of nitrate leaching.
+#
+# (a) mean monthly leaching; (b) cumulative share of the agrohydrological year;
+# (c) monthly scenario effect relative to open field.
+#
+# Lines ARE used across months in (a) and (b), unlike the scenario axes
+# elsewhere in this manuscript: month is an ordered time axis within a
+# continuous drainage season, so consecutive points are not independent
+# observations and connecting them is the correct reading.
+# ===========================================================================
+
+plot_fig_s13_a <- function(fig_s13_data) {
+  ggplot2::ggplot(fig_s13_data,
+                  ggplot2::aes(x = month_label, y = mean_leaching_kgN_ha,
+                               colour = scen_label, group = scen_label)) +
+    ggplot2::geom_ribbon(
+      ggplot2::aes(ymin = pmax(0, mean_leaching_kgN_ha - sd_leaching_kgN_ha),
+                   ymax = mean_leaching_kgN_ha + sd_leaching_kgN_ha,
+                   fill = scen_label),
+      alpha = 0.12, colour = NA
+    ) +
+    ggplot2::geom_line(linewidth = 0.7) +
+    ggplot2::geom_point(size = 1.4) +
+    ggplot2::scale_colour_manual(values = scenario_palette_extended, name = "Scenario") +
+    ggplot2::scale_fill_manual(values = scenario_palette_extended, guide = "none") +
+    ggplot2::labs(
+      x = NULL, y = expression("N leaching (kg N ha"^-1*" month"^-1*")"), tag = "a",
+      subtitle = "Agrohydrological year, April–March"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7.5),
+                    legend.position = "right")
+}
+
+plot_fig_s13_b <- function(fig_s13_data) {
+  ggplot2::ggplot(fig_s13_data,
+                  ggplot2::aes(x = month_label, y = cumulative_share_pct,
+                               colour = scen_label, group = scen_label)) +
+    ggplot2::geom_hline(yintercept = c(50, 90), linetype = "dotted",
+                         colour = "grey50", linewidth = 0.4) +
+    ggplot2::geom_line(linewidth = 0.7) +
+    ggplot2::geom_point(size = 1.4) +
+    ggplot2::scale_colour_manual(values = scenario_palette_extended, name = "Scenario") +
+    ggplot2::scale_y_continuous(labels = scales::label_number(suffix = "%", accuracy = 1)) +
+    ggplot2::labs(
+      x = NULL, y = "Cumulative share of annual leaching", tag = "b",
+      subtitle = "Dotted lines mark the 50% and 90% points"
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 0, hjust = 0.5, size = 7.5),
+                    legend.position = "right")
+}
+
+plot_fig_s13_c <- function(fig_s13_delta) {
+  ggplot2::ggplot(fig_s13_delta,
+                  ggplot2::aes(x = month_label, y = delta_kgN_ha, fill = scen_label)) +
+    ggplot2::geom_hline(yintercept = 0, colour = "grey40", linewidth = 0.45) +
+    ggplot2::geom_col(width = 0.7, alpha = 0.9) +
+    ggplot2::scale_fill_manual(values = scenario_palette_extended, guide = "none") +
+    # Full scenario labels in the strips: stripping the driver prefix here left
+    # facets titled "0%" and "-30%" with no indication they were radiation.
+    ggplot2::facet_wrap(~scen_label, nrow = 1) +
+    ggplot2::labs(
+      x = NULL, y = expression("Δ N leaching vs open field (kg N ha"^-1*" month"^-1*")"),
+      tag = "c",
+      caption = "Bars below zero are months in which that scenario leached less than the open field. Absolute values are profile-bottom leaching and are not directly comparable to Figure 5's 100 cm totals."
+    ) +
+    theme_manuscript() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1, vjust = 0.5, size = 6.5),
+                    strip.text = ggplot2::element_text(size = 8))
+}
+
+plot_fig_s13 <- function(fig_s13_data, fig_s13_delta) {
+  patchwork::wrap_plots(
+    patchwork::wrap_plots(plot_fig_s13_a(fig_s13_data), plot_fig_s13_b(fig_s13_data),
+                           ncol = 2) + patchwork::plot_layout(guides = "collect"),
+    plot_fig_s13_c(fig_s13_delta),
+    ncol = 1, heights = c(1, 0.9)
+  )
+}
+
+# ===========================================================================
+# SUPPLEMENT v2, FIGURE S7 - water and nitrogen mass balance (composite).
+#
+# One page-shaped figure stacking the water balance (S10), the N fluxes and
+# leaching by regime, the N budget (S12) and the seasonal leaching panels (S13):
+#   a  annual water-balance components            plot_fig_s10()
+#   b  N fluxes and N leaching, a row per regime  plot_fig_s07_v2_b()
+#   c  stacked N budget                           plot_fig_s12()
+#   d  monthly leaching, e  cumulative share      plot_fig_s13_a(), plot_fig_s13_b()
+#   f  monthly change against the open field      plot_fig_s13_c()
+# Panel captions are dropped (the Word caption carries them) and tags run a-f.
+#
+# The original builder of the 14 Sept composite was lost, so this is a
+# reconstruction, checked against that file: with the plain S11(a) flux panel in
+# place of (b) and panel heights 1 : 1.5 : 1 : 1 : 0.9, an earlier version of this
+# function reproduced it byte for byte. That pins down the canvas - 9 x 16 in at
+# 320 dpi; the panels' text is drawn at native size, so canvas and dpi set how
+# crowded the figure looks - and the treatment of panels a, c, d, e and f.
+#
+# Panel (b) was then redone in the design of Figure 5 (fluxes on the left axis,
+# leaching on a right axis in a shaded band), one row per regime, and the heights
+# rebalanced to make room for it. The canvas is unchanged. Panels (d)-(f) came out
+# shorter as a result, so their y titles are broken over two lines (see below).
+#
+# At one 6 x 9 in text block per page the one-page composite has to be shrunk to
+# about half size, so the Word supplement carries the figure on two pages instead,
+# panels (a)-(c) on the first and (d)-(f) on the second. Each part is built on its
+# own canvas, shaped for the text block: plot_fig_s07_v2_part1() and
+# plot_fig_s07_v2_part2(). They reuse the panels of the composite; only the canvas
+# and the panel heights differ.
+# ===========================================================================
+
+# Panel (b): Figure 5's panel repeated for every fertilisation x residue regime.
+# Each row shows the three fluxes (left axis) and that regime's leaching (right
+# axis; drawn at fig_05_leach_scale x its value inside the shaded band), in
+# Figure 5's colours, with Figure 5's two-column legend underneath. The regime
+# names sit inside the panels rather than in strips at the right: a strip and a
+# right-hand axis compete for the same side of the panel.
+plot_fig_s07_v2_b <- function(fig_s11_a_data, fig_05_b_data) {
+  k <- fig_05_leach_scale
+  band_top <- fig_05_leach_axis_max * k
+
+  flux_cols <- c("Mineralisation" = "#8C6D31",
+                 "Crop N uptake" = "#4EA72E",
+                 "Biological N fixation" = "#0072B2")
+  flux_shapes <- c("Mineralisation" = 16, "Crop N uptake" = 17, "Biological N fixation" = 15)
+  regimes <- levels(fig_05_b_data$management_label)
+
+  fluxes <- fig_s11_a_data |>
+    dplyr::transmute(management_label, series = as.character(flux), scen_label, driver,
+                     y = mean_kgN_ha, lo = mean_kgN_ha - sd_kgN_ha, hi = mean_kgN_ha + sd_kgN_ha)
+  leaching <- fig_05_b_data |>
+    dplyr::transmute(management_label, series = as.character(management_label), scen_label, driver,
+                     y = k * mean_kgN_ha,
+                     lo = k * (mean_kgN_ha - sd_kgN_ha), hi = k * (mean_kgN_ha + sd_kgN_ha))
+  if (any(leaching$hi > band_top)) {
+    warning("plot_fig_s07_v2_b(): a leaching error bar reaches above the right axis maximum (",
+            fig_05_leach_axis_max, " kg N/ha/yr); raise fig_05_leach_axis_max.")
+  }
+
+  # Legend headings and padding are pseudo-series with no data, exactly as in
+  # plot_fig_05() (see the note there).
+  lv <- c("hdr_flux", names(flux_cols), "blank", "hdr_leach", regimes)
+  d <- dplyr::bind_rows(fluxes, leaching) |>
+    dplyr::mutate(series = factor(series, levels = lv))
+  cols <- c(hdr_flux = "transparent", flux_cols, blank = "transparent",
+            hdr_leach = "transparent", fig_05_regime_cols[regimes])
+  shapes <- c(hdr_flux = NA, flux_shapes, blank = NA, hdr_leach = NA, fig_05_regime_shapes[regimes])
+  labels <- c(hdr_flux = "**N fluxes** (left axis)",
+              stats::setNames(names(flux_cols), names(flux_cols)),
+              blank = "",
+              hdr_leach = "**N leaching** (right axis; by management)",
+              stats::setNames(regimes, regimes))
+  dodge <- ggplot2::position_dodge(width = 0.86)
+
+  # Regime names, two lines each, at the top left of the Radiation panel just
+  # right of the Ref divider, above the flux markers.
+  regime_labels <- data.frame(
+    management_label = factor(regimes, levels = regimes),
+    driver = factor("Radiation", levels = levels(d$driver)),
+    y = fig_05_flux_axis_max - 8,
+    label = stringr::str_replace(regimes, stringr::fixed(" | "), "\n")
+  )
+
+  ggplot2::ggplot(d, ggplot2::aes(x = scen_label, y = y, colour = series, shape = series)) +
+    ggplot2::annotate("rect", xmin = -Inf, xmax = Inf, ymin = 0, ymax = band_top, fill = "grey95") +
+    ggplot2::geom_hline(yintercept = k * seq(10, fig_05_leach_axis_max - 10, 10),
+                        colour = "white", linewidth = 0.4) +
+    ggplot2::geom_hline(yintercept = band_top, colour = "grey75", linewidth = 0.25) +
+    ggplot2::geom_vline(xintercept = 1.5, linetype = "dotted", colour = "grey55", linewidth = 0.4) +
+    ggplot2::geom_errorbar(ggplot2::aes(ymin = lo, ymax = hi),
+                           width = 0.14, linewidth = 0.3, alpha = 0.75, position = dodge) +
+    ggplot2::geom_point(size = 1.7, position = dodge) +
+    ggplot2::geom_text(data = regime_labels, ggplot2::aes(x = 1.62, y = y, label = label),
+                       inherit.aes = FALSE, hjust = 0, vjust = 1, size = 2.2, lineheight = 0.9,
+                       fontface = "bold", colour = "grey20") +
+    ggplot2::scale_colour_manual(name = NULL, values = cols, breaks = lv, labels = labels, drop = FALSE) +
+    ggplot2::scale_shape_manual(name = NULL, values = shapes, breaks = lv, labels = labels, drop = FALSE) +
+    ggplot2::scale_x_discrete(labels = scen_axis_label) +
+    ggplot2::scale_y_continuous(
+      name = expression("N flux (kg N ha"^-1~"yr"^-1*")"),
+      breaks = seq(0, 300, 100), limits = c(0, max(fig_05_flux_axis_max, d$hi)),
+      expand = ggplot2::expansion(mult = c(0, 0.02)),
+      sec.axis = ggplot2::sec_axis(~ . / k, name = expression("N leaching (kg N ha"^-1~"yr"^-1*")"),
+                                   breaks = c(0, 20, 40))
+    ) +
+    ggplot2::facet_grid(management_label ~ driver, scales = "free_x", space = "free_x") +
+    ggplot2::labs(x = NULL, tag = "b") +
+    theme_manuscript() +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1, size = 7),
+      axis.text.y.right = ggplot2::element_text(size = 7),
+      strip.text.y = ggplot2::element_blank(),
+      strip.background.y = ggplot2::element_blank(),
+      legend.position = "bottom",
+      legend.text = ggtext::element_markdown(size = 9),
+      legend.key.height = ggplot2::unit(0.9, "lines")
+    ) +
+    ggplot2::guides(colour = ggplot2::guide_legend(nrow = 5, byrow = FALSE),
+                    shape = ggplot2::guide_legend(nrow = 5, byrow = FALSE))
+}
+
+# Panel (b) has a right-hand axis, and patchwork lines up the side columns of
+# stacked plots by position: a real secondary axis in (b) is wedged in behind the
+# strip column that panel (c) needs, far from its own panels, and squeezes every
+# panel above and below. wrap_elements() takes (b) out of that alignment; two
+# margins put its panel edges where its neighbours' are. right_in is 2.697 in in
+# all versions (panel edge at 1853 px at 320 dpi); left_in depends on the widest
+# left-hand decoration among the panels stacked with it, and was measured for each
+# version: 0.334 in in the one-page composite (333 px; the two-line y titles of
+# (d) and (f) widen the column), 0.118 in in part 1 (264 px). The left margin is
+# carried by the y title's own margin, apart from the default 5.5 pt of plot
+# margin, so that the panel tag stays in line with the other tags. If a neighbour's
+# side decoration changes, re-measure and adjust.
+s07_v2_panel_b <- function(fig_s11_a_data, fig_05_b_data, left_in, right_in = 2.697) {
+  plot_fig_s07_v2_b(fig_s11_a_data, fig_05_b_data) +
+    ggplot2::theme(plot.margin = ggplot2::margin(5.5, right_in * 72.27, 5.5, 5.5, unit = "pt"),
+                   axis.title.y = ggplot2::element_text(
+                     margin = ggplot2::margin(r = 2.75, l = left_in * 72.27 - 5.5, unit = "pt")))
+}
+
+# Panels (d)-(f) are shorter in the one-page composite than they were in its first
+# version (panel (b) needs the room), and their one-line y titles no longer fit
+# inside them: they ran into each other and into the panel tags. Broken over two
+# lines here, in the composite only; the stand-alone S13 figure keeps its one-line
+# titles. The two parts use the same panels, so the text is the same throughout.
+s07_v2_panels_def <- function(fig_s13_data, fig_s13_delta) {
+  list(
+    d = plot_fig_s13_a(fig_s13_data) +
+      ggplot2::labs(tag = "d", y = expression(atop("N leaching", "(kg N ha"^-1*" month"^-1*")"))),
+    e = plot_fig_s13_b(fig_s13_data) +
+      ggplot2::labs(tag = "e", y = "Cumulative share of\nannual leaching"),
+    f = plot_fig_s13_c(fig_s13_delta) +
+      ggplot2::labs(caption = NULL, tag = "f",
+                    y = expression(atop("Δ N leaching vs open field", "(kg N ha"^-1*" month"^-1*")")))
+  )
+}
+
+plot_fig_s07_v2 <- function(fig_s10_data, fig_s11_a_data, fig_05_b_data, fig_s12_data,
+                            fig_s13_data, fig_s13_delta) {
+  p_b <- s07_v2_panel_b(fig_s11_a_data, fig_05_b_data, left_in = 0.334)
+  p_a <- plot_fig_s10(fig_s10_data) + ggplot2::labs(caption = NULL, tag = "a")
+  p_c <- plot_fig_s12(fig_s12_data) + ggplot2::labs(caption = NULL, tag = "c")
+  def <- s07_v2_panels_def(fig_s13_data, fig_s13_delta)
+  p_de <- (def$d | def$e) + patchwork::plot_layout(guides = "collect")
+
+  # (b) is a self-contained element, so its share of the height includes its own
+  # x axis and legend. Rebalanced so that its rows stay readable and panel (c)'s
+  # four short rows do not lose their axis labels.
+  (p_a / patchwork::wrap_elements(full = p_b) / p_c / p_de / def$f) +
+    patchwork::plot_layout(heights = c(0.9, 3.5, 1.15, 0.9, 0.85))
+}
+
+# Part 1 of the two-page version: panels (a)-(c), on a canvas of the text block's
+# shape. The extra height goes to the rows of (b) and (c), whose rows and tick
+# labels are the tightest in the one-page composite.
+plot_fig_s07_v2_part1 <- function(fig_s10_data, fig_s11_a_data, fig_05_b_data, fig_s12_data) {
+  p_b <- s07_v2_panel_b(fig_s11_a_data, fig_05_b_data, left_in = 0.118)
+  p_a <- plot_fig_s10(fig_s10_data) + ggplot2::labs(caption = NULL, tag = "a")
+  p_c <- plot_fig_s12(fig_s12_data) + ggplot2::labs(caption = NULL, tag = "c")
+  (p_a / patchwork::wrap_elements(full = p_b) / p_c) +
+    patchwork::plot_layout(heights = c(2.4, 7, 3.1))
+}
+
+# Part 2: panels (d)-(f); the panels are as wide as in the one-page composite but
+# have more than twice its height.
+plot_fig_s07_v2_part2 <- function(fig_s13_data, fig_s13_delta) {
+  def <- s07_v2_panels_def(fig_s13_data, fig_s13_delta)
+  p_de <- (def$d | def$e) + patchwork::plot_layout(guides = "collect")
+  (p_de / def$f) + patchwork::plot_layout(heights = c(1, 1))
+}
+
+plot_fig_02 <- function(fig_02_a_data, fig_02_b_data, fig_02_a_system_data) {
+  patchwork::wrap_plots(
+    plot_fig_02_a_agb_by_crop(fig_02_a_data, fig_02_a_system_data),
     plot_fig_02_b_grain_response(fig_02_b_data),
     ncol = 1, heights = c(1, 1)
   )

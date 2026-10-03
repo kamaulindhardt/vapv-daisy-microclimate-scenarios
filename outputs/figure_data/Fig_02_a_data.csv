@@ -34,6 +34,11 @@ Spring Barley,Biogas digestate,Residue removed,Reference,10.946585761666666,1.54
 Soybean,Biogas digestate,Residue removed,Reference,5.8815811,0.2870881072235258,4,Temperature,TRUE,FALSE
 Ryegrass (undersown),Biogas digestate,Residue removed,Reference,0.6088628190833333,0.13861523172250378,4,Temperature,TRUE,FALSE
 Grass-Clover,Biogas digestate,Residue removed,Reference,15.360888377821968,1.7658690160851478,4,Temperature,TRUE,FALSE
+Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC,8.642950452500001,0.8209472481343658,4,Temperature,FALSE,TRUE
+Spring Barley,Biogas digestate,Residue removed,Tmp 0degC,10.603358173958334,1.3867220324696812,4,Temperature,FALSE,TRUE
+Soybean,Biogas digestate,Residue removed,Tmp 0degC,5.629643883333333,0.26142773009669446,4,Temperature,FALSE,TRUE
+Ryegrass (undersown),Biogas digestate,Residue removed,Tmp 0degC,0.6436051916666667,0.026682166096350234,4,Temperature,FALSE,TRUE
+Grass-Clover,Biogas digestate,Residue removed,Tmp 0degC,15.206525227103787,0.5573195224291931,4,Temperature,FALSE,TRUE
 Winter Wheat,Biogas digestate,Residue removed,Tmp -3degC,5.193013159166666,1.1469291760622127,4,Temperature,FALSE,FALSE
 Spring Barley,Biogas digestate,Residue removed,Tmp -3degC,4.771212172875,0.7755180133983057,4,Temperature,FALSE,FALSE
 Soybean,Biogas digestate,Residue removed,Tmp -3degC,3.27956534875,0.20964896190414728,4,Temperature,FALSE,FALSE
@@ -44,11 +49,6 @@ Spring Barley,Biogas digestate,Residue removed,Tmp -2degC,6.93381266625,1.008923
 Soybean,Biogas digestate,Residue removed,Tmp -2degC,4.219907383333333,0.24432396671370202,4,Temperature,FALSE,FALSE
 Ryegrass (undersown),Biogas digestate,Residue removed,Tmp -2degC,0.21309219270833335,0.14538731272982497,4,Temperature,FALSE,FALSE
 Grass-Clover,Biogas digestate,Residue removed,Tmp -2degC,10.409939467679356,0.27411594765428227,4,Temperature,FALSE,FALSE
-Winter Wheat,Biogas digestate,Residue removed,Tmp 0degC,8.642950452500001,0.8209472481343658,4,Temperature,FALSE,TRUE
-Spring Barley,Biogas digestate,Residue removed,Tmp 0degC,10.603358173958334,1.3867220324696812,4,Temperature,FALSE,TRUE
-Soybean,Biogas digestate,Residue removed,Tmp 0degC,5.629643883333333,0.26142773009669446,4,Temperature,FALSE,TRUE
-Ryegrass (undersown),Biogas digestate,Residue removed,Tmp 0degC,0.6436051916666667,0.026682166096350234,4,Temperature,FALSE,TRUE
-Grass-Clover,Biogas digestate,Residue removed,Tmp 0degC,15.206525227103787,0.5573195224291931,4,Temperature,FALSE,TRUE
 Winter Wheat,Biogas digestate,Residue removed,Tmp +0.5degC,8.915036197500001,0.780342519234488,4,Temperature,FALSE,FALSE
 Spring Barley,Biogas digestate,Residue removed,Tmp +0.5degC,11.072538714083333,1.7384066665352242,4,Temperature,FALSE,FALSE
 Soybean,Biogas digestate,Residue removed,Tmp +0.5degC,5.877017216666666,0.3303713120194986,4,Temperature,FALSE,FALSE

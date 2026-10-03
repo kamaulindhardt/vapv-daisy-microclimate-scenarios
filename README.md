@@ -18,13 +18,14 @@ simulation inputs, and simulation output — is archived separately on Zenodo (s
 
 - `R/` — pipeline functions, one file per scientific domain: `import.R`, `clean.R`,
   `productivity.R`, `water_balance.R`, `nitrogen.R`, `soc.R`, `tradeoffs.R`,
-  `wind_diagnostics.R`, `figures.R`, `tables.R`, `manuscript_values.R`, `theme_manuscript.R`.
+  `wind_diagnostics.R`, `microclimate_validation.R`, `resilience.R`, `methods_figure.R`,
+  `supplementary.R`, `figures.R`, `tables.R`, `manuscript_values.R`, `theme_manuscript.R`.
 - `_targets.R` — declares the [`targets`](https://books.ropensci.org/targets/) pipeline built
   from the `R/` functions.
 - `data/raw/` — Daisy/SPAWN/NWAPS setup files and simulation output this pipeline treats as
   fixed input. **Not included in this repository** — see [Data](#data).
 - `data/interim/`, `data/processed/` — intermediate and analysis-ready derived datasets.
-- `outputs/` — figures, tables, and figure-source data, split into `main/` and `supplementary/`.
+- `outputs/` — figures, tables, and figure-source data, split into `main/`, `supplementary/` and `supplementary_v2/`.
 - `validation/` — numerical checks on pipeline output (internal consistency, and comparison
   against a prior implementation's saved output where a local fixture is available — see
   `validation/README.md`).

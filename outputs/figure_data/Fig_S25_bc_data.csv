@@ -1,0 +1,49 @@
+condition,comparison_group,flux,pct_change
+Rad -10%,"Uniform radiation ladder
+(Centre strip)",Biological N fixation,-5.3773977461114155
+Rad -10%,"Uniform radiation ladder
+(Centre strip)",Crop N uptake,-3.833921473364533
+Rad -10%,"Uniform radiation ladder
+(Centre strip)",Mineralisation,-2.035168935564958
+Rad -10%,"Uniform radiation ladder
+(Centre strip)",N leaching,0.8962419455863806
+Rad -20%,"Uniform radiation ladder
+(Centre strip)",Biological N fixation,-27.86064428125219
+Rad -20%,"Uniform radiation ladder
+(Centre strip)",Crop N uptake,-11.007628010306263
+Rad -20%,"Uniform radiation ladder
+(Centre strip)",Mineralisation,-9.464911728386443
+Rad -20%,"Uniform radiation ladder
+(Centre strip)",N leaching,-6.95201545161068
+Rad -30%,"Uniform radiation ladder
+(Centre strip)",Biological N fixation,-66.86108814838553
+Rad -30%,"Uniform radiation ladder
+(Centre strip)",Crop N uptake,-20.416745088242894
+Rad -30%,"Uniform radiation ladder
+(Centre strip)",Mineralisation,-19.990026346922722
+Rad -30%,"Uniform radiation ladder
+(Centre strip)",N leaching,-16.493457743067857
+Rad -5%,"Uniform radiation ladder
+(Centre strip)",Biological N fixation,-5.59865206901457
+Rad -5%,"Uniform radiation ladder
+(Centre strip)",Crop N uptake,-2.378518513912921
+Rad -5%,"Uniform radiation ladder
+(Centre strip)",Mineralisation,-1.8130019613265556
+Rad -5%,"Uniform radiation ladder
+(Centre strip)",N leaching,-1.469682051465207
+East,"Real substrip position
+(0-level, vs Centre)",Biological N fixation,-10.388227607444922
+East,"Real substrip position
+(0-level, vs Centre)",Crop N uptake,-4.472384574335044
+East,"Real substrip position
+(0-level, vs Centre)",Mineralisation,-3.4968465451184034
+East,"Real substrip position
+(0-level, vs Centre)",N leaching,1.1062971742178216
+West,"Real substrip position
+(0-level, vs Centre)",Biological N fixation,-8.747171444241989
+West,"Real substrip position
+(0-level, vs Centre)",Crop N uptake,-6.515186494401265
+West,"Real substrip position
+(0-level, vs Centre)",Mineralisation,-3.552072193155441
+West,"Real substrip position
+(0-level, vs Centre)",N leaching,6.012080027060648

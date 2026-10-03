@@ -140,16 +140,20 @@ select_contrast_years <- function(crop_drought_years,
                                    crop_years,
                                    start_year = ANALYSIS_START_YEAR,
                                    preferred = list(
-                                     # WW and SY: SPEI-3 independently agrees with the
-                                     # chosen near-normal/dry years for both crops.
+                                     # WW and SY are named in the manuscript text; SPEI-3
+                                     # independently agrees with all four (validated in
+                                     # validation/check_spei_drought_years.R).
                                      "Winter Wheat" = c(near_normal = 2023, dry = 2013),
                                      "Soybean" = c(near_normal = 2007, dry = 2022),
-                                     # GC and SB are pinned rather than SPEI-derived. NOTE:
-                                     # SPEI-3 does not agree for spring barley - it scores
-                                     # 2001 at -0.06 (near-normal) and picks 2011 (-0.91) as
-                                     # the dry year. The pinned years are kept, and
-                                     # window_spei is carried in the output so the
-                                     # disagreement stays visible rather than being buried.
+                                     # GC and SB are pinned to the years used in the
+                                     # co-author figure draft. NOTE: SPEI-3 does not
+                                     # agree for spring barley - it scores 2001 at -0.06
+                                     # (near-normal) and picks 2011 (-0.91) as the dry
+                                     # year. The pinned years are kept so the figure
+                                     # matches the draft, and window_spei is carried in
+                                     # the output so the disagreement stays visible
+                                     # rather than being buried. See the alignment note
+                                     # in docs/manuscript_alignment_review.md.
                                      "Grass-Clover" = c(near_normal = 2000, dry = 2020),
                                      "Spring Barley" = c(near_normal = 2021, dry = 2001)
                                    )) {
@@ -247,8 +251,9 @@ select_critical_dry_periods <- function(spei_monthly, crop_years_all,
   # than over the crop's phenological SPEI window. Identifying a dry period
   # with one window and measuring its effect over another would let a year
   # qualify as "critically dry" on months that are not the months being
-  # examined. This is what identifies winter wheat's driest occurrence as
-  # May-Jul 2018 and soybean's as May-Jun 2013.
+  # examined. Using the critical window for both is what reproduces the
+  # periods the v12 draft names (winter wheat May-Jul 2018, soybean
+  # May-Jun 2013) - see validation/check_fig_04_vs_manuscript.R.
   window_spei_by_crop_year <- windows |>
     dplyr::rowwise() |>
     dplyr::mutate(window_months = list(seq(start_month, end_month))) |>

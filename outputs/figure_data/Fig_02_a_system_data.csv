@@ -1,0 +1,23 @@
+fertiliser_type,residue_policy,scen_label,mean_asy,sd_asy,n_rot,driver
+Biogas digestate,Residue removed,Reference,11.48430646611111,1.187072494095085,4,Radiation
+Biogas digestate,Residue removed,Rad 0%,9.079083701388889,0.6622489720001921,4,Radiation
+Biogas digestate,Residue removed,Rad -5%,8.662277393046296,0.23463961586633253,4,Radiation
+Biogas digestate,Residue removed,Rad -10%,8.424723532833333,0.35699172921315125,4,Radiation
+Biogas digestate,Residue removed,Rad -20%,7.256382753477777,0.23378811203588643,4,Radiation
+Biogas digestate,Residue removed,Rad -30%,5.466202177830278,0.3160906635808943,4,Radiation
+Biogas digestate,Residue removed,Reference,11.48430646611111,1.187072494095085,4,Temperature
+Biogas digestate,Residue removed,Tmp 0degC,11.275342763537036,0.6883428156836083,4,Temperature
+Biogas digestate,Residue removed,Tmp -3degC,5.594741966564815,0.4192961630337062,4,Temperature
+Biogas digestate,Residue removed,Tmp -2degC,7.795638599145371,0.4598831879520729,4,Temperature
+Biogas digestate,Residue removed,Tmp +0.5degC,11.496044884281481,1.374364584702355,4,Temperature
+Biogas digestate,Residue removed,Tmp +1degC,13.122951202037036,0.959942323250519,4,Temperature
+Biogas digestate,Residue removed,Tmp +2degC,14.300839601878703,0.7234033375668366,4,Temperature
+Biogas digestate,Residue removed,Tmp +3degC,14.506008671013426,0.7087430506315323,4,Temperature
+Biogas digestate,Residue removed,Reference,11.48430646611111,1.187072494095085,4,Wind
+Biogas digestate,Residue removed,Wind 0%,11.49972971037037,1.2264233486019749,4,Wind
+Biogas digestate,Residue removed,Wind -20%,11.515016831296297,1.2302954057385682,4,Wind
+Biogas digestate,Residue removed,Wind -30%,11.521811458518519,1.2274778135605378,4,Wind
+Biogas digestate,Residue removed,Wind -40%,11.528343323981481,1.2280646824769264,4,Wind
+Biogas digestate,Residue removed,Wind -50%,11.533858715925927,1.2270960493714635,4,Wind
+Biogas digestate,Residue removed,Wind -60%,11.312949680462964,1.425898974029173,4,Wind
+Biogas digestate,Residue removed,Wind -70%,11.320792230777776,1.4270337386079444,4,Wind

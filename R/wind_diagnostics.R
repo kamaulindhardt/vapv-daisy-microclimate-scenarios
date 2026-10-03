@@ -1,12 +1,12 @@
-# Wind-mechanism diagnostics: Supplementary Figures S6, S7 and S8.
+# Wind-mechanism diagnostics: Supplementary Figures S7, S8 and S9.
 #
 # These three figures exist to answer one question the main text raises but
 # cannot settle: wind shelter demonstrably cuts evaporative demand, so why does
 # it not move yield? The sequence is deliberate -
-#   S6  establishes that the demand reduction is real and quantifies it
-#   S7  shows the reduction does not reach soil water, stress or yield, and
+#   S7  establishes that the demand reduction is real and quantifies it
+#   S8  shows the reduction does not reach soil water, stress or yield, and
 #       benchmarks its size against radiation and temperature
-#   S8  isolates the mechanism: wind changes neither canopy size nor crop water
+#   S9  isolates the mechanism: wind changes neither canopy size nor crop water
 #       use, whereas radiation and temperature change both
 #
 # Derived from reference/legacy_snapshot/SPAWN_NWAPS_MANUSCRIPT_VIZ.Rmd wind
@@ -14,7 +14,7 @@
 # five to eight times each, which is what made the legacy session stall; here
 # each file is read once, filtered inside the reader, and cached as a target.
 
-# Scenario ladders used across S6-S8. Wind is the subject; radiation and
+# Scenario ladders used across S7-S9. Wind is the subject; radiation and
 # temperature are the benchmark against which its (non-)effect is judged.
 wind_ladder <- c("Wind 0%", "Wind -20%", "Wind -30%", "Wind -40%",
                  "Wind -50%", "Wind -60%", "Wind -70%")
@@ -23,7 +23,7 @@ temperature_ladder <- c("Tmp -3degC", "Tmp -2degC", "Tmp 0degC",
                         "Tmp +0.5degC", "Tmp +1degC", "Tmp +2degC", "Tmp +3degC")
 
 # ---------------------------------------------------------------------------
-# S6a - FAO-56 aerodynamic fraction of reference evapotranspiration
+# S7a - FAO-56 aerodynamic fraction of reference evapotranspiration
 # ---------------------------------------------------------------------------
 # Analytical, not simulated. FAO-56 (Allen et al. 1998) splits ET0 into a
 # radiation term and an aerodynamic term:
@@ -58,7 +58,7 @@ fao56_aerodynamic_fraction <- function(u2, air_temp_c, vapour_pressure_pa,
   aerodynamic_term / (radiation_term + aerodynamic_term)
 }
 
-prepare_fig_s06_a_data <- function(openfield_weather_daily,
+prepare_fig_s07_a_data <- function(openfield_weather_daily,
                                     vapv_weather_daily,
                                     growing_season_months = 4:9) {
   gs <- openfield_weather_daily |> dplyr::filter(month %in% growing_season_months)
@@ -89,12 +89,12 @@ prepare_fig_s06_a_data <- function(openfield_weather_daily,
 }
 
 # ---------------------------------------------------------------------------
-# S6b - simulated PET and AET across the wind-shelter ladder
+# S7b - simulated PET and AET across the wind-shelter ladder
 # ---------------------------------------------------------------------------
 # Growing-season totals per year, expressed relative to the open-field run, so
 # the panel answers "how much demand does shelter actually remove, and how much
 # of that removal reaches actual water use?".
-prepare_fig_s06_b_data <- function(daily_swater, growing_season_months = 4:9,
+prepare_fig_s07_b_data <- function(daily_swater, growing_season_months = 4:9,
                                     start_year = ANALYSIS_START_YEAR) {
   seasonal <- daily_swater |>
     dplyr::filter(month %in% growing_season_months, year >= start_year) |>
@@ -177,14 +177,14 @@ add_weather_scenario_label <- function(df, centre_only = TRUE) {
 }
 
 # ---------------------------------------------------------------------------
-# S6c / S7c - yield response to each driver, by crop
+# S7c / S8c - yield response to each driver, by crop
 # ---------------------------------------------------------------------------
-# S6c: AGB relative to open field across the wind ladder only.
-# S7c: the RANGE of yield response to each of the three drivers, side by side.
+# S7c: AGB relative to open field across the wind ladder only.
+# S8c: the RANGE of yield response to each of the three drivers, side by side.
 #      The range is the summary statistic that matters here - a driver whose
 #      full ladder moves yield by 2% is not a design lever, however tidy its
 #      dose-response looks in isolation.
-prepare_fig_s06_c_data <- function(harvest_annual) {
+prepare_fig_s07_c_data <- function(harvest_annual) {
   percrop_relative_yield(harvest_annual) |>
     dplyr::filter(scen_label %in% wind_ladder) |>
     dplyr::mutate(
@@ -222,7 +222,7 @@ percrop_relative_yield <- function(harvest_annual, rotations = paste("Rotation",
     )
 }
 
-prepare_fig_s07_c_data <- function(harvest_annual) {
+prepare_fig_s08_c_data <- function(harvest_annual) {
   rel <- percrop_relative_yield(harvest_annual)
 
   ladders <- tibble::tribble(
@@ -250,13 +250,13 @@ prepare_fig_s07_c_data <- function(harvest_annual) {
 }
 
 # ---------------------------------------------------------------------------
-# S7b - demand-versus-use decomposition
+# S8b - demand-versus-use decomposition
 # ---------------------------------------------------------------------------
 # The mechanistic core of the wind story. If shelter cuts demand (PET) but the
 # crop was never drawing on that demand, actual use (AET) will not follow.
 # Plotting the two differences against open-field wind speed shows whether the
 # gap widens with wind - it does for demand and does not for use.
-prepare_fig_s07_b_data <- function(daily_swater, openfield_weather_daily,
+prepare_fig_s08_b_data <- function(daily_swater, openfield_weather_daily,
                                     start_year = ANALYSIS_START_YEAR,
                                     growing_season_months = 4:9) {
   wide <- daily_swater |>
@@ -287,14 +287,14 @@ prepare_fig_s07_b_data <- function(daily_swater, openfield_weather_daily,
 }
 
 # ---------------------------------------------------------------------------
-# S8 - canopy size and cumulative water use, dose-response by driver
+# S9 - canopy size and cumulative water use, dose-response by driver
 # ---------------------------------------------------------------------------
 # Crop-years must exist in the rotation being read. The draft names soybean
 # 2013, but Rotation 1 grows soybean in 2002/2007/2012/2017/2022 - 2013 is a
 # winter-wheat year there, so reading it returns an empty soybean panel. 2022
 # is Rotation 1's dry soybean year and is the one already used in Figure 3, so
 # the two figures show the same season.
-prepare_fig_s08_data <- function(daily_crop_production_wind, daily_swater_wind,
+prepare_fig_s09_data <- function(daily_crop_production_wind, daily_swater_wind,
                                   crop_years = list("Winter Wheat" = 2018L,
                                                      "Soybean" = 2022L)) {
   lai <- daily_crop_production_wind |>
@@ -327,14 +327,14 @@ prepare_fig_s08_data <- function(daily_crop_production_wind, daily_swater_wind,
 }
 
 # ---------------------------------------------------------------------------
-# S7a - does wind shelter ever reach soil water, suction or crop stress?
+# S8a - does wind shelter ever reach soil water, suction or crop stress?
 # ---------------------------------------------------------------------------
 # The most direct test available: take each crop's driest simulated season,
 # walk the full 0-70% shelter ladder, and look at the three quantities that
 # would have to move before a yield effect were possible - stored soil water,
 # root-zone suction, and the model's own crop water-stress signal. If shelter
 # cannot shift these even in the driest year, it cannot shift yield.
-prepare_fig_s07_a_data <- function(field_water_daily, daily_pf, daily_crop_production_wind,
+prepare_fig_s08_a_data <- function(field_water_daily, daily_pf, daily_crop_production_wind,
                                     crop_years = list("Winter Wheat" = 2018L,
                                                        "Soybean" = 2022L)) {
   keep <- tibble::tibble(
@@ -382,22 +382,22 @@ prepare_fig_s07_a_data <- function(field_water_daily, daily_pf, daily_crop_produ
 }
 
 # ---------------------------------------------------------------------------
-# S10 - continuous SOC dynamics with a crop-calendar overlay
+# S14 - continuous SOC dynamics with a crop-calendar overlay
 # ---------------------------------------------------------------------------
 # Weekly resolution, so the within-year sawtooth from residue input and
 # decomposition is visible - the annual September snapshots behind Figure 6
 # cannot show it.
 #
 # Uses TOTAL SOC (SOM1+SOM2+SOM3) rather than the draft's slow pool, for the
-# same reason as Figure 6 and S12: one basis throughout. The slow pool is
+# same reason as Figure 6 and S17: one basis throughout. The slow pool is
 # carried in the figure data for comparison.
-s10_scenarios <- c("Reference", "Rad 0%", "Rad -10%", "Rad -30%",
+s14_scenarios <- c("Reference", "Rad 0%", "Rad -10%", "Rad -30%",
                    "Tmp 0degC", "Tmp -3degC", "Tmp +3degC")
 
-prepare_fig_s10_data <- function(weekly_om, start_year = ANALYSIS_START_YEAR) {
+prepare_fig_s14_data <- function(weekly_om, start_year = ANALYSIS_START_YEAR) {
   weekly_om |>
     add_weather_scenario_label() |>
-    dplyr::filter(scen_label %in% s10_scenarios, year >= start_year) |>
+    dplyr::filter(scen_label %in% s14_scenarios, year >= start_year) |>
     dplyr::mutate(
       family = dplyr::case_when(
         scen_label == "Reference" ~ "Open field",
@@ -429,7 +429,7 @@ prepare_crop_calendar <- function(daily_crop_production_all) {
     dplyr::filter(!is.na(crop_renamed))
 }
 
-# Driver family and ordered position, for the graded colour ramps in S8.
+# Driver family and ordered position, for the graded colour ramps in S9.
 classify_scenario_family <- function(scen_label) {
   x <- as.character(scen_label)
   dplyr::case_when(

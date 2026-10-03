@@ -115,6 +115,12 @@ build_nwaps_import_registry <- function(raw_dir) {
     "field_water_sep",    "out_Annual-FWater_Sep.csv",       "water_annual",   TRUE,
     "field_n_apr",        "out_Annual-FN_100cm_Apr.csv",     "nitrogen",       TRUE,
     "field_n_sep",        "out_Annual-FN_100cm_Sep.csv",     "nitrogen",       TRUE,
+    # Profile-bottom N balance, i.e. the same file family WITHOUT the 100 cm
+    # depth restriction. Not used by any manuscript figure - Figure 5 and every
+    # number derived from it are on the 100 cm basis - but registered because
+    # it is the table out_Daily-FN.csv actually corresponds to, which is what
+    # makes Supplementary Fig. S13 reconcilable. See read_daily_n().
+    "field_n_apr_profile", "out_Annual-FN_Apr.csv",          "nitrogen",       FALSE,
     "som_apr",            "out_Annual-OM_Apr.csv",           "carbon",         TRUE,
     "som_sep",            "out_Annual-OM_Sep.csv",           "carbon",         TRUE,
     "som_to30_apr",       "out_Annual-OM_to30_Apr.csv",      "carbon_layer",   FALSE,
@@ -223,7 +229,7 @@ import_daily_crop_production <- function(raw_dir, keep_years = NULL,
 # TRANSPIRATION alongside evapotranspiration, plus reference ET0. The
 # out_Daily-FWater.csv file used elsewhere has AET only, which conflates
 # canopy transpiration with soil and interception evaporation - the
-# distinction that Supplementary Figures S6-S8 exist to make.
+# distinction that Supplementary Figures S7-S9 exist to make.
 # ---------------------------------------------------------------------------
 read_daily_swater <- function(raw_dir,
                                keep_rotation_management = "Rotation1DigRem",
@@ -273,7 +279,7 @@ read_daily_swater <- function(raw_dir,
 # ---------------------------------------------------------------------------
 # DAISY weather files (.dwf): 21 header lines, then a column-name row, a units
 # row, and tab-separated hourly data. Read for wind speed, which is the driver
-# behind the whole S6-S8 sequence but is an INPUT to the simulations rather
+# behind the whole S7-S9 sequence but is an INPUT to the simulations rather
 # than an output, so it appears in no NWAPS file.
 # ---------------------------------------------------------------------------
 read_daisy_weather <- function(path) {
@@ -342,10 +348,104 @@ read_daily_pf <- function(raw_dir,
 }
 
 # ---------------------------------------------------------------------------
+# Daily nitrogen fluxes (out_Daily-FN.csv, ~959 MB)
+#
+# The only source in the run output with WITHIN-YEAR nitrogen resolution. The
+# April annual table behind Figure 5 gives one leaching total per
+# agrohydrological year and therefore cannot say WHEN in the year the leaching
+# happened - which is the question Supplementary Figure S13 answers.
+#
+# The columns are incremental daily fluxes (kg N/ha/day), not running totals -
+# verified directly against the file, since a cumulative series would make every
+# monthly sum meaningless. One row per day; the `hour` column is present but
+# always 0.
+#
+# ---------------------------------------------------------------------------
+# DEPTH BASIS - this file is NOT on the same basis as Figure 5
+# ---------------------------------------------------------------------------
+# The header carries no depth, and it is tempting to assume it matches
+# out_Annual-FN_100cm_Apr.csv. It does not. Summing it to annual totals gives
+# values 1-18% BELOW that table, and the year-by-year series do not track each
+# other (r = 0.74).
+#
+# It corresponds instead to out_Annual-FN_Apr.csv, the profile-bottom table
+# with no depth restriction: after aligning the year stamps (below), the two
+# agree at r = 0.999973 with a maximum relative difference of 2.6% across 25
+# years. Established in validation/check_fn_depth_basis.R rather than assumed.
+#
+# Consequence: the ABSOLUTE kg N/ha values in Fig. S13 are profile-bottom
+# leaching and must not be quoted alongside Figure 5's 100 cm totals. The
+# seasonal DISTRIBUTION, which is what S13 is for, is unaffected.
+#
+# ---------------------------------------------------------------------------
+# YEAR STAMP - the annual tables are labelled by the CLOSING checkpoint
+# ---------------------------------------------------------------------------
+# out_Annual-FN_Apr.csv row `year = Y` covers April Y-1 to April Y, i.e. it is
+# stamped with the April checkpoint that ENDS the accounting period, not the
+# one that starts it. A daily aggregation that assigns April-onward months to
+# the current year is therefore offset by one relative to the annual tables.
+#
+# No manuscript figure is affected - every N result is a multi-year mean per
+# scenario, and a uniform label shift leaves those unchanged except at the two
+# edge years - but anything that joins nitrogen to a specific crop-year or
+# drought year would be silently wrong, so it is recorded here.
+# ---------------------------------------------------------------------------
+#
+# 35 columns wide x ~4.1M rows: read only the eight that are needed and filter
+# inside the reader, for the same reason as the other daily readers here.
+# ---------------------------------------------------------------------------
+read_daily_n <- function(raw_dir, file_name = "out_Daily-FN.csv",
+                          keep_rotation_management = paste0("Rotation", 1:4, "DigRem"),
+                          keep_weather = NULL, keep_years = NULL) {
+  path <- file.path(raw_dir, file_name)
+  if (!file.exists(path)) {
+    cli::cli_alert_warning("Daily N file not found: {path}")
+    return(NULL)
+  }
+
+  # Mineralization/Crop-Uptake/Fixated added for Fig. S25 (seasonal N-budget
+  # mechanism behind the radiation ladder's leaching response) - same file,
+  # same daily resolution as the leaching columns already read here, so this
+  # extends the existing reader instead of a second pass over the same 1 GB
+  # file. Named to match prepare_n_annual()'s ANNUAL columns exactly
+  # (mineralisation_kgN_ha etc.) so daily and annual N-budget figures use one
+  # consistent vocabulary.
+  wanted <- c("Site", "RotationManagement", "Weather", "year", "month", "mday",
+              "Matrix-Leaching [kg N/ha]", "Biopore-Leaching [kg N/ha]",
+              "Mineralization [kg N/ha]", "Crop-Uptake [kg N/ha]", "Fixated [kg N/ha]")
+  dt <- data.table::fread(path, select = wanted, showProgress = FALSE,
+                           na.strings = c("", "NA", "NaN", "nan", "-nan", "-"))
+  data.table::setnames(dt, wanted, c(
+    "Site", "RotationManagement", "Weather", "year", "month", "mday",
+    "matrix_leaching", "biopore_leaching",
+    "mineralisation_kgN_ha", "crop_uptake_kgN_ha", "fixation_kgN_ha"
+  ))
+
+  if (!is.null(keep_rotation_management)) {
+    dt <- dt[RotationManagement %in% keep_rotation_management]
+  }
+  if (!is.null(keep_weather)) dt <- dt[Weather %in% keep_weather]
+  if (!is.null(keep_years)) dt <- dt[year %in% keep_years]
+
+  tibble::as_tibble(dt) |>
+    dplyr::mutate(
+      dplyr::across(c(matrix_leaching, biopore_leaching, mineralisation_kgN_ha,
+                      crop_uptake_kgN_ha, fixation_kgN_ha),
+                    \(x) suppressWarnings(as.numeric(x))),
+      # Same definition as the annual figure: matrix + biopore. Counting only
+      # matrix leaching would drop the preferential-flow pathway (see
+      # R/nitrogen.R), and the two figures must be on one basis.
+      leaching_kgN_ha = matrix_leaching + biopore_leaching,
+      date = as.Date(sprintf("%04d-%02d-%02d", as.integer(year),
+                              as.integer(month), as.integer(mday)))
+    )
+}
+
+# ---------------------------------------------------------------------------
 # Weekly organic matter, 0-30 cm (out_Weekly-OM_to30.csv, ~126 MB)
 #
 # Weekly rather than annual resolution, which is what makes the continuous SOC
-# trajectories in Supplementary Fig. S10 possible - the annual September
+# trajectories in Supplementary Fig. S14 possible - the annual September
 # snapshots used for Figure 6 cannot show within-year dynamics.
 # ---------------------------------------------------------------------------
 read_weekly_om <- function(raw_dir, file_name = "out_Weekly-OM_to30.csv",

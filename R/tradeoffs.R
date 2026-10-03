@@ -75,26 +75,29 @@ prepare_fig_07_b_data <- function(grain_asy, n_flux_summary) {
 }
 
 # ===========================================================================
-# Supplementary Figure S12 - yield-SOC trade-off
+# Supplementary Figure S17 - yield-SOC trade-off
 # ===========================================================================
 # Extends the Figure 7 trade-off from N leaching to soil carbon, and supplies
 # the OLS slope of %dSOC on %yield per driver per management.
 #
-# This slope is computed directly here (rather than read off Figure 7, which
-# carries leaching only) because a yield-SOC trade-off slope is a natural
-# complement to the yield-N-leaching synthesis and is not otherwise reported
-# anywhere in the pipeline.
+# That slope is why this figure matters beyond completeness: the v12 draft
+# quotes it twice with different values (Results §3.3: -0.26 to -0.31 for
+# temperature, +0.03 to +0.14 for radiation; Discussion §4.5: -0.37 to -0.39
+# and +0.01 to +0.07). Neither was reproducible from the main figures because
+# Figure 7 carries leaching only. Computing it here settles which is right -
+# or whether neither is.
 #
-# Uses TOTAL SOC (SOM1+SOM2+SOM3), matching the pool definition used for
-# main-text Figure 6, rather than the SLOW pool (SOM2-C + SOM3-C) alone -
-# keeping one pool definition across figures avoids a spurious inconsistency
-# between figures that both claim to describe "SOC". Both slopes (total and
-# slow-pool) are returned so the difference is measurable rather than assumed.
+# ONE DELIBERATE DEPARTURE FROM THE DRAFT: the draft's S17 description uses the
+# SLOW pool (SOM2-C + SOM3-C). This uses TOTAL SOC (SOM1+SOM2+SOM3), matching
+# the correction already applied to main-text Figure 6 and to Methods. Carrying
+# the slow pool here while the main text uses total would reintroduce exactly
+# the §3.2-vs-§3.3 split flagged in docs/manuscript_alignment_review.md. Both
+# slopes are returned so the difference is measurable rather than assumed.
 
 # ===========================================================================
 # Three-domain trade-off - the companion to Figure 7
 # ===========================================================================
-# Figure 7 plots yield against N leaching; S12 plots it against SOC. Neither
+# Figure 7 plots yield against N leaching; S17 plots it against SOC. Neither
 # can answer the question Results 3.3 actually asks - whether ANY scenario
 # improves yield, nitrogen retention AND carbon at once - because a point can
 # only sit in one panel's quadrant at a time.
@@ -193,7 +196,7 @@ find_win_win_scenarios <- function(three_domain_data, yield_threshold = 100) {
     dplyr::filter(relative_yield_pct >= yield_threshold, n_favourable == n_outcomes)
 }
 
-prepare_fig_s12_data <- function(tradeoff_data, soc_relative_change,
+prepare_fig_s17_data <- function(tradeoff_data, soc_relative_change,
                                   end_year = 2024L, depth_layer = "0-30 cm",
                                   rotations = paste("Rotation", 1:4)) {
   soc_end <- soc_relative_change |>
@@ -220,8 +223,8 @@ prepare_fig_s12_data <- function(tradeoff_data, soc_relative_change,
 # OLS slope of %dSOC on %yield, fitted separately per management x driver.
 # Returned as a table rather than computed inside the plot so the numbers can
 # be quoted in the text and checked independently.
-fit_yield_soc_slopes <- function(fig_s12_data, soc_col = "delta_soc_total_pct") {
-  fig_s12_data |>
+fit_yield_soc_slopes <- function(fig_s17_data, soc_col = "delta_soc_total_pct") {
+  fig_s17_data |>
     dplyr::filter(!is.na(.data[[soc_col]]), !is.na(relative_yield_pct)) |>
     dplyr::group_by(yield_metric, management_label, driver) |>
     dplyr::filter(dplyr::n() >= 3) |>
